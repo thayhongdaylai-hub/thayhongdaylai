@@ -254,7 +254,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
               </div>
               <div style={{
                 fontSize: '1.8rem',
-                fontFamily: "'Inter Tight', sans-serif",
+                fontFamily: "'Plus Jakarta Sans', sans-serif",
                 fontWeight: 800,
                 color: 'var(--accent-emerald)',
                 letterSpacing: '0.08em'

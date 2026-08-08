@@ -222,7 +222,7 @@ export default function Hero({ onOpenRegister }) {
               }}>
                 <div style={{
                   fontSize: '2.2rem',
-                  fontFamily: "'Inter Tight', sans-serif",
+                  fontFamily: "'Plus Jakarta Sans', sans-serif",
                   fontWeight: 800,
                   color: 'var(--accent-emerald)',
                   marginBottom: '0.2rem'
