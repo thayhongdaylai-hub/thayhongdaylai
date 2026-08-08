@@ -31,7 +31,7 @@ export default function Footer() {
               }}>
                 <ShieldCheck size={26} color="#051A10" />
               </div>
-              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
+              <span style={{ fontFamily: "'Inter Tight', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
                  THẦY HỒNG<span className="text-gradient"> DẠY LÁI</span>
               </span>
             </div>

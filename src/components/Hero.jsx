@@ -61,7 +61,7 @@ export default function Hero({ onOpenRegister }) {
             </h1>
 
             <p style={{
-              fontFamily: "'Quicksand', sans-serif",
+              fontFamily: "'Inter', sans-serif",
               fontSize: '1.12rem',
               fontWeight: 600,
               color: 'var(--text-muted)',
@@ -222,7 +222,7 @@ export default function Hero({ onOpenRegister }) {
               }}>
                 <div style={{
                   fontSize: '2.2rem',
-                  fontFamily: "'Outfit', sans-serif",
+                  fontFamily: "'Inter Tight', sans-serif",
                   fontWeight: 800,
                   color: 'var(--accent-emerald)',
                   marginBottom: '0.2rem'

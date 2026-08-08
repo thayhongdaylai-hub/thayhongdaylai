@@ -217,7 +217,7 @@ export default function CoursePackages({ onSelectCourse }) {
                   }}>
                     <span style={{
                       fontSize: '1.85rem',
-                      fontFamily: "'Outfit', sans-serif",
+                      fontFamily: "'Inter Tight', sans-serif",
                       fontWeight: 800,
                       color: 'var(--accent-emerald)'
                     }}>

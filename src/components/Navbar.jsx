@@ -59,7 +59,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{
-              fontFamily: "'Outfit', sans-serif",
+              fontFamily: "'Inter Tight', sans-serif",
               fontSize: '1.35rem',
               fontWeight: 800,
               letterSpacing: '-0.02em',
