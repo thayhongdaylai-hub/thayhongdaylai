@@ -57,7 +57,7 @@ export default function Hero({ onOpenRegister }) {
               marginBottom: '1.25rem',
               lineHeight: 1.15
             }}>
-              Học Lái Xe Ô Tô & Xe Máy <span className="text-gradient">Cam Kết Đậu 99%</span>
+              ĐÀO TẠO Ô Tô & Xe Máy <span className="text-gradient">Cam Kết Đậu 99%</span>
             </h1>
 
             <p style={{
