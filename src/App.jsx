@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CoursePackages from './components/CoursePackages';
 import Roadmap from './components/Roadmap';
-import CostCalculator from './components/CostCalculator';
 import Facilities from './components/Facilities';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
@@ -47,7 +46,6 @@ export default function App() {
         <Hero onOpenRegister={() => handleOpenRegister()} />
         <CoursePackages onSelectCourse={handleSelectCourse} />
         <Roadmap onOpenRegister={() => handleOpenRegister()} />
-        <CostCalculator onOpenRegisterWithDetails={handleOpenRegister} />
         <Facilities />
         <Testimonials />
         <FAQ />

@@ -114,14 +114,6 @@ export default function Hero({ onOpenRegister }) {
                 <span>Nhận Ưu Đãi 1.000.000đ</span>
                 <ArrowRight size={20} color="#051A10" />
               </button>
-
-              <a
-                href="#calculator"
-                className="btn btn-secondary"
-                style={{ padding: '1rem 1.8rem', fontSize: '1rem' }}
-              >
-                <span>Tính Học Phí Tự Động</span>
-              </a>
             </div>
           </div>
 

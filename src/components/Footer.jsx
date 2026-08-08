@@ -67,7 +67,6 @@ export default function Footer() {
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem' }}>
               <li><a href="#roadmap">Lộ trình đào tạo chuẩn GTVT</a></li>
-              <li><a href="#calculator">Tính dự toán học phí</a></li>
               <li><a href="#facilities">Hệ thống sân tập chuẩn ISO</a></li>
               <li><a href="#faq">Câu hỏi thường gặp</a></li>
               <li><a href="#">Chính sách hoàn tiền 100%</a></li>

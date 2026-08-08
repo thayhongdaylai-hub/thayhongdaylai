@@ -7,7 +7,6 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
   const navLinks = [
     { name: 'Gói học & Học phí', href: '#courses' },
     { name: 'Lộ trình đào tạo', href: '#roadmap' },
-    { name: 'Tính chi phí', href: '#calculator' },
     { name: 'Sân tập chuẩn ISO', href: '#facilities' },
     { name: 'Đánh giá học viên', href: '#testimonials' },
     { name: 'Hỏi đáp (FAQ)', href: '#faq' },
