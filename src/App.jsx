@@ -8,6 +8,7 @@ import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import RegisterModal from './components/RegisterModal';
+import CustomCursor from './components/CustomCursor';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -37,6 +38,7 @@ export default function App() {
 
   return (
     <div className="app-root">
+      <CustomCursor />
       <Navbar
         theme={theme}
         toggleTheme={toggleTheme}

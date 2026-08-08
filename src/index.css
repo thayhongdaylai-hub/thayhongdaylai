@@ -98,6 +98,12 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
   transition: background-color 0.4s ease, color 0.4s ease;
+  cursor: none;
+}
+
+/* Keep default cursor on mobile/touch */
+@media (max-width: 768px), (hover: none) {
+  body, body * { cursor: auto !important; }
 }
 
 h1, h2, h3, h4, h5, h6 {
