@@ -11,7 +11,7 @@ import RegisterModal from './components/RegisterModal';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('vietdrive_theme') || 'dark';
+    return localStorage.getItem('vietdrive_theme') || 'light';
   });
 
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);

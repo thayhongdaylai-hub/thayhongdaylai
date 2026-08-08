@@ -4,7 +4,7 @@ import { ShieldCheck, Phone, Mail, MapPin, Clock } from 'lucide-react';
 export default function Footer() {
   return (
     <footer style={{
-      background: 'var(--bg-card)',
+      background: 'var(--bg-card-hover)',
       borderTop: '1px solid var(--border-color)',
       padding: '4.5rem 0 2rem 0',
       color: 'var(--text-muted)'
@@ -29,7 +29,7 @@ export default function Footer() {
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <ShieldCheck size={26} color="#051A10" />
+                <ShieldCheck size={26} color="#FFFFFF" />
               </div>
               <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
                  THẦY HỒNG<span className="text-gradient"> DẠY LÁI</span>
