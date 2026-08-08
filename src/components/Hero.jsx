@@ -81,10 +81,10 @@ export default function Hero({ onOpenRegister }) {
               marginBottom: '2.5rem'
             }}>
               {[
-                'Học phí trọn gói 100% (Không phụ thu)',
-                'Thi sát hạch trực tiếp tại sân chuẩn ISO',
-                'Học 1 Thầy / 1 Trò (Xe trang bị máy lạnh)',
-                'Hỗ trợ trả góp 0% lãi suất linh hoạt'
+                'Học phí trọn gói 100% (Không phát sinh chi phí)',
+                'Thi sát hạch trực tiếp tại sân chuẩn học lái',
+                'Học 1 Thầy / 1 Trò (Xe tiêu chuẩn học lái)',
+                'Hỗ trợ đóng học phí nhiều lần'
               ].map((item, idx) => (
                 <div key={idx} style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                   <div style={{
