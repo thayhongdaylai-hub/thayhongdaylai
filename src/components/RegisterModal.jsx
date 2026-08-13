@@ -5,32 +5,82 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
   const [formData, setFormData] = useState({
     fullName: '',
     phone: '',
-    course: 'b1',
-    branch: 'hanoi',
+    course: 'b',
+    branch: 'hn_nvc',
     notes: ''
   });
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [voucherCode, setVoucherCode] = useState('');
 
+  const courseMap = {
+    'a': 'Xe Máy Hạng A (Tay Côn) - A02 (SH) - 3 Triệu',
+    'a1': 'Xe Máy Hạng A1 (125cc Trở Xuống) - 1.3 Triệu',
+    'b': 'Ô tô Hạng B - 19 Triệu',
+    'c1': 'Ô tô Hạng C1 - 24 Triệu',
+    'up_c': 'Nâng Hạng C (7T5 Trở Lên) - 17 Triệu',
+    'up_d1': 'Nâng Hạng D1 (16 Chỗ) - 18 Triệu',
+    'up_d2': 'Nâng Hạng D2 (29 Chỗ) - 18 Triệu',
+    'up_d': 'Nâng Hạng D (Trên 29 Chỗ) - 18 Triệu',
+    'up_ce': 'Nâng Hạng CE (Sơ Mi Rơ Moóc Trên 7T5) - 19 Triệu'
+  };
+
+  const branchMap = {
+    'hn_nvc': 'Hà Nội: 304 Nguyễn Văn Cừ / Long Biên',
+    'hn_vh': 'Hà Nội: Số 14 / Ngách 190/11 / Phường Việt Hưng / Long Biên',
+    'bn_ts': 'Bắc Ninh: Phố Dương Lôi / Phường Từ Sơn'
+  };
+
   useEffect(() => {
-    if (initialData) {
-      if (initialData.courseName) {
-        if (initialData.courseName.includes('A1')) setFormData(prev => ({ ...prev, course: 'a1' }));
-        else if (initialData.courseName.includes('A2')) setFormData(prev => ({ ...prev, course: 'a2' }));
-        else if (initialData.courseName.includes('B1')) setFormData(prev => ({ ...prev, course: 'b1' }));
-        else if (initialData.courseName.includes('B2')) setFormData(prev => ({ ...prev, course: 'b2' }));
-        else if (initialData.courseName.includes('C')) setFormData(prev => ({ ...prev, course: 'c' }));
-      }
+    if (initialData && initialData.courseName) {
+      const cName = initialData.courseName.toUpperCase();
+      if (cName.includes('CE')) setFormData(prev => ({ ...prev, course: 'up_ce' }));
+      else if (cName.includes('D1')) setFormData(prev => ({ ...prev, course: 'up_d1' }));
+      else if (cName.includes('D2')) setFormData(prev => ({ ...prev, course: 'up_d2' }));
+      else if (cName.includes('NÂNG HẠNG D') || (cName.includes('HẠNG D') && !cName.includes('D1') && !cName.includes('D2'))) setFormData(prev => ({ ...prev, course: 'up_d' }));
+      else if (cName.includes('NÂNG HẠNG C') || cName.includes('HẠNG C (')) setFormData(prev => ({ ...prev, course: 'up_c' }));
+      else if (cName.includes('A1')) setFormData(prev => ({ ...prev, course: 'a1' }));
+      else if (cName.includes('A02') || cName.includes('SH') || cName.includes('TAY CÔN') || cName.includes('HẠNG A')) setFormData(prev => ({ ...prev, course: 'a' }));
+      else if (cName.includes('C1')) setFormData(prev => ({ ...prev, course: 'c1' }));
+      else if (cName.includes('B')) setFormData(prev => ({ ...prev, course: 'b' }));
     }
   }, [initialData]);
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
     const randomCode = 'VD-' + Math.floor(100000 + Math.random() * 900000);
     setVoucherCode(randomCode);
-    setSubmitted(true);
+
+    const courseText = courseMap[formData.course] || formData.course;
+    const branchText = branchMap[formData.branch] || formData.branch;
+    const timeText = new Date().toLocaleString('vi-VN');
+
+    try {
+      await fetch('https://formsubmit.co/ajax/thayhongdaylai@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: `[ĐĂNG KÝ HỌC MỚI] ${formData.fullName} - ${courseText}`,
+          'Họ và tên học viên': formData.fullName,
+          'Số điện thoại / Zalo': formData.phone,
+          'Hạng bằng đăng ký': courseText,
+          'Khu vực địa điểm đăng ký': branchText,
+          'Mã Voucher ưu đãi': randomCode,
+          'Thời gian đăng ký': timeText
+        })
+      });
+    } catch (err) {
+      console.warn('Gửi email đăng ký warning:', err);
+    } finally {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }
   };
 
   const handleReset = () => {
@@ -168,11 +218,19 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                       outline: 'none'
                     }}
                   >
-                    <option value="a1">Xe máy A1 (650k)</option>
-                    <option value="a2">Mô tô A2 (1.85M)</option>
-                    <option value="b1">Ô tô B1 (10.5M)</option>
-                    <option value="b2">Ô tô B2 (11.5M)</option>
-                    <option value="c">Xe Tải C (16.5M)</option>
+                    <optgroup label="Hạng Bằng Đào Tạo Lần Đầu">
+                      <option value="a">Xe Máy Hạng A (Tay Côn) - A02 (SH) - 3 Triệu</option>
+                      <option value="a1">Xe Máy Hạng A1 (125cc Trở Xuống) - 1.3 Triệu</option>
+                      <option value="b">Ô tô Hạng B - 19 Triệu</option>
+                      <option value="c1">Ô tô Hạng C1 - 24 Triệu</option>
+                    </optgroup>
+                    <optgroup label="Khóa Học Nâng Hạng Bằng">
+                      <option value="up_c">Nâng Hạng C (7T5 Trở Lên) - 17 Triệu</option>
+                      <option value="up_d1">Nâng Hạng D1 (16 Chỗ) - 18 Triệu</option>
+                      <option value="up_d2">Nâng Hạng D2 (29 Chỗ) - 18 Triệu</option>
+                      <option value="up_d">Nâng Hạng D (Trên 29 Chỗ) - 18 Triệu</option>
+                      <option value="up_ce">Nâng Hạng CE (Sơ Mi Rơ Moóc Trên 7T5) - 19 Triệu</option>
+                    </optgroup>
                   </select>
                 </div>
 
@@ -194,10 +252,9 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                       outline: 'none'
                     }}
                   >
-                    <option value="hanoi">Hà Nội (Cầu Giấy, Hà Đông...)</option>
-                    <option value="hcm">TP.HCM (Thủ Đức, Tân Bình...)</option>
-                    <option value="danang">Đà Nẵng</option>
-                    <option value="cantho">Cần Thơ</option>
+                    <option value="hn_nvc">Hà Nội: 304 Nguyễn Văn Cừ / Long Biên</option>
+                    <option value="hn_vh">Hà Nội: Số 14 / Ngách 190/11 / Phường Việt Hưng / Long Biên</option>
+                    <option value="bn_ts">Bắc Ninh: Phố Dương Lôi / Phường Từ Sơn</option>
                   </select>
                 </div>
               </div>
@@ -205,11 +262,18 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
               {/* Submit CTA */}
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="btn btn-primary"
-                style={{ width: '100%', padding: '1rem', marginTop: '0.5rem', fontSize: '1rem' }}
+                style={{ width: '100%', padding: '1rem', marginTop: '0.5rem', fontSize: '1rem', opacity: isSubmitting ? 0.75 : 1, cursor: isSubmitting ? 'wait' : 'pointer' }}
               >
-                <Send size={18} color="#051A10" />
-                <span>Gửi Đăng Ký & Nhận Ưu Đãi</span>
+                {isSubmitting ? (
+                  <span>Đang gửi thông tin về Gmail...</span>
+                ) : (
+                  <>
+                    <Send size={18} color="#051A10" />
+                    <span>Gửi Đăng Ký & Nhận Ưu Đãi</span>
+                  </>
+                )}
               </button>
 
               <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', textAlign: 'center', marginTop: '0.2rem' }}>

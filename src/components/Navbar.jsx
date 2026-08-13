@@ -1,16 +1,15 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Moon, Sun, Phone, Menu, X, ChevronRight } from 'lucide-react';
 
-export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
+export default function Navbar({ theme, toggleTheme, onOpenRegister, onOpenTestModal }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Gói học & Học phí', href: '#courses' },
-    { name: 'Lộ trình đào tạo', href: '#roadmap' },
-    { name: 'Tính chi phí', href: '#calculator' },
-    { name: 'Sân tập chuẩn ISO', href: '#facilities' },
-    { name: 'Đánh giá học viên', href: '#testimonials' },
-    { name: 'Hỏi đáp (FAQ)', href: '#faq' },
+    { name: 'Gói Học & Học Phí', href: '#courses' },
+    { name: 'Lộ Trình Đào Tạo', href: '#roadmap' },
+    { name: 'Sân Tập Chuẩn ISO', href: '#facilities' },
+    { name: 'Đánh Giá Học Viên', href: '#testimonials' },
+    { name: 'Hỏi Đáp (FAQ)', href: '#faq' },
   ];
 
   return (
@@ -112,8 +111,29 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           ))}
         </nav>
 
-        {/* Right Actions (Theme Switcher + Hotline + Register CTA) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+        {/* Right Actions (Test CTA + Theme Switcher + Hotline + Register CTA) */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
+          {/* Practice Test Button (Single line, no wrap) */}
+          <button
+            onClick={() => onOpenTestModal && onOpenTestModal()}
+            className="btn"
+            style={{
+              background: 'var(--accent-blue-glow)',
+              color: 'var(--accent-blue)',
+              border: '1px solid rgba(59, 130, 246, 0.4)',
+              padding: '0.65rem 1.1rem',
+              fontSize: '0.9rem',
+              fontWeight: 700,
+              whiteSpace: 'nowrap',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.45rem',
+              flexShrink: 0
+            }}
+          >
+            <span>Thi Thử Lý Thuyết</span>
+          </button>
+
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
@@ -130,6 +150,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               alignItems: 'center',
               justifyContent: 'center',
               cursor: 'pointer',
+              flexShrink: 0,
               transition: 'all 0.25s ease'
             }}
           >
@@ -154,7 +175,9 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               border: '1px solid var(--border-color)',
               fontSize: '0.9rem',
               fontWeight: 600,
-              color: 'var(--text-main)'
+              color: 'var(--text-main)',
+              whiteSpace: 'nowrap',
+              flexShrink: 0
             }}
           >
             <Phone size={16} color="var(--accent-emerald)" />
@@ -165,7 +188,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           <button
             onClick={() => onOpenRegister()}
             className="btn btn-primary"
-            style={{ padding: '0.65rem 1.4rem', fontSize: '0.9rem' }}
+            style={{ padding: '0.65rem 1.4rem', fontSize: '0.9rem', whiteSpace: 'nowrap', flexShrink: 0 }}
           >
             <span>Tư Vấn Ngay</span>
             <ChevronRight size={16} color="#051A10" />

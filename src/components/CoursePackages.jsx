@@ -6,100 +6,176 @@ export default function CoursePackages({ onSelectCourse }) {
 
   const courses = [
     {
+      id: 'a',
+      category: 'bike',
+      badge: 'Tay Côn & SH',
+      badgeColor: 'badge-blue',
+      icon: Bike,
+      name: 'Xe Máy Hạng A (Tay Côn) - A02 (SH)',
+      subtitle: 'Xe tay côn, xe tay ga SH, xe trên 125cc',
+      originalPrice: '3.500.000đ',
+      price: '3.000.000đ',
+      duration: '1 - 2 tuần',
+      schedule: 'Lịch thi linh hoạt hàng tuần',
+      features: [
+        'Học phí trọn gói 3.000.000đ (Đã gồm hồ sơ + thi)',
+        'Cấp xe tập tay côn / SH miễn phí trước ngày thi',
+        'Giảng viên hướng dẫn kỹ thuật thăng bằng & cua vòng 8',
+        'Tài liệu bộ câu hỏi chuẩn GTVT + App mẹo thi độc quyền'
+      ]
+    },
+    {
       id: 'a1',
       category: 'bike',
       badge: 'Phổ biến nhất',
       badgeColor: 'badge-emerald',
       icon: Bike,
-      name: 'Bằng Xe Máy A1',
-      subtitle: 'Xe máy thông thường (dưới 175cc)',
-      originalPrice: '850.000đ',
-      price: '650.000đ',
+      name: 'Xe Máy Hạng A1 (125cc Trở Xuống)',
+      subtitle: 'Xe máy thông thường từ 125cc trở xuống',
+      originalPrice: '1.600.000đ',
+      price: '1.300.000đ',
       duration: '1 - 2 tuần',
       schedule: 'Lịch thi Thứ 7 / Chủ Nhật',
       features: [
-        'Học phí trọn gói 100% (Đã gồm lệ phí thi + bằng)',
-        'Tặng tài liệu 200 câu hỏi chuẩn GTVT + App mẹo thi',
-        'Tập xe chip vòng số 8 miễn phí trước ngày thi',
+        'Học phí trọn gói 1.300.000đ (Cam kết không phát sinh)',
+        'Tặng tài liệu câu hỏi chuẩn GTVT + App mẹo thi',
+        'Tập xe chip vòng số 8 miễn phí tại sân sát hạch',
         'Hỗ trợ thu hồ sơ tận nhà hoặc đăng ký Online'
       ]
     },
     {
-      id: 'a2',
-      category: 'bike',
-      badge: 'Đam mê PKL',
-      badgeColor: 'badge-blue',
-      icon: Bike,
-      name: 'Bằng Mô Tô A2',
-      subtitle: 'Xe phân khối lớn (trên 175cc)',
-      originalPrice: '2.200.000đ',
-      price: '1.850.000đ',
-      duration: '2 - 3 tuần',
-      schedule: 'Lịch thi linh hoạt hàng tuần',
-      features: [
-        'Cấp xe tập PKL (Rebel 250 / Z300 / LA250) miễn phí',
-        'Giảng viên hướng dẫn kỹ thuật thăng bằng & cua vòng 8',
-        'Tài liệu 450 câu hỏi & bộ mẹo ghi nhớ nhanh',
-        'Hỗ trợ đổi bằng nhựa PET siêu bền'
-      ]
-    },
-    {
-      id: 'b1',
+      id: 'b',
       category: 'car',
-      badge: 'Khuyên Dùng Gia Đình',
+      badge: 'Gia Đình & Dịch Vụ',
       badgeColor: 'badge-emerald',
       icon: Car,
-      name: 'Bằng Ô Tô B1 (Số Tự Động)',
-      subtitle: 'Xe gia đình 4-9 chỗ số tự động',
-      originalPrice: '12.500.000đ',
-      price: '10.500.000đ',
+      name: 'Ô tô Hạng B',
+      subtitle: 'Xe gia đình & kinh doanh 4 - 9 chỗ',
+      originalPrice: '22.000.000đ',
+      price: '19.000.000đ',
       duration: '3.5 tháng',
       schedule: 'Học 1-Thầy-1-Trò (Tự chọn giờ)',
       features: [
+        'Học phí trọn gói 19.000.000đ (Hỗ trợ chia nhỏ 2-3 lần đóng)',
         'Chạy đủ 800km DAT đường trường có camera giám sát',
-        'Thực hành 100% trên xe Toyota Vios đời mới lạnh mát',
-        'Giờ học tự chọn (Có lớp Thứ 7, CN không phụ thu)',
-        'Phòng cabin mô phỏng 3D chuẩn quy định GTVT',
-        'Hỗ trợ chia làm 2 - 3 lần đóng (Trả góp 0%)'
+        'Thực hành 100% trên xe đời mới máy lạnh mát mẻ',
+        'Giờ học linh hoạt (Thứ 7, Chủ Nhật không phụ thu)',
+        'Cam kết đào tạo đến khi lấy bằng, không phát sinh chi phí'
       ]
     },
     {
-      id: 'b2',
+      id: 'c1',
       category: 'car',
-      badge: 'Kinh Doanh & Grab',
-      badgeColor: 'badge-orange',
-      icon: Car,
-      name: 'Bằng Ô Tô B2 (Số Sàn)',
-      subtitle: 'Lái xe số sàn, xe kinh doanh dịch vụ',
-      originalPrice: '13.500.000đ',
-      price: '11.500.000đ',
-      duration: '3.5 - 4 tháng',
-      schedule: 'Sáng / Chiều / Tối / Cuối tuần',
-      features: [
-        'Chạy đủ 810km DAT (Bao gồm chạy đêm & đường trường)',
-        'Luyện tập thành thạo 11 bài sa hình sát hạch',
-        'Được quyền chọn giáo viên & đổi giáo viên nếu muốn',
-        'Tặng bộ đĩa đĩa CD 120 tình huống mô phỏng sát hạch',
-        'Cam kết không phụ thu tiền xăng xe, giáo viên'
-      ]
-    },
-    {
-      id: 'c',
-      category: 'truck',
       badge: 'Chuyên Nghiệp',
-      badgeColor: 'badge-blue',
+      badgeColor: 'badge-orange',
       icon: Truck,
-      name: 'Bằng Xe Tải Hạng C',
-      subtitle: 'Xe tải trọng tải lớn trên 3.5 tấn',
-      originalPrice: '18.500.000đ',
-      price: '16.500.000đ',
-      duration: '5 tháng',
+      name: 'Ô tô Hạng C1',
+      subtitle: 'Xe ô tô tải trọng từ 3.500kg đến 7.500kg',
+      originalPrice: '27.000.000đ',
+      price: '24.000.000đ',
+      duration: '4.5 - 5 tháng',
       schedule: 'Lịch học linh hoạt',
       features: [
+        'Học phí trọn gói 24.000.000đ (Trọn gói từ A-Z)',
         'Đào tạo kỹ năng vận tải hàng hóa đường dài chuyên nghiệp',
-        'Thực hành lái xe tải Jac / Hyundai đời mới tải trọng lớn',
-        'Đủ điều kiện nâng hạng D, E sau này',
-        'Hỗ trợ giới thiệu việc làm tại các tập đoàn vận tải'
+        'Thực hành trên xe tải chuẩn thi sát hạch',
+        'Chạy đủ km DAT chuẩn quy định mới nhất của GTVT',
+        'Hỗ trợ bảo lưu khóa học & sắp xếp lịch thi nhanh'
+      ]
+    },
+    /* Các gói Nâng Hạng */
+    {
+      id: 'up_c',
+      category: 'upgrade',
+      badge: 'Nâng Hạng C',
+      badgeColor: 'badge-orange',
+      icon: Truck,
+      name: 'Nâng Hạng C (7T5 Trở Lên)',
+      subtitle: 'Nâng hạng lái xe tải trọng lớn trên 7.5 tấn',
+      originalPrice: '19.500.000đ',
+      price: '17.000.000đ',
+      duration: '1.5 - 2 tháng',
+      schedule: 'Lịch thi sát hạch nhanh',
+      features: [
+        'Học phí trọn gói 17.000.000đ (Đã gồm hồ sơ + lệ phí thi)',
+        'Thực hành 100% Chạy DAT trên xe tải trọng lớn trên 7.5 tấn',
+        'Tài liệu bộ câu hỏi chuẩn GTVT + App mẹo thi độc quyền',
+        'Hỗ trợ sắp xếp lịch thi nâng hạng sớm nhất'
+      ]
+    },
+    {
+      id: 'up_d1',
+      category: 'upgrade',
+      badge: 'Nâng Hạng D1',
+      badgeColor: 'badge-blue',
+      icon: Car,
+      name: 'Nâng Hạng D1 (16 Chỗ)',
+      subtitle: 'Nâng hạng chở người đến 16 chỗ ngồi',
+      originalPrice: '20.500.000đ',
+      price: '18.000.000đ',
+      duration: '1.5 - 2 tháng',
+      schedule: 'Lịch thi sát hạch liên tục',
+      features: [
+        'Học phí trọn gói 18.000.000đ (Trọn gói không phát sinh)',
+        'Xe tập thực hành chạy DAT 16 chỗ của trường',
+        'Đào tạo kỹ năng vận tải hành khách an toàn chuyên nghiệp',
+        'Tặng phần mềm ôn thi lý thuyết chuẩn 100%'
+      ]
+    },
+    {
+      id: 'up_d2',
+      category: 'upgrade',
+      badge: 'Nâng Hạng D2',
+      badgeColor: 'badge-blue',
+      icon: Car,
+      name: 'Nâng Hạng D2 (29 Chỗ)',
+      subtitle: 'Nâng hạng chở người từ 16 đến 29 chỗ',
+      originalPrice: '20.500.000đ',
+      price: '18.000.000đ',
+      duration: '1.5 - 2 tháng',
+      schedule: 'Lịch thi hàng tuần',
+      features: [
+        'Học phí trọn gói 18.000.000đ (Cam kết trọn gói từ A-Z)',
+        'Thực hành xe 29 chỗ tiêu chuẩn sát hạch',
+        'Hỗ trợ hoàn thiện đầy đủ hồ sơ kinh nghiệm lái xe',
+        'Tặng phần mềm ôn thi lý thuyết chuẩn 100%'
+      ]
+    },
+    {
+      id: 'up_d',
+      category: 'upgrade',
+      badge: 'Nâng Hạng D',
+      badgeColor: 'badge-emerald',
+      icon: Car,
+      name: 'Nâng Hạng D (Trên 29 Chỗ)',
+      subtitle: 'Nâng hạng lái xe khách lớn trên 29 chỗ',
+      originalPrice: '20.500.000đ',
+      price: '18.000.000đ',
+      duration: '1.5 - 2 tháng',
+      schedule: 'Sắp xếp lịch thi ưu tiên',
+      features: [
+        'Học phí trọn gói 18.000.000đ (Đã gồm lệ phí thi + bằng)',
+        'Đào tạo thực hành xe 45 chỗ của trường',
+        'Kỹ năng xử lý tình huống giao thông xe khách đường dài',
+        'Hỗ trợ tư vấn thủ tục nhanh chóng'
+      ]
+    },
+    {
+      id: 'up_ce',
+      category: 'upgrade',
+      badge: 'Nâng Hạng CE',
+      badgeColor: 'badge-orange',
+      icon: Truck,
+      name: 'Nâng Hạng CE (Sơ Mi Rơ Moóc Trên 7T5)',
+      subtitle: 'Lái xe đầu kéo container, sơ mi rơ moóc',
+      originalPrice: '22.000.000đ',
+      price: '19.000.000đ',
+      duration: '2 tháng',
+      schedule: 'Lịch thi sát hạch chuyên nghiệp',
+      features: [
+        'Học phí trọn gói 19.000.000đ (Không phụ thu thêm chi phí)',
+        'Tập thực hành xe đầu kéo container ghép xe sa hình của trường',
+        'Tặng phần mềm ôn thi lý thuyết chuẩn 100%'
       ]
     }
   ];
@@ -118,7 +194,7 @@ export default function CoursePackages({ onSelectCourse }) {
             <span>Học Phí Trọn Gói • Minh Bạch 100%</span>
           </div>
           <h2 className="section-title">
-            Các Gói Đào Tạo <span className="text-gradient">Lái Xe Ô Tô & Xe Máy</span>
+            Các Gói Đào Tạo <span className="text-gradient">Lái Xe Ô Tô, Xe Máy & Nâng Hạng</span>
           </h2>
           <p className="section-subtitle">
             Cam kết không phát sinh bất kỳ chi phí phụ nào trong suốt quá trình học. Hỗ trợ đóng trả góp 0% lãi suất.
@@ -127,6 +203,8 @@ export default function CoursePackages({ onSelectCourse }) {
           {/* Filter Tabs */}
           <div style={{
             display: 'inline-flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
             gap: '0.5rem',
             padding: '0.4rem',
             background: 'var(--bg-card)',
@@ -136,9 +214,9 @@ export default function CoursePackages({ onSelectCourse }) {
           }}>
             {[
               { id: 'all', label: 'Tất Cả Gói Học' },
-              { id: 'bike', label: 'Xe Máy (A1 - A2)' },
-              { id: 'car', label: 'Ô Tô (B1 - B2)' },
-              { id: 'truck', label: 'Xe Tải (Hạng C)' }
+              { id: 'bike', label: 'Xe Máy (A - A1)' },
+              { id: 'car', label: 'Ô Tô (B - C1)' },
+              { id: 'upgrade', label: 'Nâng Hạng Bằng' }
             ].map(tab => (
               <button
                 key={tab.id}

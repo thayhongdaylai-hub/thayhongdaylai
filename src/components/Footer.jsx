@@ -52,11 +52,10 @@ export default function Footer() {
               Các Hạng Đào Tạo
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem' }}>
-              <li><a href="#courses">Bằng Xe Máy A1 (Dưới 175cc)</a></li>
-              <li><a href="#courses">Bằng Mô Tô A2 (Xe PKL)</a></li>
-              <li><a href="#courses">Bằng Ô Tô B1 (Số Tự Động)</a></li>
-              <li><a href="#courses">Bằng Ô Tô B2 (Số Sàn Dịch Vụ)</a></li>
-              <li><a href="#courses">Bằng Xe Tải Hạng C</a></li>
+              <li><a href="#courses">Xe Máy Hạng A (Tay Côn / SH) - 3 Triệu</a></li>
+              <li><a href="#courses">Xe Máy Hạng A1 (125cc Trở Xuống) - 1.3 Triệu</a></li>
+              <li><a href="#courses">Ô tô Hạng B - 19 Triệu</a></li>
+              <li><a href="#courses">Ô tô Hạng C1 - 24 Triệu</a></li>
             </ul>
           </div>
 
@@ -67,7 +66,6 @@ export default function Footer() {
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem' }}>
               <li><a href="#roadmap">Lộ trình đào tạo chuẩn GTVT</a></li>
-              <li><a href="#calculator">Tính dự toán học phí</a></li>
               <li><a href="#facilities">Hệ thống sân tập chuẩn ISO</a></li>
               <li><a href="#faq">Câu hỏi thường gặp</a></li>
               <li><a href="#">Chính sách hoàn tiền 100%</a></li>
@@ -82,11 +80,15 @@ export default function Footer() {
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', fontSize: '0.88rem' }}>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
                 <MapPin size={18} color="var(--accent-emerald)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span><strong>Hà Nội:</strong> 18 Cầu Giấy, Q. Cầu Giấy & Sân tập Sài Đồng, Long Biên</span>
+                <span><strong>Hà Nội:</strong> 304 Nguyễn Văn Cừ / Long Biên</span>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                <MapPin size={18} color="var(--accent-emerald)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                <span><strong>Hà Nội:</strong> Số 14 / Ngách 190/11 / Phường Việt Hưng / Long Biên</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
                 <MapPin size={18} color="var(--accent-blue)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span><strong>TP.HCM:</strong> 256 Võ Văn Ngân, Thủ Đức & Sân tập Tân Bình</span>
+                <span><strong>Bắc Ninh:</strong> Phố Dương Lôi / Phường Từ Sơn</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Phone size={18} color="var(--accent-emerald)" style={{ flexShrink: 0 }} />

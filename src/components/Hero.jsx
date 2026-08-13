@@ -60,18 +60,78 @@ export default function Hero({ onOpenRegister }) {
               Học Lái Xe Ô Tô & Xe Máy <span className="text-gradient">Cam Kết Đậu 99%</span>
             </h1>
 
-            <p style={{
-              fontFamily: "'Quicksand', sans-serif",
-              fontSize: '1.12rem',
-              fontWeight: 600,
-              color: 'var(--text-muted)',
+            {/* Highlighted Banner Box */}
+            <div style={{
+              background: 'linear-gradient(135deg, rgba(0, 229, 153, 0.12) 0%, rgba(59, 130, 246, 0.08) 100%)',
+              border: '1.5px solid var(--accent-emerald)',
+              boxShadow: '0 8px 30px rgba(0, 229, 153, 0.18)',
+              borderRadius: '1.25rem',
+              padding: '1.5rem',
               marginBottom: '2rem',
-              maxWidth: '680px',
-              lineHeight: 1.65,
-              letterSpacing: '0.01em'
+              backdropFilter: 'blur(10px)'
             }}>
-              TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE. Học phí TRỌN GÓI VÀ MINH BẠCH 100% . CAM KẾT KHÔNG PHÁT SINH thêm CHI PHÍ KHI THI ĐẠT LẦN ĐẦU TIÊN ( Thời Gian Học Linh Hoạt 1 Thầy - 1 Trò - 1 Xe )
-            </p>
+              <div style={{
+                fontSize: '1.25rem',
+                fontWeight: 800,
+                color: 'var(--text-main)',
+                marginBottom: '0.65rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.55rem',
+                fontFamily: "'Be Vietnam Pro', 'Montserrat', sans-serif",
+                letterSpacing: '0.01em'
+              }}>
+                <Shield size={24} color="var(--accent-emerald)" />
+                <span>TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE THẦY HỒNG</span>
+              </div>
+
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.65rem', marginTop: '0.75rem' }}>
+                <span style={{
+                  background: 'var(--gradient-emerald)',
+                  color: '#051A10',
+                  fontWeight: 800,
+                  fontSize: '0.92rem',
+                  padding: '0.45rem 0.95rem',
+                  borderRadius: '9999px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.35rem',
+                  boxShadow: '0 4px 12px var(--accent-emerald-glow)'
+                }}>
+                  <Zap size={16} fill="#051A10" color="#051A10" /> HỌC PHÍ TRỌN GÓI & MINH BẠCH 100%
+                </span>
+
+                <span style={{
+                  background: 'rgba(239, 68, 68, 0.15)',
+                  color: '#FF5C5C',
+                  border: '1px solid rgba(239, 68, 68, 0.4)',
+                  fontWeight: 700,
+                  fontSize: '0.92rem',
+                  padding: '0.45rem 0.95rem',
+                  borderRadius: '9999px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.35rem'
+                }}>
+                  <CheckCircle2 size={16} color="#FF5C5C" /> CAM KẾT KHÔNG PHÁT SINH CHI PHÍ
+                </span>
+
+                <span style={{
+                  background: 'var(--accent-blue-glow)',
+                  color: 'var(--accent-blue)',
+                  border: '1px solid rgba(59, 130, 246, 0.4)',
+                  fontWeight: 700,
+                  fontSize: '0.92rem',
+                  padding: '0.45rem 0.95rem',
+                  borderRadius: '9999px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.35rem'
+                }}>
+                  <Sparkles size={16} color="var(--accent-blue)" /> 1 THẦY - 1 TRÒ - 1 XE (Linh Hoạt)
+                </span>
+              </div>
+            </div>
 
             {/* Key USPs */}
             <div className="usp-grid" style={{
@@ -111,17 +171,9 @@ export default function Hero({ onOpenRegister }) {
                 className="btn btn-primary"
                 style={{ padding: '1rem 2rem', fontSize: '1.05rem' }}
               >
-                <span>Nhận Ưu Đãi 1.000.000đ</span>
+                <span>TẶNG NGAY 1,000,000 KHI ĐĂNG KÝ QUA WEBSITE</span>
                 <ArrowRight size={20} color="#051A10" />
               </button>
-
-              <a
-                href="#calculator"
-                className="btn btn-secondary"
-                style={{ padding: '1rem 1.8rem', fontSize: '1rem' }}
-              >
-                <span>Tính Học Phí Tự Động</span>
-              </a>
             </div>
           </div>
 

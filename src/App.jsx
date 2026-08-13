@@ -3,12 +3,12 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CoursePackages from './components/CoursePackages';
 import Roadmap from './components/Roadmap';
-import CostCalculator from './components/CostCalculator';
 import Facilities from './components/Facilities';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import RegisterModal from './components/RegisterModal';
+import TestModal from './components/TestModal';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -16,6 +16,7 @@ export default function App() {
   });
 
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const [isTestOpen, setIsTestOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
 
   useEffect(() => {
@@ -42,12 +43,15 @@ export default function App() {
         theme={theme}
         toggleTheme={toggleTheme}
         onOpenRegister={() => handleOpenRegister()}
+        onOpenTestModal={() => setIsTestOpen(true)}
       />
       <main>
-        <Hero onOpenRegister={() => handleOpenRegister()} />
+        <Hero
+          onOpenRegister={() => handleOpenRegister()}
+          onOpenTestModal={() => setIsTestOpen(true)}
+        />
         <CoursePackages onSelectCourse={handleSelectCourse} />
         <Roadmap onOpenRegister={() => handleOpenRegister()} />
-        <CostCalculator onOpenRegisterWithDetails={handleOpenRegister} />
         <Facilities />
         <Testimonials />
         <FAQ />
@@ -57,6 +61,10 @@ export default function App() {
         isOpen={isRegisterOpen}
         onClose={() => setIsRegisterOpen(false)}
         initialData={modalDetails}
+      />
+      <TestModal
+        isOpen={isTestOpen}
+        onClose={() => setIsTestOpen(false)}
       />
     </div>
   );
