@@ -64,9 +64,10 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '0.6rem',
+              gap: '0.65rem',
               textDecoration: 'none',
-              flexShrink: 0
+              flexShrink: 0,
+              marginRight: '1.25rem'
             }}
           >
             <div className="brand-icon-box" style={{
@@ -91,44 +92,55 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               whiteSpace: 'nowrap',
               display: 'flex',
               alignItems: 'center',
-              gap: '0.3rem'
+              gap: '0.35rem'
             }}>
               <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
               <span className="text-gradient">DẠY LÁI</span>
             </div>
           </a>
 
-          {/* Desktop Nav Links */}
+          {/* Desktop Nav Links (Framed for Visual Consistency) */}
           <nav className="desktop-nav" style={{
             display: 'flex',
             alignItems: 'center',
             gap: '0.4rem',
-            margin: '0 0.75rem'
+            margin: '0 1rem 0 1.75rem',
+            flexShrink: 0
           }}>
             {navLinks.map((link, idx) => (
               <a
                 key={idx}
                 href={link.href}
                 onClick={handleLinkClick}
+                className="nav-framed-item"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  padding: '0.45rem 0.75rem',
-                  borderRadius: '8px',
-                  color: 'var(--text-muted)',
-                  fontSize: '0.9rem',
-                  fontWeight: 600,
+                  padding: '0.42rem 0.72rem',
+                  borderRadius: '9px',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-color)',
+                  color: 'var(--text-main)',
+                  fontSize: '0.88rem',
+                  fontWeight: 650,
                   textDecoration: 'none',
                   whiteSpace: 'nowrap',
-                  transition: 'all 0.2s ease'
+                  boxShadow: 'var(--shadow-sm)',
+                  transition: 'all 0.2s cubic-bezier(0.4, 0, 0.2, 1)'
                 }}
                 onMouseEnter={(e) => {
                   e.currentTarget.style.color = 'var(--primary)';
+                  e.currentTarget.style.borderColor = 'var(--primary)';
                   e.currentTarget.style.backgroundColor = 'var(--primary-tint)';
+                  e.currentTarget.style.transform = 'translateY(-1px)';
+                  e.currentTarget.style.boxShadow = '0 3px 8px var(--primary-glow)';
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.color = 'var(--text-muted)';
-                  e.currentTarget.style.backgroundColor = 'transparent';
+                  e.currentTarget.style.color = 'var(--text-main)';
+                  e.currentTarget.style.borderColor = 'var(--border-color)';
+                  e.currentTarget.style.backgroundColor = 'var(--bg-card)';
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
                 }}
               >
                 {link.name}
@@ -442,6 +454,24 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
 
       {/* Responsive Media Queries */}
       <style>{`
+        .nav-framed-item {
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        @media (max-width: 1280px) {
+          .desktop-nav {
+            gap: 0.25rem !important;
+            margin: 0 0.5rem 0 1rem !important;
+          }
+          .nav-framed-item {
+            padding: 0.38rem 0.55rem !important;
+            font-size: 0.82rem !important;
+          }
+        }
+        @media (max-width: 1080px) {
+          .hotline-btn {
+            display: none !important;
+          }
+        }
         @media (max-width: 992px) {
           .desktop-nav, .hotline-btn { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
