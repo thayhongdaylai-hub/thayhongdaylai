@@ -58,44 +58,19 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           }}>
             <ShieldCheck size={22} color="#051A10" strokeWidth={2.5} />
           </div>
-          <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-            <div style={{
-              fontFamily: "'Google Sans', 'Quicksand', sans-serif",
-              fontSize: 'clamp(1.1rem, 4vw, 1.35rem)',
-              fontWeight: 800,
-              letterSpacing: '-0.02em',
-              lineHeight: 1.15,
-              whiteSpace: 'nowrap',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.35rem'
-            }}>
-              <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
-              <span className="text-gradient">DẠY LÁI</span>
-            </div>
-            <div style={{
-              fontSize: 'clamp(0.6rem, 2.2vw, 0.68rem)',
-              fontWeight: 700,
-              color: 'var(--accent-emerald)',
-              textTransform: 'uppercase',
-              letterSpacing: '0.08em',
-              lineHeight: 1.2,
-              marginTop: '2px',
-              whiteSpace: 'nowrap',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.3rem'
-            }}>
-              <span style={{
-                width: '5px',
-                height: '5px',
-                borderRadius: '50%',
-                backgroundColor: 'var(--accent-emerald)',
-                display: 'inline-block',
-                boxShadow: '0 0 6px var(--accent-emerald)'
-              }}></span>
-              TRUNG TÂM SÁT HẠCH GTVT
-            </div>
+          <div style={{
+            fontFamily: "'Google Sans', 'Quicksand', sans-serif",
+            fontSize: 'clamp(1.15rem, 4vw, 1.4rem)',
+            fontWeight: 800,
+            letterSpacing: '-0.02em',
+            lineHeight: 1.2,
+            whiteSpace: 'nowrap',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.35rem'
+          }}>
+            <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
+            <span className="text-gradient">DẠY LÁI</span>
           </div>
         </a>
 
