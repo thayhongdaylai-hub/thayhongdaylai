@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import AboutTeacher from './components/AboutTeacher';
 import CoursePackages from './components/CoursePackages';
 import UpgradePackages from './components/UpgradePackages';
 import Roadmap from './components/Roadmap';
@@ -45,7 +46,6 @@ export default function App() {
         theme={theme}
         toggleTheme={toggleTheme}
         onOpenRegister={() => handleOpenRegister()}
-        onOpenTestModal={() => setIsTestOpen(true)}
       />
       <main>
         <Hero

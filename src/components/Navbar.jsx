@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Moon, Sun, Phone, Menu, X, ChevronRight } from 'lucide-react';
 
-export default function Navbar({ theme, toggleTheme, onOpenRegister, onOpenTestModal }) {
+export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
+    { name: 'Về Thầy Hồng', href: '#about-teacher' },
     { name: 'Gói Học & Học Phí', href: '#courses' },
     { name: 'Lộ Trình Đào Tạo', href: '#roadmap' },
     { name: 'Sân Tập Chuẩn ISO', href: '#facilities' },
@@ -59,7 +60,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onOpenTestM
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{
-              fontFamily: "'Outfit', sans-serif",
+              fontFamily: "'Google Sans', 'Quicksand', sans-serif",
               fontSize: '1.35rem',
               fontWeight: 800,
               letterSpacing: '-0.02em',
@@ -111,29 +112,8 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onOpenTestM
           ))}
         </nav>
 
-        {/* Right Actions (Test CTA + Theme Switcher + Hotline + Register CTA) */}
+        {/* Right Actions (Theme Switcher + Hotline + Register CTA) */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
-          {/* Practice Test Button (Single line, no wrap) */}
-          <button
-            onClick={() => onOpenTestModal && onOpenTestModal()}
-            className="btn"
-            style={{
-              background: 'var(--accent-blue-glow)',
-              color: 'var(--accent-blue)',
-              border: '1px solid rgba(59, 130, 246, 0.4)',
-              padding: '0.65rem 1.1rem',
-              fontSize: '0.9rem',
-              fontWeight: 700,
-              whiteSpace: 'nowrap',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '0.45rem',
-              flexShrink: 0
-            }}
-          >
-            <span>Thi Thử Lý Thuyết</span>
-          </button>
-
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
@@ -163,8 +143,9 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onOpenTestM
 
           {/* Hotline Button */}
           <a
-            href="tel:0988123456"
+            href="tel:0983406221"
             className="hotline-btn"
+            title="Thầy Hồng: 0983.406.221 / 0336.611.194"
             style={{
               display: 'flex',
               alignItems: 'center',
@@ -181,7 +162,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onOpenTestM
             }}
           >
             <Phone size={16} color="var(--accent-emerald)" />
-            <span>0988.123.456</span>
+            <span>0983.406.221</span>
           </a>
 
           {/* Register CTA Button */}

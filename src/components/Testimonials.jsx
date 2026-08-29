@@ -41,7 +41,7 @@ export default function Testimonials() {
             Học Viên Nói Gì Về <span className="text-gradient">Thầy Hồng?</span>
           </h2>
           <p className="section-subtitle">
-            Hơn 15.000 học viên đã tin tưởng lựa chọn và nhận bằng lái xe thành công tại trung tâm.
+            Hơn 850 học viên đã tin tưởng lựa chọn và nhận bằng lái xe thành công cùng Thầy Hồng.
           </p>
         </div>
 

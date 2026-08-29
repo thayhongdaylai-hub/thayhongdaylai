@@ -6,7 +6,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
     fullName: '',
     phone: '',
     course: 'b',
-    branch: 'hn_nvc',
+    branch: 'hn',
     notes: ''
   });
   const [submitted, setSubmitted] = useState(false);
@@ -26,9 +26,8 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
   };
 
   const branchMap = {
-    'hn_nvc': 'Hà Nội: 304 Nguyễn Văn Cừ / Long Biên',
-    'hn_vh': 'Hà Nội: Số 14 / Ngách 190/11 / Phường Việt Hưng / Long Biên',
-    'bn_ts': 'Bắc Ninh: Phố Dương Lôi / Phường Từ Sơn'
+    'hn': 'Hà Nội: Số 14 Ngõ 190/11, Phố Thượng Thanh, Việt Hưng, Hà Nội',
+    'bn': 'Bắc Ninh: Phố Dương Lôi, Phường Từ Sơn, Tỉnh Bắc Ninh'
   };
 
   useEffect(() => {
@@ -182,7 +181,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                 <input
                   type="tel"
                   required
-                  placeholder="Ví dụ: 0988 123 456"
+                  placeholder="Ví dụ: 0983 406 221"
                   value={formData.phone}
                   onChange={e => setFormData({ ...formData, phone: e.target.value })}
                   style={{
@@ -252,11 +251,29 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                       outline: 'none'
                     }}
                   >
-                    <option value="hn_nvc">Hà Nội: 304 Nguyễn Văn Cừ / Long Biên</option>
-                    <option value="hn_vh">Hà Nội: Số 14 / Ngách 190/11 / Phường Việt Hưng / Long Biên</option>
-                    <option value="bn_ts">Bắc Ninh: Phố Dương Lôi / Phường Từ Sơn</option>
+                    <option value="hn">Hà Nội: Số 14 Ngõ 190/11, Phố Thượng Thanh, Việt Hưng</option>
+                    <option value="bn">Bắc Ninh: Phố Dương Lôi, Phường Từ Sơn</option>
                   </select>
                 </div>
+              </div>
+
+              {/* Direct Contact Info Box */}
+              <div style={{
+                background: 'var(--bg-card-hover)',
+                border: '1px solid var(--border-color)',
+                borderRadius: '0.85rem',
+                padding: '0.75rem 1rem',
+                fontSize: '0.8rem',
+                color: 'var(--text-muted)',
+                display: 'flex',
+                flexDirection: 'column',
+                gap: '0.35rem'
+              }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+                  <span>📞 Hotline: <strong style={{ color: 'var(--accent-emerald)' }}>0983.406.221</strong> - <strong style={{ color: 'var(--accent-emerald)' }}>0336.611.194</strong></span>
+                  <span>✉️ Gmail: <strong style={{ color: 'var(--accent-blue)' }}>thayhongdaylai@gmail.com</strong></span>
+                </div>
+                <div>📍 Cơ sở: <strong>Số 14 Ngõ 190/11 Thượng Thanh, Việt Hưng, HN</strong> & <strong>Phố Dương Lôi, Từ Sơn, BN</strong></div>
               </div>
 
               {/* Submit CTA */}
@@ -264,7 +281,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                 type="submit"
                 disabled={isSubmitting}
                 className="btn btn-primary"
-                style={{ width: '100%', padding: '1rem', marginTop: '0.5rem', fontSize: '1rem', opacity: isSubmitting ? 0.75 : 1, cursor: isSubmitting ? 'wait' : 'pointer' }}
+                style={{ width: '100%', padding: '1rem', marginTop: '0.25rem', fontSize: '1rem', opacity: isSubmitting ? 0.75 : 1, cursor: isSubmitting ? 'wait' : 'pointer' }}
               >
                 {isSubmitting ? (
                   <span>Đang gửi thông tin về Gmail...</span>
@@ -276,7 +293,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                 )}
               </button>
 
-              <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', textAlign: 'center', marginTop: '0.2rem' }}>
+              <div style={{ fontSize: '0.78rem', color: 'var(--text-light)', textAlign: 'center', marginTop: '0.1rem' }}>
                 🔒 Thông tin của bạn được bảo mật tuyệt đối 100% theo quy định GTVT.
               </div>
             </form>
@@ -318,7 +335,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
               </div>
               <div style={{
                 fontSize: '1.8rem',
-                fontFamily: "'Outfit', sans-serif",
+                fontFamily: "'Google Sans', 'Quicksand', sans-serif",
                 fontWeight: 800,
                 color: 'var(--accent-emerald)',
                 letterSpacing: '0.08em'

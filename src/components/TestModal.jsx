@@ -472,7 +472,7 @@ export default function TestModal({ isOpen, onClose }) {
                 <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Số câu trả lời đúng</div>
                 <div style={{
                   fontSize: '2.5rem',
-                  fontFamily: "'Outfit', sans-serif",
+                  fontFamily: "'Google Sans', 'Quicksand', sans-serif",
                   fontWeight: 800,
                   color: calculateScore() >= currentExam.passScore ? 'var(--accent-emerald)' : 'var(--accent-red)'
                 }}>
@@ -482,7 +482,7 @@ export default function TestModal({ isOpen, onClose }) {
               <div style={{ height: '40px', width: '1px', background: 'var(--border-color)' }}></div>
               <div>
                 <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>Tỷ lệ chính xác</div>
-                <div style={{ fontSize: '2.5rem', fontFamily: "'Outfit', sans-serif", fontWeight: 800, color: 'var(--accent-blue)' }}>
+                <div style={{ fontSize: '2.5rem', fontFamily: "'Google Sans', 'Quicksand', sans-serif", fontWeight: 800, color: 'var(--accent-blue)' }}>
                   {Math.round((calculateScore() / currentExam.total) * 100)}%
                 </div>
               </div>

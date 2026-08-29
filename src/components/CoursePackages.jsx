@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bike, Car, Truck, Check, Sparkles, Clock, ShieldCheck, ArrowRight, Tag } from 'lucide-react';
+import { Bike, Car, Truck, Check, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function CoursePackages({ onSelectCourse }) {
   const [filter, setFilter] = useState('all');
@@ -11,12 +11,12 @@ export default function CoursePackages({ onSelectCourse }) {
       badge: 'Tay Côn & SH',
       badgeColor: 'badge-blue',
       icon: Bike,
+      iconColor: 'var(--accent-blue)',
+      iconBg: 'var(--accent-blue-glow)',
+      iconBorder: 'rgba(59, 130, 246, 0.3)',
       name: 'Xe Máy Hạng A (Tay Côn) - A02 (SH)',
       subtitle: 'Xe tay côn, xe tay ga SH, xe trên 125cc',
-      originalPrice: '3.500.000đ',
       price: '3.000.000đ',
-      duration: '1 - 2 tuần',
-      schedule: 'Lịch thi linh hoạt hàng tuần',
       features: [
         'Học phí trọn gói 3.000.000đ (Đã gồm hồ sơ + thi)',
         'Cấp xe tập tay côn / SH miễn phí trước ngày thi',
@@ -30,12 +30,12 @@ export default function CoursePackages({ onSelectCourse }) {
       badge: 'Phổ biến nhất',
       badgeColor: 'badge-emerald',
       icon: Bike,
+      iconColor: 'var(--accent-emerald)',
+      iconBg: 'var(--accent-emerald-glow)',
+      iconBorder: 'rgba(0, 229, 153, 0.3)',
       name: 'Xe Máy Hạng A1 (125cc Trở Xuống)',
       subtitle: 'Xe máy thông thường từ 125cc trở xuống',
-      originalPrice: '1.600.000đ',
       price: '1.300.000đ',
-      duration: '1 - 2 tuần',
-      schedule: 'Lịch thi Thứ 7 / Chủ Nhật',
       features: [
         'Học phí trọn gói 1.300.000đ (Cam kết không phát sinh)',
         'Tặng tài liệu câu hỏi chuẩn GTVT + App mẹo thi',
@@ -49,12 +49,12 @@ export default function CoursePackages({ onSelectCourse }) {
       badge: 'Gia Đình & Dịch Vụ',
       badgeColor: 'badge-emerald',
       icon: Car,
+      iconColor: 'var(--accent-emerald)',
+      iconBg: 'var(--accent-emerald-glow)',
+      iconBorder: 'rgba(0, 229, 153, 0.3)',
       name: 'Ô tô Hạng B',
       subtitle: 'Xe gia đình & kinh doanh 4 - 9 chỗ',
-      originalPrice: '22.000.000đ',
       price: '19.000.000đ',
-      duration: '3.5 tháng',
-      schedule: 'Học 1-Thầy-1-Trò (Tự chọn giờ)',
       features: [
         'Học phí trọn gói 19.000.000đ (Hỗ trợ chia nhỏ 2-3 lần đóng)',
         'Chạy đủ 800km DAT đường trường có camera giám sát',
@@ -69,113 +69,18 @@ export default function CoursePackages({ onSelectCourse }) {
       badge: 'Chuyên Nghiệp',
       badgeColor: 'badge-orange',
       icon: Truck,
+      iconColor: 'var(--accent-orange)',
+      iconBg: 'rgba(245, 158, 11, 0.15)',
+      iconBorder: 'rgba(245, 158, 11, 0.3)',
       name: 'Ô tô Hạng C1',
       subtitle: 'Xe ô tô tải trọng từ 3.500kg đến 7.500kg',
-      originalPrice: '27.000.000đ',
       price: '24.000.000đ',
-      duration: '4.5 - 5 tháng',
-      schedule: 'Lịch học linh hoạt',
       features: [
         'Học phí trọn gói 24.000.000đ (Trọn gói từ A-Z)',
         'Đào tạo kỹ năng vận tải hàng hóa đường dài chuyên nghiệp',
         'Thực hành trên xe tải chuẩn thi sát hạch',
         'Chạy đủ km DAT chuẩn quy định mới nhất của GTVT',
-        'Hỗ trợ bảo lưu khóa học & sắp xếp lịch thi nhanh'
-      ]
-    },
-    /* Các gói Nâng Hạng */
-    {
-      id: 'up_c',
-      category: 'upgrade',
-      badge: 'Nâng Hạng C',
-      badgeColor: 'badge-orange',
-      icon: Truck,
-      name: 'Nâng Hạng C (7T5 Trở Lên)',
-      subtitle: 'Nâng hạng lái xe tải trọng lớn trên 7.5 tấn',
-      originalPrice: '19.500.000đ',
-      price: '17.000.000đ',
-      duration: '1.5 - 2 tháng',
-      schedule: 'Lịch thi sát hạch nhanh',
-      features: [
-        'Học phí trọn gói 17.000.000đ (Đã gồm hồ sơ + lệ phí thi)',
-        'Thực hành 100% Chạy DAT trên xe tải trọng lớn trên 7.5 tấn',
-        'Tài liệu bộ câu hỏi chuẩn GTVT + App mẹo thi độc quyền',
-        'Hỗ trợ sắp xếp lịch thi nâng hạng sớm nhất'
-      ]
-    },
-    {
-      id: 'up_d1',
-      category: 'upgrade',
-      badge: 'Nâng Hạng D1',
-      badgeColor: 'badge-blue',
-      icon: Car,
-      name: 'Nâng Hạng D1 (16 Chỗ)',
-      subtitle: 'Nâng hạng chở người đến 16 chỗ ngồi',
-      originalPrice: '20.500.000đ',
-      price: '18.000.000đ',
-      duration: '1.5 - 2 tháng',
-      schedule: 'Lịch thi sát hạch liên tục',
-      features: [
-        'Học phí trọn gói 18.000.000đ (Trọn gói không phát sinh)',
-        'Xe tập thực hành chạy DAT 16 chỗ của trường',
-        'Đào tạo kỹ năng vận tải hành khách an toàn chuyên nghiệp',
-        'Tặng phần mềm ôn thi lý thuyết chuẩn 100%'
-      ]
-    },
-    {
-      id: 'up_d2',
-      category: 'upgrade',
-      badge: 'Nâng Hạng D2',
-      badgeColor: 'badge-blue',
-      icon: Car,
-      name: 'Nâng Hạng D2 (29 Chỗ)',
-      subtitle: 'Nâng hạng chở người từ 16 đến 29 chỗ',
-      originalPrice: '20.500.000đ',
-      price: '18.000.000đ',
-      duration: '1.5 - 2 tháng',
-      schedule: 'Lịch thi hàng tuần',
-      features: [
-        'Học phí trọn gói 18.000.000đ (Cam kết trọn gói từ A-Z)',
-        'Thực hành xe 29 chỗ tiêu chuẩn sát hạch',
-        'Hỗ trợ hoàn thiện đầy đủ hồ sơ kinh nghiệm lái xe',
-        'Tặng phần mềm ôn thi lý thuyết chuẩn 100%'
-      ]
-    },
-    {
-      id: 'up_d',
-      category: 'upgrade',
-      badge: 'Nâng Hạng D',
-      badgeColor: 'badge-emerald',
-      icon: Car,
-      name: 'Nâng Hạng D (Trên 29 Chỗ)',
-      subtitle: 'Nâng hạng lái xe khách lớn trên 29 chỗ',
-      originalPrice: '20.500.000đ',
-      price: '18.000.000đ',
-      duration: '1.5 - 2 tháng',
-      schedule: 'Sắp xếp lịch thi ưu tiên',
-      features: [
-        'Học phí trọn gói 18.000.000đ (Đã gồm lệ phí thi + bằng)',
-        'Đào tạo thực hành xe 45 chỗ của trường',
-        'Kỹ năng xử lý tình huống giao thông xe khách đường dài',
-        'Hỗ trợ tư vấn thủ tục nhanh chóng'
-      ]
-    },
-    {
-      id: 'up_ce',
-      category: 'upgrade',
-      badge: 'Nâng Hạng CE',
-      badgeColor: 'badge-orange',
-      icon: Truck,
-      name: 'Nâng Hạng CE (Sơ Mi Rơ Moóc Trên 7T5)',
-      subtitle: 'Lái xe đầu kéo container, sơ mi rơ moóc',
-      originalPrice: '22.000.000đ',
-      price: '19.000.000đ',
-      duration: '2 tháng',
-      schedule: 'Lịch thi sát hạch chuyên nghiệp',
-      features: [
-        'Học phí trọn gói 19.000.000đ (Không phụ thu thêm chi phí)',
-        'Tập thực hành xe đầu kéo container ghép xe sa hình của trường',
-        'Tặng phần mềm ôn thi lý thuyết chuẩn 100%'
+        'Hỗ trợ bảo lưu khóa học & sắp xếp thi sát hạch nhanh'
       ]
     }
   ];
@@ -194,7 +99,7 @@ export default function CoursePackages({ onSelectCourse }) {
             <span>Học Phí Trọn Gói • Minh Bạch 100%</span>
           </div>
           <h2 className="section-title">
-            Các Gói Đào Tạo <span className="text-gradient">Lái Xe Ô Tô, Xe Máy & Nâng Hạng</span>
+            Các Gói Đào Tạo <span className="text-gradient">Lái Xe Ô Tô & Xe Máy</span>
           </h2>
           <p className="section-subtitle">
             Cam kết không phát sinh bất kỳ chi phí phụ nào trong suốt quá trình học. Hỗ trợ đóng trả góp 0% lãi suất.
@@ -215,8 +120,7 @@ export default function CoursePackages({ onSelectCourse }) {
             {[
               { id: 'all', label: 'Tất Cả Gói Học' },
               { id: 'bike', label: 'Xe Máy (A - A1)' },
-              { id: 'car', label: 'Ô Tô (B - C1)' },
-              { id: 'upgrade', label: 'Nâng Hạng Bằng' }
+              { id: 'car', label: 'Ô Tô (B - C1)' }
             ].map(tab => (
               <button
                 key={tab.id}
@@ -240,7 +144,15 @@ export default function CoursePackages({ onSelectCourse }) {
         </div>
 
         {/* Course Cards Grid */}
-        <div className="grid-3" style={{ alignItems: 'stretch' }}>
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))',
+            gap: '1.75rem',
+            marginTop: '2rem',
+            alignItems: 'stretch'
+          }}
+        >
           {filteredCourses.map(course => {
             const IconComponent = course.icon;
             return (
@@ -260,26 +172,41 @@ export default function CoursePackages({ onSelectCourse }) {
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'space-between',
+                    gap: '0.75rem',
                     marginBottom: '1.25rem'
                   }}>
                     <div style={{
-                      width: '48px',
-                      height: '48px',
-                      borderRadius: '14px',
-                      background: 'var(--accent-emerald-glow)',
+                      width: '44px',
+                      height: '44px',
+                      borderRadius: '13px',
+                      background: course.iconBg,
+                      border: `1px solid ${course.iconBorder}`,
                       display: 'flex',
                       alignItems: 'center',
-                      justifyContent: 'center'
+                      justifyContent: 'center',
+                      flexShrink: 0
                     }}>
-                      <IconComponent size={26} color="var(--accent-emerald)" />
+                      <IconComponent size={22} color={course.iconColor} />
                     </div>
-                    <span className={`badge ${course.badgeColor}`}>{course.badge}</span>
+                    <span
+                      className={`badge ${course.badgeColor}`}
+                      style={{
+                        padding: '0.4rem 0.85rem',
+                        fontSize: '0.82rem',
+                        fontWeight: 700,
+                        letterSpacing: '0.01em',
+                        whiteSpace: 'nowrap'
+                      }}
+                    >
+                      {course.badge}
+                    </span>
                   </div>
 
                   {/* Course Title & Subtitle */}
-                  <h3 style={{ fontSize: '1.4rem', marginBottom: '0.3rem' }}>{course.name}</h3>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, marginBottom: '0.4rem', minHeight: '3.2rem', lineHeight: 1.25, color: 'var(--text-main)' }}>
+                    {course.name}
+                  </h3>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '1.35rem', minHeight: '40px', lineHeight: 1.45 }}>
                     {course.subtitle}
                   </p>
 
@@ -290,36 +217,21 @@ export default function CoursePackages({ onSelectCourse }) {
                     borderRadius: '1rem',
                     marginBottom: '1.5rem',
                     display: 'flex',
-                    alignItems: 'baseline',
-                    gap: '0.75rem'
+                    flexDirection: 'column',
+                    justifyContent: 'center'
                   }}>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.2rem' }}>
+                      Học phí trọn gói:
+                    </div>
                     <span style={{
                       fontSize: '1.85rem',
-                      fontFamily: "'Outfit', sans-serif",
+                      fontFamily: "'Google Sans', 'Quicksand', sans-serif",
                       fontWeight: 800,
-                      color: 'var(--accent-emerald)'
+                      color: 'var(--accent-emerald)',
+                      lineHeight: 1.15
                     }}>
                       {course.price}
                     </span>
-                    <span style={{
-                      fontSize: '0.95rem',
-                      color: 'var(--text-light)',
-                      textDecoration: 'line-through'
-                    }}>
-                      {course.originalPrice}
-                    </span>
-                  </div>
-
-                  {/* Meta info */}
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.5rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                      <Clock size={16} color="var(--accent-blue)" />
-                      <span>Thời gian đào tạo: <strong>{course.duration}</strong></span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                      <ShieldCheck size={16} color="var(--accent-emerald)" />
-                      <span>Lịch thi: <strong>{course.schedule}</strong></span>
-                    </div>
                   </div>
 
                   {/* Features List */}

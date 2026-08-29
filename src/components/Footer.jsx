@@ -31,7 +31,7 @@ export default function Footer() {
               }}>
                 <ShieldCheck size={26} color="#051A10" />
               </div>
-              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
+              <span style={{ fontFamily: "'Google Sans', 'Quicksand', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
                  THẦY HỒNG<span className="text-gradient"> DẠY LÁI</span>
               </span>
             </div>
@@ -75,28 +75,28 @@ export default function Footer() {
           {/* Col 4: Contact & Locations */}
           <div>
             <h4 style={{ fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '1.25rem' }}>
-              Trụ Sở & Sân Tập
+              Địa Chỉ & Liên Hệ
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', fontSize: '0.88rem' }}>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
                 <MapPin size={18} color="var(--accent-emerald)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span><strong>Hà Nội:</strong> 304 Nguyễn Văn Cừ / Long Biên</span>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
-                <MapPin size={18} color="var(--accent-emerald)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span><strong>Hà Nội:</strong> Số 14 / Ngách 190/11 / Phường Việt Hưng / Long Biên</span>
+                <span><strong>Hà Nội:</strong> Số 14 Ngõ 190/11, Phố Thượng Thanh, Việt Hưng, Hà Nội.</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
                 <MapPin size={18} color="var(--accent-blue)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span><strong>Bắc Ninh:</strong> Phố Dương Lôi / Phường Từ Sơn</span>
+                <span><strong>Bắc Ninh:</strong> Phố Dương Lôi, Phường Từ Sơn, Tỉnh Bắc Ninh.</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Phone size={18} color="var(--accent-emerald)" style={{ flexShrink: 0 }} />
-                <span>Hotline 24/7: <strong>0988.123.456</strong></span>
+                <span>Thầy Hồng: <a href="tel:0983406221" style={{ fontWeight: 700, color: 'var(--accent-emerald)' }}>0983.406.221</a></span>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                <Phone size={18} color="var(--accent-emerald)" style={{ flexShrink: 0 }} />
+                <span>Thầy Hồng: <a href="tel:0336611194" style={{ fontWeight: 700, color: 'var(--accent-emerald)' }}>0336.611.194</a></span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Mail size={18} color="var(--accent-blue)" style={{ flexShrink: 0 }} />
-                 <span>Email: tuyensinh@thayhongdaylai.edu.vn</span>
+                <span>Gmail: <a href="mailto:thayhongdaylai@gmail.com" style={{ color: 'var(--text-muted)' }}>thayhongdaylai@gmail.com</a></span>
               </li>
             </ul>
           </div>
