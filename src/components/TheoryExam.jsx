@@ -230,7 +230,7 @@ export default function TheoryExam() {
             Thi Thử <span className="text-gradient">Lý Thuyết Lái Xe</span> Trực Tuyến
           </h2>
           <p className="section-subtitle">
-            Bộ đề thi 250 câu xe máy (Hạng A, A1) & 600 câu ô tô (Hạng B, C-1, D) — Tự động tạo đề ngẫu nhiên không trùng lặp, chấm điểm tự động chuẩn Bộ GTVT.
+            Bộ đề thi 250 câu xe máy ( Hạng A, A1 ) & 600 câu ô tô ( Hạng B, C-1, D ) — Tự động tạo đề ngẫu nhiên không trùng lặp, chấm điểm tự động chuẩn Bộ GTVT.
           </p>
         </div>
 
@@ -287,7 +287,7 @@ export default function TheoryExam() {
                   {isMotor ? <Bike size={15} /> : <Car size={15} />}
                   <span>{config.badgeName || key}</span>
                   <span style={{ opacity: 0.85, fontSize: '0.74rem' }}>
-                    ({config.totalQuestions}c)
+                    ( {config.totalQuestions} câu )
                   </span>
                 </button>
               );

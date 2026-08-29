@@ -12,9 +12,9 @@ export default function CoursePackages({ onSelectCourse }) {
       badgeClass: 'badge-gold',
       icon: Car,
       name: 'Ô tô Hạng B',
-      subtitle: 'Lái xe ô tô con 4 - 9 chỗ (Gia đình & Dịch vụ)',
+      subtitle: 'Lái xe ô tô con 4 - 9 chỗ ( Gia đình & Dịch vụ )',
       price: '19.000.000đ',
-      shortDesc: 'Khóa học lái xe ô tô số tự động (B1) và số sàn (B2) chuẩn mới 2026. Hợp đồng đào tạo minh bạch, cam kết đầu ra vững tay lái.',
+      shortDesc: 'Khóa học lái xe ô tô số tự động ( B1 ) và số sàn ( B2 ) chuẩn mới 2026. Hợp đồng đào tạo minh bạch, cam kết đầu ra vững tay lái.',
       features: [
         'Học phí trọn gói 19.000.000đ ( Hợp đồng đào tạo rõ ràng )',
         'Chạy đủ 810km DAT đường trường',
@@ -69,7 +69,7 @@ export default function CoursePackages({ onSelectCourse }) {
       name: 'Xe Máy Hạng A',
       subtitle: 'Xe tay côn & xe mô tô có dung tích trên 125cc',
       price: '3.000.000đ',
-      shortDesc: 'Dành cho người điều khiển xe mô tô tay côn (Exciter, Winner, Raider...) và các dòng xe máy có dung tích xi lanh trên 125cc.',
+      shortDesc: 'Dành cho người điều khiển xe mô tô tay côn ( Exciter, Winner, Raider... ) và các dòng xe máy có dung tích xi lanh trên 125cc.',
       features: [
         'Học phí trọn gói 3.000.000đ ( Hợp đồng đào tạo rõ ràng )',
         'Cấp xe tập miễn phí trước ngày thi',
@@ -85,7 +85,7 @@ export default function CoursePackages({ onSelectCourse }) {
       badgeClass: 'badge-purple',
       icon: Bike,
       name: 'Xe Máy Hạng A02',
-      subtitle: 'Xe tay ga cao cấp (Honda SH, Vespa, Phân khối lớn)',
+      subtitle: 'Xe tay ga cao cấp ( Honda SH , Vespa , PKL )',
       price: '3.000.000đ',
       shortDesc: 'Đào tạo bài bản kỹ năng điều khiển các dòng xe tay ga cỡ lớn, phân khối lớn, giúp tự tin vào cua và xử lý phanh an toàn.',
       features: [
@@ -151,7 +151,7 @@ export default function CoursePackages({ onSelectCourse }) {
                 transition: 'all 0.2s ease'
               }}
             >
-              Tất Cả Khóa Học ({courses.length})
+              Tất Cả Khóa Học ( {courses.length} )
             </button>
             <button
               onClick={() => setFilter('car')}
@@ -168,7 +168,7 @@ export default function CoursePackages({ onSelectCourse }) {
                 transition: 'all 0.2s ease'
               }}
             >
-              Ô Tô (Hạng B, C1)
+              Ô Tô ( Hạng B, C1 )
             </button>
             <button
               onClick={() => setFilter('bike')}
@@ -185,7 +185,7 @@ export default function CoursePackages({ onSelectCourse }) {
                 transition: 'all 0.2s ease'
               }}
             >
-              Xe Máy (A1, A, A02)
+              Xe Máy ( A1, A, A02 )
             </button>
           </div>
         </div>
