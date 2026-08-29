@@ -88,32 +88,40 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
   };
 
   return (
-    <div style={{
-      position: 'fixed',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      zIndex: 200,
-      background: 'rgba(0, 0, 0, 0.78)',
-      backdropFilter: 'blur(8px)',
-      display: 'flex',
-      alignItems: 'center',
-      justifyContent: 'center',
-      padding: '0.75rem',
-      overflowY: 'auto'
-    }}>
-      <div className="modern-card register-modal-box" style={{
-        width: '100%',
-        maxWidth: '520px',
-        maxHeight: '92vh',
-        overflowY: 'auto',
-        padding: '1.75rem 1.5rem',
-        position: 'relative',
-        borderRadius: '16px',
-        background: 'var(--bg-card)',
-        boxShadow: 'var(--shadow-lg)'
-      }}>
+    <div
+      onClick={onClose}
+      style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
+        zIndex: 10001,
+        background: 'rgba(0, 0, 0, 0.78)',
+        backdropFilter: 'blur(8px)',
+        WebkitBackdropFilter: 'blur(8px)',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '0.75rem',
+        overflowY: 'auto'
+      }}
+    >
+      <div
+        className="modern-card register-modal-box"
+        onClick={(e) => e.stopPropagation()}
+        style={{
+          width: '100%',
+          maxWidth: '520px',
+          maxHeight: '92vh',
+          overflowY: 'auto',
+          padding: '1.75rem 1.5rem',
+          position: 'relative',
+          borderRadius: '16px',
+          background: 'var(--bg-card)',
+          boxShadow: 'var(--shadow-lg)'
+        }}
+      >
         {/* Close Button */}
         <button
           onClick={onClose}

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ShieldCheck, Phone, Menu, X, ChevronRight, Sparkles, Sun, Moon } from 'lucide-react';
 
-export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
+export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Lock body scroll when mobile menu is open
@@ -26,6 +26,13 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
     { name: 'Đánh Giá', href: '#testimonials' },
     { name: 'Hỏi Đáp', href: '#faq' },
   ];
+
+  const handleLinkClick = () => {
+    setMobileMenuOpen(false);
+    if (onNavigate) {
+      onNavigate();
+    }
+  };
 
   return (
     <>
@@ -102,6 +109,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               <a
                 key={idx}
                 href={link.href}
+                onClick={handleLinkClick}
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -306,7 +314,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               <a
                 key={idx}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
+                onClick={handleLinkClick}
                 style={{
                   display: 'flex',
                   alignItems: 'center',

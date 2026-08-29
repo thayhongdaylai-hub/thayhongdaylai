@@ -74,6 +74,10 @@ export default function App() {
         theme={theme}
         toggleTheme={toggleTheme}
         onOpenRegister={() => handleOpenRegister()}
+        onNavigate={() => {
+          setIsRegisterOpen(false);
+          setIsTestOpen(false);
+        }}
       />
       <main>
         <Hero
