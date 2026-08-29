@@ -122,35 +122,44 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
           boxShadow: 'var(--shadow-lg)'
         }}
       >
-        {/* Close Button */}
-        <button
-          onClick={onClose}
-          style={{
-            position: 'absolute',
-            top: '1rem',
-            right: '1rem',
-            background: 'var(--bg-main)',
-            border: '1px solid var(--border-color)',
-            color: 'var(--text-muted)',
-            borderRadius: '50%',
-            width: '34px',
-            height: '34px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            zIndex: 10
-          }}
-        >
-          <X size={18} />
-        </button>
-
         {!submitted ? (
           <>
-            {/* Header Promo Banner */}
-            <div className="badge badge-gold" style={{ marginBottom: '0.85rem', fontSize: '0.78rem' }}>
-              <Sparkles size={14} />
-              <span>Tặng ngay Voucher 1.000.000đ khi đăng ký Online</span>
+            {/* Top Row with Promo Banner and Close Button */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: '0.65rem',
+              marginBottom: '0.85rem'
+            }}>
+              <div className="badge badge-gold" style={{ fontSize: '0.78rem', margin: 0, flex: 1 }}>
+                <Sparkles size={14} />
+                <span>Tặng ngay Voucher 1.000.000đ khi đăng ký Online</span>
+              </div>
+
+              {/* Close Button */}
+              <button
+                onClick={onClose}
+                aria-label="Đóng"
+                title="Đóng form đăng ký"
+                style={{
+                  background: 'var(--bg-main)',
+                  border: '1px solid var(--border-color)',
+                  color: 'var(--text-main)',
+                  borderRadius: '50%',
+                  width: '36px',
+                  height: '36px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  flexShrink: 0,
+                  boxShadow: 'var(--shadow-sm)',
+                  transition: 'all 0.2s ease'
+                }}
+              >
+                <X size={19} />
+              </button>
             </div>
 
             <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.55rem)', fontWeight: 900, color: 'var(--text-main)', marginBottom: '0.35rem' }}>
