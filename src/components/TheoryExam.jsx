@@ -222,7 +222,7 @@ export default function TheoryExam() {
       <div className="container">
         {/* Title Header */}
         <div className="section-title-wrapper" style={{ marginBottom: '2.5rem' }}>
-          <div className="badge badge-emerald" style={{ marginBottom: '0.8rem' }}>
+          <div className="badge badge-blue" style={{ marginBottom: '0.8rem' }}>
             <Award size={15} />
             <span>Phần Mềm Sát Hạch Bộ GTVT Mới Nhất</span>
           </div>
@@ -253,7 +253,7 @@ export default function TheoryExam() {
               padding: '0.35rem',
               background: 'var(--bg-card)',
               border: '1px solid var(--border-color)',
-              borderRadius: '9999px',
+              borderRadius: '12px',
               boxShadow: 'var(--shadow-sm)',
               maxWidth: '100%',
               gap: '0.35rem'
@@ -271,13 +271,13 @@ export default function TheoryExam() {
                   className="btn"
                   style={{
                     padding: '0.5rem 1rem',
-                    borderRadius: '9999px',
+                    borderRadius: '8px',
                     fontSize: '0.85rem',
                     fontWeight: 700,
                     border: 'none',
-                    background: isSelected ? 'var(--gradient-emerald)' : 'transparent',
-                    color: isSelected ? '#051A10' : 'var(--text-muted)',
-                    boxShadow: isSelected ? '0 2px 10px rgba(16,185,129,0.3)' : 'none',
+                    background: isSelected ? 'var(--primary)' : 'transparent',
+                    color: isSelected ? '#FFFFFF' : 'var(--text-muted)',
+                    boxShadow: isSelected ? 'var(--shadow-primary)' : 'none',
                     transition: 'all 0.25s ease',
                     display: 'inline-flex',
                     alignItems: 'center',
@@ -302,7 +302,7 @@ export default function TheoryExam() {
             padding: '0.3rem',
             background: 'var(--bg-card)',
             border: '1px solid var(--border-color)',
-            borderRadius: '9999px',
+            borderRadius: '10px',
             boxShadow: 'var(--shadow-sm)',
             gap: '0.25rem',
             maxWidth: '100%',
@@ -313,12 +313,12 @@ export default function TheoryExam() {
               className="btn"
               style={{
                 padding: '0.5rem 0.95rem',
-                borderRadius: '9999px',
+                borderRadius: '8px',
                 fontSize: '0.8rem',
                 fontWeight: 700,
                 border: 'none',
-                background: examMode === 'mock' ? 'var(--accent-emerald-glow)' : 'transparent',
-                color: examMode === 'mock' ? 'var(--accent-emerald)' : 'var(--text-muted)',
+                background: examMode === 'mock' ? 'var(--primary-tint)' : 'transparent',
+                color: examMode === 'mock' ? 'var(--primary)' : 'var(--text-muted)',
                 display: 'inline-flex',
                 alignItems: 'center',
                 gap: '0.35rem',
@@ -334,11 +334,11 @@ export default function TheoryExam() {
               className="btn"
               style={{
                 padding: '0.5rem 0.95rem',
-                borderRadius: '9999px',
+                borderRadius: '8px',
                 fontSize: '0.8rem',
                 fontWeight: 700,
                 border: 'none',
-                background: examMode === 'critical' ? 'rgba(239, 68, 68, 0.12)' : 'transparent',
+                background: examMode === 'critical' ? 'var(--accent-red-tint)' : 'transparent',
                 color: examMode === 'critical' ? '#EF4444' : 'var(--text-muted)',
                 display: 'inline-flex',
                 alignItems: 'center',
@@ -353,9 +353,9 @@ export default function TheoryExam() {
         </div>
 
         {/* EXAM MAIN CONTAINER */}
-        <div className="glass-card exam-main-card" style={{
+        <div className="modern-card exam-main-card" style={{
           padding: '2rem',
-          borderRadius: '20px',
+          borderRadius: '16px',
           boxShadow: 'var(--shadow-md)',
           background: 'var(--bg-card)',
           position: 'relative',

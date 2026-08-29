@@ -7,13 +7,13 @@ export default function Facilities() {
       title: 'Sân Tập Sa Hình Chuẩn ISO 10.000m²',
       description: 'Sân tập thiết kế 100% giống sân thi sát hạch chính thức của Sở GTVT với đầy đủ 11 bài thi sa hình (Vòng số 8, Ghép xe dọc, Ghép xe ngang, Dừng xe dốc cầu...).',
       image: '/images/hero_banner.jpg',
-      tags: ['Sân thi chuẩn ISO', 'Xe Vios 2023', 'Đầy đủ 11 bài thi']
+      tags: ['Sân thi chuẩn ISO', 'Xe đời mới máy lạnh', 'Đầy đủ 11 bài thi']
     },
     {
       title: 'Sân Tập Xe Máy & Mô Tô Phân Khối Lớn (A1 - A2)',
       description: 'Đầy đủ xe số, xe tay ga và xe mô tô phân khối lớn (Rebel, Z300, Honda SH) để học viên luyện tập kỹ năng cua vòng số 8 mượt mà.',
       image: '/images/motorcycle_course.jpg',
-      tags: ['Sân vòng số 8 cảm ứng', 'Đủ xe PKL', 'Bảo hộ an toàn']
+      tags: ['Vòng số 8 cảm ứng', 'Đủ xe tay ga & côn tay', 'Bảo hộ an toàn']
     },
     {
       title: 'Phòng Học Cabin Mô Phỏng 3D Hiện Đại',
@@ -25,29 +25,40 @@ export default function Facilities() {
 
   return (
     <section id="facilities" style={{
-      padding: '5.5rem 0',
-      background: 'var(--gradient-dark-card)',
-      borderTop: '1px solid var(--border-color)',
+      padding: '5rem 0',
+      background: 'var(--bg-main)',
       borderBottom: '1px solid var(--border-color)'
     }}>
       <div className="container">
         <div className="section-title-wrapper">
-          <div className="badge badge-emerald">
-            <Sparkles size={16} />
+          <div className="badge badge-blue">
+            <Sparkles size={15} />
             <span>Cơ Sở Vật Chất Hiện Đại</span>
           </div>
           <h2 className="section-title">
-            Hệ Thống <span className="text-gradient">Sân Tập</span>
+            Hệ Thống <span className="text-gradient">Sân Tập & Xe Thực Hành</span>
           </h2>
           <p className="section-subtitle">
-            Học viên được thực hành trên dàn xe đời mới trang bị máy lạnh 100% và hệ thống sân tập sát hạch tiêu chuẩn quốc tế.
+            Học viên được thực hành trên dàn xe đời mới trang bị máy lạnh 100% và hệ thống sân tập sát hạch tiêu chuẩn Bộ GTVT.
           </p>
         </div>
 
-        <div className="grid-3" style={{ alignItems: 'stretch' }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+          gap: '1.75rem',
+          alignItems: 'stretch'
+        }}>
           {facilities.map((fac, idx) => (
-            <div key={idx} className="glass-card" style={{ overflow: 'hidden', display: 'flex', flexDirection: 'column' }}>
-              <div style={{ position: 'relative', overflow: 'hidden', height: '240px' }}>
+            <div key={idx} className="modern-card" style={{
+              overflow: 'hidden',
+              display: 'flex',
+              flexDirection: 'column',
+              background: 'var(--bg-card)',
+              borderRadius: '16px',
+              border: '1px solid var(--border-color)'
+            }}>
+              <div style={{ position: 'relative', overflow: 'hidden', height: '220px' }}>
                 <img
                   src={fac.image}
                   alt={fac.title}
@@ -55,17 +66,17 @@ export default function Facilities() {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
-                    transition: 'transform 0.5s ease'
+                    transition: 'transform 0.4s ease'
                   }}
-                  onMouseEnter={(e) => e.target.style.transform = 'scale(1.06)'}
+                  onMouseEnter={(e) => e.target.style.transform = 'scale(1.05)'}
                   onMouseLeave={(e) => e.target.style.transform = 'scale(1)'}
                 />
               </div>
 
-              <div style={{ padding: '1.75rem', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+              <div style={{ padding: '1.5rem', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
                 <div>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '0.6rem' }}>{fac.title}</h3>
-                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.25rem', lineHeight: 1.5 }}>
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '0.5rem' }}>{fac.title}</h3>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.25rem', lineHeight: 1.55 }}>
                     {fac.description}
                   </p>
                 </div>
@@ -76,12 +87,12 @@ export default function Facilities() {
                       key={tIdx}
                       style={{
                         fontSize: '0.78rem',
-                        fontWeight: 600,
+                        fontWeight: 700,
                         padding: '0.25rem 0.65rem',
                         borderRadius: '9999px',
-                        background: 'var(--bg-card-hover)',
-                        color: 'var(--accent-emerald)',
-                        border: '1px solid var(--border-color)'
+                        background: 'var(--primary-tint)',
+                        color: 'var(--primary)',
+                        border: '1px solid rgba(29, 78, 216, 0.15)'
                       }}
                     >
                       ✓ {tag}

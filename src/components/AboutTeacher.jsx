@@ -1,227 +1,459 @@
-import React from 'react';
-import { Award, ShieldCheck, HeartHandshake, Sparkles, CheckCircle2, ArrowRight, UserCheck, Clock, ThumbsUp } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { Award, ShieldCheck, HeartHandshake, Sparkles, CheckCircle2, ArrowRight, UserCheck, Clock, ThumbsUp, Compass, Phone, Star, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
 
 export default function AboutTeacher({ onOpenRegister }) {
-  const highlights = [
-    {
-      icon: Award,
-      title: 'Hơn 10 Năm Kinh Nghiệm',
-      desc: 'Giảng viên sát hạch giàu kinh nghiệm, trực tiếp đào tạo hơn 850 học viên thi đỗ giấy phép lái xe ô tô & xe máy.',
-      color: 'var(--accent-emerald)',
-      bg: 'var(--accent-emerald-glow)'
-    },
+  const teacherPhotos = [
+    '/images/gallery/1788023503238_204090055134776357_2543730497231762877_7e9b4c78c6268845613a8d2bae8b2879.jpg',
+    '/images/gallery/1788023044901_204090055134776357_2543730497231762877_f125425a703ff6d37e4c69f3cea1fe18.jpg',
+    '/images/gallery/1788023092366_204090055134776357_2543730497231762877_4ce09257c0d1e631a7c2f92fafbcd3fd.jpg',
+    '/images/gallery/1788023503206_204090055134776357_2543730497231762877_37abaa60a3ba5b83b39f01f2a9524d72.jpg',
+    '/images/gallery/1788023503256_204090055134776357_2543730497231762877_19c1ab1ce36d2bcdf44f6ee078f73493.jpg',
+    '/images/gallery/1788023503271_204090055134776357_2543730497231762877_e8ef0f5da7a95b6e2135f83fe825cf77.jpg',
+    '/images/gallery/1788023503285_204090055134776357_2543730497231762877_2c50792b0d9eaaad32cb91b168df6791.jpg',
+    '/images/gallery/1788023503297_204090055134776357_2543730497231762877_905f27ca86aaa9cb25ff6dbd08590b86.jpg',
+    '/images/gallery/1788023503306_204090055134776357_2543730497231762877_a3c8cb1e6805851149a5ec8fbcf64ea6.jpg',
+    '/images/gallery/1788023503316_204090055134776357_2543730497231762877_1cbe969375d62ca3e1b26b1be18aad53.jpg',
+    '/images/gallery/1788023503325_204090055134776357_2543730497231762877_fa8aa721b5d52f77fcef44dcec3c66cf.jpg',
+    '/images/gallery/1788023503334_204090055134776357_2543730497231762877_7e7222968d3e4bb9784bab22a2d52ac4.jpg',
+    '/images/gallery/1788023503345_204090055134776357_2543730497231762877_e0298ec31f78821d6f0ce188cba5c0f0.jpg',
+    '/images/gallery/1788023503353_204090055134776357_2543730497231762877_d2f1d92cb9917bf9f7eecad5445860f5.jpg',
+    '/images/gallery/1788023503361_204090055134776357_2543730497231762877_8ca0d4abbfd8b237b3bf5551d0c8242a.jpg',
+    '/images/gallery/1788023503369_204090055134776357_2543730497231762877_08d18a2acc93f007ff92a6b2b5e53a8c.jpg',
+    '/images/gallery/1788023503377_204090055134776357_2543730497231762877_82ec91416f316d4c110aab892f0c97db.jpg',
+    '/images/gallery/1788023503385_204090055134776357_2543730497231762877_5ce025c095c0c6a37d52cb09dd45a1e6.jpg'
+  ];
+
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
+
+  useEffect(() => {
+    if (isPaused) return;
+    const timer = setInterval(() => {
+      setCurrentIdx(prev => (prev + 1) % teacherPhotos.length);
+    }, 4500);
+    return () => clearInterval(timer);
+  }, [isPaused, teacherPhotos.length]);
+
+  const handlePrev = (e) => {
+    if (e) e.stopPropagation();
+    setCurrentIdx(prev => (prev === 0 ? teacherPhotos.length - 1 : prev - 1));
+  };
+
+  const handleNext = (e) => {
+    if (e) e.stopPropagation();
+    setCurrentIdx(prev => (prev + 1) % teacherPhotos.length);
+  };
+
+  const handleTouchStart = (e) => {
+    setIsPaused(true);
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    setIsPaused(false);
+    if (!touchStartX || !touchEndX) return;
+    const distance = touchStartX - touchEndX;
+    if (distance > 40) handleNext();
+    else if (distance < -40) handlePrev();
+    setTouchStartX(null);
+    setTouchEndX(null);
+  };
+
+  const advantages = [
     {
       icon: HeartHandshake,
-      title: 'Giảng Dạy Tận Tâm & Kiên Nhẫn',
-      desc: 'Phương châm 1-Thầy-1-Trò không quát mắng, hướng dẫn tỉ mỉ từng thao tác côn số, ghép chuồng và xử lý tình huống thực tế.',
-      color: 'var(--accent-blue)',
-      bg: 'var(--accent-blue-glow)'
+      title: 'Hướng Dẫn Tận Tâm',
+      desc: 'Phương châm 1-Thầy-1-Trò, giảng dạy kiên nhẫn, giải thích dễ hiểu, tuyệt đối không quát mắng hay tạo áp lực cho học viên.',
+      badge: '1 Kèm 1'
     },
     {
-      icon: ShieldCheck,
-      title: 'Tỷ Lệ Đậu Khóa Học 99%',
-      desc: 'Bộ mẹo lý thuyết độc quyền + kèm xe chip trực tiếp tại sân sát hạch giúp học viên tự tin vượt qua kỳ thi sát hạch dễ dàng.',
-      color: 'var(--accent-orange)',
-      bg: 'rgba(245, 158, 11, 0.12)'
+      icon: Compass,
+      title: 'Kinh Nghiệm Thực Tế',
+      desc: 'Học thực chiến trên đường phố thật, xử lý điểm mù, đường đèo dốc, ngã tư đông đúc và kỹ năng lái xe an toàn suốt đời.',
+      badge: 'Thực Chiến'
     },
     {
-      icon: ThumbsUp,
-      title: 'Minh Bạch 100% & Trả Góp 0%',
-      desc: 'Cam kết bằng văn bản không phát sinh chi phí, hỗ trợ chia nhỏ học phí nhiều lần đóng giúp an tâm học tập.',
-      color: '#8B5CF6',
-      bg: 'rgba(139, 92, 246, 0.12)'
+      icon: Clock,
+      title: 'Lộ Trình Học Rõ Ràng',
+      desc: 'Giáo trình chuẩn Bộ GTVT 2026, minh bạch học phí trọn gói 100%, ký cam kết hợp đồng không phát sinh bất kỳ phụ phí nào.',
+      badge: 'Minh Bạch'
+    },
+    {
+      icon: UserCheck,
+      title: 'Hỗ Trợ Học Viên Tối Đa',
+      desc: 'Thời gian học linh hoạt theo lịch rảnh của học viên , hỗ trợ đưa đón và làm thủ tục hồ sơ nhanh.',
+      badge: 'Linh Hoạt'
+    },
+    {
+      icon: Award,
+      title: 'Tỷ Lệ Thi Đỗ Cao (99%)',
+      desc: 'Cung cấp tài liệu độc quyền 250 câu ( cho xe máy ) và 600 câu ( cho ô tô ) + 120 tình huống mô phỏng và tặng giờ tập xe chip sát hạch giúp tự tin thi đạt ngay lần đầu.',
+      badge: 'Tỷ Lệ Đậu 99%'
     }
   ];
 
   return (
     <section id="about-teacher" style={{
-      padding: '5.5rem 0',
-      background: 'var(--bg-card)',
-      borderTop: '1px solid var(--border-color)',
+      padding: '5rem 0',
+      background: 'var(--bg-main)',
       borderBottom: '1px solid var(--border-color)',
       position: 'relative'
     }}>
       <div className="container">
         {/* Section Header */}
-        <div className="section-title-wrapper" style={{ marginBottom: '3.5rem' }}>
-          <div className="badge badge-emerald">
-            <Sparkles size={16} />
-            <span>Giảng Viên Đào Tạo & Sát Hạch Uy Tín</span>
+        <div className="section-title-wrapper">
+          <div className="badge badge-gold">
+            <Sparkles size={15} />
+            <span>Cam Kết Chất Lượng Đào Tạo Hàng Đầu</span>
           </div>
           <h2 className="section-title">
-            Về <span className="text-gradient">Thầy Hồng Dạy Lái</span>
+            Ưu Điểm Vượt Trội Tại <span className="text-gradient">Thầy Hồng Dạy Lái</span>
           </h2>
           <p className="section-subtitle">
-            Hơn 10 năm kinh nghiệm tận tâm đồng hành – Cam kết đào tạo vững tay lái, vững vàng luật giao thông và tỷ lệ đậu 99% ngay lần thi đầu tiên.
+            Hơn 10 năm đồng hành cùng hàng trăm học viên . Đảm bảo vững vàng tay lái, thông thạo luật giao thông và tự tin nhận bằng.
           </p>
         </div>
 
-        {/* 2-Column Grid: Teacher Profile & Core Values */}
+        {/* Top 5 Advantages Grid */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: '1fr 1.15fr',
-          gap: '3.5rem',
-          alignItems: 'center'
-        }} className="about-grid">
-          
-          {/* Left: Teacher Visual Card */}
-          <div style={{ position: 'relative' }}>
-            <div className="glass-card" style={{
-              padding: '1rem',
-              borderRadius: '24px',
-              border: '1px solid var(--border-color)',
-              background: 'var(--bg-main)',
-              boxShadow: 'var(--shadow-lg)',
-              overflow: 'hidden'
-            }}>
-              <img
-                src="/images/gallery/1788023503238_204090055134776357_2543730497231762877_7e9b4c78c6268845613a8d2bae8b2879.jpg"
-                alt="Thầy Hồng Dạy Lái Xe Ô Tô và Xe Máy"
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+          gap: '1.5rem',
+          marginBottom: '3.5rem'
+        }}>
+          {advantages.map((item, idx) => {
+            const IconComp = item.icon;
+            return (
+              <div
+                key={idx}
+                className="modern-card"
                 style={{
-                  width: '100%',
-                  height: '380px',
-                  objectFit: 'cover',
-                  borderRadius: '18px',
-                  display: 'block'
+                  padding: '1.75rem',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: '16px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                  position: 'relative'
                 }}
-              />
-
-              {/* Quick Info Box */}
-              <div style={{
-                padding: '1.25rem 1rem 0.5rem 1rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                flexWrap: 'wrap',
-                gap: '0.75rem'
-              }}>
+              >
                 <div>
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '0.2rem' }}>
-                    Thầy Hồng Dạy Lái
-                  </h3>
-                  <div style={{ fontSize: '0.85rem', color: 'var(--accent-emerald)', fontWeight: 700 }}>
-                    Giảng Viên Sát Hạch Hơn 10 Năm Kinh Nghiệm
-                  </div>
-                </div>
-                <div className="badge badge-emerald" style={{ padding: '0.4rem 0.85rem', fontSize: '0.8rem', fontWeight: 800 }}>
-                  10+ Năm Kinh Nghiệm
-                </div>
-              </div>
-            </div>
-
-            {/* Experience Floating Badge */}
-            <div className="glass-card" style={{
-              position: 'absolute',
-              top: '-15px',
-              right: '-15px',
-              padding: '0.75rem 1.15rem',
-              borderRadius: '16px',
-              background: 'var(--bg-main)',
-              border: '1px solid var(--border-color)',
-              boxShadow: 'var(--shadow-md)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.65rem'
-            }}>
-              <div style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '10px',
-                background: 'var(--gradient-emerald)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}>
-                <Award size={20} color="#051A10" />
-              </div>
-              <div>
-                <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--text-main)', lineHeight: 1.2 }}>10+ Năm</div>
-                <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)' }}>Kinh nghiệm đào tạo</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right: Detailed Intro & Highlights */}
-          <div>
-            <h3 style={{
-              fontSize: '1.75rem',
-              fontWeight: 800,
-              lineHeight: 1.25,
-              marginBottom: '1rem',
-              color: 'var(--text-main)'
-            }}>
-              Tận Tâm Kèm Cặp – Vững Tay Lái <span className="text-gradient">An Toàn Trên Mọi Cung Đường</span>
-            </h3>
-
-            <p style={{
-              fontSize: '1rem',
-              color: 'var(--text-muted)',
-              lineHeight: 1.65,
-              marginBottom: '1.75rem'
-            }}>
-              Với hơn <strong>10 năm kinh nghiệm trực tiếp giảng dạy và hướng dẫn sát hạch lái xe</strong>, Thầy Hồng luôn thấu hiểu những bỡ ngỡ, lo lắng của học viên mới bắt đầu. Bằng phương pháp kèm cặp <strong>1 Thầy - 1 Trò - 1 Xe</strong> thực tế, học viên được rèn luyện phản xạ lái xe an toàn, vững tâm lý phòng thủ và tự tin vượt qua kỳ thi sát hạch chuẩn GTVT ngay lần đầu.
-            </p>
-
-            {/* 4 Feature Items */}
-            <div style={{
-              display: 'grid',
-              gridTemplateColumns: 'repeat(2, 1fr)',
-              gap: '1.25rem',
-              marginBottom: '2rem'
-            }} className="highlights-grid">
-              {highlights.map((item, idx) => {
-                const IconComp = item.icon;
-                return (
-                  <div
-                    key={idx}
-                    style={{
-                      padding: '1.2rem',
-                      borderRadius: '16px',
-                      background: 'var(--bg-main)',
-                      border: '1px solid var(--border-color)',
-                      transition: 'all 0.25s ease'
-                    }}
-                  >
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'space-between',
+                    marginBottom: '1.25rem'
+                  }}>
                     <div style={{
-                      width: '42px',
-                      height: '42px',
+                      width: '46px',
+                      height: '46px',
                       borderRadius: '12px',
-                      background: item.bg,
+                      background: 'var(--primary-tint)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      marginBottom: '0.75rem'
+                      flexShrink: 0
                     }}>
-                      <IconComp size={22} color={item.color} />
+                      <IconComp size={24} color="var(--primary)" />
                     </div>
-                    <h4 style={{ fontSize: '1rem', fontWeight: 800, marginBottom: '0.35rem', color: 'var(--text-main)' }}>
-                      {item.title}
-                    </h4>
-                    <p style={{ fontSize: '0.84rem', color: 'var(--text-muted)', lineHeight: 1.45 }}>
-                      {item.desc}
-                    </p>
+                    <span className="badge badge-blue">
+                      {item.badge}
+                    </span>
                   </div>
-                );
-              })}
+
+                  <h3 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-main)', marginBottom: '0.5rem' }}>
+                    {item.title}
+                  </h3>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
+                    {item.desc}
+                  </p>
+                </div>
+
+                <div style={{
+                  marginTop: '1.25rem',
+                  paddingTop: '0.85rem',
+                  borderTop: '1px solid var(--border-subtle)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  color: 'var(--primary)',
+                  fontWeight: 700,
+                  fontSize: '0.86rem'
+                }}>
+                  <CheckCircle2 size={16} />
+                  <span>Cam kết chuẩn chất lượng</span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Teacher Visual & Profile Summary Banner with Full Photo Gallery */}
+        <div className="modern-card" style={{
+          padding: '2rem',
+          background: 'var(--bg-card)',
+          borderRadius: '20px',
+          display: 'grid',
+          gridTemplateColumns: '360px 1fr',
+          gap: '2.5rem',
+          alignItems: 'center'
+        }}>
+          {/* Interactive Teacher Photo Slider Box */}
+          <div style={{ position: 'relative' }}>
+            <div
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+              style={{
+                position: 'relative',
+                width: '100%',
+                height: '310px',
+                borderRadius: '16px',
+                overflow: 'hidden',
+                background: '#0B1120',
+                userSelect: 'none',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                boxShadow: 'var(--shadow-md)'
+              }}
+            >
+              {/* Layer 1: Ambient Blurred Background */}
+              <img
+                src={teacherPhotos[currentIdx]}
+                alt=""
+                aria-hidden="true"
+                style={{
+                  position: 'absolute',
+                  top: 0,
+                  left: 0,
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                  filter: 'blur(28px) brightness(0.65)',
+                  transform: 'scale(1.2)',
+                  zIndex: 1,
+                  pointerEvents: 'none'
+                }}
+              />
+
+              {/* Layer 2: Foreground Image 100% In Frame */}
+              <img
+                src={teacherPhotos[currentIdx]}
+                alt="Thầy Hồng Dạy Lái Thực Tế"
+                style={{
+                  position: 'relative',
+                  zIndex: 2,
+                  maxWidth: '100%',
+                  maxHeight: '100%',
+                  width: 'auto',
+                  height: 'auto',
+                  objectFit: 'contain',
+                  display: 'block',
+                  transition: 'all 0.3s ease',
+                  filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45))'
+                }}
+              />
+
+              {/* Top Photo Counter */}
+              <div style={{
+                position: 'absolute',
+                top: '10px',
+                right: '10px',
+                zIndex: 10,
+                background: 'rgba(15, 23, 42, 0.8)',
+                backdropFilter: 'blur(8px)',
+                color: '#FFFFFF',
+                padding: '0.3rem 0.65rem',
+                borderRadius: '9999px',
+                fontSize: '0.72rem',
+                fontWeight: 700
+              }}>
+                {currentIdx + 1}/{teacherPhotos.length}
+              </div>
+
+              {/* Bottom Teacher Badge */}
+              <div style={{
+                position: 'absolute',
+                bottom: '10px',
+                left: '10px',
+                zIndex: 10,
+                background: 'rgba(15, 23, 42, 0.85)',
+                backdropFilter: 'blur(8px)',
+                color: '#FFFFFF',
+                padding: '0.35rem 0.75rem',
+                borderRadius: '9999px',
+                fontSize: '0.76rem',
+                fontWeight: 700,
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.35rem'
+              }}>
+                <ShieldCheck size={14} color="#FBBF24" />
+                <span>Giảng Viên Sát Hạch Uy Tín</span>
+              </div>
+
+              {/* Prev & Next Arrows */}
+              <button
+                onClick={handlePrev}
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  left: '8px',
+                  transform: 'translateY(-50%)',
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '50%',
+                  background: 'rgba(255, 255, 255, 0.9)',
+                  border: 'none',
+                  color: '#0F172A',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  boxShadow: 'var(--shadow-md)',
+                  zIndex: 10,
+                  transition: 'all 0.2s ease'
+                }}
+                aria-label="Ảnh trước"
+              >
+                <ChevronLeft size={18} />
+              </button>
+
+              <button
+                onClick={handleNext}
+                style={{
+                  position: 'absolute',
+                  top: '50%',
+                  right: '8px',
+                  transform: 'translateY(-50%)',
+                  width: '32px',
+                  height: '32px',
+                  borderRadius: '50%',
+                  background: 'rgba(255, 255, 255, 0.9)',
+                  border: 'none',
+                  color: '#0F172A',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  boxShadow: 'var(--shadow-md)',
+                  zIndex: 10,
+                  transition: 'all 0.2s ease'
+                }}
+                aria-label="Ảnh kế tiếp"
+              >
+                <ChevronRight size={18} />
+              </button>
+            </div>
+          </div>
+
+          {/* Profile Description */}
+          <div>
+            <div className="badge badge-gold" style={{ marginBottom: '0.75rem' }}>
+              <Star size={14} fill="#F59E0B" color="#F59E0B" />
+              <span>Giáo Viên Dạy Lái Tiêu Biểu</span>
             </div>
 
-            {/* Action CTA */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
+            <h3 style={{ fontSize: '1.65rem', fontWeight: 900, color: 'var(--text-main)', marginBottom: '0.65rem' }}>
+              Trực Tiếp Đồng Hành Cùng Thầy Hồng
+            </h3>
+            <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.65, marginBottom: '1.5rem' }}>
+              "Với phương châm <strong>Dạy Lái Bằng Cái Tâm</strong>, tôi luôn lắng nghe và kiên nhẫn kèm cặp từng học viên. Dù bạn là người mới bắt đầu chưa từng cầm vô lăng hay từng có tâm lý sợ lái xe, tôi cam kết giúp bạn vững tay lái và đỗ kỳ thi sát hạch một cách nhẹ nhàng nhất."
+            </p>
+
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.85rem', alignItems: 'center' }}>
               <button
-                onClick={() => onOpenRegister && onOpenRegister({ note: 'Đăng ký học cùng Thầy Hồng' })}
-                className="btn btn-primary"
-                style={{ padding: '0.95rem 1.8rem', fontSize: '1rem' }}
+                onClick={() => onOpenRegister()}
+                className="btn btn-gold"
+                style={{ padding: '0.85rem 1.65rem', borderRadius: '10px' }}
               >
+                <Sparkles size={16} />
                 <span>Đăng Ký Học Cùng Thầy Hồng</span>
-                <ArrowRight size={18} color="#051A10" />
               </button>
-              
+
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                background: 'var(--bg-card)',
+                border: '1.5px solid var(--border-color)',
+                borderRadius: '10px',
+                padding: '0.3rem 0.5rem',
+                gap: '0.35rem',
+                flexWrap: 'wrap'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', padding: '0.45rem 0.5rem', color: 'var(--primary)', fontWeight: 700, fontSize: '0.88rem' }}>
+                  <Phone size={15} />
+                  <span>Zalo:</span>
+                </div>
+                <a
+                  href="https://zalo.me/0983406221"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: '0.45rem 0.7rem',
+                    borderRadius: '8px',
+                    background: 'var(--primary-tint)',
+                    color: 'var(--primary)',
+                    fontWeight: 800,
+                    fontSize: '0.88rem',
+                    textDecoration: 'none'
+                  }}
+                  title="Nhắn Zalo Thầy Hồng: 0983.406.221"
+                >
+                  0983.406.221
+                </a>
+                <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>•</span>
+                <a
+                  href="https://zalo.me/0336611194"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: '0.45rem 0.7rem',
+                    borderRadius: '8px',
+                    background: 'var(--primary-tint)',
+                    color: 'var(--primary)',
+                    fontWeight: 800,
+                    fontSize: '0.88rem',
+                    textDecoration: 'none'
+                  }}
+                  title="Nhắn Zalo Thầy Hồng: 0336.611.194"
+                >
+                  0336.611.194
+                </a>
+              </div>
+
+              {/* Facebook Fanpage Button */}
               <a
-                href="tel:0983406221"
-                className="btn btn-secondary"
-                style={{ padding: '0.95rem 1.6rem', fontSize: '0.95rem' }}
+                href="https://www.facebook.com/share/1GuWF1te7x/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  padding: '0.75rem 1rem',
+                  borderRadius: '10px',
+                  background: 'var(--bg-card)',
+                  border: '1.5px solid #1877F2',
+                  color: '#1877F2',
+                  fontSize: '0.88rem',
+                  fontWeight: 700,
+                  textDecoration: 'none'
+                }}
+                title="Fanpage Facebook Thầy Hồng Dạy Lái"
               >
-                <span>Hotline: 0983.406.221</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>FANPAGE</span>
               </a>
             </div>
           </div>
@@ -229,11 +461,11 @@ export default function AboutTeacher({ onOpenRegister }) {
       </div>
 
       <style>{`
-        @media (max-width: 992px) {
-          .about-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
-        }
-        @media (max-width: 576px) {
-          .highlights-grid { grid-template-columns: 1fr !important; }
+        @media (max-width: 850px) {
+          .modern-card[style*="grid-template-columns: 360px 1fr"] {
+            grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
+          }
         }
       `}</style>
     </section>

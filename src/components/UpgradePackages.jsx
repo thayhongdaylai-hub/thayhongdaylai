@@ -20,10 +20,10 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       duration: '1.5 - 2 tháng',
       experienceReq: 'Từ 03 năm lái xe an toàn & 50.000km',
       badge: 'Phổ Biến Nhất',
-      badgeColor: 'badge-emerald',
+      badgeColor: 'badge-gold',
       icon: Truck,
-      iconColor: 'var(--accent-emerald)',
-      iconBg: 'var(--accent-emerald-glow)',
+      iconColor: 'var(--primary)',
+      iconBg: 'var(--primary-tint)',
       features: [
         'Thực hành bổ túc trên xe tải tiêu chuẩn',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -41,8 +41,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       badge: 'Chạy Dịch Vụ / Tour',
       badgeColor: 'badge-blue',
       icon: Bus,
-      iconColor: 'var(--accent-blue)',
-      iconBg: 'var(--accent-blue-glow)',
+      iconColor: 'var(--primary)',
+      iconBg: 'var(--primary-tint)',
       features: [
         'Lái xe chở học sinh, nhân viên công ty & xe hợp đồng du lịch',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -59,10 +59,10 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       duration: '2 tháng',
       experienceReq: 'Đủ 24 tuổi, 03 năm kinh nghiệm lái xe',
       badge: 'Xe Hợp Đồng / Tuyến',
-      badgeColor: 'badge-orange',
+      badgeColor: 'badge-blue',
       icon: Bus,
-      iconColor: 'var(--accent-orange)',
-      iconBg: 'rgba(245, 158, 11, 0.15)',
+      iconColor: 'var(--primary)',
+      iconBg: 'var(--primary-tint)',
       features: [
         'Lái xe chở học sinh, nhân viên công ty & xe hợp đồng du lịch',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -81,8 +81,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       badge: 'Hạng Cao Cấp',
       badgeColor: 'badge-purple',
       icon: Award,
-      iconColor: 'var(--accent-purple)',
-      iconBg: 'var(--accent-purple-glow)',
+      iconColor: '#7E22CE',
+      iconBg: '#FAF5FF',
       features: [
         'Lái xe chở học sinh, nhân viên công ty & xe hợp đồng du lịch',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -99,10 +99,10 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       duration: '2 tháng',
       experienceReq: 'Đủ 24 tuổi, có bằng C từ 03 năm trở lên',
       badge: 'Thu Nhập Cao',
-      badgeColor: 'badge-emerald',
+      badgeColor: 'badge-gold',
       icon: Truck,
-      iconColor: 'var(--accent-emerald)',
-      iconBg: 'var(--accent-emerald-glow)',
+      iconColor: 'var(--accent-gold-dark)',
+      iconBg: 'var(--accent-gold-tint)',
       features: [
         'Lái đầu kéo container chuyên dụng',
         'Kỹ năng ghép rơ-moóc, lùi chuồng hẹp và quay đầu an toàn',
@@ -114,10 +114,10 @@ export default function UpgradePackages({ onSelectUpgrade }) {
   ];
 
   return (
-    <section id="upgrades" style={{ padding: '4rem 0 3rem 0', background: 'var(--bg-card)' }}>
+    <section id="upgrades" style={{ padding: '5rem 0', background: 'var(--bg-main)', borderBottom: '1px solid var(--border-color)' }}>
       <div className="container">
         {/* Section Header */}
-        <div className="section-title-wrapper" style={{ marginBottom: '2.5rem' }}>
+        <div className="section-title-wrapper">
           <div className="badge badge-blue">
             <TrendingUp size={15} />
             <span>Nâng Cấp Bằng Lái • Mở Rộng Cơ Hội Thu Nhập</span>
@@ -134,9 +134,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 320px), 1fr))',
             gap: '1.5rem',
-            marginTop: '2rem',
             alignItems: 'stretch'
           }}
         >
@@ -145,20 +144,19 @@ export default function UpgradePackages({ onSelectUpgrade }) {
             return (
               <div
                 key={item.id}
-                className="glass-card"
+                className="modern-card"
                 style={{
-                  padding: '1.5rem',
+                  padding: '1.75rem',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
-                  borderRadius: '1.25rem',
+                  borderRadius: '16px',
                   border: '1px solid var(--border-color)',
-                  background: 'var(--bg-main)',
-                  transition: 'all 0.3s ease'
+                  background: 'var(--bg-card)'
                 }}
               >
                 <div>
-                  {/* Top Header: Icon & Badge sitting closely side-by-side */}
+                  {/* Top Header: Icon & Badge */}
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
@@ -166,96 +164,78 @@ export default function UpgradePackages({ onSelectUpgrade }) {
                     marginBottom: '1.25rem'
                   }}>
                     <div style={{
-                      width: '44px',
-                      height: '44px',
+                      width: '46px',
+                      height: '46px',
                       borderRadius: '12px',
-                      background: item.iconBg || 'var(--accent-blue-glow)',
+                      background: item.iconBg || 'var(--primary-tint)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       flexShrink: 0
                     }}>
-                      <IconComponent size={22} color={item.iconColor || 'var(--accent-blue)'} />
+                      <IconComponent size={24} color={item.iconColor || 'var(--primary)'} />
                     </div>
-                    <span className={`badge ${item.badgeColor}`} style={{
-                      fontSize: '0.8rem',
-                      fontWeight: 800,
-                      padding: '0.35rem 0.8rem',
-                      borderRadius: '9999px'
-                    }}>
+                    <span className={`badge ${item.badgeColor}`}>
                       {item.badge}
                     </span>
                   </div>
 
                   {/* Title & Route */}
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, marginBottom: '0.3rem', color: 'var(--text-main)' }}>
+                  <h3 style={{ fontSize: '1.35rem', fontWeight: 900, marginBottom: '0.35rem', color: 'var(--text-main)' }}>
                     {item.targetGrade}
                   </h3>
                   <div style={{
                     display: 'inline-flex',
                     alignItems: 'center',
                     gap: '0.35rem',
-                    color: 'var(--accent-emerald)',
-                    fontSize: '0.88rem',
+                    fontSize: '0.84rem',
                     fontWeight: 700,
-                    marginBottom: '0.65rem'
+                    color: 'var(--primary)',
+                    marginBottom: '0.75rem'
                   }}>
-                    <TrendingUp size={14} />
                     <span>{item.route}</span>
                   </div>
 
-                  <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', marginBottom: '1.15rem', lineHeight: 1.45 }}>
+                  <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.5, marginBottom: '1rem' }}>
                     {item.vehicleDesc}
                   </p>
 
-                  {/* Clean Official Price Section */}
+                  {/* Experience Requirement Pill */}
                   <div style={{
-                    padding: '0.85rem 1.15rem',
-                    background: 'var(--bg-card)',
-                    borderRadius: '0.85rem',
-                    marginBottom: '1.2rem',
+                    fontSize: '0.82rem',
+                    color: 'var(--text-muted)',
+                    background: 'var(--bg-main)',
                     border: '1px solid var(--border-color)',
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'center'
+                    padding: '0.65rem 0.85rem',
+                    borderRadius: '10px',
+                    marginBottom: '1.25rem'
                   }}>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>
-                      Học phí nâng hạng trọn gói:
-                    </div>
-                    <span style={{
-                      fontSize: '1.65rem',
-                      fontFamily: "'Google Sans', 'Quicksand', sans-serif",
-                      fontWeight: 800,
-                      color: 'var(--accent-emerald)',
-                      lineHeight: 1.15
-                    }}>
-                      {item.price}
-                    </span>
+                    <strong>Yêu cầu:</strong> {item.experienceReq}
                   </div>
 
-                  {/* Features List */}
-                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '0.85rem', marginBottom: '1.35rem' }}>
-                    <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.55rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                      Quyền lợi nâng hạng:
-                    </div>
-                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                      {item.features.map((feat, fIdx) => (
-                        <li key={fIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.45rem', fontSize: '0.84rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
-                          <CheckCircle2 size={15} color="var(--accent-emerald)" style={{ marginTop: '0.15rem', flexShrink: 0 }} />
-                          <span>{feat}</span>
-                        </li>
-                      ))}
-                    </ul>
+                  {/* Features */}
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.5rem' }}>
+                    {item.features.map((feat, fIdx) => (
+                      <div key={fIdx} className="feature-item">
+                        <CheckCircle2 size={16} color="var(--primary)" />
+                        <span>{feat}</span>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
-                {/* CTA */}
                 <button
                   onClick={() => onSelectUpgrade(item.targetGrade)}
-                  className="btn btn-primary"
-                  style={{ width: '100%', padding: '0.85rem', fontSize: '0.92rem' }}
+                  className="btn btn-secondary"
+                  style={{
+                    width: '100%',
+                    padding: '0.8rem 1rem',
+                    fontSize: '0.92rem',
+                    borderRadius: '10px',
+                    justifyContent: 'center'
+                  }}
                 >
-                  <span>Đăng Ký {item.targetGrade}</span>
+                  <span>Tư Vấn Hồ Sơ {item.targetGrade}</span>
                   <ArrowRight size={16} />
                 </button>
               </div>

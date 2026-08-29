@@ -103,14 +103,14 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
       padding: '0.75rem',
       overflowY: 'auto'
     }}>
-      <div className="glass-card register-modal-box" style={{
+      <div className="modern-card register-modal-box" style={{
         width: '100%',
         maxWidth: '520px',
         maxHeight: '92vh',
         overflowY: 'auto',
         padding: '1.75rem 1.5rem',
         position: 'relative',
-        borderRadius: '1.5rem',
+        borderRadius: '16px',
         background: 'var(--bg-card)',
         boxShadow: 'var(--shadow-lg)'
       }}>
@@ -121,7 +121,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
             position: 'absolute',
             top: '1rem',
             right: '1rem',
-            background: 'var(--bg-card-hover)',
+            background: 'var(--bg-main)',
             border: '1px solid var(--border-color)',
             color: 'var(--text-muted)',
             borderRadius: '50%',
@@ -140,12 +140,12 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
         {!submitted ? (
           <>
             {/* Header Promo Banner */}
-            <div className="badge badge-emerald" style={{ marginBottom: '0.85rem', fontSize: '0.78rem' }}>
+            <div className="badge badge-gold" style={{ marginBottom: '0.85rem', fontSize: '0.78rem' }}>
               <Sparkles size={14} />
               <span>Tặng ngay Voucher 1.000.000đ khi đăng ký Online</span>
             </div>
 
-            <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.55rem)', marginBottom: '0.35rem' }}>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.55rem)', fontWeight: 900, color: 'var(--text-main)', marginBottom: '0.35rem' }}>
               Đăng Ký Tư Vấn Khóa Học
             </h3>
             <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', marginBottom: '1.25rem' }}>

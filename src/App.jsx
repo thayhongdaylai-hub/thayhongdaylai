@@ -1,21 +1,23 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, BookOpen, Gift, Sparkles } from 'lucide-react';
+import { Phone, MessageSquare, BookOpen, Gift } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CoursePackages from './components/CoursePackages';
+import AboutTeacher from './components/AboutTeacher';
 import UpgradePackages from './components/UpgradePackages';
+import TheoryExam from './components/TheoryExam';
 import Roadmap from './components/Roadmap';
 import Facilities from './components/Facilities';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
+import CTASection from './components/CTASection';
 import Footer from './components/Footer';
-import TheoryExam from './components/TheoryExam';
 import RegisterModal from './components/RegisterModal';
 import TestModal from './components/TestModal';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('vietdrive_theme') || 'light';
+    return localStorage.getItem('thayhong_theme') || 'light';
   });
 
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
@@ -24,7 +26,7 @@ export default function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('vietdrive_theme', theme);
+    localStorage.setItem('thayhong_theme', theme);
   }, [theme]);
 
   const toggleTheme = () => {
@@ -53,19 +55,21 @@ export default function App() {
           onOpenTestModal={() => setIsTestOpen(true)}
         />
         <CoursePackages onSelectCourse={handleSelectCourse} />
+        <AboutTeacher onOpenRegister={() => handleOpenRegister()} />
         <UpgradePackages onSelectUpgrade={handleSelectCourse} />
         <TheoryExam />
         <Roadmap onOpenRegister={() => handleOpenRegister()} />
         <Facilities />
         <Testimonials />
         <FAQ />
+        <CTASection onOpenRegister={() => handleOpenRegister()} />
       </main>
       <Footer />
 
       {/* Sticky Mobile Floating Action Bar */}
       <div className="mobile-bottom-bar">
-        <a href="tel:0983406221" className="mobile-bottom-btn" title="Gọi trực tiếp Thầy Hồng">
-          <Phone size={18} color="var(--accent-emerald)" />
+        <a href="https://zalo.me/0983406221" target="_blank" rel="noopener noreferrer" className="mobile-bottom-btn" title="Gọi / Nhắn Zalo Thầy Hồng">
+          <Phone size={18} color="var(--primary)" />
           <span>Gọi Thầy</span>
         </a>
 
@@ -76,7 +80,7 @@ export default function App() {
           className="mobile-bottom-btn"
           title="Chat Zalo cùng Thầy Hồng"
         >
-          <MessageSquare size={18} color="var(--accent-blue)" />
+          <MessageSquare size={18} color="var(--primary)" />
           <span>Chat Zalo</span>
         </a>
 
@@ -92,7 +96,7 @@ export default function App() {
           className="mobile-bottom-btn"
           title="Luyện thi lý thuyết sát hạch"
         >
-          <BookOpen size={18} color="var(--accent-orange)" />
+          <BookOpen size={18} color="var(--accent-gold)" />
           <span>Thi Thử</span>
         </button>
 
@@ -101,7 +105,7 @@ export default function App() {
           className="mobile-bottom-btn highlight"
           title="Đăng ký nhận voucher 1 triệu"
         >
-          <Gift size={18} color="#051A10" />
+          <Gift size={18} color="#FFFFFF" />
           <span>Nhận Ưu Đãi</span>
         </button>
       </div>

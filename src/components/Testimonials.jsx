@@ -5,36 +5,36 @@ export default function Testimonials() {
   const reviews = [
     {
       name: 'Nguyễn Văn Minh',
-      role: 'Học viên Bằng B2 (Số Sàn)',
+      role: 'Học viên Bằng B (Số Sàn)',
       avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
       rating: 5,
-      comment: 'Thầy Hùng dạy rất nhiệt tình và kiên nhẫn. Xe tập Vios đời mới chạy êm mát lạnh. Mình đăng ký gói B2 và đã thi đậu ngay lần đầu với điểm tuyệt đối 100/100 sa hình!',
+      comment: 'Thầy Hồng dạy rất nhiệt tình và kiên nhẫn. Xe tập Vios đời mới chạy êm mát lạnh. Mình đăng ký gói B và đã thi đậu ngay lần đầu với điểm tuyệt đối 100/100 sa hình!',
       passedDate: 'Thi đậu tháng 01/2026'
     },
     {
       name: 'Trần Thị Thu Hà',
-      role: 'Học viên Bằng B1 (Số Tự Động)',
+      role: 'Học viên Bằng B (Số Tự Động)',
       avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80',
       rating: 5,
-      comment: 'Lúc đầu chưa biết lái xe ô tô em rất sợ dốc cầu và ghép xe. Nhưng trung tâm cho tập cabin 3D và 1 thầy 1 trò nên em tự tin hẳn. Học phí trọn gói 100% đúng như cam kết!',
+      comment: 'Lúc đầu chưa biết lái xe ô tô em rất sợ dốc cầu và ghép xe. Nhưng Thầy Hồng 1 kèm 1 chỉ bảo tỉ mỉ nên em tự tin hẳn. Học phí trọn gói 100% đúng như cam kết!',
       passedDate: 'Thi đậu tháng 02/2026'
     },
     {
       name: 'Lê Hoàng Anh',
-      role: 'Học viên Bằng Mô Tô A2 (PKL)',
+      role: 'Học viên Bằng Mô Tô A (PKL)',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
       rating: 5,
-      comment: 'Đăng ký bằng A2 ở đây cực kỳ nhanh gọn. Được tập trên xe Z300 chuẩn sân sát hạch, thầy chỉ cho mấy mẹo vòng 8 không bao giờ bị cán vạch. Rất hài lòng!',
+      comment: 'Đăng ký bằng A ở đây cực kỳ nhanh gọn. Được tập trên xe côn tay chuẩn sân sát hạch, thầy chỉ cho mấy mẹo cua số 8 không bao giờ bị cán vạch. Rất hài lòng!',
       passedDate: 'Thi đậu tháng 01/2026'
     }
   ];
 
   return (
-    <section id="testimonials" style={{ padding: '5rem 0', background: 'var(--bg-main)' }}>
+    <section id="testimonials" style={{ padding: '5rem 0', background: 'var(--bg-main)', borderBottom: '1px solid var(--border-color)' }}>
       <div className="container">
         <div className="section-title-wrapper">
-          <div className="badge badge-emerald">
-            <Sparkles size={16} />
+          <div className="badge badge-gold">
+            <Sparkles size={15} />
             <span>Cảm Nhận Thực Tế</span>
           </div>
           <h2 className="section-title">
@@ -45,27 +45,40 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid-3" style={{ alignItems: 'stretch' }}>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 340px), 1fr))',
+          gap: '1.75rem',
+          alignItems: 'stretch'
+        }}>
           {reviews.map((rev, idx) => (
-            <div key={idx} className="glass-card" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+            <div key={idx} className="modern-card" style={{
+              padding: '1.75rem',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              background: 'var(--bg-card)',
+              borderRadius: '16px',
+              border: '1px solid var(--border-color)'
+            }}>
               <div>
                 {/* Rating Stars & Quote Icon */}
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1.25rem' }}>
-                  <div style={{ display: 'flex', gap: '0.2rem' }}>
+                  <div style={{ display: 'flex', gap: '2px' }}>
                     {[...Array(rev.rating)].map((_, sIdx) => (
                       <Star key={sIdx} size={18} fill="#F59E0B" color="#F59E0B" />
                     ))}
                   </div>
-                  <Quote size={28} color="var(--accent-emerald)" style={{ opacity: 0.4 }} />
+                  <Quote size={28} color="var(--primary)" style={{ opacity: 0.25 }} />
                 </div>
 
-                <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.6, fontStyle: 'italic', marginBottom: '1.75rem' }}>
+                <p style={{ fontSize: '0.95rem', color: 'var(--text-muted)', lineHeight: 1.65, fontStyle: 'italic', marginBottom: '1.75rem' }}>
                   "{rev.comment}"
                 </p>
               </div>
 
               {/* Student info */}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', borderTop: '1px solid var(--border-subtle)', paddingTop: '1.25rem' }}>
                 <img
                   src={rev.avatar}
                   alt={rev.name}
@@ -74,14 +87,14 @@ export default function Testimonials() {
                     height: '46px',
                     borderRadius: '50%',
                     objectFit: 'cover',
-                    border: '2px solid var(--accent-emerald)'
+                    border: '2px solid var(--primary)'
                   }}
                 />
                 <div>
-                  <div style={{ fontSize: '1rem', fontWeight: 700 }}>{rev.name}</div>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>{rev.role}</div>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--accent-emerald)', fontWeight: 600, marginTop: '0.1rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
-                    <CheckCircle2 size={12} />
+                  <div style={{ fontSize: '1rem', fontWeight: 800, color: 'var(--text-main)' }}>{rev.name}</div>
+                  <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>{rev.role}</div>
+                  <div style={{ fontSize: '0.78rem', color: 'var(--primary)', fontWeight: 700, marginTop: '0.1rem', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+                    <CheckCircle2 size={13} />
                     <span>{rev.passedDate}</span>
                   </div>
                 </div>

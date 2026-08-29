@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Award, CheckCircle2, ArrowRight, Shield, Zap, Sparkles, Users, Phone, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
+import { Award, CheckCircle2, ArrowRight, ShieldCheck, Zap, Sparkles, Users, Phone, ChevronLeft, ChevronRight, Camera, Star } from 'lucide-react';
 
 export default function Hero({ onOpenRegister }) {
   const galleryPhotos = [
@@ -62,10 +62,8 @@ export default function Hero({ onOpenRegister }) {
     const distance = touchStartX - touchEndX;
     const minSwipeDistance = 40;
     if (distance > minSwipeDistance) {
-      // Swiped left -> next
       handleNext();
     } else if (distance < -minSwipeDistance) {
-      // Swiped right -> prev
       handlePrev();
     }
     setTouchStartX(null);
@@ -73,353 +71,452 @@ export default function Hero({ onOpenRegister }) {
   };
 
   return (
-    <section id="about-teacher" style={{
+    <section style={{
       position: 'relative',
-      padding: '3.5rem 0 2.5rem 0',
+      padding: '4rem 0 3.5rem 0',
       background: 'var(--gradient-hero)',
+      borderBottom: '1px solid var(--border-color)',
       overflow: 'hidden'
     }}>
-      {/* Background Decorative Glow Circles */}
-      <div style={{
-        position: 'absolute',
-        top: '-10%',
-        left: '15%',
-        width: '400px',
-        height: '400px',
-        borderRadius: '50%',
-        background: 'var(--accent-emerald-glow)',
-        filter: 'blur(100px)',
-        zIndex: 0,
-        pointerEvents: 'none'
-      }}></div>
-      
-      <div style={{
-        position: 'absolute',
-        bottom: '10%',
-        right: '10%',
-        width: '450px',
-        height: '450px',
-        borderRadius: '50%',
-        background: 'var(--accent-blue-glow)',
-        filter: 'blur(120px)',
-        zIndex: 0,
-        pointerEvents: 'none'
-      }}></div>
-
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
         <div className="hero-grid" style={{
           display: 'grid',
           gridTemplateColumns: '1.15fr 0.85fr',
-          gap: '2.5rem',
+          gap: '3rem',
           alignItems: 'center'
         }}>
           
-          {/* Left Column: Teacher Introduction & Key Commitments */}
+          {/* Left Column: Headline, Subtitle & CTAs */}
           <div>
-            <div className="badge badge-emerald" style={{ marginBottom: '1rem', fontSize: '0.82rem' }}>
+            {/* Trust Badge */}
+            <div className="badge badge-gold" style={{ marginBottom: '1.25rem', fontSize: '0.85rem' }}>
               <Sparkles size={15} />
-              <span>Thầy Hồng Dạy Lái • 10+ Năm Kinh Nghiệm Đào Tạo</span>
+              <span>Trung Tâm Đào Tạo & Sát Hạch GPLX Chuẩn GTVT</span>
             </div>
 
+            {/* Main Headline */}
             <h1 style={{
-              fontSize: 'clamp(1.75rem, 5vw, 3.2rem)',
+              fontSize: 'clamp(2rem, 5.5vw, 3.4rem)',
+              fontWeight: 900,
               letterSpacing: '-0.03em',
               marginBottom: '1rem',
-              lineHeight: 1.2
+              lineHeight: 1.18
             }}>
-              THẦY HỒNG DẠY LÁI - <span className="text-gradient">UY TÍN - TẬN TÂM - CHẤT LƯỢNG</span>
+              <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG </span>
+              <span className="text-gradient">DẠY LÁI</span>
             </h1>
 
-            {/* Teacher Introduction Box */}
-            <div style={{
-              background: 'linear-gradient(135deg, rgba(0, 229, 153, 0.12) 0%, rgba(59, 130, 246, 0.08) 100%)',
-              border: '1.5px solid var(--accent-emerald)',
-              boxShadow: '0 8px 30px rgba(0, 229, 153, 0.18)',
-              borderRadius: '1.25rem',
-              padding: '1.25rem',
+            {/* Subtitle */}
+            <p style={{
+              fontSize: 'clamp(1.05rem, 2.2vw, 1.25rem)',
+              fontWeight: 600,
+              color: 'var(--text-muted)',
+              lineHeight: 1.6,
               marginBottom: '1.5rem',
-              backdropFilter: 'blur(10px)'
+              maxWidth: '560px'
             }}>
-              <div style={{
-                fontSize: 'clamp(1rem, 3.5vw, 1.18rem)',
-                fontWeight: 800,
-                color: 'var(--text-main)',
-                marginBottom: '0.5rem',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-                letterSpacing: '0.01em'
-              }}>
-                <Shield size={22} color="var(--accent-emerald)" />
-                <span>TRUNG TÂM ĐÀO TẠO & SÁT HẠCH THẦY HỒNG</span>
+              Đào tạo lái xe ô tô và xe máy – Hướng dẫn tận tâm, dễ hiểu, thực tế
+            </p>
+
+            {/* Key Advantages Bullet List */}
+            <div style={{
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.65rem',
+              marginBottom: '2rem'
+            }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
+                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
+                <span><strong>1-Kèm-1 Tận Tâm:</strong> Không quát mắng, kèm cặp tỉ mỉ từng kỹ năng.</span>
               </div>
-
-              <p style={{
-                fontSize: '0.9rem',
-                color: 'var(--text-muted)',
-                lineHeight: 1.55,
-                marginBottom: '0.85rem'
-              }}>
-                Với <strong>hơn 10 năm kinh nghiệm</strong> trực tiếp giảng dạy cho hơn <strong>850 học viên</strong>, Thầy Hồng cam kết dạy <strong>1-Thầy-1-Trò</strong> tận tâm, không quát mắng, kèm cặp từng học viên đến khi vững tay lái và đỗ sát hạch ngay lần đầu.
-              </p>
-
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                <span style={{
-                  background: 'var(--gradient-emerald)',
-                  color: '#051A10',
-                  fontWeight: 800,
-                  fontSize: '0.82rem',
-                  padding: '0.4rem 0.85rem',
-                  borderRadius: '9999px',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.35rem',
-                  boxShadow: '0 4px 12px var(--accent-emerald-glow)'
-                }}>
-                  <Zap size={15} fill="#051A10" color="#051A10" /> HỌC PHÍ TRỌN GÓI 100%
-                </span>
-
-                <span style={{
-                  background: 'rgba(239, 68, 68, 0.15)',
-                  color: '#FF5C5C',
-                  border: '1px solid rgba(239, 68, 68, 0.4)',
-                  fontWeight: 700,
-                  fontSize: '0.82rem',
-                  padding: '0.4rem 0.85rem',
-                  borderRadius: '9999px',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.35rem'
-                }}>
-                  <CheckCircle2 size={15} color="#FF5C5C" /> KHÔNG PHÁT SINH PHÍ
-                </span>
-
-                <span style={{
-                  background: 'var(--accent-blue-glow)',
-                  color: 'var(--accent-blue)',
-                  border: '1px solid rgba(59, 130, 246, 0.4)',
-                  fontWeight: 700,
-                  fontSize: '0.82rem',
-                  padding: '0.4rem 0.85rem',
-                  borderRadius: '9999px',
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.35rem'
-                }}>
-                  <Sparkles size={15} color="var(--accent-blue)" /> 1 THẦY - 1 TRÒ - 1 XE
-                </span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
+                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
+                <span><strong>Học Phí Minh Bạch 100%:</strong> Hợp đồng rõ ràng, cam kết không phát sinh.</span>
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
+                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
+                <span><strong>Tỷ Lệ Thi Đỗ 99%:</strong> Bộ mẹo 600 câu + 120 tình huống mô phỏng độc quyền.</span>
               </div>
             </div>
 
-            {/* CTA Buttons */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
+            {/* Dual CTA Buttons */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              flexWrap: 'wrap',
+              gap: '0.85rem'
+            }}>
               <button
-                onClick={() => onOpenRegister && onOpenRegister({ note: 'Đăng Ký Ngay Hôm Nay - Giảm Ngay 1.000.000' })}
-                className="btn btn-primary hero-cta-btn"
+                onClick={() => onOpenRegister()}
+                className="btn btn-gold"
                 style={{
-                  padding: '0.9rem 1.6rem',
-                  fontSize: 'clamp(0.92rem, 3.5vw, 1.05rem)',
-                  fontWeight: 800,
-                  width: '100%',
-                  maxWidth: '480px'
+                  padding: '0.95rem 1.85rem',
+                  fontSize: '1rem',
+                  borderRadius: '12px'
                 }}
               >
-                <span>ĐĂNG KÝ NGAY - GIẢM 1.000.000Đ</span>
-                <ArrowRight size={18} color="#051A10" />
+                <Sparkles size={18} />
+                <span>ĐĂNG KÝ HỌC NGAY</span>
               </button>
+
+              <div style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                background: 'var(--bg-card)',
+                border: '1.5px solid var(--primary)',
+                borderRadius: '12px',
+                padding: '0.3rem 0.5rem',
+                gap: '0.35rem',
+                boxShadow: 'var(--shadow-sm)',
+                flexWrap: 'wrap'
+              }}>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.4rem',
+                  padding: '0.5rem 0.65rem',
+                  color: 'var(--primary)',
+                  fontWeight: 700,
+                  fontSize: '0.92rem'
+                }}>
+                  <Phone size={16} />
+                  <span>GỌI TƯ VẤN:</span>
+                </div>
+                <a
+                  href="https://zalo.me/0983406221"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: '0.5rem 0.75rem',
+                    borderRadius: '8px',
+                    background: 'var(--primary-tint)',
+                    color: 'var(--primary)',
+                    fontWeight: 800,
+                    fontSize: '0.92rem',
+                    textDecoration: 'none',
+                    transition: 'all 0.2s ease'
+                  }}
+                  title="Nhắn Zalo Thầy Hồng: 0983.406.221"
+                >
+                  0983.406.221
+                </a>
+                <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>•</span>
+                <a
+                  href="https://zalo.me/0336611194"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    padding: '0.5rem 0.75rem',
+                    borderRadius: '8px',
+                    background: 'var(--primary-tint)',
+                    color: 'var(--primary)',
+                    fontWeight: 800,
+                    fontSize: '0.92rem',
+                    textDecoration: 'none',
+                    transition: 'all 0.2s ease'
+                  }}
+                  title="Nhắn Zalo Thầy Hồng: 0336.611.194"
+                >
+                  0336.611.194
+                </a>
+              </div>
+
+              {/* Facebook Fanpage Button */}
+              <a
+                href="https://www.facebook.com/share/1GuWF1te7x/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.45rem',
+                  padding: '0.78rem 1.15rem',
+                  borderRadius: '12px',
+                  background: 'var(--bg-card)',
+                  border: '1.5px solid #1877F2',
+                  color: '#1877F2',
+                  fontWeight: 700,
+                  fontSize: '0.92rem',
+                  textDecoration: 'none',
+                  boxShadow: 'var(--shadow-sm)',
+                  transition: 'all 0.25s ease'
+                }}
+                title="Fanpage Facebook Thầy Hồng Dạy Lái"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>FANPAGE</span>
+              </a>
+            </div>
+
+            {/* Rating summary */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.75rem',
+              marginTop: '1.75rem',
+              fontSize: '0.88rem',
+              color: 'var(--text-muted)'
+            }}>
+              <div style={{ display: 'flex', gap: '2px', color: '#F59E0B' }}>
+                <Star size={16} fill="#F59E0B" />
+                <Star size={16} fill="#F59E0B" />
+                <Star size={16} fill="#F59E0B" />
+                <Star size={16} fill="#F59E0B" />
+                <Star size={16} fill="#F59E0B" />
+              </div>
+              <span><strong>4.9/5.0</strong> đánh giá xuất sắc từ hơn <strong>850+ học viên</strong></span>
             </div>
           </div>
 
-          {/* Right Column: Hero Visual Card (Swipeable Photo Gallery) */}
+          {/* Right Column: Real Photo Gallery Card */}
           <div style={{ position: 'relative' }}>
-            <div
-              className="glass-card"
-              onMouseEnter={() => setIsPaused(true)}
-              onMouseLeave={() => setIsPaused(false)}
-              onTouchStart={handleTouchStart}
-              onTouchMove={handleTouchMove}
-              onTouchEnd={handleTouchEnd}
-              style={{
-                padding: '0.5rem',
-                boxShadow: 'var(--shadow-lg)',
-                borderRadius: '1.5rem',
-                position: 'relative',
-                overflow: 'hidden',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-color)',
-                touchAction: 'pan-y'
-              }}
-            >
-              {/* Image Frame with smart backdrop blur */}
-              <div style={{
-                position: 'relative',
-                width: '100%',
-                height: 'clamp(280px, 60vw, 440px)',
-                borderRadius: '1.15rem',
-                overflow: 'hidden',
-                background: '#0B0E14',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center'
-              }}>
-                {/* Blurred backdrop fill */}
-                <div style={{
-                  position: 'absolute',
-                  inset: 0,
-                  backgroundImage: `url(${galleryPhotos[currentImgIndex]})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
-                  filter: 'blur(25px) brightness(0.55)',
-                  transform: 'scale(1.15)',
-                  zIndex: 0
-                }}></div>
-
-                {/* Main sharp image */}
+            <div className="modern-card" style={{
+              padding: '0.75rem',
+              borderRadius: '20px',
+              boxShadow: 'var(--shadow-lg)',
+              background: 'var(--bg-card)'
+            }}>
+              {/* Photo Slider Box */}
+              <div
+                onTouchStart={handleTouchStart}
+                onTouchMove={handleTouchMove}
+                onTouchEnd={handleTouchEnd}
+                style={{
+                  position: 'relative',
+                  width: '100%',
+                  height: 'clamp(300px, 52vw, 440px)',
+                  borderRadius: '14px',
+                  overflow: 'hidden',
+                  background: '#0B1120',
+                  userSelect: 'none',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center'
+                }}
+              >
+                {/* Ambient Blurred Background to Fill the Entire Frame Seamlessly */}
                 <img
-                  key={currentImgIndex}
                   src={galleryPhotos[currentImgIndex]}
-                  alt="Hình ảnh thực tế Thầy Hồng và học viên đào tạo sát hạch"
+                  alt=""
+                  aria-hidden="true"
                   style={{
-                    position: 'relative',
-                    zIndex: 1,
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
                     width: '100%',
                     height: '100%',
-                    objectFit: 'contain',
-                    display: 'block',
-                    userSelect: 'none',
-                    WebkitUserDrag: 'none'
+                    objectFit: 'cover',
+                    filter: 'blur(28px) brightness(0.65)',
+                    transform: 'scale(1.2)',
+                    zIndex: 1,
+                    pointerEvents: 'none'
                   }}
                 />
 
-                {/* Left / Right Nav Arrows */}
+                {/* Main Foreground Image Displayed 100% in Full Without Any Cropping */}
+                <img
+                  src={galleryPhotos[currentImgIndex]}
+                  alt="Thầy Hồng Dạy Lái Xe Thực Tế"
+                  style={{
+                    position: 'relative',
+                    zIndex: 2,
+                    maxWidth: '100%',
+                    maxHeight: '100%',
+                    width: 'auto',
+                    height: 'auto',
+                    objectFit: 'contain',
+                    display: 'block',
+                    transition: 'all 0.3s ease',
+                    filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45))'
+                  }}
+                />
+
+
+                {/* Photo Counter */}
+                <div style={{
+                  position: 'absolute',
+                  top: '12px',
+                  right: '12px',
+                  zIndex: 10,
+                  background: 'rgba(15, 23, 42, 0.75)',
+                  backdropFilter: 'blur(8px)',
+                  color: '#FFFFFF',
+                  padding: '0.35rem 0.75rem',
+                  borderRadius: '9999px',
+                  fontSize: '0.75rem',
+                  fontWeight: 700
+                }}>
+                  {currentImgIndex + 1}/{galleryPhotos.length}
+                </div>
+
+                {/* Navigation Arrows */}
                 <button
                   onClick={handlePrev}
-                  aria-label="Ảnh trước"
                   style={{
                     position: 'absolute',
-                    left: '8px',
                     top: '50%',
+                    left: '10px',
                     transform: 'translateY(-50%)',
-                    zIndex: 10,
-                    width: '36px',
-                    height: '36px',
+                    width: '38px',
+                    height: '38px',
                     borderRadius: '50%',
-                    background: 'rgba(0, 0, 0, 0.6)',
-                    backdropFilter: 'blur(8px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    color: '#FFFFFF',
+                    background: 'rgba(255, 255, 255, 0.9)',
+                    border: 'none',
+                    color: '#0F172A',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     cursor: 'pointer',
+                    boxShadow: 'var(--shadow-md)',
+                    zIndex: 10,
                     transition: 'all 0.2s ease'
                   }}
+                  aria-label="Ảnh trước"
                 >
-                  <ChevronLeft size={20} />
+                  <ChevronLeft size={22} />
                 </button>
 
                 <button
                   onClick={handleNext}
-                  aria-label="Ảnh kế tiếp"
                   style={{
                     position: 'absolute',
-                    right: '8px',
                     top: '50%',
+                    right: '10px',
                     transform: 'translateY(-50%)',
-                    zIndex: 10,
-                    width: '36px',
-                    height: '36px',
+                    width: '38px',
+                    height: '38px',
                     borderRadius: '50%',
-                    background: 'rgba(0, 0, 0, 0.6)',
-                    backdropFilter: 'blur(8px)',
-                    border: '1px solid rgba(255, 255, 255, 0.2)',
-                    color: '#FFFFFF',
+                    background: 'rgba(255, 255, 255, 0.9)',
+                    border: 'none',
+                    color: '#0F172A',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     cursor: 'pointer',
+                    boxShadow: 'var(--shadow-md)',
+                    zIndex: 10,
                     transition: 'all 0.2s ease'
                   }}
+                  aria-label="Ảnh kế tiếp"
                 >
-                  <ChevronRight size={20} />
+                  <ChevronRight size={22} />
                 </button>
+              </div>
 
-                {/* Bottom Gallery Counter Pill */}
-                <div style={{
-                  position: 'absolute',
-                  bottom: '10px',
-                  zIndex: 10,
-                  padding: '0.3rem 0.75rem',
-                  borderRadius: '9999px',
-                  background: 'rgba(0, 0, 0, 0.7)',
-                  backdropFilter: 'blur(10px)',
-                  border: '1px solid rgba(255, 255, 255, 0.15)',
-                  color: '#FFFFFF',
-                  fontSize: '0.74rem',
-                  fontWeight: 700,
-                  letterSpacing: '0.02em',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.35rem'
-                }}>
-                  <Camera size={13} color="var(--accent-emerald)" />
-                  <span>Ảnh Thực Tế Thầy Hồng • {currentImgIndex + 1} / {galleryPhotos.length}</span>
+              {/* Photo Caption */}
+              <div style={{
+                padding: '0.85rem 0.5rem 0.35rem 0.5rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '0.84rem',
+                color: 'var(--text-muted)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <Camera size={16} color="var(--primary)" />
+                  <span>Hình Ảnh Đào Tạo Thực Tế</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Stats Row */}
-        <div className="glass-card stats-row" style={{
-          marginTop: '2.5rem',
-          padding: '1.25rem 1.5rem',
+        {/* 4 Stats Cards */}
+        <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '1rem',
-          textAlign: 'center'
+          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
+          gap: '1.25rem',
+          marginTop: '3.5rem'
         }}>
-          {[
-            { value: '10+ Năm', label: 'Kinh nghiệm đào tạo', icon: Award },
-            { value: '850+', label: 'Học viên tốt nghiệp', icon: Users },
-            { value: '99%', label: 'Tỷ lệ thi đỗ lần đầu', icon: Shield },
-            { value: '100%', label: 'Học phí trọn gói', icon: Zap }
-          ].map((stat, idx) => {
-            return (
-              <div key={idx} className="stat-item" style={{
-                borderRight: idx < 3 ? '1px solid var(--border-color)' : 'none',
-                paddingRight: idx < 3 ? '1rem' : '0'
-              }}>
-                <div style={{
-                  fontSize: 'clamp(1.5rem, 4vw, 2.1rem)',
-                  fontFamily: "'Google Sans', 'Quicksand', sans-serif",
-                  fontWeight: 800,
-                  color: 'var(--accent-emerald)',
-                  marginBottom: '0.1rem'
-                }}>
-                  {stat.value}
-                </div>
-                <div style={{ fontSize: 'clamp(0.78rem, 2.5vw, 0.88rem)', color: 'var(--text-muted)', fontWeight: 600 }}>
-                  {stat.label}
-                </div>
-              </div>
-            );
-          })}
+          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: 'var(--primary-tint)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <Award size={24} color="var(--primary)" />
+            </div>
+            <div>
+              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>10+ Năm</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Kinh nghiệm đào tạo</div>
+            </div>
+          </div>
+
+          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: 'var(--accent-gold-tint)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <Users size={24} color="var(--accent-gold-dark)" />
+            </div>
+            <div>
+              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>850+</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Học viên đã nhận bằng</div>
+            </div>
+          </div>
+
+          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: 'var(--accent-emerald-tint)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <ShieldCheck size={24} color="var(--accent-emerald)" />
+            </div>
+            <div>
+              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>99%</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Tỷ lệ đỗ kỳ sát hạch</div>
+            </div>
+          </div>
+
+          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div style={{
+              width: '46px',
+              height: '46px',
+              borderRadius: '12px',
+              background: 'var(--primary-tint)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              flexShrink: 0
+            }}>
+              <Zap size={24} color="var(--primary)" />
+            </div>
+            <div>
+              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>1 Kèm 1</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Tận tâm & không quát mắng</div>
+            </div>
+          </div>
         </div>
       </div>
 
       <style>{`
-        @media (max-width: 992px) {
-          .hero-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
-          .stats-row { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
-          .stat-item:nth-child(even) { border-right: none !important; }
-        }
-        @media (max-width: 576px) {
-          .hero-cta-btn { width: 100% !important; justify-content: center; }
-          .stats-row { padding: 1rem !important; gap: 0.75rem !important; }
+        @media (max-width: 900px) {
+          .hero-grid {
+            grid-template-columns: 1fr !important;
+            gap: 2rem !important;
+          }
         }
       `}</style>
     </section>
   );
 }
-

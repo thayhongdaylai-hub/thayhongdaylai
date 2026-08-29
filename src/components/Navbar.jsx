@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
-import { ShieldCheck, Moon, Sun, Phone, Menu, X, ChevronRight } from 'lucide-react';
+import { ShieldCheck, Phone, Menu, X, ChevronRight, Sparkles, Sun, Moon } from 'lucide-react';
 
 export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Về Thầy Hồng', href: '#about-teacher' },
-    { name: 'Gói Học & Học Phí', href: '#courses' },
-    { name: 'Lộ Trình Đào Tạo', href: '#roadmap' },
-    { name: 'Sân Tập Chuẩn ISO', href: '#facilities' },
-    { name: 'Đánh Giá Học Viên', href: '#testimonials' },
-    { name: 'Hỏi Đáp (FAQ)', href: '#faq' },
+    { name: 'Khóa Học', href: '#courses' },
+    { name: 'Nâng Hạng', href: '#upgrades' },
+    { name: 'Ưu Điểm', href: '#about-teacher' },
+    { name: 'Thi Lý Thuyết', href: '#theory-exam' },
+    { name: 'Lộ Trình', href: '#roadmap' },
+    { name: 'Sân Tập', href: '#facilities' },
+    { name: 'Đánh Giá', href: '#testimonials' },
+    { name: 'Hỏi Đáp', href: '#faq' },
   ];
 
   return (
@@ -22,13 +24,14 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
       backdropFilter: 'blur(16px)',
       WebkitBackdropFilter: 'blur(16px)',
       borderBottom: '1px solid var(--border-color)',
+      boxShadow: 'var(--shadow-sm)',
       transition: 'all 0.3s ease'
     }}>
       <div className="container" style={{
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        minHeight: '70px',
+        minHeight: '74px',
         paddingTop: '0.4rem',
         paddingBottom: '0.4rem'
       }}>
@@ -39,29 +42,29 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.65rem',
+            gap: '0.75rem',
             textDecoration: 'none',
             flexShrink: 0
           }}
         >
           <div className="brand-icon-box" style={{
-            width: '40px',
-            height: '40px',
+            width: '44px',
+            height: '44px',
             borderRadius: '12px',
-            background: 'var(--gradient-emerald)',
+            background: 'var(--gradient-primary)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            boxShadow: '0 4px 16px var(--accent-emerald-glow)',
+            boxShadow: 'var(--shadow-primary)',
             flexShrink: 0,
             transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
           }}>
-            <ShieldCheck size={22} color="#051A10" strokeWidth={2.5} />
+            <ShieldCheck size={24} color="#FBBF24" strokeWidth={2.5} />
           </div>
           <div style={{
-            fontFamily: "'Google Sans', 'Quicksand', sans-serif",
-            fontSize: 'clamp(1.15rem, 4vw, 1.4rem)',
-            fontWeight: 800,
+            fontFamily: "'Montserrat', 'Be Vietnam Pro', sans-serif",
+            fontSize: 'clamp(1.15rem, 3.8vw, 1.35rem)',
+            fontWeight: 900,
             letterSpacing: '-0.02em',
             lineHeight: 1.2,
             whiteSpace: 'nowrap',
@@ -74,13 +77,37 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           </div>
         </a>
 
-        {/* Desktop Nav Links (2-Row Grid with Framed Cards) */}
-        <nav className="desktop-nav desktop-nav-grid">
+        {/* Desktop Nav Links (Clean Modern Bar) */}
+        <nav className="desktop-nav" style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: '0.4rem',
+          margin: '0 0.75rem'
+        }}>
           {navLinks.map((link, idx) => (
             <a
               key={idx}
               href={link.href}
-              className="nav-link-card"
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                padding: '0.45rem 0.75rem',
+                borderRadius: '8px',
+                color: 'var(--text-muted)',
+                fontSize: '0.9rem',
+                fontWeight: 600,
+                textDecoration: 'none',
+                whiteSpace: 'nowrap',
+                transition: 'all 0.2s ease'
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = 'var(--primary)';
+                e.currentTarget.style.backgroundColor = 'var(--primary-tint)';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = 'var(--text-muted)';
+                e.currentTarget.style.backgroundColor = 'transparent';
+              }}
             >
               {link.name}
             </a>
@@ -88,86 +115,103 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
         </nav>
 
         {/* Right Actions (Theme Switcher + Hotline + Register CTA + Hamburger) */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexShrink: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', flexShrink: 0 }}>
           {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
-            aria-label="Chuyển đổi giao diện"
-            title={theme === 'dark' ? 'Chuyển sang giao diện Sáng' : 'Chuyển sang giao diện Tối'}
-            style={{
-              width: '38px',
-              height: '38px',
-              borderRadius: '50%',
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border-color)',
-              color: 'var(--text-main)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              cursor: 'pointer',
-              flexShrink: 0,
-              transition: 'all 0.25s ease'
-            }}
+            className="theme-toggle-btn"
+            aria-label="Chuyển đổi chế độ sáng/tối"
+            title={theme === 'dark' ? 'Chuyển sang chế độ Sáng' : 'Chuyển sang chế độ Tối'}
           >
             {theme === 'dark' ? (
-              <Sun size={18} color="#F59E0B" />
+              <Sun size={19} color="#FBBF24" />
             ) : (
-              <Moon size={18} color="#3B82F6" />
+              <Moon size={19} color="#3B82F6" />
             )}
           </button>
 
-          {/* Hotline Button (Hidden on tablet/mobile) */}
-          <a
-            href="tel:0983406221"
-            className="hotline-btn"
-            title="Thầy Hồng: 0983.406.221 / 0336.611.194"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.45rem',
-              padding: '0.55rem 1rem',
-              borderRadius: '9999px',
-              background: 'var(--bg-card)',
-              border: '1px solid var(--border-color)',
-              fontSize: '0.88rem',
-              fontWeight: 600,
-              color: 'var(--text-main)',
-              whiteSpace: 'nowrap',
-              flexShrink: 0
-            }}
-          >
-            <Phone size={15} color="var(--accent-emerald)" />
-            <span>0983.406.221</span>
-          </a>
+          {/* Hotline Zalo Buttons */}
+          <div className="hotline-btn" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+            <a
+              href="https://zalo.me/0983406221"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Nhắn Zalo Thầy Hồng: 0983.406.221"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                padding: '0.5rem 0.75rem',
+                borderRadius: '8px',
+                background: 'var(--primary-tint)',
+                border: '1px solid var(--border-highlight)',
+                fontSize: '0.86rem',
+                fontWeight: 700,
+                color: 'var(--primary)',
+                whiteSpace: 'nowrap',
+                textDecoration: 'none'
+              }}
+            >
+              <Phone size={14} color="var(--primary)" />
+              <span>0983.406.221</span>
+            </a>
+            <a
+              href="https://zalo.me/0336611194"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Nhắn Zalo Thầy Hồng: 0336.611.194"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.35rem',
+                padding: '0.5rem 0.75rem',
+                borderRadius: '8px',
+                background: 'var(--primary-tint)',
+                border: '1px solid var(--border-highlight)',
+                fontSize: '0.86rem',
+                fontWeight: 700,
+                color: 'var(--primary)',
+                whiteSpace: 'nowrap',
+                textDecoration: 'none'
+              }}
+            >
+              <Phone size={14} color="var(--primary)" />
+              <span>0336.611.194</span>
+            </a>
+          </div>
 
-          {/* Register CTA Button (Hidden on small mobile to prevent squish) */}
+          {/* Register CTA Button */}
           <button
             onClick={() => onOpenRegister()}
-            className="btn btn-primary desktop-cta-btn"
-            style={{ padding: '0.55rem 1.15rem', fontSize: '0.85rem', whiteSpace: 'nowrap', flexShrink: 0 }}
+            className="btn btn-gold desktop-cta-btn"
+            style={{
+              padding: '0.65rem 1.35rem',
+              fontSize: '0.9rem',
+              borderRadius: '10px',
+              boxShadow: 'var(--shadow-gold)'
+            }}
           >
-            <span>Tư Vấn Ngay</span>
-            <ChevronRight size={15} color="#051A10" />
+            <Sparkles size={16} />
+            <span>ĐĂNG KÝ HỌC</span>
           </button>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Hamburger Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="mobile-menu-btn"
-            aria-label="Menu điều hướng"
             style={{
               background: 'var(--bg-card)',
               border: '1px solid var(--border-color)',
               color: 'var(--text-main)',
+              padding: '0.5rem',
               borderRadius: '10px',
               cursor: 'pointer',
-              width: '38px',
-              height: '38px',
-              display: 'flex',
+              display: 'none',
               alignItems: 'center',
               justifyContent: 'center',
-              padding: 0
+              boxShadow: 'var(--shadow-sm)'
             }}
+            aria-label="Toggle Navigation Menu"
           >
             {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -177,77 +221,108 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div style={{
-          background: 'var(--bg-main)',
+          padding: '1.25rem',
+          background: 'var(--bg-card)',
           borderBottom: '1px solid var(--border-color)',
-          padding: '1.25rem 1rem',
           display: 'flex',
           flexDirection: 'column',
-          gap: '0.85rem',
-          boxShadow: 'var(--shadow-lg)',
-          animation: 'pulseGlow 0.3s ease-out'
+          gap: '0.5rem',
+          boxShadow: 'var(--shadow-lg)'
         }}>
+          {/* Mobile Theme Switch Row */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '0.6rem 0.85rem',
+            background: 'var(--bg-main)',
+            borderRadius: '10px',
+            border: '1px solid var(--border-color)',
+            marginBottom: '0.25rem'
+          }}>
+            <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)' }}>
+              Giao diện: {theme === 'dark' ? '🌙 Chế độ Tối' : '☀️ Chế độ Sáng'}
+            </span>
+            <button
+              onClick={toggleTheme}
+              className="btn btn-secondary"
+              style={{ padding: '0.35rem 0.75rem', fontSize: '0.8rem', borderRadius: '8px' }}
+            >
+              {theme === 'dark' ? 'Đổi sang Sáng' : 'Đổi sang Tối'}
+            </button>
+          </div>
+
           {navLinks.map((link, idx) => (
             <a
               key={idx}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
               style={{
-                fontSize: '1rem',
-                fontWeight: 600,
-                color: 'var(--text-main)',
-                padding: '0.65rem 0.85rem',
-                borderRadius: '10px',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-color)',
                 display: 'flex',
                 alignItems: 'center',
-                justifyContent: 'space-between'
+                justifyContent: 'space-between',
+                padding: '0.75rem 1rem',
+                borderRadius: '10px',
+                background: 'var(--bg-main)',
+                border: '1px solid var(--border-color)',
+                color: 'var(--text-main)',
+                fontSize: '0.95rem',
+                fontWeight: 700,
+                textDecoration: 'none'
               }}
             >
               <span>{link.name}</span>
-              <ChevronRight size={16} color="var(--accent-emerald)" />
+              <ChevronRight size={16} color="var(--primary)" />
             </a>
           ))}
 
-          {/* Direct Hotline Quick Button in drawer */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.65rem', marginTop: '0.35rem' }}>
+          {/* Quick Contact Buttons on Mobile */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '0.5rem' }}>
             <a
-              href="tel:0983406221"
+              href="https://zalo.me/0983406221"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '0.45rem',
+                gap: '0.4rem',
                 padding: '0.75rem',
-                borderRadius: '12px',
-                background: 'var(--bg-card-hover)',
-                border: '1px solid var(--border-color)',
-                color: 'var(--text-main)',
+                borderRadius: '10px',
+                background: 'var(--primary-tint)',
+                border: '1px solid var(--border-highlight)',
+                color: 'var(--primary)',
                 fontSize: '0.88rem',
-                fontWeight: 700
+                fontWeight: 700,
+                textDecoration: 'none'
               }}
             >
-              <Phone size={16} color="var(--accent-emerald)" />
-              <span>0983.406.221</span>
+              <Phone size={15} color="var(--primary)" />
+              <span>Zalo 0983</span>
             </a>
             <a
-              href="tel:0336611194"
+              href="https://zalo.me/0336611194"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn"
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                gap: '0.45rem',
+                gap: '0.4rem',
                 padding: '0.75rem',
-                borderRadius: '12px',
-                background: 'var(--bg-card-hover)',
+                borderRadius: '10px',
+                background: 'var(--bg-main)',
                 border: '1px solid var(--border-color)',
                 color: 'var(--text-main)',
                 fontSize: '0.88rem',
-                fontWeight: 700
+                fontWeight: 700,
+                textDecoration: 'none'
               }}
             >
-              <Phone size={16} color="var(--accent-blue)" />
-              <span>0336.611.194</span>
+              <Phone size={15} color="var(--accent-gold)" />
+              <span>Zalo 0336</span>
             </a>
           </div>
 
@@ -256,10 +331,10 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               setMobileMenuOpen(false);
               onOpenRegister();
             }}
-            className="btn btn-primary"
-            style={{ width: '100%', padding: '0.85rem', marginTop: '0.25rem', fontSize: '0.95rem' }}
+            className="btn btn-gold"
+            style={{ width: '100%', padding: '0.85rem', marginTop: '0.35rem', fontSize: '0.95rem' }}
           >
-            Đăng Ký Khóa Học Nhận Ưu Đãi
+            ĐĂNG KÝ HỌC NGAY • NHẬN VOUCHER
           </button>
         </div>
       )}
@@ -268,12 +343,10 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
       <style>{`
         @media (max-width: 992px) {
           .desktop-nav, .hotline-btn { display: none !important; }
+          .mobile-menu-btn { display: flex !important; }
         }
         @media (max-width: 600px) {
           .desktop-cta-btn { display: none !important; }
-        }
-        @media (min-width: 993px) {
-          .mobile-menu-btn { display: none !important; }
         }
       `}</style>
     </header>
