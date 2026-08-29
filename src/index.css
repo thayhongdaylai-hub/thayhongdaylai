@@ -1,7 +1,7 @@
 /* ==========================================================================
    LIGHT MINIMALIST LUXURY DESIGN SYSTEM
    Inspired by Apple, Linear, Stripe — Clean, Airy, Refined
-   Primary Font: Plus Jakarta Sans
+   Primary Font: Quicksand
    Default: Light Theme
    ========================================================================== */
 
@@ -86,7 +86,7 @@
 
 html {
   scroll-behavior: smooth;
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -98,16 +98,18 @@ body {
   line-height: 1.65;
   overflow-x: hidden;
   transition: background-color 0.4s ease, color 0.4s ease;
-  cursor: none;
 }
 
-/* Keep default cursor on mobile/touch */
-@media (max-width: 768px), (hover: none) {
-  body, body * { cursor: auto !important; }
+/* Default native fast cursor */
+body {
+  cursor: default;
+}
+a, button, [role="button"], input[type="submit"], input[type="button"], select {
+  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 800;
   letter-spacing: -0.035em;
   line-height: 1.12;
@@ -141,7 +143,7 @@ button, input, select, textarea {
   gap: 0.55rem;
   padding: 0.85rem 1.8rem;
   border-radius: 12px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 0.95rem;
   letter-spacing: -0.01em;
@@ -193,7 +195,7 @@ button, input, select, textarea {
   gap: 0.4rem;
   padding: 0.35rem 0.9rem;
   border-radius: 9999px;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.02em;
@@ -217,6 +219,12 @@ button, input, select, textarea {
   border: 1px solid #FEF3C7;
 }
 
+.badge-purple {
+  background: #FAF5FF;
+  color: #9333EA;
+  border: 1px solid #F3E8FF;
+}
+
 [data-theme='dark'] .badge-emerald {
   background: var(--accent-emerald-glow);
   color: var(--accent-emerald);
@@ -231,6 +239,11 @@ button, input, select, textarea {
   background: rgba(245, 158, 11, 0.15);
   color: var(--accent-orange);
   border: 1px solid rgba(245, 158, 11, 0.3);
+}
+[data-theme='dark'] .badge-purple {
+  background: rgba(168, 85, 247, 0.15);
+  color: #C084FC;
+  border: 1px solid rgba(168, 85, 247, 0.3);
 }
 
 /* Gradient Text */
@@ -280,7 +293,7 @@ button, input, select, textarea {
 }
 
 .section-title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 2.6rem;
   font-weight: 800;
   letter-spacing: -0.04em;
@@ -345,7 +358,7 @@ button, input, select, textarea {
   border: 1px solid var(--border-color);
   background: var(--bg-card);
   color: var(--text-muted);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   font-size: 0.86rem;
   font-weight: 600;
   letter-spacing: -0.01em;

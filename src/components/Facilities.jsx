@@ -37,7 +37,7 @@ export default function Facilities() {
             <span>Cơ Sở Vật Chất Hiện Đại</span>
           </div>
           <h2 className="section-title">
-            Hệ Thống Sân Tập & <span className="text-gradient">Đội Xe Đời Mới</span>
+            Hệ Thống <span className="text-gradient">Sân Tập</span>
           </h2>
           <p className="section-subtitle">
             Học viên được thực hành trên dàn xe đời mới trang bị máy lạnh 100% và hệ thống sân tập sát hạch tiêu chuẩn quốc tế.

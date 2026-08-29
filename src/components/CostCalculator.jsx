@@ -2,19 +2,18 @@ import React, { useState } from 'react';
 import { Calculator, CheckCircle2, Gift, Sparkles, ArrowRight, ShieldAlert } from 'lucide-react';
 
 export default function CostCalculator({ onOpenRegisterWithDetails }) {
-  const [courseType, setCourseType] = useState('b1');
+  const [courseType, setCourseType] = useState('b');
   const [schedule, setSchedule] = useState('weekday');
   const [paymentMode, setPaymentMode] = useState('full');
 
   const courseRates = {
-    a1: { name: 'Xe máy A1', basePrice: 650000, initialDeposit: 300000 },
-    a2: { name: 'Mô tô A2', basePrice: 1850000, initialDeposit: 500000 },
-    b1: { name: 'Ô tô B1 (Tự động)', basePrice: 10500000, initialDeposit: 3000000 },
-    b2: { name: 'Ô tô B2 (Số sàn)', basePrice: 11500000, initialDeposit: 3000000 },
-    c: { name: 'Xe Tải C', basePrice: 16500000, initialDeposit: 5000000 }
+    a1: { name: 'Hạng Xe Máy A1 (125cc)', basePrice: 1100000, initialDeposit: 500000 },
+    moto: { name: 'Hạng Mô Tô (PKL / Côn Tay)', basePrice: 3000000, initialDeposit: 1000000 },
+    b: { name: 'Ô TÔ Hạng B', basePrice: 20000000, initialDeposit: 5000000 },
+    c1: { name: 'Ô TÔ Hạng C1 (Xe Tải)', basePrice: 24000000, initialDeposit: 6000000 }
   };
 
-  const selectedCourse = courseRates[courseType];
+  const selectedCourse = courseRates[courseType] || courseRates.b;
   let discount = 0;
   if (schedule === 'weekday') discount += 200000;
   if (paymentMode === 'full') discount += 500000;
@@ -56,11 +55,10 @@ export default function CostCalculator({ onOpenRegisterWithDetails }) {
               </label>
               <div className="course-select-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '0.75rem' }}>
                 {[
-                  { id: 'a1', label: 'Xe Máy A1 (650k)' },
-                  { id: 'a2', label: 'Mô Tô A2 (1.85M)' },
-                  { id: 'b1', label: 'Ô Tô B1 (10.5M)' },
-                  { id: 'b2', label: 'Ô Tô B2 (11.5M)' },
-                  { id: 'c', label: 'Xe Tải C (16.5M)' }
+                  { id: 'a1', label: 'Xe Máy A1 (1.1Tr)' },
+                  { id: 'moto', label: 'Mô Tô PKL (3.0Tr)' },
+                  { id: 'b', label: 'Ô Tô Hạng B (20Tr)' },
+                  { id: 'c1', label: 'Ô Tô Hạng C1 (24Tr)' }
                 ].map(opt => (
                   <button
                     key={opt.id}
@@ -227,7 +225,7 @@ export default function CostCalculator({ onOpenRegisterWithDetails }) {
               </div>
               <div style={{
                 fontSize: '2.3rem',
-                fontFamily: "'Outfit', sans-serif",
+                fontFamily: "'Quicksand', sans-serif",
                 fontWeight: 800,
                 color: 'var(--accent-emerald)'
               }}>

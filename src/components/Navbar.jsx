@@ -6,6 +6,8 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
 
   const navLinks = [
     { name: 'Gói học & Học phí', href: '#courses' },
+    { name: 'Nâng hạng GPLX', href: '#upgrades' },
+    { name: 'Thi thử lý thuyết', href: '#theory-exam', isNew: true },
     { name: 'Lộ trình đào tạo', href: '#roadmap' },
     { name: 'Sân tập chuẩn ISO', href: '#facilities' },
     { name: 'Đánh giá học viên', href: '#testimonials' },
@@ -58,7 +60,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{
-              fontFamily: "'Plus Jakarta Sans', sans-serif",
+              fontFamily: "'Quicksand', sans-serif",
               fontSize: '1.2rem',
               fontWeight: 800,
               letterSpacing: '-0.02em',
@@ -88,8 +90,22 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
         {/* Desktop Nav */}
         <nav className="desktop-nav desktop-nav-grid">
           {navLinks.map((link, idx) => (
-            <a key={idx} href={link.href} className="nav-link-card">
-              {link.name}
+            <a key={idx} href={link.href} className="nav-link-card" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
+              <span>{link.name}</span>
+              {link.isNew && (
+                <span style={{
+                  fontSize: '0.62rem',
+                  fontWeight: 800,
+                  padding: '0.1rem 0.4rem',
+                  borderRadius: '9999px',
+                  background: 'var(--gradient-emerald)',
+                  color: '#FFFFFF',
+                  letterSpacing: '0.02em',
+                  lineHeight: 1.2
+                }}>
+                  MỚI
+                </span>
+              )}
             </a>
           ))}
         </nav>
@@ -124,7 +140,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
 
           {/* Hotline */}
           <a
-            href="tel:0988123456"
+            href="tel:0983406221"
             className="hotline-btn"
             style={{
               display: 'flex',
@@ -135,12 +151,12 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               background: 'var(--bg-card-hover)',
               border: '1px solid var(--border-color)',
               fontSize: '0.88rem',
-              fontWeight: 600,
+              fontWeight: 700,
               color: 'var(--text-main)'
             }}
           >
             <Phone size={15} color="var(--accent-emerald)" />
-            <span>0988.123.456</span>
+            <span>0983.406.221</span>
           </a>
 
           {/* CTA */}
@@ -188,10 +204,18 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               style={{
                 fontSize: '1rem',
                 fontWeight: 600,
-                color: 'var(--text-main)'
+                color: 'var(--text-main)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between'
               }}
             >
-              {link.name}
+              <span>{link.name}</span>
+              {link.isNew && (
+                <span className="badge badge-emerald" style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem' }}>
+                  MỚI
+                </span>
+              )}
             </a>
           ))}
           <button

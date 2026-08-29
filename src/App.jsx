@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CoursePackages from './components/CoursePackages';
+import UpgradePackages from './components/UpgradePackages';
 import Roadmap from './components/Roadmap';
 import Facilities from './components/Facilities';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import TheoryExam from './components/TheoryExam';
 import RegisterModal from './components/RegisterModal';
-import CustomCursor from './components/CustomCursor';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -38,7 +39,6 @@ export default function App() {
 
   return (
     <div className="app-root">
-      <CustomCursor />
       <Navbar
         theme={theme}
         toggleTheme={toggleTheme}
@@ -47,6 +47,8 @@ export default function App() {
       <main>
         <Hero onOpenRegister={() => handleOpenRegister()} />
         <CoursePackages onSelectCourse={handleSelectCourse} />
+        <UpgradePackages onSelectUpgrade={handleSelectCourse} />
+        <TheoryExam />
         <Roadmap onOpenRegister={() => handleOpenRegister()} />
         <Facilities />
         <Testimonials />

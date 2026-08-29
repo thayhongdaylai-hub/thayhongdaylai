@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Monitor, Car, Award, CreditCard, ChevronRight, Sparkles } from 'lucide-react';
+import { FileText, Monitor, Car, Award, ChevronRight, Sparkles } from 'lucide-react';
 
 export default function Roadmap({ onOpenRegister }) {
   const steps = [
@@ -34,14 +34,6 @@ export default function Roadmap({ onOpenRegister }) {
       icon: Award,
       color: 'var(--accent-emerald)',
       description: 'Thi thử nghiệm trên xe cảm ứng chip để làm quen. Thi sát hạch chính thức dưới sự giám sát trực tiếp của Sở GTVT.'
-    },
-    {
-      step: '05',
-      title: 'Cấp Thẻ PET & Hỗ Trợ Sau Khóa Học',
-      time: 'Sau 7 - 10 ngày',
-      icon: CreditCard,
-      color: 'var(--accent-blue)',
-      description: 'Nhận bằng lái dạng thẻ nhựa PET siêu bền do Sở GTVT cấp. Tặng 1 giờ bổ túc tay lái xe gia đình đi cao tốc thực tế.'
     }
   ];
 
@@ -59,10 +51,10 @@ export default function Roadmap({ onOpenRegister }) {
             <span>Lộ Trình Chuẩn Sở GTVT</span>
           </div>
           <h2 className="section-title">
-            Lộ Trình Đào Tạo <span className="text-gradient">5 Bước Bài Bản</span>
+            Lộ Trình Đào Tạo <span className="text-gradient">4 Bước Bài Bản</span>
           </h2>
           <p className="section-subtitle">
-            Học viên được đồng hành 1-thầy-1-trò từ ngày nộp hồ sơ đến khi cầm tấm bằng lái trên tay.
+            Học viên được đồng hành 1-thầy-1-trò từ ngày nộp hồ sơ đến khi hoàn thành kỳ thi sát hạch.
           </p>
         </div>
 

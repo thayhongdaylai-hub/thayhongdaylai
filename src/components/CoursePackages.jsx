@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Bike, Car, Truck, Check, Sparkles, Clock, ShieldCheck, ArrowRight, Tag } from 'lucide-react';
+import { Bike, Car, Truck, Check, Sparkles, ArrowRight } from 'lucide-react';
 
 export default function CoursePackages({ onSelectCourse }) {
   const [filter, setFilter] = useState('all');
@@ -8,98 +8,77 @@ export default function CoursePackages({ onSelectCourse }) {
     {
       id: 'a1',
       category: 'bike',
-      badge: 'Phổ biến nhất',
+      badge: 'Phổ Biến Nhất',
       badgeColor: 'badge-emerald',
       icon: Bike,
-      name: 'Bằng Xe Máy A1',
-      subtitle: 'Xe máy thông thường (dưới 175cc)',
-      originalPrice: '850.000đ',
-      price: '650.000đ',
+      name: 'Hạng Xe Máy A1',
+      subtitle: 'Xe Phổ Thông 125cc',
+      price: '1.100.000đ',
       duration: '1 - 2 tuần',
       schedule: 'Lịch thi Thứ 7 / Chủ Nhật',
       features: [
         'Học phí trọn gói 100% (Đã gồm lệ phí thi + bằng)',
-        'Tặng tài liệu 200 câu hỏi chuẩn GTVT + App mẹo thi',
+        'Tặng tài liệu 250 câu hỏi chuẩn GTVT + App mẹo thi',
         'Tập xe chip vòng số 8 miễn phí trước ngày thi',
-        'Hỗ trợ thu hồ sơ tận nhà hoặc đăng ký Online'
+        'Hỗ trợ thu hồ sơ tận nơi hoặc đăng ký Online'
       ]
     },
     {
-      id: 'a2',
+      id: 'moto',
       category: 'bike',
-      badge: 'Đam mê PKL',
+      badge: 'PKL & Côn Tay',
       badgeColor: 'badge-blue',
       icon: Bike,
-      name: 'Bằng Mô Tô A2',
-      subtitle: 'Xe phân khối lớn (trên 175cc)',
-      originalPrice: '2.200.000đ',
-      price: '1.850.000đ',
+      name: 'Hạng Mô Tô',
+      subtitle: 'Xe PKL , Xe Tay Côn',
+      price: '3.000.000đ',
       duration: '2 - 3 tuần',
       schedule: 'Lịch thi linh hoạt hàng tuần',
       features: [
-        'Cấp xe tập PKL (Rebel 250 / Z300 / LA250) miễn phí',
-        'Giảng viên hướng dẫn kỹ thuật thăng bằng & cua vòng 8',
-        'Tài liệu 450 câu hỏi & bộ mẹo ghi nhớ nhanh',
-        'Hỗ trợ đổi bằng nhựa PET siêu bền'
+        'Cấp xe tập PKL & Xe Tay Côn miễn phí',
+        'Giảng viên hướng dẫn kỹ thuật thăng bằng & cua vòng số 8',
+        'Bộ tài liệu ôn thi chuẩn & mẹo ghi nhớ nhanh',
+        'Hỗ trợ thu hồ sơ tận nơi hoặc đăng ký Online'
       ]
     },
     {
-      id: 'b1',
+      id: 'b',
       category: 'car',
-      badge: 'Khuyên Dùng Gia Đình',
+      badge: 'Gia Đình & Dịch Vụ',
       badgeColor: 'badge-emerald',
       icon: Car,
-      name: 'Bằng Ô Tô B1 (Số Tự Động)',
-      subtitle: 'Xe gia đình 4-9 chỗ số tự động',
-      originalPrice: '12.500.000đ',
-      price: '10.500.000đ',
-      duration: '3.5 tháng',
+      name: 'Ô TÔ Hạng B',
+      subtitle: 'Xe số tự động & số sàn (B1 / B2)',
+      price: '20.000.000đ',
+      duration: '3 - 3.5 tháng',
       schedule: 'Học 1-Thầy-1-Trò (Tự chọn giờ)',
       features: [
-        'Chạy đủ 800km DAT đường trường có camera giám sát',
-        'Thực hành 100% trên xe Toyota Vios đời mới lạnh mát',
-        'Giờ học tự chọn (Có lớp Thứ 7, CN không phụ thu)',
-        'Phòng cabin mô phỏng 3D chuẩn quy định GTVT',
-        'Hỗ trợ chia làm 2 - 3 lần đóng (Trả góp 0%)'
+        'Chạy đủ 710km / 810km DAT đường trường có giáo viên đưa đón tận nơi',
+        'Bộ tài liệu ôn thi chuẩn & mẹo ghi nhớ nhanh',
+        'Giờ học linh hoạt',
+        'Luyện tập thành thạo 11 bài thi sa hình sát hạch',
+        'Hỗ trợ thu hồ sơ tận nơi hoặc đăng ký Online'
       ]
     },
     {
-      id: 'b2',
-      category: 'car',
-      badge: 'Kinh Doanh & Grab',
-      badgeColor: 'badge-orange',
-      icon: Car,
-      name: 'Bằng Ô Tô B2 (Số Sàn)',
-      subtitle: 'Lái xe số sàn, xe kinh doanh dịch vụ',
-      originalPrice: '13.500.000đ',
-      price: '11.500.000đ',
-      duration: '3.5 - 4 tháng',
-      schedule: 'Sáng / Chiều / Tối / Cuối tuần',
-      features: [
-        'Chạy đủ 810km DAT (Bao gồm chạy đêm & đường trường)',
-        'Luyện tập thành thạo 11 bài sa hình sát hạch',
-        'Được quyền chọn giáo viên & đổi giáo viên nếu muốn',
-        'Tặng bộ đĩa đĩa CD 120 tình huống mô phỏng sát hạch',
-        'Cam kết không phụ thu tiền xăng xe, giáo viên'
-      ]
-    },
-    {
-      id: 'c',
+      id: 'c1',
       category: 'truck',
-      badge: 'Chuyên Nghiệp',
-      badgeColor: 'badge-blue',
+      badge: 'Tải Trọng Lớn',
+      badgeColor: 'badge-orange',
       icon: Truck,
-      name: 'Bằng Xe Tải Hạng C',
+      name: 'Ô TÔ Hạng C1',
       subtitle: 'Xe tải trọng tải lớn trên 3.5 tấn',
-      originalPrice: '18.500.000đ',
-      price: '16.500.000đ',
+      price: '24.000.000đ',
       duration: '5 tháng',
       schedule: 'Lịch học linh hoạt',
       features: [
-        'Đào tạo kỹ năng vận tải hàng hóa đường dài chuyên nghiệp',
-        'Thực hành lái xe tải Jac / Hyundai đời mới tải trọng lớn',
-        'Đủ điều kiện nâng hạng D, E sau này',
-        'Hỗ trợ giới thiệu việc làm tại các tập đoàn vận tải'
+        'Chạy đủ 825km DAT đường trường có giáo viên đưa đón tận nơi',
+        'Bộ tài liệu ôn thi chuẩn & mẹo ghi nhớ nhanh',
+        'Giờ học linh hoạt',
+        'Luyện tập thành thạo 11 bài thi sa hình sát hạch',
+        'Hỗ trợ thu hồ sơ tận nơi hoặc đăng ký Online',
+        'Đủ điều kiện nâng hạng C , D , CE sau này',
+        'Hỗ trợ Chứng Chỉ Nghiệp Vụ Vận Tải'
       ]
     }
   ];
@@ -121,37 +100,39 @@ export default function CoursePackages({ onSelectCourse }) {
             Các Gói Đào Tạo <span className="text-gradient">Lái Xe Ô Tô & Xe Máy</span>
           </h2>
           <p className="section-subtitle">
-            Cam kết không phát sinh bất kỳ chi phí phụ nào trong suốt quá trình học. Hỗ trợ đóng trả góp 0% lãi suất.
+            Cam kết không phát sinh bất kỳ chi phí phụ nào trong suốt quá trình học. Hỗ trợ đào tạo lý thuyết và thực hành chuẩn sát hạch.
           </p>
 
           {/* Filter Tabs */}
           <div style={{
             display: 'inline-flex',
-            gap: '0.5rem',
-            padding: '0.4rem',
+            gap: '0.4rem',
+            padding: '0.35rem',
             background: 'var(--bg-card)',
             border: '1px solid var(--border-color)',
             borderRadius: '9999px',
-            marginTop: '2rem'
+            marginTop: '2rem',
+            flexWrap: 'wrap'
           }}>
             {[
               { id: 'all', label: 'Tất Cả Gói Học' },
-              { id: 'bike', label: 'Xe Máy (A1 - A2)' },
-              { id: 'car', label: 'Ô Tô (B1 - B2)' },
-              { id: 'truck', label: 'Xe Tải (Hạng C)' }
+              { id: 'bike', label: 'Xe Máy & Mô Tô' },
+              { id: 'car', label: 'Ô Tô Hạng B' },
+              { id: 'truck', label: 'Ô Tô Hạng C1' }
             ].map(tab => (
               <button
                 key={tab.id}
                 onClick={() => setFilter(tab.id)}
                 style={{
-                  padding: '0.6rem 1.4rem',
+                  padding: '0.55rem 1.25rem',
                   borderRadius: '9999px',
                   border: 'none',
-                  fontSize: '0.95rem',
-                  fontWeight: 600,
+                  fontSize: '0.9rem',
+                  fontWeight: 700,
                   cursor: 'pointer',
                   background: filter === tab.id ? 'var(--gradient-emerald)' : 'transparent',
-                  color: filter === tab.id ? '#051A10' : 'var(--text-muted)',
+                  color: filter === tab.id ? '#FFFFFF' : 'var(--text-muted)',
+                  boxShadow: filter === tab.id ? '0 2px 10px rgba(16,185,129,0.3)' : 'none',
                   transition: 'all 0.25s ease'
                 }}
               >
@@ -161,8 +142,15 @@ export default function CoursePackages({ onSelectCourse }) {
           </div>
         </div>
 
-        {/* Course Cards Grid */}
-        <div className="grid-3" style={{ alignItems: 'stretch' }}>
+        {/* Course Cards Grid - 4 Columns */}
+        <div
+          style={{
+            display: 'grid',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))',
+            gap: '1.5rem',
+            alignItems: 'stretch'
+          }}
+        >
           {filteredCourses.map(course => {
             const IconComponent = course.icon;
             return (
@@ -170,7 +158,7 @@ export default function CoursePackages({ onSelectCourse }) {
                 key={course.id}
                 className="glass-card"
                 style={{
-                  padding: '2rem',
+                  padding: '1.75rem',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
@@ -178,12 +166,12 @@ export default function CoursePackages({ onSelectCourse }) {
                 }}
               >
                 <div>
-                  {/* Top Badge & Icon */}
+                  {/* Top Badge & Icon - Grouped together nicely */}
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'space-between',
-                    marginBottom: '1.25rem'
+                    gap: '0.85rem',
+                    marginBottom: '1.35rem'
                   }}>
                     <div style={{
                       width: '48px',
@@ -192,67 +180,64 @@ export default function CoursePackages({ onSelectCourse }) {
                       background: 'var(--accent-emerald-glow)',
                       display: 'flex',
                       alignItems: 'center',
-                      justifyContent: 'center'
+                      justifyContent: 'center',
+                      flexShrink: 0
                     }}>
-                      <IconComponent size={26} color="var(--accent-emerald)" />
+                      <IconComponent size={25} color="var(--accent-emerald)" />
                     </div>
-                    <span className={`badge ${course.badgeColor}`}>{course.badge}</span>
+                    <span className={`badge ${course.badgeColor}`} style={{
+                      fontSize: '0.86rem',
+                      fontWeight: 800,
+                      padding: '0.45rem 0.95rem',
+                      whiteSpace: 'nowrap',
+                      borderRadius: '9999px',
+                      letterSpacing: '0.01em',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.06)'
+                    }}>
+                      {course.badge}
+                    </span>
                   </div>
 
                   {/* Course Title & Subtitle */}
-                  <h3 style={{ fontSize: '1.4rem', marginBottom: '0.3rem' }}>{course.name}</h3>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, marginBottom: '0.25rem' }}>{course.name}</h3>
+                  <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '1.25rem', minHeight: '38px' }}>
                     {course.subtitle}
                   </p>
 
-                  {/* Price Section */}
+                  {/* Clean Official Price Section (No strikethrough) */}
                   <div style={{
                     padding: '1rem 1.25rem',
                     background: 'var(--bg-card-hover)',
                     borderRadius: '1rem',
-                    marginBottom: '1.5rem',
+                    marginBottom: '1.25rem',
+                    border: '1px solid var(--border-color)',
                     display: 'flex',
-                    alignItems: 'baseline',
-                    gap: '0.75rem'
+                    flexDirection: 'column',
+                    justifyContent: 'center'
                   }}>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.2rem' }}>
+                      Học phí trọn gói chính thức:
+                    </div>
                     <span style={{
                       fontSize: '1.85rem',
-                      fontFamily: "'Plus Jakarta Sans', sans-serif",
+                      fontFamily: "'Quicksand', sans-serif",
                       fontWeight: 800,
-                      color: 'var(--accent-emerald)'
+                      color: 'var(--accent-emerald)',
+                      lineHeight: 1.15
                     }}>
                       {course.price}
                     </span>
-                    <span style={{
-                      fontSize: '0.95rem',
-                      color: 'var(--text-light)',
-                      textDecoration: 'line-through'
-                    }}>
-                      {course.originalPrice}
-                    </span>
-                  </div>
-
-                  {/* Meta info */}
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem', marginBottom: '1.5rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                      <Clock size={16} color="var(--accent-blue)" />
-                      <span>Thời gian đào tạo: <strong>{course.duration}</strong></span>
-                    </div>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                      <ShieldCheck size={16} color="var(--accent-emerald)" />
-                      <span>Lịch thi: <strong>{course.schedule}</strong></span>
-                    </div>
                   </div>
 
                   {/* Features List */}
-                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem', marginBottom: '1.75rem' }}>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem', marginBottom: '1.5rem' }}>
+                    <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                       Quyền lợi gói học:
                     </div>
-                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
                       {course.features.map((feat, idx) => (
-                        <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                          <Check size={16} color="var(--accent-emerald)" style={{ marginTop: '0.2rem', flexShrink: 0 }} />
+                        <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', fontSize: '0.84rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+                          <Check size={15} color="var(--accent-emerald)" style={{ marginTop: '0.15rem', flexShrink: 0 }} />
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -264,10 +249,10 @@ export default function CoursePackages({ onSelectCourse }) {
                 <button
                   onClick={() => onSelectCourse(course.name)}
                   className="btn btn-primary"
-                  style={{ width: '100%', padding: '0.9rem', fontSize: '0.95rem' }}
+                  style={{ width: '100%', padding: '0.85rem', fontSize: '0.92rem' }}
                 >
                   <span>Đăng Ký Khóa Học Này</span>
-                  <ArrowRight size={18} color="#051A10" />
+                  <ArrowRight size={17} />
                 </button>
               </div>
             );
