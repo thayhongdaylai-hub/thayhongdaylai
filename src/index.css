@@ -24,6 +24,8 @@
   --accent-blue: #3B82F6;
   --accent-blue-glow: rgba(59, 130, 246, 0.25);
   --accent-orange: #F59E0B;
+  --accent-purple: #A855F7;
+  --accent-purple-glow: rgba(168, 85, 247, 0.22);
   --accent-red: #EF4444;
 
   --gradient-emerald: linear-gradient(135deg, #00E599 0%, #00B377 100%);
@@ -60,6 +62,8 @@
   --accent-blue: #2563EB;
   --accent-blue-glow: rgba(37, 99, 235, 0.15);
   --accent-orange: #D97706;
+  --accent-purple: #9333EA;
+  --accent-purple-glow: rgba(147, 51, 234, 0.15);
   --accent-red: #DC2626;
 
   --gradient-emerald: linear-gradient(135deg, #059669 0%, #047857 100%);
@@ -207,6 +211,12 @@ button, input, select, textarea {
   background: rgba(245, 158, 11, 0.15);
   color: var(--accent-orange);
   border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-purple {
+  background: var(--accent-purple-glow);
+  color: var(--accent-purple);
+  border: 1px solid rgba(168, 85, 247, 0.35);
 }
 
 /* Gradient Text */

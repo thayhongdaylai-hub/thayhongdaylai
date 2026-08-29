@@ -22,6 +22,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       badge: 'Phổ Biến Nhất',
       badgeColor: 'badge-emerald',
       icon: Truck,
+      iconColor: 'var(--accent-emerald)',
+      iconBg: 'var(--accent-emerald-glow)',
       features: [
         'Thực hành bổ túc trên xe tải tiêu chuẩn',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -39,6 +41,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       badge: 'Chạy Dịch Vụ / Tour',
       badgeColor: 'badge-blue',
       icon: Bus,
+      iconColor: 'var(--accent-blue)',
+      iconBg: 'var(--accent-blue-glow)',
       features: [
         'Lái xe chở học sinh, nhân viên công ty & xe hợp đồng du lịch',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -57,6 +61,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       badge: 'Xe Hợp Đồng / Tuyến',
       badgeColor: 'badge-orange',
       icon: Bus,
+      iconColor: 'var(--accent-orange)',
+      iconBg: 'rgba(245, 158, 11, 0.15)',
       features: [
         'Lái xe chở học sinh, nhân viên công ty & xe hợp đồng du lịch',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -75,6 +81,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       badge: 'Hạng Cao Cấp',
       badgeColor: 'badge-purple',
       icon: Award,
+      iconColor: 'var(--accent-purple)',
+      iconBg: 'var(--accent-purple-glow)',
       features: [
         'Lái xe chở học sinh, nhân viên công ty & xe hợp đồng du lịch',
         'Tặng 1 tiếng xe chip tại sân thi sát hạch',
@@ -93,6 +101,8 @@ export default function UpgradePackages({ onSelectUpgrade }) {
       badge: 'Thu Nhập Cao',
       badgeColor: 'badge-emerald',
       icon: Truck,
+      iconColor: 'var(--accent-emerald)',
+      iconBg: 'var(--accent-emerald-glow)',
       features: [
         'Lái đầu kéo container chuyên dụng',
         'Kỹ năng ghép rơ-moóc, lùi chuồng hẹp và quay đầu an toàn',
@@ -148,29 +158,29 @@ export default function UpgradePackages({ onSelectUpgrade }) {
                 }}
               >
                 <div>
-                  {/* Top Header: Icon & Badge */}
+                  {/* Top Header: Icon & Badge sitting closely side-by-side */}
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'space-between',
-                    marginBottom: '1rem'
+                    gap: '0.75rem',
+                    marginBottom: '1.25rem'
                   }}>
                     <div style={{
                       width: '44px',
                       height: '44px',
                       borderRadius: '12px',
-                      background: 'var(--accent-blue-glow)',
+                      background: item.iconBg || 'var(--accent-blue-glow)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       flexShrink: 0
                     }}>
-                      <IconComponent size={22} color="var(--accent-blue)" />
+                      <IconComponent size={22} color={item.iconColor || 'var(--accent-blue)'} />
                     </div>
                     <span className={`badge ${item.badgeColor}`} style={{
-                      fontSize: '0.78rem',
+                      fontSize: '0.8rem',
                       fontWeight: 800,
-                      padding: '0.35rem 0.75rem',
+                      padding: '0.35rem 0.8rem',
                       borderRadius: '9999px'
                     }}>
                       {item.badge}
