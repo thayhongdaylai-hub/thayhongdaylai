@@ -242,21 +242,20 @@ export default function TheoryExam() {
           gap: '1rem',
           marginBottom: '2rem'
         }}>
-          {/* Scrollable License Selector */}
+          {/* Responsive License Selector (Always displays all license grades on mobile) */}
           <div
-            className="no-scrollbar"
             style={{
               display: 'flex',
-              overflowX: 'auto',
-              whiteSpace: 'nowrap',
-              WebkitOverflowScrolling: 'touch',
-              padding: '0.35rem',
+              flexWrap: 'wrap',
+              justifyContent: 'center',
+              alignItems: 'center',
+              padding: '0.45rem',
               background: 'var(--bg-card)',
               border: '1px solid var(--border-color)',
-              borderRadius: '12px',
+              borderRadius: '14px',
               boxShadow: 'var(--shadow-sm)',
               maxWidth: '100%',
-              gap: '0.35rem'
+              gap: '0.4rem'
             }}
           >
             {Object.entries(LICENSE_CONFIGS).map(([key, config]) => {
@@ -270,9 +269,9 @@ export default function TheoryExam() {
                   }}
                   className="btn"
                   style={{
-                    padding: '0.5rem 1rem',
-                    borderRadius: '8px',
-                    fontSize: '0.85rem',
+                    padding: '0.55rem 0.85rem',
+                    borderRadius: '10px',
+                    fontSize: 'clamp(0.82rem, 3vw, 0.9rem)',
                     fontWeight: 700,
                     border: 'none',
                     background: isSelected ? 'var(--primary)' : 'transparent',
@@ -281,15 +280,14 @@ export default function TheoryExam() {
                     transition: 'all 0.25s ease',
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '0.4rem',
-                    whiteSpace: 'nowrap',
-                    flexShrink: 0
+                    gap: '0.35rem',
+                    cursor: 'pointer'
                   }}
                 >
                   {isMotor ? <Bike size={15} /> : <Car size={15} />}
                   <span>{config.badgeName || key}</span>
-                  <span className="hide-mobile-sm" style={{ opacity: 0.85, fontSize: '0.76rem' }}>
-                    ({config.totalQuestions}c • {config.passingScore}/{config.totalQuestions})
+                  <span style={{ opacity: 0.85, fontSize: '0.74rem' }}>
+                    ({config.totalQuestions}c)
                   </span>
                 </button>
               );
@@ -298,31 +296,31 @@ export default function TheoryExam() {
 
           {/* Mode Switcher */}
           <div style={{
-            display: 'inline-flex',
-            padding: '0.3rem',
+            display: 'flex',
+            flexWrap: 'wrap',
+            justifyContent: 'center',
+            padding: '0.35rem',
             background: 'var(--bg-card)',
             border: '1px solid var(--border-color)',
-            borderRadius: '10px',
+            borderRadius: '12px',
             boxShadow: 'var(--shadow-sm)',
-            gap: '0.25rem',
-            maxWidth: '100%',
-            overflowX: 'auto'
+            gap: '0.35rem',
+            maxWidth: '100%'
           }}>
             <button
               onClick={() => setExamMode('mock')}
               className="btn"
               style={{
-                padding: '0.5rem 0.95rem',
+                padding: '0.55rem 1rem',
                 borderRadius: '8px',
-                fontSize: '0.8rem',
+                fontSize: '0.84rem',
                 fontWeight: 700,
                 border: 'none',
                 background: examMode === 'mock' ? 'var(--primary-tint)' : 'transparent',
                 color: examMode === 'mock' ? 'var(--primary)' : 'var(--text-muted)',
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem',
-                whiteSpace: 'nowrap'
+                gap: '0.35rem'
               }}
             >
               <Timer size={14} />
@@ -333,17 +331,16 @@ export default function TheoryExam() {
               onClick={() => setExamMode('critical')}
               className="btn"
               style={{
-                padding: '0.5rem 0.95rem',
+                padding: '0.55rem 1rem',
                 borderRadius: '8px',
-                fontSize: '0.8rem',
+                fontSize: '0.84rem',
                 fontWeight: 700,
                 border: 'none',
                 background: examMode === 'critical' ? 'var(--accent-red-tint)' : 'transparent',
                 color: examMode === 'critical' ? '#EF4444' : 'var(--text-muted)',
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem',
-                whiteSpace: 'nowrap'
+                gap: '0.35rem'
               }}
             >
               <AlertTriangle size={14} />
@@ -508,22 +505,22 @@ export default function TheoryExam() {
               {/* LEFT: CURRENT QUESTION PANEL */}
               <div style={{
                 background: 'var(--bg-input)',
-                borderRadius: '18px',
-                padding: '1.75rem',
+                borderRadius: '16px',
+                padding: 'clamp(1rem, 2.5vw, 1.5rem)',
                 border: '1px solid var(--border-color)'
               }}>
-                {/* Question Header */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
+                {/* Question Header with Quick Flip Arrows */}
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.85rem', flexWrap: 'wrap', gap: '0.45rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
                     <span style={{
                       display: 'inline-flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      padding: '0.3rem 0.8rem',
+                      padding: '0.25rem 0.65rem',
                       borderRadius: '8px',
                       background: 'var(--accent-emerald)',
                       color: '#FFFFFF',
-                      fontSize: '0.85rem',
+                      fontSize: '0.82rem',
                       fontWeight: 800
                     }}>
                       Câu {currentQuestionIndex + 1}/{currentExam.questions.length}
@@ -534,49 +531,73 @@ export default function TheoryExam() {
                         background: 'rgba(239, 68, 68, 0.15)',
                         color: '#EF4444',
                         border: '1px solid rgba(239, 68, 68, 0.3)',
-                        fontSize: '0.75rem',
-                        fontWeight: 800
+                        fontSize: '0.72rem',
+                        fontWeight: 800,
+                        padding: '0.2rem 0.5rem'
                       }}>
-                        <AlertTriangle size={13} />
-                        CÂU ĐIỂM LIỆT (BẮT BUỘC ĐÚNG)
+                        <AlertTriangle size={12} />
+                        ĐIỂM LIỆT
                       </span>
                     )}
                   </div>
 
-                  {/* Bookmark button */}
-                  {!isSubmitted && (
+                  {/* Bookmark & Quick Flip Arrows on Top */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                    {!isSubmitted && (
+                      <button
+                        onClick={toggleBookmark}
+                        className="btn"
+                        style={{
+                          padding: '0.3rem 0.6rem',
+                          borderRadius: '8px',
+                          background: bookmarkedQuestions[currentQ.id] ? 'rgba(245, 158, 11, 0.15)' : 'var(--bg-card)',
+                          border: bookmarkedQuestions[currentQ.id] ? '1px solid #F59E0B' : '1px solid var(--border-color)',
+                          color: bookmarkedQuestions[currentQ.id] ? '#D97706' : 'var(--text-muted)',
+                          fontSize: '0.75rem',
+                          fontWeight: 600
+                        }}
+                        title="Đánh dấu xem lại câu này"
+                      >
+                        <Bookmark size={13} fill={bookmarkedQuestions[currentQ.id] ? '#F59E0B' : 'none'} />
+                        <span>{bookmarkedQuestions[currentQ.id] ? 'Đã dấu' : 'Đánh dấu'}</span>
+                      </button>
+                    )}
+
                     <button
-                      onClick={toggleBookmark}
-                      className="btn"
-                      style={{
-                        padding: '0.35rem 0.75rem',
-                        borderRadius: '8px',
-                        background: bookmarkedQuestions[currentQ.id] ? 'rgba(245, 158, 11, 0.15)' : 'var(--bg-card)',
-                        border: bookmarkedQuestions[currentQ.id] ? '1px solid #F59E0B' : '1px solid var(--border-color)',
-                        color: bookmarkedQuestions[currentQ.id] ? '#D97706' : 'var(--text-muted)',
-                        fontSize: '0.8rem',
-                        fontWeight: 600
-                      }}
+                      onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
+                      disabled={currentQuestionIndex === 0}
+                      className="btn btn-secondary"
+                      style={{ padding: '0.3rem 0.55rem', borderRadius: '8px', opacity: currentQuestionIndex === 0 ? 0.35 : 1 }}
+                      title="Câu trước"
                     >
-                      <Bookmark size={14} fill={bookmarkedQuestions[currentQ.id] ? '#F59E0B' : 'none'} />
-                      <span>{bookmarkedQuestions[currentQ.id] ? 'Đã đánh dấu' : 'Đánh dấu xem lại'}</span>
+                      <ArrowLeft size={14} />
                     </button>
-                  )}
+
+                    <button
+                      onClick={() => setCurrentQuestionIndex(prev => Math.min(currentExam.questions.length - 1, prev + 1))}
+                      disabled={currentQuestionIndex === currentExam.questions.length - 1}
+                      className="btn btn-primary"
+                      style={{ padding: '0.3rem 0.55rem', borderRadius: '8px', opacity: currentQuestionIndex === currentExam.questions.length - 1 ? 0.35 : 1 }}
+                      title="Câu tiếp theo"
+                    >
+                      <ArrowRight size={14} />
+                    </button>
+                  </div>
                 </div>
 
                 {/* Question Content */}
                 <h4 style={{
-                  fontSize: '1.2rem',
+                  fontSize: 'clamp(1rem, 2.5vw, 1.15rem)',
                   fontWeight: 700,
-                  lineHeight: 1.5,
+                  lineHeight: 1.45,
                   color: 'var(--text-main)',
-                  marginBottom: '1.5rem'
+                  marginBottom: '1rem'
                 }}>
                   {currentQ.question}
                 </h4>
 
-                {/* Options List */}
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '2rem' }}>
+                {/* Options List (Compact & Touch-Friendly) */}
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.55rem', marginBottom: '1.15rem' }}>
                   {currentQ.options.map((opt, idx) => {
                     const isSelected = currentAnswer === idx;
                     const isCorrect = currentQ.correctIndex === idx;
@@ -615,9 +636,9 @@ export default function TheoryExam() {
                         style={{
                           display: 'flex',
                           alignItems: 'center',
-                          gap: '1rem',
-                          padding: '1rem 1.25rem',
-                          borderRadius: '12px',
+                          gap: '0.75rem',
+                          padding: '0.65rem 0.9rem',
+                          borderRadius: '10px',
                           background: bg,
                           border: border,
                           cursor: isSubmitted ? 'default' : 'pointer',
@@ -626,33 +647,33 @@ export default function TheoryExam() {
                         }}
                       >
                         <div style={{
-                          width: '32px',
-                          height: '32px',
-                          borderRadius: '8px',
+                          width: '28px',
+                          height: '28px',
+                          borderRadius: '6px',
                           background: indicatorBg,
                           color: indicatorColor,
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
                           fontWeight: 800,
-                          fontSize: '0.9rem',
+                          fontSize: '0.85rem',
                           flexShrink: 0
                         }}>
                           {idx + 1}
                         </div>
-                        <div style={{ fontSize: '0.96rem', fontWeight: 600, lineHeight: 1.45, flex: 1 }}>
+                        <div style={{ fontSize: '0.92rem', fontWeight: 600, lineHeight: 1.4, flex: 1 }}>
                           {opt}
                         </div>
                         {isSubmitted && isCorrect && (
-                          <div style={{ color: 'var(--accent-emerald)', display: 'flex', alignItems: 'center', gap: '0.3rem', fontWeight: 700, fontSize: '0.85rem' }}>
-                            <CheckCircle2 size={18} />
-                            <span>Đáp án đúng</span>
+                          <div style={{ color: 'var(--accent-emerald)', display: 'flex', alignItems: 'center', gap: '0.25rem', fontWeight: 700, fontSize: '0.8rem', flexShrink: 0 }}>
+                            <CheckCircle2 size={16} />
+                            <span>Đúng</span>
                           </div>
                         )}
                         {isSubmitted && isSelected && !isCorrect && (
-                          <div style={{ color: '#EF4444', display: 'flex', alignItems: 'center', gap: '0.3rem', fontWeight: 700, fontSize: '0.85rem' }}>
-                            <XCircle size={18} />
-                            <span>Bạn đã chọn</span>
+                          <div style={{ color: '#EF4444', display: 'flex', alignItems: 'center', gap: '0.25rem', fontWeight: 700, fontSize: '0.8rem', flexShrink: 0 }}>
+                            <XCircle size={16} />
+                            <span>Đã chọn</span>
                           </div>
                         )}
                       </div>
@@ -660,50 +681,110 @@ export default function TheoryExam() {
                   })}
                 </div>
 
-                {/* Explanation Box (When Submitted or Practice Mode) */}
+                {/* Explanation Box (When Submitted) */}
                 {isSubmitted && (
                   <div style={{
-                    padding: '1.25rem',
-                    borderRadius: '12px',
+                    padding: '1rem',
+                    borderRadius: '10px',
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border-color)',
                     borderLeft: '4px solid var(--accent-emerald)',
-                    marginBottom: '1.5rem'
+                    marginBottom: '1rem'
                   }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', color: 'var(--accent-emerald)', fontWeight: 800, fontSize: '0.9rem', marginBottom: '0.4rem' }}>
-                      <HelpCircle size={17} />
-                      <span>Giải Thích Luật & Mẹo Ghi Nhớ Nhanh:</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--accent-emerald)', fontWeight: 800, fontSize: '0.85rem', marginBottom: '0.3rem' }}>
+                      <HelpCircle size={15} />
+                      <span>Giải Thích & Mẹo Thi:</span>
                     </div>
-                    <div style={{ fontSize: '0.9rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
+                    <div style={{ fontSize: '0.86rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
                       {currentQ.explanation}
                     </div>
                   </div>
                 )}
 
-                {/* Navigation Buttons */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '1rem', flexWrap: 'wrap' }}>
+                {/* Integrated Action Row Directly Under Options: Câu Trước | Nộp Bài / Kết Quả | Câu Sau */}
+                <div style={{
+                  display: 'grid',
+                  gridTemplateColumns: '1fr 1.2fr 1fr',
+                  gap: '0.45rem',
+                  alignItems: 'center'
+                }}>
                   <button
                     onClick={() => setCurrentQuestionIndex(prev => Math.max(0, prev - 1))}
                     disabled={currentQuestionIndex === 0}
                     className="btn btn-secondary"
-                    style={{ padding: '0.6rem 1.2rem', opacity: currentQuestionIndex === 0 ? 0.4 : 1 }}
+                    style={{
+                      padding: '0.65rem 0.5rem',
+                      fontSize: '0.84rem',
+                      borderRadius: '10px',
+                      opacity: currentQuestionIndex === 0 ? 0.35 : 1,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '0.3rem'
+                    }}
                   >
-                    <ArrowLeft size={16} />
+                    <ArrowLeft size={15} />
                     <span>Câu Trước</span>
                   </button>
 
-                  <div style={{ fontSize: '0.85rem', color: 'var(--text-light)', display: 'none' }} className="shortcut-hint">
-                    Dùng phím 1, 2, 3, 4 để chọn • Mũi tên để chuyển câu
-                  </div>
+                  {!isSubmitted ? (
+                    <button
+                      onClick={handleSubmitExam}
+                      className="btn btn-gold"
+                      style={{
+                        padding: '0.65rem 0.5rem',
+                        fontSize: '0.86rem',
+                        fontWeight: 800,
+                        borderRadius: '10px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.35rem'
+                      }}
+                    >
+                      <Send size={14} />
+                      <span>Nộp Bài Thi</span>
+                    </button>
+                  ) : (
+                    <button
+                      onClick={() => {
+                        const examEl = document.getElementById('theory-exam');
+                        if (examEl) examEl.scrollIntoView({ behavior: 'smooth' });
+                      }}
+                      className="btn btn-gold"
+                      style={{
+                        padding: '0.65rem 0.5rem',
+                        fontSize: '0.86rem',
+                        fontWeight: 800,
+                        borderRadius: '10px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        gap: '0.35rem'
+                      }}
+                    >
+                      <CheckCircle2 size={14} />
+                      <span>Xem Kết Quả</span>
+                    </button>
+                  )}
 
                   <button
                     onClick={() => setCurrentQuestionIndex(prev => Math.min(currentExam.questions.length - 1, prev + 1))}
                     disabled={currentQuestionIndex === currentExam.questions.length - 1}
                     className="btn btn-primary"
-                    style={{ padding: '0.6rem 1.2rem', opacity: currentQuestionIndex === currentExam.questions.length - 1 ? 0.4 : 1 }}
+                    style={{
+                      padding: '0.65rem 0.5rem',
+                      fontSize: '0.84rem',
+                      borderRadius: '10px',
+                      opacity: currentQuestionIndex === currentExam.questions.length - 1 ? 0.35 : 1,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      gap: '0.3rem'
+                    }}
                   >
-                    <span>Câu Tiếp Theo</span>
-                    <ArrowRight size={16} />
+                    <span>Câu Sau</span>
+                    <ArrowRight size={15} />
                   </button>
                 </div>
               </div>
