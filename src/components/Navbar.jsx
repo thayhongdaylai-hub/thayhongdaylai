@@ -8,7 +8,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
     { name: 'Khóa Học', href: '#courses' },
     { name: 'Nâng Hạng', href: '#upgrades' },
     { name: 'Ưu Điểm', href: '#about-teacher' },
-    { name: 'Thi Lý Thuyết', href: '#theory-exam' },
+    { name: 'Thi Thử Lý Thuyết', href: '#theory-exam' },
     { name: 'Lộ Trình', href: '#roadmap' },
     { name: 'Sân Tập', href: '#facilities' },
     { name: 'Đánh Giá', href: '#testimonials' },
