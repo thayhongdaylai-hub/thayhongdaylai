@@ -4,25 +4,25 @@ import { Star, Quote, Award, Sparkles, CheckCircle2 } from 'lucide-react';
 export default function Testimonials() {
   const reviews = [
     {
-      name: 'Nguyễn Văn Minh',
-      role: 'Học viên Bằng B (Số Sàn)',
-      avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80',
+      name: 'Nguyễn Thị Thuỳ Trang',
+      role: 'Học viên Bằng B ( Số Sàn )',
+      avatar: '/images/testimonials/nguyen_thi_thuy_trang.png',
       rating: 5,
       comment: 'Thầy Hồng dạy rất nhiệt tình và kiên nhẫn. Xe tập Vios đời mới chạy êm mát lạnh. Mình đăng ký gói B và đã thi đậu ngay lần đầu với điểm tuyệt đối 100/100 sa hình!',
       passedDate: 'Thi đậu tháng 01/2026'
     },
     {
       name: 'Trần Thị Thu Hà',
-      role: 'Học viên Bằng B (Số Tự Động)',
-      avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=150&q=80',
+      role: 'Học viên Bằng B ( Số Tự Động )',
+      avatar: '/images/testimonials/tran_thi_thu_ha.jpg',
       rating: 5,
       comment: 'Lúc đầu chưa biết lái xe ô tô em rất sợ dốc cầu và ghép xe. Nhưng Thầy Hồng 1 kèm 1 chỉ bảo tỉ mỉ nên em tự tin hẳn. Học phí trọn gói 100% đúng như cam kết!',
       passedDate: 'Thi đậu tháng 02/2026'
     },
     {
-      name: 'Lê Hoàng Anh',
-      role: 'Học viên Bằng Mô Tô A (PKL)',
-      avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
+      name: 'Lê Ngọc Khải',
+      role: 'Học viên Bằng Mô Tô A ( PKL )',
+      avatar: '/images/testimonials/le_ngoc_khai.webp',
       rating: 5,
       comment: 'Đăng ký bằng A ở đây cực kỳ nhanh gọn. Được tập trên xe côn tay chuẩn sân sát hạch, thầy chỉ cho mấy mẹo cua số 8 không bao giờ bị cán vạch. Rất hài lòng!',
       passedDate: 'Thi đậu tháng 01/2026'
