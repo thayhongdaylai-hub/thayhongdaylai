@@ -15,9 +15,21 @@ import Footer from './components/Footer';
 import RegisterModal from './components/RegisterModal';
 import TestModal from './components/TestModal';
 
+// Helper function to detect real-time day/night theme
+const getTimeBasedTheme = () => {
+  const hour = new Date().getHours();
+  // 06:00 to 17:59 -> Light Mode (Sáng)
+  // 18:00 to 05:59 -> Dark Mode (Tối)
+  return (hour >= 6 && hour < 18) ? 'light' : 'dark';
+};
+
 export default function App() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('thayhong_theme') || 'light';
+    const saved = localStorage.getItem('thayhong_theme');
+    if (saved === 'light' || saved === 'dark') {
+      return saved;
+    }
+    return getTimeBasedTheme();
   });
 
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
@@ -26,11 +38,25 @@ export default function App() {
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('thayhong_theme', theme);
   }, [theme]);
 
+  // Check real-time clock periodically if user hasn't explicitly locked a manual preference
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const saved = localStorage.getItem('thayhong_theme');
+      if (!saved) {
+        setTheme(getTimeBasedTheme());
+      }
+    }, 60000); // check every 1 minute
+    return () => clearInterval(interval);
+  }, []);
+
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
+    setTheme(prev => {
+      const next = prev === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('thayhong_theme', next);
+      return next;
+    });
   };
 
   const handleOpenRegister = (details = null) => {

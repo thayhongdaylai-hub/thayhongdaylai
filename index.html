@@ -4,13 +4,27 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trung Tâm Đào Tạo & Sát Hạch Lái Xe Việt Nam | Tuyển Sinh A1, A2, B1, B2, C</title>
-    <meta name="description" content="Trung tâm đào tạo lái xe ô tô và xe máy uy tín hàng đầu. Học phí trọn gói minh bạch, tỷ lệ đậu 98%, sân tập đạt chuẩn ISO, hỗ trợ trả góp 0%." />
+    <title>THẦY HỒNG DẠY LÁI | Đào Tạo Lái Xe Ô Tô & Xe Máy Chuẩn GTVT</title>
+    <meta name="description" content="Thầy Hồng Dạy Lái - Đào tạo lái xe ô tô và xe máy chuẩn GTVT tại Hà Nội & Bắc Ninh. Hướng dẫn tận tâm 1-kèm-1, học phí trọn gói minh bạch 100%, tỷ lệ thi đỗ 99%." />
     <!-- Google Fonts: Google Sans & Quicksand (Google Sand) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&family=DM+Sans:ital,opsz,wght@0,9..40,400..800;1,9..40,400..800&family=Open+Sans:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('thayhong_theme');
+          if (saved === 'light' || saved === 'dark') {
+            document.documentElement.setAttribute('data-theme', saved);
+          } else {
+            var hour = new Date().getHours();
+            var autoTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', autoTheme);
+          }
+        } catch (e) {}
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

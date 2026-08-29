@@ -10,16 +10,12 @@ export default function FAQ() {
       a: 'Bạn chỉ cần mang theo bản gốc hoặc ảnh chụp CCCD/CMND (còn hạn sử dụng). Thầy Hồng Dạy Lái sẽ hỗ trợ bạn chụp ảnh 3x4 đúng chuẩn GTVT và hướng dẫn bạn hoàn thiện hồ sơ trọn gói nhanh chóng.'
     },
     {
-      q: 'Học phí tại trung tâm có thực sự trọn gói 100% không? Có phát sinh phụ phí không?',
-      a: 'Cam kết 100% học phí trên hợp đồng là trọn gói cuối cùng! Đã bao gồm: lệ phí hồ sơ GTVT, khám sức khỏe, tài liệu học, giờ chạy DAT 800km, xe chip cảm ứng sa hình, xăng xe và tiền công giảng viên. Nếu phát sinh bất kỳ khoản phí ngoài hợp đồng, trung tâm hoàn tiền 200%.'
+      q: 'Học phí tại Thầy Hồng Dạy Lái có thực sự trọn gói 100% không? Có phát sinh phụ phí không?',
+      a: 'Cam kết 100% học phí trên hợp đồng là trọn gói cuối cùng! Đã bao gồm: lệ phí hồ sơ GTVT, khám sức khỏe, tài liệu học, giờ chạy DAT 800km, xe chip cảm ứng sa hình, xăng xe và tiền công giảng viên. Nếu phát sinh bất kỳ khoản phí ngoài hợp đồng, Thầy Hồng Dạy Lái sẵn sàng hoàn tiền 200%.'
     },
     {
       q: 'Tôi bận làm việc hành chính từ Thứ 2 đến Thứ 6 thì có sắp xếp học được không?',
       a: 'Hoàn toàn được! Lịch học thực hành 1-Thầy-1-Trò cực kỳ linh hoạt từ 7h00 sáng đến 20h00 tối tất cả các ngày trong tuần (bao gồm Thứ 7 & Chủ Nhật). Học viên được tự do chọn khung giờ rảnh phù hợp với công việc.'
-    },
-    {
-      q: 'Phương thức thanh toán học phí như thế nào? Có trả góp không?',
-      a: 'Trung tâm hỗ trợ chia học phí làm 2 - 3 đợt đóng hoặc hỗ trợ trả góp 0% lãi suất. Đợt 1 bạn chỉ cần đóng từ 3.000.000đ để nộp hồ sơ lên Sở GTVT và bắt đầu xếp lớp học ngay.'
     },
     {
       q: 'Chưa từng chạm vào vô lăng ô tô thì học có khó không? Tỷ lệ đậu thế nào?',

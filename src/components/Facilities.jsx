@@ -4,21 +4,21 @@ import { MapPin, ShieldCheck, CheckCircle2, Sparkles } from 'lucide-react';
 export default function Facilities() {
   const facilities = [
     {
-      title: 'Sân Tập Sa Hình Chuẩn ISO 10.000m²',
+      title: 'Sân Tập Sa Hình Chuẩn ISO',
       description: 'Sân tập thiết kế 100% giống sân thi sát hạch chính thức của Sở GTVT với đầy đủ 11 bài thi sa hình (Vòng số 8, Ghép xe dọc, Ghép xe ngang, Dừng xe dốc cầu...).',
-      image: '/images/hero_banner.jpg',
-      tags: ['Sân thi chuẩn ISO', 'Xe đời mới máy lạnh', 'Đầy đủ 11 bài thi']
+      image: '/images/facilities/san-tap-sa-hinh.jpeg',
+      tags: ['Sân thi chuẩn ISO', 'Xe thi sát hạch', 'Đầy đủ 11 bài thi']
     },
     {
       title: 'Sân Tập Xe Máy & Mô Tô Phân Khối Lớn (A1 - A2)',
       description: 'Đầy đủ xe số, xe tay ga và xe mô tô phân khối lớn (Rebel, Z300, Honda SH) để học viên luyện tập kỹ năng cua vòng số 8 mượt mà.',
-      image: '/images/motorcycle_course.jpg',
-      tags: ['Vòng số 8 cảm ứng', 'Đủ xe tay ga & côn tay', 'Bảo hộ an toàn']
+      image: '/images/facilities/san-tap-xe-may.jpg',
+      tags: ['Vòng số 8 cảm ứng', 'Đủ xe tay ga & tay côn', 'Bảo hộ an toàn']
     },
     {
       title: 'Phòng Học Cabin Mô Phỏng 3D Hiện Đại',
       description: 'Trang bị buồng lái cabin mô phỏng 3D độ nét cao với vô lăng cảm ứng lực, giúp học viên thực hành lái xe trong điều kiện mưa bão, sương mù, đường núi.',
-      image: '/images/simulator_facility.jpg',
+      image: '/images/facilities/phong-hoc-cabin.jpg',
       tags: ['Mô phỏng 3D chuẩn GTVT', 'Vô lăng phản hồi lực', '120 Tình huống giao thông']
     }
   ];
@@ -39,7 +39,7 @@ export default function Facilities() {
             Hệ Thống <span className="text-gradient">Sân Tập & Xe Thực Hành</span>
           </h2>
           <p className="section-subtitle">
-            Học viên được thực hành trên dàn xe đời mới trang bị máy lạnh 100% và hệ thống sân tập sát hạch tiêu chuẩn Bộ GTVT.
+            Học viên được thực hành trên dàn xe tiêu chuẩn của Sân Thi Sát Hạch và Hệ Thống Sân Tập Sát Hạch Tiêu Chuẩn Bộ GTVT.
           </p>
         </div>
 
