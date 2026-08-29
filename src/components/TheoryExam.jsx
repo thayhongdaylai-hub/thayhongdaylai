@@ -608,11 +608,13 @@ export default function TheoryExam() {
 
                 {/* Question Content */}
                 <h4 style={{
-                  fontSize: 'clamp(1.05rem, 2.8vw, 1.22rem)',
+                  fontSize: 'clamp(1.02rem, 2.7vw, 1.2rem)',
                   fontWeight: 700,
                   lineHeight: 1.48,
                   color: 'var(--text-main)',
-                  marginBottom: '1.15rem'
+                  marginBottom: '1.15rem',
+                  wordBreak: 'break-word',
+                  overflowWrap: 'break-word'
                 }}>
                   {currentQ.question}
                 </h4>
@@ -937,12 +939,24 @@ export default function TheoryExam() {
       <style>{`
         @media (max-width: 900px) {
           .exam-grid-responsive {
-            grid-template-columns: 1fr !important;
-            gap: 1.5rem !important;
+            grid-template-columns: 100% !important;
+            width: 100% !important;
+            gap: 1.25rem !important;
           }
           .exam-main-card {
-            padding: 1.25rem 1rem !important;
-            border-radius: 16px !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            background: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+            width: 100% !important;
+          }
+          .exam-question-card {
+            width: 100% !important;
+            max-width: 100% !important;
+            box-sizing: border-box !important;
+            padding: 1.15rem 0.85rem !important;
+            margin: 0 !important;
           }
         }
         @media (max-width: 600px) {
