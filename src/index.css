@@ -509,4 +509,25 @@ input, select, textarea {
     color: #0F172A;
     font-weight: 900;
   }
+
+  /* Full-width spacious Theory Exam on Mobile */
+  #theory-exam .container {
+    padding: 0 0.5rem !important;
+  }
+
+  .exam-main-card {
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+  }
+
+  .exam-grid-responsive {
+    gap: 1.25rem !important;
+  }
+
+  .exam-question-card {
+    padding: 1.25rem 0.9rem !important;
+    border-radius: 14px !important;
+  }
 }

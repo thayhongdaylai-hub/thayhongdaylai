@@ -511,15 +511,25 @@ export default function TheoryExam() {
             className="exam-grid-responsive"
             >
               {/* LEFT: CURRENT QUESTION PANEL */}
-              <div style={{
+              <div className="exam-question-card" style={{
                 background: 'var(--bg-input)',
                 borderRadius: '16px',
-                padding: 'clamp(0.75rem, 2vw, 1.35rem)',
-                border: '1px solid var(--border-color)'
+                padding: 'clamp(0.85rem, 2.5vw, 1.5rem)',
+                border: '1px solid var(--border-color)',
+                width: '100%',
+                boxSizing: 'border-box'
               }}>
                 {/* Question Header with Quick Flip Arrows */}
-                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.95rem', flexWrap: 'wrap', gap: '0.45rem' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <div style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  marginBottom: '1rem',
+                  flexWrap: 'wrap',
+                  gap: '0.45rem',
+                  width: '100%'
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', flexWrap: 'wrap' }}>
                     <span style={{
                       display: 'inline-flex',
                       alignItems: 'center',
@@ -529,7 +539,8 @@ export default function TheoryExam() {
                       background: 'var(--accent-emerald)',
                       color: '#FFFFFF',
                       fontSize: '0.86rem',
-                      fontWeight: 800
+                      fontWeight: 800,
+                      whiteSpace: 'nowrap'
                     }}>
                       Câu {currentQuestionIndex + 1}/{currentExam.questions.length}
                     </span>
@@ -541,7 +552,8 @@ export default function TheoryExam() {
                         border: '1px solid rgba(239, 68, 68, 0.3)',
                         fontSize: '0.75rem',
                         fontWeight: 800,
-                        padding: '0.25rem 0.55rem'
+                        padding: '0.25rem 0.55rem',
+                        whiteSpace: 'nowrap'
                       }}>
                         <AlertTriangle size={13} />
                         ĐIỂM LIỆT
@@ -550,19 +562,20 @@ export default function TheoryExam() {
                   </div>
 
                   {/* Bookmark & Quick Flip Arrows on Top */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', flexShrink: 0 }}>
                     {!isSubmitted && (
                       <button
                         onClick={toggleBookmark}
                         className="btn"
                         style={{
-                          padding: '0.35rem 0.65rem',
+                          padding: '0.35rem 0.6rem',
                           borderRadius: '8px',
                           background: bookmarkedQuestions[currentQ.id] ? 'rgba(245, 158, 11, 0.15)' : 'var(--bg-card)',
                           border: bookmarkedQuestions[currentQ.id] ? '1px solid #F59E0B' : '1px solid var(--border-color)',
                           color: bookmarkedQuestions[currentQ.id] ? '#D97706' : 'var(--text-muted)',
                           fontSize: '0.78rem',
-                          fontWeight: 700
+                          fontWeight: 700,
+                          whiteSpace: 'nowrap'
                         }}
                         title="Đánh dấu xem lại câu này"
                       >
