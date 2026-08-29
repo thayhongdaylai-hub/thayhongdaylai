@@ -180,6 +180,32 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
             </a>
           </div>
 
+          {/* Mobile Header Quick Hotline Button (always visible on phone header) */}
+          <a
+            href="https://zalo.me/0983406221"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mobile-header-hotline"
+            title="Gọi Hotline Thầy Hồng: 0983.406.221"
+            style={{
+              display: 'none',
+              alignItems: 'center',
+              gap: '0.35rem',
+              padding: '0.45rem 0.75rem',
+              borderRadius: '8px',
+              background: 'var(--primary-tint)',
+              border: '1px solid var(--border-highlight)',
+              color: 'var(--primary)',
+              fontSize: '0.82rem',
+              fontWeight: 800,
+              textDecoration: 'none',
+              whiteSpace: 'nowrap'
+            }}
+          >
+            <Phone size={13} color="var(--primary)" />
+            <span>0983.406.221</span>
+          </a>
+
           {/* Register CTA Button */}
           <button
             onClick={() => onOpenRegister()}
@@ -226,7 +252,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           borderBottom: '1px solid var(--border-color)',
           display: 'flex',
           flexDirection: 'column',
-          gap: '0.5rem',
+          gap: '0.55rem',
           boxShadow: 'var(--shadow-lg)'
         }}>
           {/* Mobile Theme Switch Row */}
@@ -234,13 +260,13 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
-            padding: '0.6rem 0.85rem',
+            padding: '0.65rem 0.85rem',
             background: 'var(--bg-main)',
             borderRadius: '10px',
             border: '1px solid var(--border-color)',
             marginBottom: '0.25rem'
           }}>
-            <span style={{ fontSize: '0.9rem', fontWeight: 700, color: 'var(--text-main)' }}>
+            <span style={{ fontSize: '0.88rem', fontWeight: 700, color: 'var(--text-main)' }}>
               Giao diện: {theme === 'dark' ? '🌙 Chế độ Tối' : '☀️ Chế độ Sáng'}
             </span>
             <button
@@ -276,54 +302,92 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
             </a>
           ))}
 
-          {/* Quick Contact Buttons on Mobile */}
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.6rem', marginTop: '0.5rem' }}>
-            <a
-              href="https://zalo.me/0983406221"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.4rem',
-                padding: '0.75rem',
-                borderRadius: '10px',
-                background: 'var(--primary-tint)',
-                border: '1px solid var(--border-highlight)',
-                color: 'var(--primary)',
-                fontSize: '0.88rem',
-                fontWeight: 700,
-                textDecoration: 'none'
-              }}
-            >
-              <Phone size={15} color="var(--primary)" />
-              <span>Zalo 0983</span>
-            </a>
-            <a
-              href="https://zalo.me/0336611194"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                gap: '0.4rem',
-                padding: '0.75rem',
-                borderRadius: '10px',
-                background: 'var(--bg-main)',
-                border: '1px solid var(--border-color)',
-                color: 'var(--text-main)',
-                fontSize: '0.88rem',
-                fontWeight: 700,
-                textDecoration: 'none'
-              }}
-            >
-              <Phone size={15} color="var(--accent-gold)" />
-              <span>Zalo 0336</span>
-            </a>
+          {/* Dedicated High-Visibility Phone Numbers Section on Mobile */}
+          <div style={{
+            padding: '0.85rem',
+            background: 'var(--bg-main)',
+            border: '1.5px solid var(--border-color)',
+            borderRadius: '12px',
+            marginTop: '0.35rem'
+          }}>
+            <div style={{ fontSize: '0.78rem', fontWeight: 800, color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em', marginBottom: '0.6rem' }}>
+              📞 Hotline & Zalo Tư Vấn Trực Tiếp:
+            </div>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+              <a
+                href="https://zalo.me/0983406221"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '0.7rem 0.9rem',
+                  borderRadius: '10px',
+                  background: 'var(--primary-tint)',
+                  border: '1px solid var(--border-highlight)',
+                  color: 'var(--primary)',
+                  fontWeight: 800,
+                  fontSize: '0.95rem',
+                  textDecoration: 'none'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+                  <Phone size={16} color="var(--primary)" />
+                  <span>Thầy Hồng:</span>
+                </div>
+                <strong style={{ fontSize: '1.02rem', letterSpacing: '0.02em' }}>0983.406.221</strong>
+              </a>
+
+              <a
+                href="https://zalo.me/0336611194"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  padding: '0.7rem 0.9rem',
+                  borderRadius: '10px',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-color)',
+                  color: 'var(--text-main)',
+                  fontWeight: 800,
+                  fontSize: '0.95rem',
+                  textDecoration: 'none'
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
+                  <Phone size={16} color="var(--accent-gold)" />
+                  <span>Tư Vấn Hồ Sơ:</span>
+                </div>
+                <strong style={{ fontSize: '1.02rem', letterSpacing: '0.02em' }}>0336.611.194</strong>
+              </a>
+
+              <a
+                href="https://www.facebook.com/share/1GuWF1te7x/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.45rem',
+                  padding: '0.65rem',
+                  borderRadius: '10px',
+                  background: '#1877F2',
+                  color: '#FFFFFF',
+                  fontWeight: 700,
+                  fontSize: '0.88rem',
+                  textDecoration: 'none'
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#FFFFFF">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>FANPAGE FACEBOOK CHÍNH THỨC</span>
+              </a>
+            </div>
           </div>
 
           <button
@@ -332,7 +396,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               onOpenRegister();
             }}
             className="btn btn-gold"
-            style={{ width: '100%', padding: '0.85rem', marginTop: '0.35rem', fontSize: '0.95rem' }}
+            style={{ width: '100%', padding: '0.9rem', marginTop: '0.35rem', fontSize: '0.95rem' }}
           >
             ĐĂNG KÝ HỌC NGAY • NHẬN VOUCHER
           </button>
@@ -344,9 +408,13 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
         @media (max-width: 992px) {
           .desktop-nav, .hotline-btn { display: none !important; }
           .mobile-menu-btn { display: flex !important; }
+          .mobile-header-hotline { display: flex !important; }
         }
         @media (max-width: 600px) {
           .desktop-cta-btn { display: none !important; }
+        }
+        @media (max-width: 480px) {
+          .mobile-header-hotline span { font-size: 0.78rem !important; }
         }
       `}</style>
     </header>

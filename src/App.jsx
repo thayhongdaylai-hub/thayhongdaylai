@@ -92,47 +92,37 @@ export default function App() {
       </main>
       <Footer />
 
-      {/* Sticky Mobile Floating Action Bar */}
+      {/* Sticky Mobile Floating Action Bar with Clear Phone Numbers */}
       <div className="mobile-bottom-bar">
-        <a href="https://zalo.me/0983406221" target="_blank" rel="noopener noreferrer" className="mobile-bottom-btn" title="Gọi / Nhắn Zalo Thầy Hồng">
-          <Phone size={18} color="var(--primary)" />
-          <span>Gọi Thầy</span>
-        </a>
-
         <a
           href="https://zalo.me/0983406221"
           target="_blank"
           rel="noopener noreferrer"
           className="mobile-bottom-btn"
-          title="Chat Zalo cùng Thầy Hồng"
+          title="Gọi / Zalo Thầy Hồng: 0983.406.221"
         >
-          <MessageSquare size={18} color="var(--primary)" />
-          <span>Chat Zalo</span>
+          <Phone size={17} color="var(--primary)" />
+          <span style={{ fontWeight: 800 }}>0983.406.221</span>
         </a>
 
-        <button
-          onClick={() => {
-            const examSection = document.getElementById('theory-exam');
-            if (examSection) {
-              examSection.scrollIntoView({ behavior: 'smooth' });
-            } else {
-              setIsTestOpen(true);
-            }
-          }}
+        <a
+          href="https://zalo.me/0336611194"
+          target="_blank"
+          rel="noopener noreferrer"
           className="mobile-bottom-btn"
-          title="Luyện thi lý thuyết sát hạch"
+          title="Zalo Tư Vấn: 0336.611.194"
         >
-          <BookOpen size={18} color="var(--accent-gold)" />
-          <span>Thi Thử</span>
-        </button>
+          <MessageSquare size={17} color="var(--primary)" />
+          <span style={{ fontWeight: 800 }}>0336.611.194</span>
+        </a>
 
         <button
           onClick={() => handleOpenRegister({ note: 'Đăng ký nhanh từ điện thoại' })}
           className="mobile-bottom-btn highlight"
-          title="Đăng ký nhận voucher 1 triệu"
+          title="Đăng ký nhận voucher 1.000.000đ"
         >
-          <Gift size={18} color="#FFFFFF" />
-          <span>Nhận Ưu Đãi</span>
+          <Sparkles size={16} color="#0F172A" />
+          <span style={{ fontWeight: 900 }}>ĐĂNG KÝ HỌC</span>
         </button>
       </div>
 
