@@ -1,10 +1,10 @@
 import React from 'react';
-import { ShieldCheck, Phone, Mail, MapPin } from 'lucide-react';
+import { ShieldCheck, Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 export default function Footer() {
   return (
     <footer style={{
-      background: 'var(--bg-card-hover)',
+      background: 'var(--bg-card)',
       borderTop: '1px solid var(--border-color)',
       padding: '4.5rem 0 2rem 0',
       color: 'var(--text-muted)'
@@ -12,8 +12,8 @@ export default function Footer() {
       <div className="container">
         <div className="footer-grid" style={{
           display: 'grid',
-          gridTemplateColumns: '1.3fr 1fr 1fr 1.4fr',
-          gap: '2.5rem',
+          gridTemplateColumns: '1.4fr 1fr 1fr 1.2fr',
+          gap: '3rem',
           marginBottom: '3.5rem'
         }}>
           
@@ -29,16 +29,21 @@ export default function Footer() {
                 alignItems: 'center',
                 justifyContent: 'center'
               }}>
-                <ShieldCheck size={26} color="#FFFFFF" />
+                <ShieldCheck size={26} color="#051A10" />
               </div>
-              <span style={{ fontFamily: "'Quicksand', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
+              <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: '1.4rem', fontWeight: 800, color: 'var(--text-main)' }}>
                  THẦY HỒNG<span className="text-gradient"> DẠY LÁI</span>
               </span>
             </div>
 
             <p style={{ fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '1.25rem' }}>
-              Đào tạo lái xe chuyên nghiệp & tận tâm. Đồng hành cùng học viên từ lý thuyết đến thực hành thực chiến trên mọi cung đường.
+              Trung tâm đào tạo & sát hạch lái xe hàng đầu Việt Nam. Cấp giấy phép đào tạo số 128/GP-GTVT do Sở Giao Thông Vận Tải thẩm định.
             </p>
+
+            <div style={{ fontSize: '0.85rem', color: 'var(--text-light)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <Clock size={16} color="var(--accent-emerald)" />
+              <span>Thời gian làm việc: 7h30 - 20h00 (Cả T7 & CN)</span>
+            </div>
           </div>
 
           {/* Col 2: Quick Links */}
@@ -47,11 +52,10 @@ export default function Footer() {
               Các Hạng Đào Tạo
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem' }}>
-              <li><a href="#courses">Hạng Xe Máy A1 (Xe Phổ Thông 125cc)</a></li>
-              <li><a href="#courses">Hạng Mô Tô (Xe PKL, Xe Tay Côn)</a></li>
-              <li><a href="#courses">Ô TÔ Hạng B (Số Tự Động & Số Sàn)</a></li>
-              <li><a href="#courses">Ô TÔ Hạng C1 (Xe Tải Trọng Tải Lớn)</a></li>
-              <li><a href="#upgrades" style={{ color: 'var(--accent-blue)', fontWeight: 700 }}>Nâng Hạng GPLX (C, D1, D2, D, CE)</a></li>
+              <li><a href="#courses">Xe Máy Hạng A (Tay Côn / SH) - 3 Triệu</a></li>
+              <li><a href="#courses">Xe Máy Hạng A1 (125cc Trở Xuống) - 1.3 Triệu</a></li>
+              <li><a href="#courses">Ô tô Hạng B - 19 Triệu</a></li>
+              <li><a href="#courses">Ô tô Hạng C1 - 24 Triệu</a></li>
             </ul>
           </div>
 
@@ -61,38 +65,38 @@ export default function Footer() {
               Hỗ Trợ Học Viên
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.9rem' }}>
-              <li><a href="#theory-exam" style={{ color: 'var(--accent-emerald)', fontWeight: 700 }}>Thi thử lý thuyết 250 & 600 câu (Mới)</a></li>
               <li><a href="#roadmap">Lộ trình đào tạo chuẩn GTVT</a></li>
-              <li><a href="#facilities">Hệ thống sân tập</a></li>
+              <li><a href="#facilities">Hệ thống sân tập chuẩn ISO</a></li>
               <li><a href="#faq">Câu hỏi thường gặp</a></li>
+              <li><a href="#">Chính sách hoàn tiền 100%</a></li>
             </ul>
           </div>
 
           {/* Col 4: Contact & Locations */}
           <div>
             <h4 style={{ fontSize: '1.05rem', color: 'var(--text-main)', marginBottom: '1.25rem' }}>
-              Địa Chỉ & Liên Hệ
+              Trụ Sở & Sân Tập
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.85rem', fontSize: '0.88rem' }}>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
                 <MapPin size={18} color="var(--accent-emerald)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span><strong>Hà Nội:</strong> Số 14 Ngõ 190/10 Phố Thượng Thanh, Long Biên, Hà Nội.</span>
+                <span><strong>Hà Nội:</strong> 304 Nguyễn Văn Cừ / Long Biên</span>
+              </li>
+              <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
+                <MapPin size={18} color="var(--accent-emerald)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
+                <span><strong>Hà Nội:</strong> Số 14 / Ngách 190/11 / Phường Việt Hưng / Long Biên</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem' }}>
                 <MapPin size={18} color="var(--accent-blue)" style={{ flexShrink: 0, marginTop: '0.2rem' }} />
-                <span><strong>Bắc Ninh:</strong> Phố Dương Lôi, Phường Từ Sơn, Tỉnh Bắc Ninh.</span>
+                <span><strong>Bắc Ninh:</strong> Phố Dương Lôi / Phường Từ Sơn</span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Phone size={18} color="var(--accent-emerald)" style={{ flexShrink: 0 }} />
-                <span>SĐT 1: <a href="tel:0983406221" style={{ fontWeight: 800, color: 'var(--text-main)' }}>0983.406.221</a> (Thầy Hồng)</span>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
-                <Phone size={18} color="var(--accent-emerald)" style={{ flexShrink: 0 }} />
-                <span>SĐT 2: <a href="tel:0336611194" style={{ fontWeight: 800, color: 'var(--text-main)' }}>0336.611.194</a> (Thầy Hồng)</span>
+                <span>Hotline 24/7: <strong>0988.123.456</strong></span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.6rem' }}>
                 <Mail size={18} color="var(--accent-blue)" style={{ flexShrink: 0 }} />
-                <span>Email: <a href="mailto:thayhongdaylai@gmail.com" style={{ color: 'var(--accent-blue)', fontWeight: 600 }}>thayhongdaylai@gmail.com</a></span>
+                 <span>Email: tuyensinh@thayhongdaylai.edu.vn</span>
               </li>
             </ul>
           </div>
@@ -110,12 +114,12 @@ export default function Footer() {
           fontSize: '0.85rem'
         }}>
           <div>
-             © 2026 Thầy Hồng Dạy Lái. Tất cả quyền được bảo lưu.
+             © 2026 Trung Tâm Đào Tạo Lái Xe Thầy Hồng Dạy Lái. Tất cả quyền được bảo lưu.
           </div>
           <div style={{ display: 'flex', gap: '1.5rem', color: 'var(--text-light)' }}>
-            <a href="#">Điều khoản dịch vụ</a>
+            <a href="#">Điều khoản sử dụng</a>
             <a href="#">Chính sách bảo mật</a>
-            <a href="#courses">Bảng giá đào tạo</a>
+            <a href="#">Giấy phép GTVT</a>
           </div>
         </div>
       </div>

@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
 import { ShieldCheck, Moon, Sun, Phone, Menu, X, ChevronRight } from 'lucide-react';
 
-export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
+export default function Navbar({ theme, toggleTheme, onOpenRegister, onOpenTestModal }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Gói học & Học phí', href: '#courses' },
-    { name: 'Nâng hạng GPLX', href: '#upgrades' },
-    { name: 'Thi thử lý thuyết', href: '#theory-exam', isNew: true },
-    { name: 'Lộ trình đào tạo', href: '#roadmap' },
-    { name: 'Sân tập chuẩn ISO', href: '#facilities' },
-    { name: 'Đánh giá học viên', href: '#testimonials' },
-    { name: 'Hỏi đáp (FAQ)', href: '#faq' },
+    { name: 'Gói Học & Học Phí', href: '#courses' },
+    { name: 'Lộ Trình Đào Tạo', href: '#roadmap' },
+    { name: 'Sân Tập Chuẩn ISO', href: '#facilities' },
+    { name: 'Đánh Giá Học Viên', href: '#testimonials' },
+    { name: 'Hỏi Đáp (FAQ)', href: '#faq' },
   ];
 
   return (
@@ -20,8 +18,8 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
       top: 0,
       zIndex: 100,
       background: 'var(--bg-nav)',
-      backdropFilter: 'blur(20px)',
-      WebkitBackdropFilter: 'blur(20px)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
       borderBottom: '1px solid var(--border-color)',
       transition: 'all 0.3s ease'
     }}>
@@ -29,9 +27,9 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'space-between',
-        minHeight: '72px',
-        paddingTop: '0.35rem',
-        paddingBottom: '0.35rem'
+        minHeight: '84px',
+        paddingTop: '0.5rem',
+        paddingBottom: '0.5rem'
       }}>
         {/* Brand Logo */}
         <a
@@ -40,133 +38,160 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
           style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.75rem',
+            gap: '0.85rem',
             textDecoration: 'none',
             flexShrink: 0
           }}
         >
           <div className="brand-icon-box" style={{
-            width: '40px',
-            height: '40px',
-            borderRadius: '12px',
+            width: '46px',
+            height: '46px',
+            borderRadius: '14px',
             background: 'var(--gradient-emerald)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
+            boxShadow: '0 4px 16px var(--accent-emerald-glow)',
             flexShrink: 0,
             transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
           }}>
-            <ShieldCheck size={22} color="#FFFFFF" strokeWidth={2.5} />
+            <ShieldCheck size={26} color="#051A10" strokeWidth={2.5} />
           </div>
           <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
             <div style={{
-              fontFamily: "'Quicksand', sans-serif",
-              fontSize: '1.2rem',
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: '1.35rem',
               fontWeight: 800,
               letterSpacing: '-0.02em',
               lineHeight: 1.15,
               whiteSpace: 'nowrap',
               display: 'flex',
               alignItems: 'center',
-              gap: '0.3rem'
+              gap: '0.35rem'
             }}>
               <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
               <span className="text-gradient">DẠY LÁI</span>
             </div>
             <div style={{
-              fontSize: '0.65rem',
-              fontWeight: 600,
-              color: 'var(--text-light)',
-              letterSpacing: '0.06em',
+              fontSize: '0.68rem',
+              fontWeight: 700,
+              color: 'var(--accent-emerald)',
+              textTransform: 'uppercase',
+              letterSpacing: '0.1em',
               lineHeight: 1.2,
-              marginTop: '1px',
-              whiteSpace: 'nowrap'
+              marginTop: '2px',
+              whiteSpace: 'nowrap',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.35rem'
             }}>
+              <span style={{
+                width: '6px',
+                height: '6px',
+                borderRadius: '50%',
+                backgroundColor: 'var(--accent-emerald)',
+                display: 'inline-block',
+                boxShadow: '0 0 8px var(--accent-emerald)'
+              }}></span>
               TRUNG TÂM SÁT HẠCH GTVT
             </div>
           </div>
         </a>
 
-        {/* Desktop Nav */}
+        {/* Desktop Nav Links (2-Row Grid with Framed Cards) */}
         <nav className="desktop-nav desktop-nav-grid">
           {navLinks.map((link, idx) => (
-            <a key={idx} href={link.href} className="nav-link-card" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.35rem' }}>
-              <span>{link.name}</span>
-              {link.isNew && (
-                <span style={{
-                  fontSize: '0.62rem',
-                  fontWeight: 800,
-                  padding: '0.1rem 0.4rem',
-                  borderRadius: '9999px',
-                  background: 'var(--gradient-emerald)',
-                  color: '#FFFFFF',
-                  letterSpacing: '0.02em',
-                  lineHeight: 1.2
-                }}>
-                  MỚI
-                </span>
-              )}
+            <a
+              key={idx}
+              href={link.href}
+              className="nav-link-card"
+            >
+              {link.name}
             </a>
           ))}
         </nav>
 
-        {/* Right Actions */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-          {/* Theme Toggle */}
+        {/* Right Actions (Test CTA + Theme Switcher + Hotline + Register CTA) */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexShrink: 0 }}>
+          {/* Practice Test Button (Single line, no wrap) */}
+          <button
+            onClick={() => onOpenTestModal && onOpenTestModal()}
+            className="btn"
+            style={{
+              background: 'var(--accent-blue-glow)',
+              color: 'var(--accent-blue)',
+              border: '1px solid rgba(59, 130, 246, 0.4)',
+              padding: '0.65rem 1.1rem',
+              fontSize: '0.9rem',
+              fontWeight: 700,
+              whiteSpace: 'nowrap',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '0.45rem',
+              flexShrink: 0
+            }}
+          >
+            <span>Thi Thử Lý Thuyết</span>
+          </button>
+
+          {/* Theme Toggle Button */}
           <button
             onClick={toggleTheme}
             aria-label="Chuyển đổi giao diện"
             title={theme === 'dark' ? 'Chuyển sang giao diện Sáng' : 'Chuyển sang giao diện Tối'}
             style={{
-              width: '38px',
-              height: '38px',
-              borderRadius: '10px',
-              background: 'var(--bg-card-hover)',
+              width: '42px',
+              height: '42px',
+              borderRadius: '50%',
+              background: 'var(--bg-card)',
               border: '1px solid var(--border-color)',
               color: 'var(--text-main)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
               cursor: 'pointer',
+              flexShrink: 0,
               transition: 'all 0.25s ease'
             }}
           >
             {theme === 'dark' ? (
-              <Sun size={18} color="#F59E0B" />
+              <Sun size={20} color="#F59E0B" />
             ) : (
-              <Moon size={18} color="#5E6378" />
+              <Moon size={20} color="#3B82F6" />
             )}
           </button>
 
-          {/* Hotline */}
+          {/* Hotline Button */}
           <a
-            href="tel:0983406221"
+            href="tel:0988123456"
             className="hotline-btn"
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '0.45rem',
-              padding: '0.5rem 1rem',
-              borderRadius: '10px',
-              background: 'var(--bg-card-hover)',
+              gap: '0.5rem',
+              padding: '0.6rem 1.1rem',
+              borderRadius: '9999px',
+              background: 'var(--bg-card)',
               border: '1px solid var(--border-color)',
-              fontSize: '0.88rem',
-              fontWeight: 700,
-              color: 'var(--text-main)'
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              color: 'var(--text-main)',
+              whiteSpace: 'nowrap',
+              flexShrink: 0
             }}
           >
-            <Phone size={15} color="var(--accent-emerald)" />
-            <span>0983.406.221</span>
+            <Phone size={16} color="var(--accent-emerald)" />
+            <span>0988.123.456</span>
           </a>
 
-          {/* CTA */}
+          {/* Register CTA Button */}
           <button
             onClick={() => onOpenRegister()}
             className="btn btn-primary"
-            style={{ padding: '0.55rem 1.2rem', fontSize: '0.88rem' }}
+            style={{ padding: '0.65rem 1.4rem', fontSize: '0.9rem', whiteSpace: 'nowrap', flexShrink: 0 }}
           >
             <span>Tư Vấn Ngay</span>
-            <ChevronRight size={15} />
+            <ChevronRight size={16} color="#051A10" />
           </button>
 
           {/* Mobile Menu Button */}
@@ -181,20 +206,20 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               padding: '0.5rem'
             }}
           >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+            {mobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
           </button>
         </div>
       </div>
 
-      {/* Mobile Drawer */}
+      {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div style={{
           background: 'var(--bg-main)',
           borderBottom: '1px solid var(--border-color)',
-          padding: '1.25rem 1.5rem',
+          padding: '1.5rem',
           display: 'flex',
           flexDirection: 'column',
-          gap: '1rem'
+          gap: '1.25rem'
         }}>
           {navLinks.map((link, idx) => (
             <a
@@ -202,20 +227,12 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
               style={{
-                fontSize: '1rem',
+                fontSize: '1.05rem',
                 fontWeight: 600,
-                color: 'var(--text-main)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between'
+                color: 'var(--text-main)'
               }}
             >
-              <span>{link.name}</span>
-              {link.isNew && (
-                <span className="badge badge-emerald" style={{ fontSize: '0.7rem', padding: '0.2rem 0.5rem' }}>
-                  MỚI
-                </span>
-              )}
+              {link.name}
             </a>
           ))}
           <button
@@ -231,6 +248,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister }) {
         </div>
       )}
 
+      {/* Hide desktop nav on mobile via CSS media query style */}
       <style>{`
         @media (max-width: 992px) {
           .desktop-nav, .hotline-btn { display: none !important; }

@@ -1,39 +1,63 @@
 import React from 'react';
-import { FileText, Monitor, Car, Award, ChevronRight, Sparkles } from 'lucide-react';
+import { FileText, Monitor, Car, Award, CreditCard, Sparkles } from 'lucide-react';
 
 export default function Roadmap({ onOpenRegister }) {
   const steps = [
     {
       step: '01',
       title: 'Đăng Ký & Hoàn Thiện Hồ Sơ',
-      time: 'Ngay trong 24h',
+      time: 'Nộp Hồ Sơ Khai Giảng',
       icon: FileText,
       color: 'var(--accent-blue)',
-      description: 'Chỉ cần ảnh chụp CCCD 2 mặt. Trung tâm hỗ trợ chụp ảnh chân dung miễn phí & làm hồ sơ khám sức khỏe tận nơi.'
+      description: 'Chỉ cần ảnh chụp CCCD 2 mặt. Trung tâm hỗ trợ chụp ảnh chân dung miễn phí & làm hồ sơ nộp về trường.'
     },
     {
       step: '02',
-      title: 'Học Lý Thuyết & Cabin Mô Phỏng 3D',
-      time: 'Tuần 1 - Tuần 3',
+      title: 'Học Lý Thuyết Online : 120h',
+      time: 'Học Online 120h',
       icon: Monitor,
       color: 'var(--accent-emerald)',
-      description: 'Học qua App 600 câu chuẩn GTVT + 120 tình huống mô phỏng. Thực hành lái xe trên cabin 3D độ nét cao xử lý thời tiết xấu.'
+      description: 'Đào tạo lý thuyết linh hoạt qua hệ thống học trực tuyến 120 giờ chuẩn quy định GTVT.'
     },
     {
       step: '03',
-      title: 'Thực Hành DAT Đường Trường & Sa Hình',
-      time: 'Tuần 4 - Tuần 10',
-      icon: Car,
+      title: 'Học Lý Thuyết & Cabin Mô Phỏng 3D',
+      time: 'Lý Thuyết & Cabin',
+      icon: Monitor,
       color: 'var(--accent-orange)',
-      description: 'Hoàn thành 800km DAT đường trường gắn chip GPS. Luyện thành thạo 11 bài sa hình (Dừng xe ngang dốc, ghép xe dọc, ghép xe ngang...).'
+      description: 'Học qua App 600 câu chuẩn GTVT + 120 tình huống mô phỏng. Thực hành lái xe trên cabin 3D.'
     },
     {
       step: '04',
-      title: 'Thi Tốt Nghiệp & Thi Sát Hạch GTVT',
-      time: 'Tuần 12 - Tuần 14',
-      icon: Award,
+      title: 'Thực Hành DAT Đường Trường & Sa Hình - Đường Trường',
+      time: 'Thực Hành DAT',
+      icon: Car,
       color: 'var(--accent-emerald)',
-      description: 'Thi thử nghiệm trên xe cảm ứng chip để làm quen. Thi sát hạch chính thức dưới sự giám sát trực tiếp của Sở GTVT.'
+      description: 'Hoàn thành 710/810/825km DAT đường trường gắn chip GPS. Luyện thành thạo 11 bài sa hình (Dừng xe ngang dốc, ghép xe dọc, ghép xe ngang...).'
+    },
+    {
+      step: '05',
+      title: 'Thi Chứng Chỉ Tốt Nghiệp Kết Thúc Khóa Đào Tạo ( Thi Tốt Nghiệp )',
+      time: 'Thi Tốt Nghiệp',
+      icon: Award,
+      color: 'var(--accent-blue)',
+      description: 'Thi Lý Thuyết , Mô Phỏng , Đường Trường.'
+    },
+    {
+      step: '06',
+      title: 'Tổng ôn Thi Sa Hình , Thực Hành 2h Trên Xe Chip Tại Sân Thi.',
+      time: 'Ôn Thi Sa Hình',
+      icon: Car,
+      color: 'var(--accent-orange)',
+      description: 'Tổng ôn thi sa hình, thực hành 2 giờ trực tiếp trên xe chip sát hạch tại sân thi.'
+    },
+    {
+      step: '07',
+      title: 'Thi Sát Hạch GTVT & Cấp GPLX',
+      time: 'Sát Hạch GTVT',
+      icon: CreditCard,
+      color: 'var(--accent-emerald)',
+      description: 'Thi Sát Hạch Gồm 3 Phần : Thi Lý Thuyết , Sa Hình , Đường Trường. Cấp GPLX Điện Tử.'
     }
   ];
 
@@ -51,18 +75,18 @@ export default function Roadmap({ onOpenRegister }) {
             <span>Lộ Trình Chuẩn Sở GTVT</span>
           </div>
           <h2 className="section-title">
-            Lộ Trình Đào Tạo <span className="text-gradient">4 Bước Bài Bản</span>
+            Lộ Trình Đào Tạo <span className="text-gradient">7 Bước Bài Bản</span>
           </h2>
           <p className="section-subtitle">
-            Học viên được đồng hành 1-thầy-1-trò từ ngày nộp hồ sơ đến khi hoàn thành kỳ thi sát hạch.
+            Học viên được đồng hành 1-thầy-1-trò từ ngày nộp hồ sơ đến khi cầm tấm bằng lái trên tay.
           </p>
         </div>
 
-        {/* Vertical / Horizontal Roadmap Steps */}
+        {/* Vertical Roadmap Steps */}
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '1.5rem',
+          gap: '1.25rem',
           maxWidth: '900px',
           margin: '0 auto'
         }}>
@@ -73,15 +97,15 @@ export default function Roadmap({ onOpenRegister }) {
                 key={idx}
                 className="glass-card roadmap-card"
                 style={{
-                  padding: '1.75rem 2rem',
+                  padding: '1.5rem 2rem',
                   display: 'grid',
-                  gridTemplateColumns: '80px 1fr 160px',
+                  gridTemplateColumns: '70px 1fr',
                   alignItems: 'center',
-                  gap: '1.5rem',
+                  gap: '1.25rem',
                   position: 'relative'
                 }}
               >
-                {/* Step Number & Icon */}
+                {/* Step Icon */}
                 <div style={{ textAlign: 'center' }}>
                   <div style={{
                     width: '56px',
@@ -95,15 +119,15 @@ export default function Roadmap({ onOpenRegister }) {
                     margin: '0 auto',
                     boxShadow: 'var(--shadow-sm)'
                   }}>
-                    <StepIcon size={28} color={item.color} />
+                    <StepIcon size={26} color={item.color} />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.3rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.35rem' }}>
                     <span style={{
-                      fontSize: '0.8rem',
+                      fontSize: '0.82rem',
                       fontWeight: 800,
                       color: item.color,
                       letterSpacing: '0.05em'
@@ -113,7 +137,7 @@ export default function Roadmap({ onOpenRegister }) {
                     <span style={{
                       fontSize: '0.8rem',
                       fontWeight: 600,
-                      padding: '0.15rem 0.6rem',
+                      padding: '0.15rem 0.65rem',
                       borderRadius: '9999px',
                       background: 'var(--bg-card-hover)',
                       color: 'var(--text-muted)'
@@ -121,22 +145,10 @@ export default function Roadmap({ onOpenRegister }) {
                       {item.time}
                     </span>
                   </div>
-                  <h3 style={{ fontSize: '1.25rem', marginBottom: '0.4rem' }}>{item.title}</h3>
-                  <p style={{ fontSize: '0.92rem', color: 'var(--text-muted)', lineHeight: 1.5 }}>
+                  <h3 style={{ fontSize: '1.2rem', marginBottom: '0.35rem' }}>{item.title}</h3>
+                  <p style={{ fontSize: '0.92rem', color: 'var(--text-muted)', lineHeight: 1.5, margin: 0 }}>
                     {item.description}
                   </p>
-                </div>
-
-                {/* Action button */}
-                <div style={{ textAlign: 'right' }} className="roadmap-action">
-                  <button
-                    onClick={() => onOpenRegister()}
-                    className="btn btn-secondary"
-                    style={{ padding: '0.6rem 1.1rem', fontSize: '0.85rem' }}
-                  >
-                    <span>Xem Chi Tiết</span>
-                    <ChevronRight size={14} />
-                  </button>
                 </div>
               </div>
             );
@@ -174,9 +186,6 @@ export default function Roadmap({ onOpenRegister }) {
         @media (max-width: 768px) {
           .roadmap-card {
             grid-template-columns: 1fr !important;
-            text-align: left !important;
-          }
-          .roadmap-action {
             text-align: left !important;
           }
         }

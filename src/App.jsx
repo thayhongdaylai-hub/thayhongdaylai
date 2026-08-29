@@ -10,6 +10,7 @@ import FAQ from './components/FAQ';
 import Footer from './components/Footer';
 import TheoryExam from './components/TheoryExam';
 import RegisterModal from './components/RegisterModal';
+import TestModal from './components/TestModal';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
@@ -17,6 +18,7 @@ export default function App() {
   });
 
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
+  const [isTestOpen, setIsTestOpen] = useState(false);
   const [modalDetails, setModalDetails] = useState(null);
 
   useEffect(() => {
@@ -43,9 +45,13 @@ export default function App() {
         theme={theme}
         toggleTheme={toggleTheme}
         onOpenRegister={() => handleOpenRegister()}
+        onOpenTestModal={() => setIsTestOpen(true)}
       />
       <main>
-        <Hero onOpenRegister={() => handleOpenRegister()} />
+        <Hero
+          onOpenRegister={() => handleOpenRegister()}
+          onOpenTestModal={() => setIsTestOpen(true)}
+        />
         <CoursePackages onSelectCourse={handleSelectCourse} />
         <UpgradePackages onSelectUpgrade={handleSelectCourse} />
         <TheoryExam />
@@ -59,6 +65,10 @@ export default function App() {
         isOpen={isRegisterOpen}
         onClose={() => setIsRegisterOpen(false)}
         initialData={modalDetails}
+      />
+      <TestModal
+        isOpen={isTestOpen}
+        onClose={() => setIsTestOpen(false)}
       />
     </div>
   );
