@@ -86,7 +86,7 @@ export default function Roadmap({ onOpenRegister }) {
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '1.25rem',
+          gap: '1rem',
           maxWidth: '900px',
           margin: '0 auto'
         }}>
@@ -97,20 +97,21 @@ export default function Roadmap({ onOpenRegister }) {
                 key={idx}
                 className="glass-card roadmap-card"
                 style={{
-                  padding: '1.5rem 2rem',
+                  padding: '1.25rem 1.5rem',
                   display: 'grid',
-                  gridTemplateColumns: '70px 1fr',
+                  gridTemplateColumns: '60px 1fr',
                   alignItems: 'center',
                   gap: '1.25rem',
-                  position: 'relative'
+                  position: 'relative',
+                  borderRadius: '1.25rem'
                 }}
               >
                 {/* Step Icon */}
                 <div style={{ textAlign: 'center' }}>
                   <div style={{
-                    width: '56px',
-                    height: '56px',
-                    borderRadius: '16px',
+                    width: '48px',
+                    height: '48px',
+                    borderRadius: '14px',
                     background: 'var(--bg-card)',
                     border: '1px solid var(--border-color)',
                     display: 'flex',
@@ -119,15 +120,15 @@ export default function Roadmap({ onOpenRegister }) {
                     margin: '0 auto',
                     boxShadow: 'var(--shadow-sm)'
                   }}>
-                    <StepIcon size={26} color={item.color} />
+                    <StepIcon size={22} color={item.color} />
                   </div>
                 </div>
 
                 {/* Content */}
                 <div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '0.35rem' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.5rem', marginBottom: '0.35rem' }}>
                     <span style={{
-                      fontSize: '0.82rem',
+                      fontSize: '0.8rem',
                       fontWeight: 800,
                       color: item.color,
                       letterSpacing: '0.05em'
@@ -135,9 +136,9 @@ export default function Roadmap({ onOpenRegister }) {
                       BƯỚC {item.step}
                     </span>
                     <span style={{
-                      fontSize: '0.8rem',
+                      fontSize: '0.76rem',
                       fontWeight: 600,
-                      padding: '0.15rem 0.65rem',
+                      padding: '0.15rem 0.6rem',
                       borderRadius: '9999px',
                       background: 'var(--bg-card-hover)',
                       color: 'var(--text-muted)'
@@ -145,8 +146,8 @@ export default function Roadmap({ onOpenRegister }) {
                       {item.time}
                     </span>
                   </div>
-                  <h3 style={{ fontSize: '1.2rem', marginBottom: '0.35rem' }}>{item.title}</h3>
-                  <p style={{ fontSize: '0.92rem', color: 'var(--text-muted)', lineHeight: 1.5, margin: 0 }}>
+                  <h3 style={{ fontSize: '1.1rem', marginBottom: '0.3rem', lineHeight: 1.35 }}>{item.title}</h3>
+                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.5, margin: 0 }}>
                     {item.description}
                   </p>
                 </div>
@@ -157,25 +158,25 @@ export default function Roadmap({ onOpenRegister }) {
 
         {/* Bottom Banner */}
         <div style={{
-          marginTop: '3.5rem',
+          marginTop: '2.5rem',
           textAlign: 'center',
           background: 'var(--bg-card)',
           border: '1px solid var(--border-highlight)',
-          borderRadius: '1.5rem',
-          padding: '2.25rem',
+          borderRadius: '1.25rem',
+          padding: '1.75rem 1.25rem',
           maxWidth: '850px',
-          margin: '3.5rem auto 0 auto'
+          margin: '2.5rem auto 0 auto'
         }}>
-          <h3 style={{ fontSize: '1.5rem', marginBottom: '0.5rem' }}>
+          <h3 style={{ fontSize: 'clamp(1.2rem, 4vw, 1.5rem)', marginBottom: '0.5rem' }}>
             Bạn chưa rõ mình phù hợp với lộ trình hạng bằng nào?
           </h3>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem', fontSize: '0.98rem' }}>
+          <p style={{ color: 'var(--text-muted)', marginBottom: '1.25rem', fontSize: '0.92rem', lineHeight: 1.5 }}>
             Đội ngũ chuyên viên tuyển sinh của Thầy Hồng Dạy Lái sẽ tư vấn chi tiết lộ trình và sắp xếp lớp học theo thời gian rảnh của bạn.
           </p>
           <button
             onClick={() => onOpenRegister()}
             className="btn btn-primary"
-            style={{ padding: '0.85rem 2rem' }}
+            style={{ padding: '0.85rem 1.75rem', width: '100%', maxWidth: '380px' }}
           >
             Đăng Ký Tư Vấn Lộ Trình Miễn Phí
           </button>
@@ -183,10 +184,11 @@ export default function Roadmap({ onOpenRegister }) {
       </div>
 
       <style>{`
-        @media (max-width: 768px) {
+        @media (max-width: 640px) {
           .roadmap-card {
-            grid-template-columns: 1fr !important;
-            text-align: left !important;
+            grid-template-columns: 44px 1fr !important;
+            gap: 0.85rem !important;
+            padding: 1rem !important;
           }
         }
       `}</style>

@@ -234,25 +234,31 @@ export default function TheoryExam() {
           </p>
         </div>
 
-        {/* License Selector Bar */}
+        {/* Category & Exam Selector Tabs */}
         <div style={{
           display: 'flex',
-          flexWrap: 'wrap',
-          gap: '0.8rem',
-          justifyContent: 'center',
+          flexDirection: 'column',
           alignItems: 'center',
+          gap: '1rem',
           marginBottom: '2rem'
         }}>
-          <div style={{
-            display: 'inline-flex',
-            padding: '0.35rem',
-            background: 'var(--bg-card)',
-            border: '1px solid var(--border-color)',
-            borderRadius: '9999px',
-            boxShadow: 'var(--shadow-sm)',
-            flexWrap: 'wrap',
-            gap: '0.3rem'
-          }}>
+          {/* Scrollable License Selector */}
+          <div
+            className="no-scrollbar"
+            style={{
+              display: 'flex',
+              overflowX: 'auto',
+              whiteSpace: 'nowrap',
+              WebkitOverflowScrolling: 'touch',
+              padding: '0.35rem',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border-color)',
+              borderRadius: '9999px',
+              boxShadow: 'var(--shadow-sm)',
+              maxWidth: '100%',
+              gap: '0.35rem'
+            }}
+          >
             {Object.entries(LICENSE_CONFIGS).map(([key, config]) => {
               const isSelected = selectedLicense === key;
               const isMotor = config.vehicleType === 'motorbike';
@@ -264,22 +270,27 @@ export default function TheoryExam() {
                   }}
                   className="btn"
                   style={{
-                    padding: '0.55rem 1.1rem',
+                    padding: '0.5rem 1rem',
                     borderRadius: '9999px',
-                    fontSize: '0.88rem',
+                    fontSize: '0.85rem',
                     fontWeight: 700,
                     border: 'none',
                     background: isSelected ? 'var(--gradient-emerald)' : 'transparent',
-                    color: isSelected ? '#FFFFFF' : 'var(--text-muted)',
+                    color: isSelected ? '#051A10' : 'var(--text-muted)',
                     boxShadow: isSelected ? '0 2px 10px rgba(16,185,129,0.3)' : 'none',
                     transition: 'all 0.25s ease',
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '0.45rem'
+                    gap: '0.4rem',
+                    whiteSpace: 'nowrap',
+                    flexShrink: 0
                   }}
                 >
-                  {isMotor ? <Bike size={16} /> : <Car size={16} />}
-                  <span>{config.badgeName || key} ({config.totalQuestions} câu • {config.passingScore}/{config.totalQuestions} đạt)</span>
+                  {isMotor ? <Bike size={15} /> : <Car size={15} />}
+                  <span>{config.badgeName || key}</span>
+                  <span className="hide-mobile-sm" style={{ opacity: 0.85, fontSize: '0.76rem' }}>
+                    ({config.totalQuestions}c • {config.passingScore}/{config.totalQuestions})
+                  </span>
                 </button>
               );
             })}
@@ -288,30 +299,33 @@ export default function TheoryExam() {
           {/* Mode Switcher */}
           <div style={{
             display: 'inline-flex',
-            padding: '0.35rem',
+            padding: '0.3rem',
             background: 'var(--bg-card)',
             border: '1px solid var(--border-color)',
             borderRadius: '9999px',
             boxShadow: 'var(--shadow-sm)',
-            gap: '0.3rem'
+            gap: '0.25rem',
+            maxWidth: '100%',
+            overflowX: 'auto'
           }}>
             <button
               onClick={() => setExamMode('mock')}
               className="btn"
               style={{
-                padding: '0.55rem 1rem',
+                padding: '0.5rem 0.95rem',
                 borderRadius: '9999px',
-                fontSize: '0.82rem',
+                fontSize: '0.8rem',
                 fontWeight: 700,
                 border: 'none',
                 background: examMode === 'mock' ? 'var(--accent-emerald-glow)' : 'transparent',
                 color: examMode === 'mock' ? 'var(--accent-emerald)' : 'var(--text-muted)',
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem'
+                gap: '0.35rem',
+                whiteSpace: 'nowrap'
               }}
             >
-              <Timer size={15} />
+              <Timer size={14} />
               <span>Đề Thi Sát Hạch</span>
             </button>
 
@@ -319,28 +333,29 @@ export default function TheoryExam() {
               onClick={() => setExamMode('critical')}
               className="btn"
               style={{
-                padding: '0.55rem 1rem',
+                padding: '0.5rem 0.95rem',
                 borderRadius: '9999px',
-                fontSize: '0.82rem',
+                fontSize: '0.8rem',
                 fontWeight: 700,
                 border: 'none',
                 background: examMode === 'critical' ? 'rgba(239, 68, 68, 0.12)' : 'transparent',
                 color: examMode === 'critical' ? '#EF4444' : 'var(--text-muted)',
                 display: 'inline-flex',
                 alignItems: 'center',
-                gap: '0.35rem'
+                gap: '0.35rem',
+                whiteSpace: 'nowrap'
               }}
             >
-              <AlertTriangle size={15} />
+              <AlertTriangle size={14} />
               <span>60 Câu Điểm Liệt</span>
             </button>
           </div>
         </div>
 
         {/* EXAM MAIN CONTAINER */}
-        <div className="glass-card" style={{
+        <div className="glass-card exam-main-card" style={{
           padding: '2rem',
-          borderRadius: '24px',
+          borderRadius: '20px',
           boxShadow: 'var(--shadow-md)',
           background: 'var(--bg-card)',
           position: 'relative',
@@ -370,7 +385,7 @@ export default function TheoryExam() {
             </div>
 
             {/* Controls & Timer */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', flexWrap: 'wrap' }}>
               {/* Countdown Timer */}
               {!isSubmitted && (
                 <div style={{
@@ -820,7 +835,15 @@ export default function TheoryExam() {
         @media (max-width: 900px) {
           .exam-grid-responsive {
             grid-template-columns: 1fr !important;
+            gap: 1.5rem !important;
           }
+          .exam-main-card {
+            padding: 1.25rem 1rem !important;
+            border-radius: 16px !important;
+          }
+        }
+        @media (max-width: 600px) {
+          .hide-mobile-sm { display: none !important; }
         }
       `}</style>
     </section>

@@ -104,12 +104,12 @@ export default function UpgradePackages({ onSelectUpgrade }) {
   ];
 
   return (
-    <section id="upgrades" style={{ padding: '5rem 0 4rem 0', background: 'var(--bg-card)' }}>
+    <section id="upgrades" style={{ padding: '4rem 0 3rem 0', background: 'var(--bg-card)' }}>
       <div className="container">
         {/* Section Header */}
-        <div className="section-title-wrapper">
+        <div className="section-title-wrapper" style={{ marginBottom: '2.5rem' }}>
           <div className="badge badge-blue">
-            <TrendingUp size={16} />
+            <TrendingUp size={15} />
             <span>Nâng Cấp Bằng Lái • Mở Rộng Cơ Hội Thu Nhập</span>
           </div>
           <h2 className="section-title">
@@ -124,9 +124,9 @@ export default function UpgradePackages({ onSelectUpgrade }) {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-            gap: '1.75rem',
-            marginTop: '3rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: '1.5rem',
+            marginTop: '2rem',
             alignItems: 'stretch'
           }}
         >
@@ -137,11 +137,11 @@ export default function UpgradePackages({ onSelectUpgrade }) {
                 key={item.id}
                 className="glass-card"
                 style={{
-                  padding: '2rem',
+                  padding: '1.5rem',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
-                  borderRadius: '20px',
+                  borderRadius: '1.25rem',
                   border: '1px solid var(--border-color)',
                   background: 'var(--bg-main)',
                   transition: 'all 0.3s ease'
@@ -153,24 +153,24 @@ export default function UpgradePackages({ onSelectUpgrade }) {
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    marginBottom: '1.25rem'
+                    marginBottom: '1rem'
                   }}>
                     <div style={{
-                      width: '50px',
-                      height: '50px',
-                      borderRadius: '14px',
+                      width: '44px',
+                      height: '44px',
+                      borderRadius: '12px',
                       background: 'var(--accent-blue-glow)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
                       flexShrink: 0
                     }}>
-                      <IconComponent size={26} color="var(--accent-blue)" />
+                      <IconComponent size={22} color="var(--accent-blue)" />
                     </div>
                     <span className={`badge ${item.badgeColor}`} style={{
-                      fontSize: '0.8rem',
+                      fontSize: '0.78rem',
                       fontWeight: 800,
-                      padding: '0.4rem 0.85rem',
+                      padding: '0.35rem 0.75rem',
                       borderRadius: '9999px'
                     }}>
                       {item.badge}
@@ -178,43 +178,43 @@ export default function UpgradePackages({ onSelectUpgrade }) {
                   </div>
 
                   {/* Title & Route */}
-                  <h3 style={{ fontSize: '1.45rem', fontWeight: 800, marginBottom: '0.35rem', color: 'var(--text-main)' }}>
+                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, marginBottom: '0.3rem', color: 'var(--text-main)' }}>
                     {item.targetGrade}
                   </h3>
                   <div style={{
                     display: 'inline-flex',
                     alignItems: 'center',
-                    gap: '0.4rem',
+                    gap: '0.35rem',
                     color: 'var(--accent-emerald)',
-                    fontSize: '0.92rem',
+                    fontSize: '0.88rem',
                     fontWeight: 700,
-                    marginBottom: '0.75rem'
+                    marginBottom: '0.65rem'
                   }}>
-                    <TrendingUp size={15} />
+                    <TrendingUp size={14} />
                     <span>{item.route}</span>
                   </div>
 
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '1.25rem', lineHeight: 1.5, minHeight: '42px' }}>
+                  <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', marginBottom: '1.15rem', lineHeight: 1.45 }}>
                     {item.vehicleDesc}
                   </p>
 
                   {/* Clean Official Price Section */}
                   <div style={{
-                    padding: '1rem 1.25rem',
+                    padding: '0.85rem 1.15rem',
                     background: 'var(--bg-card)',
-                    borderRadius: '1rem',
-                    marginBottom: '1.25rem',
+                    borderRadius: '0.85rem',
+                    marginBottom: '1.2rem',
                     border: '1px solid var(--border-color)',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center'
                   }}>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.2rem' }}>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>
                       Học phí nâng hạng trọn gói:
                     </div>
                     <span style={{
-                      fontSize: '1.8rem',
-                      fontFamily: "'Quicksand', sans-serif",
+                      fontSize: '1.65rem',
+                      fontFamily: "'Google Sans', 'Quicksand', sans-serif",
                       fontWeight: 800,
                       color: 'var(--accent-emerald)',
                       lineHeight: 1.15
@@ -224,14 +224,14 @@ export default function UpgradePackages({ onSelectUpgrade }) {
                   </div>
 
                   {/* Features List */}
-                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem', marginBottom: '1.5rem' }}>
-                    <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '0.85rem', marginBottom: '1.35rem' }}>
+                    <div style={{ fontSize: '0.8rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.55rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                       Quyền lợi nâng hạng:
                     </div>
-                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
+                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                       {item.features.map((feat, fIdx) => (
-                        <li key={fIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', fontSize: '0.86rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
-                          <CheckCircle2 size={16} color="var(--accent-emerald)" style={{ marginTop: '0.15rem', flexShrink: 0 }} />
+                        <li key={fIdx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.45rem', fontSize: '0.84rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>
+                          <CheckCircle2 size={15} color="var(--accent-emerald)" style={{ marginTop: '0.15rem', flexShrink: 0 }} />
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -243,10 +243,10 @@ export default function UpgradePackages({ onSelectUpgrade }) {
                 <button
                   onClick={() => onSelectUpgrade(item.targetGrade)}
                   className="btn btn-primary"
-                  style={{ width: '100%', padding: '0.9rem', fontSize: '0.95rem' }}
+                  style={{ width: '100%', padding: '0.85rem', fontSize: '0.92rem' }}
                 >
                   <span>Đăng Ký {item.targetGrade}</span>
-                  <ArrowRight size={17} />
+                  <ArrowRight size={16} />
                 </button>
               </div>
             );

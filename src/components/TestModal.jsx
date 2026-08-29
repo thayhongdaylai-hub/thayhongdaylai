@@ -115,16 +115,16 @@ export default function TestModal({ isOpen, onClose }) {
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '1.5rem',
+      padding: '0.75rem',
       overflowY: 'auto'
     }}>
-      <div className="glass-card" style={{
+      <div className="glass-card test-modal-card" style={{
         width: '100%',
         maxWidth: '920px',
-        maxHeight: '90vh',
+        maxHeight: '92vh',
         overflowY: 'auto',
-        padding: '2.25rem',
-        borderRadius: '1.75rem',
+        padding: '1.75rem 1.5rem',
+        borderRadius: '1.5rem',
         background: 'var(--bg-card)',
         boxShadow: 'var(--shadow-lg)',
         position: 'relative'
@@ -134,14 +134,14 @@ export default function TestModal({ isOpen, onClose }) {
           onClick={onClose}
           style={{
             position: 'absolute',
-            top: '1.25rem',
-            right: '1.25rem',
+            top: '1rem',
+            right: '1rem',
             background: 'var(--bg-card-hover)',
             border: '1px solid var(--border-color)',
             color: 'var(--text-muted)',
             borderRadius: '50%',
-            width: '38px',
-            height: '38px',
+            width: '34px',
+            height: '34px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
@@ -149,34 +149,34 @@ export default function TestModal({ isOpen, onClose }) {
             zIndex: 10
           }}
         >
-          <X size={20} />
+          <X size={18} />
         </button>
 
         {/* STEP 1: Select License Category */}
         {!selectedCategory && (
           <div>
-            <div className="badge badge-emerald" style={{ marginBottom: '1rem' }}>
-              <Award size={16} />
+            <div className="badge badge-emerald" style={{ marginBottom: '0.75rem', fontSize: '0.78rem' }}>
+              <Award size={14} />
               <span>Hệ Thống Thi Thử Lý Thuyết GPLX 2026 Chuẩn GTVT</span>
             </div>
 
-            <h2 style={{ fontSize: '1.85rem', marginBottom: '0.5rem' }}>
+            <h2 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.75rem)', marginBottom: '0.35rem' }}>
               Chọn Hạng Bằng Để Thi Thử Lý Thuyết
             </h2>
-            <p style={{ fontSize: '0.98rem', color: 'var(--text-muted)', marginBottom: '2rem' }}>
+            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
               Bộ đề thi sát hạch lý thuyết được cập nhật theo đúng chuẩn của Cục Đường Bộ Việt Nam.
             </p>
 
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
               {categories.map((catGroup, gIdx) => (
                 <div key={gIdx}>
-                  <h3 style={{ fontSize: '1.15rem', color: 'var(--accent-emerald)', marginBottom: '1rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                  <h3 style={{ fontSize: '1.05rem', color: 'var(--accent-emerald)', marginBottom: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
                     {catGroup.groupTitle}
                   </h3>
                   <div style={{
                     display: 'grid',
-                    gridTemplateColumns: catGroup.items.length === 2 ? 'repeat(2, 1fr)' : 'repeat(2, 1fr)',
-                    gap: '1.25rem'
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))',
+                    gap: '1rem'
                   }}>
                     {catGroup.items.map((item) => {
                       const IconComp = item.icon;
@@ -186,8 +186,8 @@ export default function TestModal({ isOpen, onClose }) {
                           onClick={() => handleStartExam(item.id)}
                           className="glass-card"
                           style={{
-                            padding: '1.5rem',
-                            borderRadius: '1.25rem',
+                            padding: '1.25rem',
+                            borderRadius: '1.15rem',
                             cursor: 'pointer',
                             transition: 'all 0.25s ease',
                             border: '1px solid var(--border-color)',
@@ -206,26 +206,26 @@ export default function TestModal({ isOpen, onClose }) {
                           }}
                         >
                           <div>
-                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.85rem' }}>
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '0.75rem' }}>
                               <div style={{
-                                width: '44px',
-                                height: '44px',
-                                borderRadius: '12px',
+                                width: '40px',
+                                height: '40px',
+                                borderRadius: '10px',
                                 background: 'var(--accent-emerald-glow)',
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center'
                               }}>
-                                <IconComp size={24} color="var(--accent-emerald)" />
+                                <IconComp size={22} color="var(--accent-emerald)" />
                               </div>
-                              <span className="badge badge-blue" style={{ fontSize: '0.78rem' }}>{item.badge}</span>
+                              <span className="badge badge-blue" style={{ fontSize: '0.74rem' }}>{item.badge}</span>
                             </div>
-                            <h4 style={{ fontSize: '1.25rem', marginBottom: '0.3rem' }}>{item.name}</h4>
-                            <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>{item.desc}</p>
+                            <h4 style={{ fontSize: '1.15rem', marginBottom: '0.25rem' }}>{item.name}</h4>
+                            <p style={{ fontSize: '0.84rem', color: 'var(--text-muted)', lineHeight: 1.4 }}>{item.desc}</p>
                           </div>
-                          <div style={{ marginTop: '1.25rem', display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--accent-emerald)', fontWeight: 700, fontSize: '0.9rem' }}>
+                          <div style={{ marginTop: '1rem', display: 'flex', alignItems: 'center', gap: '0.35rem', color: 'var(--accent-emerald)', fontWeight: 700, fontSize: '0.86rem' }}>
                             <span>Bắt đầu thi thử ({EXAM_DATA[item.id]?.questions.length || 30} câu / {Math.floor((EXAM_DATA[item.id]?.timeLimit || 1200) / 60)} phút)</span>
-                            <ChevronRight size={16} />
+                            <ChevronRight size={15} />
                           </div>
                         </div>
                       );
@@ -299,8 +299,8 @@ export default function TestModal({ isOpen, onClose }) {
               </div>
             </div>
 
-            {/* Layout Grid: Left Question (2/3) + Right 30-Question Matrix (1/3) */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '2rem', alignItems: 'start' }}>
+            {/* Layout Grid: Left Question + Right Question Matrix */}
+            <div className="test-modal-exam-grid" style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start' }}>
               {/* Question Details */}
               <div>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
@@ -823,6 +823,19 @@ export default function TestModal({ isOpen, onClose }) {
           </div>
         )}
       </div>
+
+      <style>{`
+        @media (max-width: 768px) {
+          .test-modal-exam-grid {
+            grid-template-columns: 1fr !important;
+            gap: 1.25rem !important;
+          }
+          .test-modal-card {
+            padding: 1.25rem 1rem !important;
+            border-radius: 16px !important;
+          }
+        }
+      `}</style>
     </div>
   );
 }

@@ -95,19 +95,22 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
       right: 0,
       bottom: 0,
       zIndex: 200,
-      background: 'rgba(0, 0, 0, 0.75)',
+      background: 'rgba(0, 0, 0, 0.78)',
       backdropFilter: 'blur(8px)',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',
-      padding: '1.5rem'
+      padding: '0.75rem',
+      overflowY: 'auto'
     }}>
-      <div className="glass-card" style={{
+      <div className="glass-card register-modal-box" style={{
         width: '100%',
         maxWidth: '520px',
-        padding: '2.5rem',
+        maxHeight: '92vh',
+        overflowY: 'auto',
+        padding: '1.75rem 1.5rem',
         position: 'relative',
-        borderRadius: '1.75rem',
+        borderRadius: '1.5rem',
         background: 'var(--bg-card)',
         boxShadow: 'var(--shadow-lg)'
       }}>
@@ -116,42 +119,43 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
           onClick={onClose}
           style={{
             position: 'absolute',
-            top: '1.25rem',
-            right: '1.25rem',
+            top: '1rem',
+            right: '1rem',
             background: 'var(--bg-card-hover)',
             border: '1px solid var(--border-color)',
             color: 'var(--text-muted)',
             borderRadius: '50%',
-            width: '36px',
-            height: '36px',
+            width: '34px',
+            height: '34px',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            cursor: 'pointer'
+            cursor: 'pointer',
+            zIndex: 10
           }}
         >
-          <X size={20} />
+          <X size={18} />
         </button>
 
         {!submitted ? (
           <>
             {/* Header Promo Banner */}
-            <div className="badge badge-emerald" style={{ marginBottom: '1rem' }}>
-              <Sparkles size={16} />
+            <div className="badge badge-emerald" style={{ marginBottom: '0.85rem', fontSize: '0.78rem' }}>
+              <Sparkles size={14} />
               <span>Tặng ngay Voucher 1.000.000đ khi đăng ký Online</span>
             </div>
 
-            <h3 style={{ fontSize: '1.6rem', marginBottom: '0.4rem' }}>
+            <h3 style={{ fontSize: 'clamp(1.25rem, 4vw, 1.55rem)', marginBottom: '0.35rem' }}>
               Đăng Ký Tư Vấn Khóa Học
             </h3>
-            <p style={{ fontSize: '0.9rem', color: 'var(--text-muted)', marginBottom: '1.75rem' }}>
+            <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', marginBottom: '1.25rem' }}>
               Điền thông tin bên dưới, chuyên viên tư vấn của Thầy Hồng sẽ gọi lại cho bạn trong vòng 5 phút.
             </p>
 
-            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1.1rem' }}>
+            <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem' }}>
               {/* Full Name */}
               <div>
-                <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.4rem' }}>
+                <label style={{ fontSize: '0.82rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>
                   Họ và tên học viên <span style={{ color: 'var(--accent-red)' }}>*</span>
                 </label>
                 <input
@@ -162,12 +166,12 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                   onChange={e => setFormData({ ...formData, fullName: e.target.value })}
                   style={{
                     width: '100%',
-                    padding: '0.85rem 1rem',
+                    padding: '0.8rem 0.95rem',
                     borderRadius: '0.75rem',
                     background: 'var(--bg-input)',
                     border: '1px solid var(--border-color)',
                     color: 'var(--text-main)',
-                    fontSize: '0.95rem',
+                    fontSize: '16px',
                     outline: 'none'
                   }}
                 />
@@ -175,7 +179,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
 
               {/* Phone */}
               <div>
-                <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.4rem' }}>
+                <label style={{ fontSize: '0.82rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>
                   Số điện thoại Zalo <span style={{ color: 'var(--accent-red)' }}>*</span>
                 </label>
                 <input
@@ -186,21 +190,21 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                   onChange={e => setFormData({ ...formData, phone: e.target.value })}
                   style={{
                     width: '100%',
-                    padding: '0.85rem 1rem',
+                    padding: '0.8rem 0.95rem',
                     borderRadius: '0.75rem',
                     background: 'var(--bg-input)',
                     border: '1px solid var(--border-color)',
                     color: 'var(--text-main)',
-                    fontSize: '0.95rem',
+                    fontSize: '16px',
                     outline: 'none'
                   }}
                 />
               </div>
 
-              {/* Course Select */}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
+              {/* Course & Branch Select (Responsive 1 or 2 col) */}
+              <div className="modal-select-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '0.75rem' }}>
                 <div>
-                  <label style={{ fontSize: '0.85rem', fontWeight: 600, display: 'block', marginBottom: '0.4rem' }}>
+                  <label style={{ fontSize: '0.82rem', fontWeight: 600, display: 'block', marginBottom: '0.35rem' }}>
                     Chọn hạng bằng:
                   </label>
                   <select
@@ -208,12 +212,12 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                     onChange={e => setFormData({ ...formData, course: e.target.value })}
                     style={{
                       width: '100%',
-                      padding: '0.85rem 1rem',
+                      padding: '0.8rem 0.95rem',
                       borderRadius: '0.75rem',
                       background: 'var(--bg-input)',
                       border: '1px solid var(--border-color)',
                       color: 'var(--text-main)',
-                      fontSize: '0.9rem',
+                      fontSize: '16px',
                       outline: 'none'
                     }}
                   >

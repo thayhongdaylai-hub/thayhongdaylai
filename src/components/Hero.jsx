@@ -25,6 +25,8 @@ export default function Hero({ onOpenRegister }) {
 
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [touchStartX, setTouchStartX] = useState(null);
+  const [touchEndX, setTouchEndX] = useState(null);
 
   useEffect(() => {
     if (isPaused) return;
@@ -35,19 +37,45 @@ export default function Hero({ onOpenRegister }) {
   }, [isPaused, galleryPhotos.length]);
 
   const handlePrev = (e) => {
-    e.stopPropagation();
+    if (e) e.stopPropagation();
     setCurrentImgIndex(prev => (prev === 0 ? galleryPhotos.length - 1 : prev - 1));
   };
 
   const handleNext = (e) => {
-    e.stopPropagation();
+    if (e) e.stopPropagation();
     setCurrentImgIndex(prev => (prev + 1) % galleryPhotos.length);
+  };
+
+  // Touch Swipe for mobile phones
+  const handleTouchStart = (e) => {
+    setIsPaused(true);
+    setTouchStartX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e) => {
+    setTouchEndX(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    setIsPaused(false);
+    if (!touchStartX || !touchEndX) return;
+    const distance = touchStartX - touchEndX;
+    const minSwipeDistance = 40;
+    if (distance > minSwipeDistance) {
+      // Swiped left -> next
+      handleNext();
+    } else if (distance < -minSwipeDistance) {
+      // Swiped right -> prev
+      handlePrev();
+    }
+    setTouchStartX(null);
+    setTouchEndX(null);
   };
 
   return (
     <section id="about-teacher" style={{
       position: 'relative',
-      padding: '4.5rem 0 3.5rem 0',
+      padding: '3.5rem 0 2.5rem 0',
       background: 'var(--gradient-hero)',
       overflow: 'hidden'
     }}>
@@ -82,22 +110,22 @@ export default function Hero({ onOpenRegister }) {
         <div className="hero-grid" style={{
           display: 'grid',
           gridTemplateColumns: '1.15fr 0.85fr',
-          gap: '3.5rem',
+          gap: '2.5rem',
           alignItems: 'center'
         }}>
           
           {/* Left Column: Teacher Introduction & Key Commitments */}
           <div>
-            <div className="badge badge-emerald" style={{ marginBottom: '1.25rem' }}>
-              <Sparkles size={16} />
-              <span>Thầy Hồng Dạy Lái • Hơn 10 Năm Kinh Nghiệm Đào Tạo & Sát Hạch</span>
+            <div className="badge badge-emerald" style={{ marginBottom: '1rem', fontSize: '0.82rem' }}>
+              <Sparkles size={15} />
+              <span>Thầy Hồng Dạy Lái • 10+ Năm Kinh Nghiệm Đào Tạo</span>
             </div>
 
             <h1 style={{
-              fontSize: 'clamp(2.2rem, 4vw, 3.4rem)',
+              fontSize: 'clamp(1.75rem, 5vw, 3.2rem)',
               letterSpacing: '-0.03em',
-              marginBottom: '1.25rem',
-              lineHeight: 1.18
+              marginBottom: '1rem',
+              lineHeight: 1.2
             }}>
               THẦY HỒNG DẠY LÁI - <span className="text-gradient">UY TÍN - TẬN TÂM - CHẤT LƯỢNG</span>
             </h1>
@@ -108,47 +136,47 @@ export default function Hero({ onOpenRegister }) {
               border: '1.5px solid var(--accent-emerald)',
               boxShadow: '0 8px 30px rgba(0, 229, 153, 0.18)',
               borderRadius: '1.25rem',
-              padding: '1.5rem',
-              marginBottom: '1.75rem',
+              padding: '1.25rem',
+              marginBottom: '1.5rem',
               backdropFilter: 'blur(10px)'
             }}>
               <div style={{
-                fontSize: '1.2rem',
+                fontSize: 'clamp(1rem, 3.5vw, 1.18rem)',
                 fontWeight: 800,
                 color: 'var(--text-main)',
-                marginBottom: '0.6rem',
+                marginBottom: '0.5rem',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '0.55rem',
+                gap: '0.5rem',
                 letterSpacing: '0.01em'
               }}>
-                <Shield size={24} color="var(--accent-emerald)" />
-                <span>TRUNG TÂM ĐÀO TẠO & SÁT HẠCH LÁI XE THẦY HỒNG</span>
+                <Shield size={22} color="var(--accent-emerald)" />
+                <span>TRUNG TÂM ĐÀO TẠO & SÁT HẠCH THẦY HỒNG</span>
               </div>
 
               <p style={{
-                fontSize: '0.92rem',
+                fontSize: '0.9rem',
                 color: 'var(--text-muted)',
-                lineHeight: 1.6,
+                lineHeight: 1.55,
                 marginBottom: '0.85rem'
               }}>
-                Với <strong>hơn 10 năm kinh nghiệm</strong> trực tiếp giảng dạy và hướng dẫn sát hạch cho hơn <strong>850 học viên</strong>, Thầy Hồng mang đến phương pháp dạy <strong>1-Thầy-1-Trò</strong> tận tâm, kiên nhẫn, không quát mắng, kèm cặp từng học viên từ lúc chưa biết lái đến khi vững tay lái và đỗ kỳ thi sát hạch ngay lần đầu.
+                Với <strong>hơn 10 năm kinh nghiệm</strong> trực tiếp giảng dạy cho hơn <strong>850 học viên</strong>, Thầy Hồng cam kết dạy <strong>1-Thầy-1-Trò</strong> tận tâm, không quát mắng, kèm cặp từng học viên đến khi vững tay lái và đỗ sát hạch ngay lần đầu.
               </p>
 
-              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.6rem' }}>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                 <span style={{
                   background: 'var(--gradient-emerald)',
                   color: '#051A10',
                   fontWeight: 800,
-                  fontSize: '0.88rem',
-                  padding: '0.45rem 0.95rem',
+                  fontSize: '0.82rem',
+                  padding: '0.4rem 0.85rem',
                   borderRadius: '9999px',
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.35rem',
                   boxShadow: '0 4px 12px var(--accent-emerald-glow)'
                 }}>
-                  <Zap size={16} fill="#051A10" color="#051A10" /> HỌC PHÍ TRỌN GÓI & MINH BẠCH 100%
+                  <Zap size={15} fill="#051A10" color="#051A10" /> HỌC PHÍ TRỌN GÓI 100%
                 </span>
 
                 <span style={{
@@ -156,14 +184,14 @@ export default function Hero({ onOpenRegister }) {
                   color: '#FF5C5C',
                   border: '1px solid rgba(239, 68, 68, 0.4)',
                   fontWeight: 700,
-                  fontSize: '0.88rem',
-                  padding: '0.45rem 0.95rem',
+                  fontSize: '0.82rem',
+                  padding: '0.4rem 0.85rem',
                   borderRadius: '9999px',
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.35rem'
                 }}>
-                  <CheckCircle2 size={16} color="#FF5C5C" /> CAM KẾT KHÔNG PHÁT SINH CHI PHÍ
+                  <CheckCircle2 size={15} color="#FF5C5C" /> KHÔNG PHÁT SINH PHÍ
                 </span>
 
                 <span style={{
@@ -171,53 +199,63 @@ export default function Hero({ onOpenRegister }) {
                   color: 'var(--accent-blue)',
                   border: '1px solid rgba(59, 130, 246, 0.4)',
                   fontWeight: 700,
-                  fontSize: '0.88rem',
-                  padding: '0.45rem 0.95rem',
+                  fontSize: '0.82rem',
+                  padding: '0.4rem 0.85rem',
                   borderRadius: '9999px',
                   display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.35rem'
                 }}>
-                  <Sparkles size={16} color="var(--accent-blue)" /> 1 THẦY - 1 TRÒ - 1 XE (Linh Hoạt)
+                  <Sparkles size={15} color="var(--accent-blue)" /> 1 THẦY - 1 TRÒ - 1 XE
                 </span>
               </div>
             </div>
 
             {/* CTA Buttons */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.9rem' }}>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
               <button
                 onClick={() => onOpenRegister && onOpenRegister({ note: 'Đăng Ký Ngay Hôm Nay - Giảm Ngay 1.000.000' })}
-                className="btn btn-primary"
-                style={{ padding: '1rem 2rem', fontSize: '1.05rem', fontWeight: 800 }}
+                className="btn btn-primary hero-cta-btn"
+                style={{
+                  padding: '0.9rem 1.6rem',
+                  fontSize: 'clamp(0.92rem, 3.5vw, 1.05rem)',
+                  fontWeight: 800,
+                  width: '100%',
+                  maxWidth: '480px'
+                }}
               >
-                <span>ĐĂNG KÝ NGAY HÔM NAY - GIẢM NGAY 1.000.000</span>
-                <ArrowRight size={20} color="#051A10" />
+                <span>ĐĂNG KÝ NGAY - GIẢM 1.000.000Đ</span>
+                <ArrowRight size={18} color="#051A10" />
               </button>
             </div>
           </div>
 
-          {/* Right Column: Hero Visual Card (Photo Gallery from Ảnh folder) */}
+          {/* Right Column: Hero Visual Card (Swipeable Photo Gallery) */}
           <div style={{ position: 'relative' }}>
             <div
               className="glass-card"
               onMouseEnter={() => setIsPaused(true)}
               onMouseLeave={() => setIsPaused(false)}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
               style={{
-                padding: '0.65rem',
+                padding: '0.5rem',
                 boxShadow: 'var(--shadow-lg)',
-                borderRadius: '1.75rem',
+                borderRadius: '1.5rem',
                 position: 'relative',
                 overflow: 'hidden',
                 background: 'var(--bg-card)',
-                border: '1px solid var(--border-color)'
+                border: '1px solid var(--border-color)',
+                touchAction: 'pan-y'
               }}
             >
-              {/* Image Frame with smart backdrop blur so every photo fits 100% perfectly */}
+              {/* Image Frame with smart backdrop blur */}
               <div style={{
                 position: 'relative',
                 width: '100%',
-                height: '460px',
-                borderRadius: '1.25rem',
+                height: 'clamp(280px, 60vw, 440px)',
+                borderRadius: '1.15rem',
                 overflow: 'hidden',
                 background: '#0B0E14',
                 display: 'flex',
@@ -247,7 +285,9 @@ export default function Hero({ onOpenRegister }) {
                     width: '100%',
                     height: '100%',
                     objectFit: 'contain',
-                    display: 'block'
+                    display: 'block',
+                    userSelect: 'none',
+                    WebkitUserDrag: 'none'
                   }}
                 />
 
@@ -257,14 +297,14 @@ export default function Hero({ onOpenRegister }) {
                   aria-label="Ảnh trước"
                   style={{
                     position: 'absolute',
-                    left: '12px',
+                    left: '8px',
                     top: '50%',
                     transform: 'translateY(-50%)',
                     zIndex: 10,
-                    width: '38px',
-                    height: '38px',
+                    width: '36px',
+                    height: '36px',
                     borderRadius: '50%',
-                    background: 'rgba(0, 0, 0, 0.55)',
+                    background: 'rgba(0, 0, 0, 0.6)',
                     backdropFilter: 'blur(8px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
                     color: '#FFFFFF',
@@ -275,7 +315,7 @@ export default function Hero({ onOpenRegister }) {
                     transition: 'all 0.2s ease'
                   }}
                 >
-                  <ChevronLeft size={22} />
+                  <ChevronLeft size={20} />
                 </button>
 
                 <button
@@ -283,14 +323,14 @@ export default function Hero({ onOpenRegister }) {
                   aria-label="Ảnh kế tiếp"
                   style={{
                     position: 'absolute',
-                    right: '12px',
+                    right: '8px',
                     top: '50%',
                     transform: 'translateY(-50%)',
                     zIndex: 10,
-                    width: '38px',
-                    height: '38px',
+                    width: '36px',
+                    height: '36px',
                     borderRadius: '50%',
-                    background: 'rgba(0, 0, 0, 0.55)',
+                    background: 'rgba(0, 0, 0, 0.6)',
                     backdropFilter: 'blur(8px)',
                     border: '1px solid rgba(255, 255, 255, 0.2)',
                     color: '#FFFFFF',
@@ -301,28 +341,28 @@ export default function Hero({ onOpenRegister }) {
                     transition: 'all 0.2s ease'
                   }}
                 >
-                  <ChevronRight size={22} />
+                  <ChevronRight size={20} />
                 </button>
 
                 {/* Bottom Gallery Counter Pill */}
                 <div style={{
                   position: 'absolute',
-                  bottom: '12px',
+                  bottom: '10px',
                   zIndex: 10,
-                  padding: '0.35rem 0.85rem',
+                  padding: '0.3rem 0.75rem',
                   borderRadius: '9999px',
-                  background: 'rgba(0, 0, 0, 0.65)',
+                  background: 'rgba(0, 0, 0, 0.7)',
                   backdropFilter: 'blur(10px)',
                   border: '1px solid rgba(255, 255, 255, 0.15)',
                   color: '#FFFFFF',
-                  fontSize: '0.78rem',
+                  fontSize: '0.74rem',
                   fontWeight: 700,
                   letterSpacing: '0.02em',
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '0.4rem'
+                  gap: '0.35rem'
                 }}>
-                  <Camera size={14} color="var(--accent-emerald)" />
+                  <Camera size={13} color="var(--accent-emerald)" />
                   <span>Ảnh Thực Tế Thầy Hồng • {currentImgIndex + 1} / {galleryPhotos.length}</span>
                 </div>
               </div>
@@ -332,35 +372,34 @@ export default function Hero({ onOpenRegister }) {
 
         {/* Stats Row */}
         <div className="glass-card stats-row" style={{
-          marginTop: '3.5rem',
-          padding: '1.75rem 2rem',
+          marginTop: '2.5rem',
+          padding: '1.25rem 1.5rem',
           display: 'grid',
           gridTemplateColumns: 'repeat(4, 1fr)',
-          gap: '1.5rem',
+          gap: '1rem',
           textAlign: 'center'
         }}>
           {[
-            { value: '10+ Năm', label: 'Kinh nghiệm đào tạo & sát hạch', icon: Award },
-            { value: '850+', label: 'Học viên tốt nghiệp nhận bằng', icon: Users },
-            { value: '99%', label: 'Tỷ lệ thi đỗ ngay lần đầu', icon: Shield },
-            { value: '100%', label: 'Học phí trọn gói minh bạch', icon: Zap }
+            { value: '10+ Năm', label: 'Kinh nghiệm đào tạo', icon: Award },
+            { value: '850+', label: 'Học viên tốt nghiệp', icon: Users },
+            { value: '99%', label: 'Tỷ lệ thi đỗ lần đầu', icon: Shield },
+            { value: '100%', label: 'Học phí trọn gói', icon: Zap }
           ].map((stat, idx) => {
-            const IconComp = stat.icon;
             return (
               <div key={idx} className="stat-item" style={{
                 borderRight: idx < 3 ? '1px solid var(--border-color)' : 'none',
-                paddingRight: idx < 3 ? '1.5rem' : '0'
+                paddingRight: idx < 3 ? '1rem' : '0'
               }}>
                 <div style={{
-                  fontSize: '2.1rem',
+                  fontSize: 'clamp(1.5rem, 4vw, 2.1rem)',
                   fontFamily: "'Google Sans', 'Quicksand', sans-serif",
                   fontWeight: 800,
                   color: 'var(--accent-emerald)',
-                  marginBottom: '0.2rem'
+                  marginBottom: '0.1rem'
                 }}>
                   {stat.value}
                 </div>
-                <div style={{ fontSize: '0.88rem', color: 'var(--text-muted)', fontWeight: 600 }}>
+                <div style={{ fontSize: 'clamp(0.78rem, 2.5vw, 0.88rem)', color: 'var(--text-muted)', fontWeight: 600 }}>
                   {stat.label}
                 </div>
               </div>
@@ -371,13 +410,13 @@ export default function Hero({ onOpenRegister }) {
 
       <style>{`
         @media (max-width: 992px) {
-          .hero-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
-          .stats-row { grid-template-columns: repeat(2, 1fr) !important; gap: 1.5rem !important; }
-          .stat-item { border-right: none !important; padding-right: 0 !important; }
+          .hero-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+          .stats-row { grid-template-columns: repeat(2, 1fr) !important; gap: 1rem !important; }
+          .stat-item:nth-child(even) { border-right: none !important; }
         }
         @media (max-width: 576px) {
-          .usp-grid { grid-template-columns: 1fr !important; }
-          .stats-row { grid-template-columns: 1fr !important; }
+          .hero-cta-btn { width: 100% !important; justify-content: center; }
+          .stats-row { padding: 1rem !important; gap: 0.75rem !important; }
         }
       `}</style>
     </section>

@@ -91,11 +91,11 @@ export default function CoursePackages({ onSelectCourse }) {
   });
 
   return (
-    <section id="courses" style={{ padding: '5rem 0', background: 'var(--bg-main)' }}>
+    <section id="courses" style={{ padding: '4rem 0', background: 'var(--bg-main)' }}>
       <div className="container">
-        <div className="section-title-wrapper">
+        <div className="section-title-wrapper" style={{ marginBottom: '2.5rem' }}>
           <div className="badge badge-emerald">
-            <Sparkles size={16} />
+            <Sparkles size={15} />
             <span>Học Phí Trọn Gói • Minh Bạch 100%</span>
           </div>
           <h2 className="section-title">
@@ -105,18 +105,23 @@ export default function CoursePackages({ onSelectCourse }) {
             Cam kết không phát sinh bất kỳ chi phí phụ nào trong suốt quá trình học. Hỗ trợ đóng trả góp 0% lãi suất.
           </p>
 
-          {/* Filter Tabs */}
-          <div style={{
-            display: 'inline-flex',
-            flexWrap: 'wrap',
-            justifyContent: 'center',
-            gap: '0.5rem',
-            padding: '0.4rem',
-            background: 'var(--bg-card)',
-            border: '1px solid var(--border-color)',
-            borderRadius: '9999px',
-            marginTop: '2rem'
-          }}>
+          {/* Filter Tabs (Horizontal Scrollable on Mobile) */}
+          <div
+            className="no-scrollbar"
+            style={{
+              display: 'inline-flex',
+              maxWidth: '100%',
+              overflowX: 'auto',
+              whiteSpace: 'nowrap',
+              WebkitOverflowScrolling: 'touch',
+              gap: '0.4rem',
+              padding: '0.35rem',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border-color)',
+              borderRadius: '9999px',
+              marginTop: '1.5rem'
+            }}
+          >
             {[
               { id: 'all', label: 'Tất Cả Gói Học' },
               { id: 'bike', label: 'Xe Máy (A - A1)' },
@@ -126,12 +131,13 @@ export default function CoursePackages({ onSelectCourse }) {
                 key={tab.id}
                 onClick={() => setFilter(tab.id)}
                 style={{
-                  padding: '0.6rem 1.4rem',
+                  padding: '0.55rem 1.2rem',
                   borderRadius: '9999px',
                   border: 'none',
-                  fontSize: '0.95rem',
+                  fontSize: '0.9rem',
                   fontWeight: 600,
                   cursor: 'pointer',
+                  whiteSpace: 'nowrap',
                   background: filter === tab.id ? 'var(--gradient-emerald)' : 'transparent',
                   color: filter === tab.id ? '#051A10' : 'var(--text-muted)',
                   transition: 'all 0.25s ease'
@@ -147,9 +153,8 @@ export default function CoursePackages({ onSelectCourse }) {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(270px, 1fr))',
-            gap: '1.75rem',
-            marginTop: '2rem',
+            gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+            gap: '1.5rem',
             alignItems: 'stretch'
           }}
         >
@@ -160,11 +165,12 @@ export default function CoursePackages({ onSelectCourse }) {
                 key={course.id}
                 className="glass-card"
                 style={{
-                  padding: '2rem',
+                  padding: '1.5rem',
                   display: 'flex',
                   flexDirection: 'column',
                   justifyContent: 'space-between',
-                  position: 'relative'
+                  position: 'relative',
+                  borderRadius: '1.25rem'
                 }}
               >
                 <div>
@@ -173,12 +179,12 @@ export default function CoursePackages({ onSelectCourse }) {
                     display: 'flex',
                     alignItems: 'center',
                     gap: '0.75rem',
-                    marginBottom: '1.25rem'
+                    marginBottom: '1rem'
                   }}>
                     <div style={{
-                      width: '44px',
-                      height: '44px',
-                      borderRadius: '13px',
+                      width: '42px',
+                      height: '42px',
+                      borderRadius: '12px',
                       background: course.iconBg,
                       border: `1px solid ${course.iconBorder}`,
                       display: 'flex',
@@ -186,13 +192,13 @@ export default function CoursePackages({ onSelectCourse }) {
                       justifyContent: 'center',
                       flexShrink: 0
                     }}>
-                      <IconComponent size={22} color={course.iconColor} />
+                      <IconComponent size={20} color={course.iconColor} />
                     </div>
                     <span
                       className={`badge ${course.badgeColor}`}
                       style={{
-                        padding: '0.4rem 0.85rem',
-                        fontSize: '0.82rem',
+                        padding: '0.35rem 0.75rem',
+                        fontSize: '0.8rem',
                         fontWeight: 700,
                         letterSpacing: '0.01em',
                         whiteSpace: 'nowrap'
@@ -203,28 +209,28 @@ export default function CoursePackages({ onSelectCourse }) {
                   </div>
 
                   {/* Course Title & Subtitle */}
-                  <h3 style={{ fontSize: '1.3rem', fontWeight: 800, marginBottom: '0.4rem', minHeight: '3.2rem', lineHeight: 1.25, color: 'var(--text-main)' }}>
+                  <h3 style={{ fontSize: '1.22rem', fontWeight: 800, marginBottom: '0.35rem', lineHeight: 1.3, color: 'var(--text-main)' }}>
                     {course.name}
                   </h3>
-                  <p style={{ fontSize: '0.88rem', color: 'var(--text-muted)', marginBottom: '1.35rem', minHeight: '40px', lineHeight: 1.45 }}>
+                  <p style={{ fontSize: '0.86rem', color: 'var(--text-muted)', marginBottom: '1.2rem', lineHeight: 1.45 }}>
                     {course.subtitle}
                   </p>
 
                   {/* Price Section */}
                   <div style={{
-                    padding: '1rem 1.25rem',
+                    padding: '0.85rem 1.15rem',
                     background: 'var(--bg-card-hover)',
-                    borderRadius: '1rem',
-                    marginBottom: '1.5rem',
+                    borderRadius: '0.85rem',
+                    marginBottom: '1.25rem',
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'center'
                   }}>
-                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.2rem' }}>
+                    <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', marginBottom: '0.15rem' }}>
                       Học phí trọn gói:
                     </div>
                     <span style={{
-                      fontSize: '1.85rem',
+                      fontSize: '1.65rem',
                       fontFamily: "'Google Sans', 'Quicksand', sans-serif",
                       fontWeight: 800,
                       color: 'var(--accent-emerald)',
@@ -235,14 +241,14 @@ export default function CoursePackages({ onSelectCourse }) {
                   </div>
 
                   {/* Features List */}
-                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1.25rem', marginBottom: '1.75rem' }}>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                  <div style={{ borderTop: '1px solid var(--border-color)', paddingTop: '1rem', marginBottom: '1.5rem' }}>
+                    <div style={{ fontSize: '0.82rem', fontWeight: 700, color: 'var(--text-main)', marginBottom: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
                       Quyền lợi gói học:
                     </div>
-                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem' }}>
+                    <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.55rem' }}>
                       {course.features.map((feat, idx) => (
-                        <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.6rem', fontSize: '0.88rem', color: 'var(--text-muted)' }}>
-                          <Check size={16} color="var(--accent-emerald)" style={{ marginTop: '0.2rem', flexShrink: 0 }} />
+                        <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem', fontSize: '0.86rem', color: 'var(--text-muted)' }}>
+                          <Check size={15} color="var(--accent-emerald)" style={{ marginTop: '0.2rem', flexShrink: 0 }} />
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -254,10 +260,10 @@ export default function CoursePackages({ onSelectCourse }) {
                 <button
                   onClick={() => onSelectCourse(course.name)}
                   className="btn btn-primary"
-                  style={{ width: '100%', padding: '0.9rem', fontSize: '0.95rem' }}
+                  style={{ width: '100%', padding: '0.85rem', fontSize: '0.92rem' }}
                 >
                   <span>Đăng Ký Khóa Học Này</span>
-                  <ArrowRight size={18} color="#051A10" />
+                  <ArrowRight size={17} color="#051A10" />
                 </button>
               </div>
             );

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import { Phone, MessageSquare, BookOpen, Gift, Sparkles } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import AboutTeacher from './components/AboutTeacher';
 import CoursePackages from './components/CoursePackages';
 import UpgradePackages from './components/UpgradePackages';
 import Roadmap from './components/Roadmap';
@@ -61,6 +61,51 @@ export default function App() {
         <FAQ />
       </main>
       <Footer />
+
+      {/* Sticky Mobile Floating Action Bar */}
+      <div className="mobile-bottom-bar">
+        <a href="tel:0983406221" className="mobile-bottom-btn" title="Gọi trực tiếp Thầy Hồng">
+          <Phone size={18} color="var(--accent-emerald)" />
+          <span>Gọi Thầy</span>
+        </a>
+
+        <a
+          href="https://zalo.me/0983406221"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mobile-bottom-btn"
+          title="Chat Zalo cùng Thầy Hồng"
+        >
+          <MessageSquare size={18} color="var(--accent-blue)" />
+          <span>Chat Zalo</span>
+        </a>
+
+        <button
+          onClick={() => {
+            const examSection = document.getElementById('theory-exam');
+            if (examSection) {
+              examSection.scrollIntoView({ behavior: 'smooth' });
+            } else {
+              setIsTestOpen(true);
+            }
+          }}
+          className="mobile-bottom-btn"
+          title="Luyện thi lý thuyết sát hạch"
+        >
+          <BookOpen size={18} color="var(--accent-orange)" />
+          <span>Thi Thử</span>
+        </button>
+
+        <button
+          onClick={() => handleOpenRegister({ note: 'Đăng ký nhanh từ điện thoại' })}
+          className="mobile-bottom-btn highlight"
+          title="Đăng ký nhận voucher 1 triệu"
+        >
+          <Gift size={18} color="#051A10" />
+          <span>Nhận Ưu Đãi</span>
+        </button>
+      </div>
+
       <RegisterModal
         isOpen={isRegisterOpen}
         onClose={() => setIsRegisterOpen(false)}

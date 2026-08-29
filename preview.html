@@ -123,6 +123,25 @@
     .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
     .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 
+    /* Hide scrollbars */
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    input, select, textarea {
+      font-size: 16px !important;
+      touch-action: manipulation;
+    }
+
+    html, body {
+      overflow-x: hidden;
+      width: 100%;
+    }
+
     @media (max-width: 1024px) {
       .grid-3 { grid-template-columns: repeat(2, 1fr); }
       .grid-4 { grid-template-columns: repeat(2, 1fr); }
@@ -130,7 +149,9 @@
     }
     @media (max-width: 768px) {
       .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-      .section-title { font-size: 1.75rem; }
+      .section-title { font-size: 1.65rem; }
+      .container { padding: 0 1rem; }
+      body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
     }
 
     .brand-logo:hover .brand-icon-box { transform: scale(1.08) rotate(-4deg); box-shadow: 0 6px 22px rgba(0, 229, 153, 0.45); }
@@ -424,7 +445,7 @@
         { q: "Thiết bị 'Trợ lực tay lái' (Steering Damper) trên xe PKL có vai trò gì?", opts: ["A. Dập tắt dạo động rung lắc cổ xe tốc độ cao (chống vẫy đầu xe Tank Slapper).", "B. Giúp xoay nhẹ khi dắt xe.", "C. Tự động rẽ hướng."], ans: 0 },
         { q: "Độ võng xích tải (sên) chuẩn đối với xe mô tô PKL thường là bao nhiêu?", opts: ["A. Khoảng 20 mm - 30 mm.", "B. Khoảng 5 mm.", "C. Trên 60 mm."], ans: 0 },
         { q: "Nút ngắt động cơ khẩn cấp (Engine Kill Switch) màu đỏ trên ghi-đông xe PKL dùng để làm gì?", opts: ["A. Tắt máy ngay lập tức khi kẹt ga hoặc ngã xe khẩn cấp.", "B. Bật còi động.", "C. Bật đèn sương mù."], ans: 0 },
-        { q: "Đội hình di chuyển nhóm xe PKL (Touring đoàn) an toàn là đội hình nào?", opts: ["A. Đội hình ziczac so le, giữ kho�      c1: [
+        { q: "Đội hình di chuyển nhóm xe PKL (Touring đoàn) an toàn là đội hình nào?", opts: ["A. Đội hình ziczac so le, giữ kho      c1: [
         { q: "Giấy phép lái xe Hạng C1 được phép điều khiển loại xe tải nào?", opts: ["A. Xe ô tô tải có khối lượng chuyên chở từ 3.500 kg đến 7.500 kg.", "B. Xe tải nặng trên 15 tấn.", "C. Xe container."], ans: 0 },
         { q: "Nguyên tắc phân bổ hàng hóa khi xếp dỡ trên sàn xe tải C1 là gì?", opts: ["A. Hàng nặng xếp bên dưới sát sàn thùng xe và trải đều hai bên.", "B. Xếp hàng nặng lên trên cùng.", "C. Dồn hết về đuôi xe."], ans: 0 },
         { q: "Góc mù (Dead Angle) nguy hiểm nhất của xe tải C1 nằm ở đâu?", opts: ["A. Ngay phía sau thùng xe và góc thấp bên cửa phụ.", "B. Phía trên nóc cabin.", "C. Trước nắp capo."], ans: 0 },
@@ -605,7 +626,7 @@
                   </div>
                 </div>
               </div>
-            )}�P</h3>
+            )}P</h3>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1rem' }}>
                   <div onClick={() => handleSelectCat('b')} className="glass-card" style={{ padding: '1.25rem', cursor: 'pointer', background: 'var(--bg-card-hover)', border: '1px solid var(--border-color)' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '0.5rem' }}>

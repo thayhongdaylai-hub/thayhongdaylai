@@ -267,6 +267,40 @@ button, input, select, textarea {
 .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
 .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
 
+/* Hide scrollbars for smooth swipe/tab experiences */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Form input touch & iOS zoom prevention (font-size >= 16px) */
+input, select, textarea {
+  font-size: 16px !important;
+  touch-action: manipulation;
+}
+
+/* App Root & Overflow Safety */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  -webkit-text-size-adjust: 100%;
+}
+
+.app-root {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Sticky Mobile Quick Action Bar */
+.mobile-bottom-bar {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
@@ -275,7 +309,74 @@ button, input, select, textarea {
 
 @media (max-width: 768px) {
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  .section-title { font-size: 1.75rem; }
+  .section-title { font-size: 1.65rem; }
+  .section-subtitle { font-size: 0.95rem; }
+  .section-title-wrapper { margin-bottom: 2.25rem; }
+  .container { padding: 0 1rem; }
+  
+  /* Space out main body for mobile bottom bar */
+  body {
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px));
+  }
+
+  .mobile-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(64px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+    background: var(--bg-nav);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-top: 1px solid var(--border-color);
+    z-index: 999;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-bottom-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    height: 100%;
+    gap: 3px;
+    color: var(--text-muted);
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0 4px;
+    text-align: center;
+  }
+
+  .mobile-bottom-btn.active, .mobile-bottom-btn:active {
+    color: var(--accent-emerald);
+  }
+
+  .mobile-bottom-btn.highlight {
+    background: var(--gradient-emerald);
+    color: #051A10;
+    border-radius: 14px;
+    margin: 6px 8px;
+    height: calc(100% - 12px);
+    box-shadow: 0 4px 14px var(--accent-emerald-glow);
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title { font-size: 1.45rem; }
+  .btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.92rem;
+  }
 }
 
 /* Brand Logo Styling & Micro-interactions */
@@ -331,4 +432,5 @@ button, input, select, textarea {
 .nav-link-card:active {
   transform: translateY(0);
 }
+
 

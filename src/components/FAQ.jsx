@@ -29,15 +29,15 @@ export default function FAQ() {
 
   return (
     <section id="faq" style={{
-      padding: '5.5rem 0',
+      padding: '4rem 0 3rem 0',
       background: 'var(--gradient-dark-card)',
       borderTop: '1px solid var(--border-color)',
       borderBottom: '1px solid var(--border-color)'
     }}>
       <div className="container">
-        <div className="section-title-wrapper">
+        <div className="section-title-wrapper" style={{ marginBottom: '2.5rem' }}>
           <div className="badge badge-blue">
-            <Sparkles size={16} />
+            <Sparkles size={15} />
             <span>Giải Đáp Thắc Mắc</span>
           </div>
           <h2 className="section-title">
@@ -48,7 +48,7 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div style={{ maxWidth: '850px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+        <div style={{ maxWidth: '850px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '0.85rem' }}>
           {faqs.map((faq, idx) => {
             const isOpen = openIndex === idx;
             return (
@@ -56,7 +56,7 @@ export default function FAQ() {
                 key={idx}
                 className="glass-card"
                 style={{
-                  borderRadius: '1.25rem',
+                  borderRadius: '1.15rem',
                   overflow: 'hidden',
                   transition: 'all 0.3s ease',
                   border: isOpen ? '1px solid var(--accent-emerald)' : '1px solid var(--border-color)'
@@ -67,26 +67,26 @@ export default function FAQ() {
                   onClick={() => setOpenIndex(isOpen ? -1 : idx)}
                   style={{
                     width: '100%',
-                    padding: '1.5rem',
+                    padding: '1.15rem 1.25rem',
                     background: 'transparent',
                     border: 'none',
                     textAlign: 'left',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'space-between',
-                    gap: '1rem',
+                    gap: '0.75rem',
                     cursor: 'pointer',
                     color: 'var(--text-main)',
-                    fontSize: '1.05rem',
+                    fontSize: 'clamp(0.92rem, 3vw, 1.05rem)',
                     fontWeight: 700
                   }}
                 >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
-                    <HelpCircle size={22} color={isOpen ? 'var(--accent-emerald)' : 'var(--text-muted)'} />
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+                    <HelpCircle size={20} color={isOpen ? 'var(--accent-emerald)' : 'var(--text-muted)'} style={{ flexShrink: 0 }} />
                     <span>{faq.q}</span>
                   </div>
                   <ChevronDown
-                    size={20}
+                    size={18}
                     color="var(--text-muted)"
                     style={{
                       transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)',
@@ -98,12 +98,12 @@ export default function FAQ() {
 
                 {isOpen && (
                   <div style={{
-                    padding: '0 1.5rem 1.5rem 3.25rem',
+                    padding: '0 1.25rem 1.25rem 1.25rem',
                     color: 'var(--text-muted)',
-                    fontSize: '0.95rem',
-                    lineHeight: 1.65,
+                    fontSize: '0.92rem',
+                    lineHeight: 1.6,
                     borderTop: '1px dashed var(--border-color)',
-                    paddingTop: '1rem'
+                    paddingTop: '0.85rem'
                   }}>
                     {faq.a}
                   </div>
