@@ -17,7 +17,7 @@ export default function CoursePackages({ onSelectCourse }) {
       shortDesc: 'Khóa học lái xe ô tô số tự động ( B1 ) và số sàn ( B2 ) chuẩn mới 2026. Hợp đồng đào tạo minh bạch, cam kết đầu ra vững tay lái.',
       features: [
         'Học phí trọn gói 19.000.000đ ( Hợp đồng đào tạo rõ ràng )',
-        'Chạy đủ 810km DAT đường trường',
+        'Chạy đủ 810km DAT đường trường chuẩn GTVT',
         'Thực hành 100% của xe thi sát hạch',
         'Lịch học linh hoạt',
         'Hỗ trợ phần mềm 120 tình huống mô phỏng & 600 câu hỏi',
@@ -36,7 +36,7 @@ export default function CoursePackages({ onSelectCourse }) {
       shortDesc: 'Đào tạo lái xe tải chuyên nghiệp chuẩn GTVT. Dành cho tài xế kinh doanh vận tải hàng hóa chuyên tuyến và đường dài.',
       features: [
         'Học phí trọn gói 24.000.000đ ( Hợp đồng đào tạo rõ ràng )',
-        'Chạy đủ km DAT đường trường chuẩn GTVT',
+        'Chạy đủ 825km DAT đường trường chuẩn GTVT',
         'Thực hành 100% trên xe thi sát hạch',
         'Lịch học linh hoạt',
         'Hỗ trợ phần mềm 120 tình huống mô phỏng & 600 câu hỏi',
