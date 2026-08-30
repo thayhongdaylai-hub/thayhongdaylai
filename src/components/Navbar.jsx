@@ -70,19 +70,20 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               marginRight: '1.25rem'
             }}
           >
-            <div className="brand-icon-box" style={{
-              width: '40px',
-              height: '40px',
-              borderRadius: '10px',
-              background: 'var(--gradient-primary)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              boxShadow: 'var(--shadow-primary)',
-              flexShrink: 0
-            }}>
-              <ShieldCheck size={22} color="#FBBF24" strokeWidth={2.5} />
-            </div>
+            <img
+              src="/logo.png"
+              alt="Logo Thầy Hồng Dạy Lái"
+              width="44"
+              height="44"
+              style={{
+                width: '44px',
+                height: '44px',
+                borderRadius: '50%',
+                flexShrink: 0,
+                boxShadow: '0 4px 12px rgba(29, 78, 216, 0.25)',
+                border: '2px solid rgba(251, 191, 36, 0.6)'
+              }}
+            />
             <div style={{
               fontFamily: "'Montserrat', 'Be Vietnam Pro', sans-serif",
               fontSize: 'clamp(1.05rem, 3.5vw, 1.3rem)',

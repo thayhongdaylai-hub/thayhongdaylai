@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="60%" stop-color="#1D4ED8"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Gold Metallic Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A"/>
+      <stop offset="30%" stop-color="#FBBF24"/>
+      <stop offset="70%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+
+    <!-- Soft Gold Gradient -->
+    <linearGradient id="goldGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <!-- Shield Gradient -->
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+
+    <!-- Drop Shadow Filter -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+    
+    <filter id="innerGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#FBBF24" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Base Squircle with Shadow -->
+  <rect width="512" height="512" rx="120" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Subtle Gold Border -->
+  <rect x="12" y="12" width="488" height="488" rx="108" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-opacity="0.4"/>
+
+  <!-- Main Symbol Group with Shadow -->
+  <g filter="url(#shadow)" transform="translate(0, 0)">
+    
+    <!-- Outer Steering Wheel Rim -->
+    <circle cx="256" cy="256" r="176" fill="none" stroke="url(#goldGrad)" stroke-width="26" stroke-linecap="round"/>
+    <!-- Steering Wheel Grip details -->
+    <circle cx="256" cy="256" r="150" fill="none" stroke="#60A5FA" stroke-width="3" stroke-dasharray="16 12" stroke-opacity="0.4"/>
+
+    <!-- Central Shield Background -->
+    <path d="M 256 125 
+             C 328 125 348 152 348 152
+             C 348 275 256 360 256 360
+             C 256 360 164 275 164 152
+             C 164 152 184 125 256 125 Z" 
+          fill="url(#shieldGrad)" 
+          stroke="url(#goldGrad)" 
+          stroke-width="12" 
+          stroke-linejoin="round"/>
+
+    <!-- Inner Shield Accent Line -->
+    <path d="M 256 148 
+             C 310 148 326 168 326 168
+             C 326 260 256 328 256 328
+             C 256 328 186 260 186 168
+             C 186 168 202 148 256 148 Z" 
+          fill="none" 
+          stroke="url(#goldGlow)" 
+          stroke-width="3" 
+          stroke-linejoin="round"/>
+
+    <!-- Steering Wheel Spokes connecting to shield -->
+    <!-- Left Spoke -->
+    <path d="M 94 256 L 170 256" stroke="url(#goldGrad)" stroke-width="20" stroke-linecap="round"/>
+    <!-- Right Spoke -->
+    <path d="M 342 256 L 418 256" stroke="url(#goldGrad)" stroke-width="20" stroke-linecap="round"/>
+    <!-- Bottom Spoke -->
+    <path d="M 256 348 L 256 420" stroke="url(#goldGrad)" stroke-width="20" stroke-linecap="round"/>
+
+    <!-- Golden Star at Top of Shield -->
+    <polygon points="256,170 262,188 281,188 266,200 271,218 256,207 241,218 246,200 231,188 250,188" 
+             fill="url(#goldGrad)" 
+             filter="url(#innerGlow)"/>
+
+    <!-- Verified Checkmark in Center of Shield -->
+    <path d="M 224 246 L 246 270 L 292 220" 
+          fill="none" 
+          stroke="url(#goldGrad)" 
+          stroke-width="18" 
+          stroke-linecap="round" 
+          stroke-linejoin="round"
+          filter="url(#innerGlow)"/>
+
+  </g>
+</svg>

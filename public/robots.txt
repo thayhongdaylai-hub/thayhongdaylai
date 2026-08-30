@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+# Allow Googlebot to crawl all images and icons
+User-agent: Googlebot-Image
+Allow: /
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+Allow: /*.ico$
+
+Sitemap: https://thayhongdaylai.vn/sitemap.xml

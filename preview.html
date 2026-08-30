@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TRUNG TÂM ĐÀO TẠO LÁI XE THẦY HỒNG - SÁT HẠCH GTVT</title>
+  <link rel="icon" type="image/png" href="/public/logo.png">
+  <link rel="shortcut icon" href="/public/favicon.ico">
 
   <!-- Google Fonts: Be Vietnam Pro & Montserrat for crystal-clear Vietnamese typography -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -236,9 +238,7 @@
         <header style={{ position: 'sticky', top: 0, zIndex: 100, background: 'var(--bg-nav)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border-color)', transition: 'all 0.3s ease' }}>
           <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: '84px', paddingTop: '0.5rem', paddingBottom: '0.5rem' }}>
             <a href="#" className="brand-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', textDecoration: 'none', flexShrink: 0 }}>
-              <div className="brand-icon-box" style={{ width: '46px', height: '46px', borderRadius: '14px', background: 'var(--gradient-emerald)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 4px 16px var(--accent-emerald-glow)', flexShrink: 0, transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)' }}>
-                <i data-lucide="shield-check" style={{ width: 26, height: 26, stroke: '#051A10', strokeWidth: 2.5 }}></i>
-              </div>
+              <img src="/public/logo.png" alt="Logo Thầy Hồng Dạy Lái" width="46" height="46" style={{ width: '46px', height: '46px', borderRadius: '50%', border: '2px solid #FBBF24', boxShadow: '0 4px 16px rgba(0, 229, 153, 0.25)', flexShrink: 0 }} onError={(e) => { e.target.src = 'public/logo.png'; }} />
               <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.2, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
                 <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
                 <span className="text-gradient">DẠY LÁI</span>

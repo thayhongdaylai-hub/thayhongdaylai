@@ -20,18 +20,20 @@ export default function Footer() {
           {/* Col 1: Brand Info */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
-              <div style={{
-                width: '42px',
-                height: '42px',
-                borderRadius: '12px',
-                background: 'var(--gradient-primary)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                boxShadow: 'var(--shadow-primary)'
-              }}>
-                <ShieldCheck size={24} color="#FBBF24" />
-              </div>
+              <img
+                src="/logo.png"
+                alt="Logo Thầy Hồng Dạy Lái"
+                width="46"
+                height="46"
+                style={{
+                  width: '46px',
+                  height: '46px',
+                  borderRadius: '50%',
+                  flexShrink: 0,
+                  boxShadow: '0 4px 12px rgba(29, 78, 216, 0.35)',
+                  border: '2px solid rgba(251, 191, 36, 0.7)'
+                }}
+              />
               <span style={{ fontFamily: "'Montserrat', 'Be Vietnam Pro', sans-serif", fontSize: '1.35rem', fontWeight: 900, color: '#FFFFFF' }}>
                  THẦY HỒNG<span style={{ color: '#60A5FA' }}> DẠY LÁI</span>
               </span>
