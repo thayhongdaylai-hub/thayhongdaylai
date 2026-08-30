@@ -45,7 +45,7 @@ export default function Footer() {
 
             <div style={{ fontSize: '0.84rem', color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Clock size={16} color="#60A5FA" />
-              <span>Thời gian làm việc: 7h30 - 20h00 (Cả T7 & CN)</span>
+              <span>Thời gian làm việc: 7h30 - 20h00 ( Cả T7 & CN )</span>
             </div>
           </div>
 
@@ -55,11 +55,11 @@ export default function Footer() {
               Các Hạng Đào Tạo
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.88rem' }}>
-              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Ô tô Hạng B (4-9 chỗ)</a></li>
-              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Ô tô Hạng C1 (Xe tải)</a></li>
-              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A1 (Dưới 125cc)</a></li>
-              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A (Trên 125cc)</a></li>
-              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A02 (SH / PKL)</a></li>
+              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Ô Tô Hạng B ( 4-9 chỗ )</a></li>
+              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Ô Tô Hạng C1 ( Xe Tải )</a></li>
+              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A1 ( Dưới 125cc )</a></li>
+              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A ( Trên 125cc )</a></li>
+              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A02 ( SH / PKL )</a></li>
             </ul>
           </div>
 
@@ -73,7 +73,7 @@ export default function Footer() {
               <li><a href="#theory-exam" style={{ color: '#CBD5E1' }}>Thi thử lý thuyết online 2026</a></li>
               <li><a href="#roadmap" style={{ color: '#CBD5E1' }}>Lộ trình đào tạo 7 bước</a></li>
               <li><a href="#facilities" style={{ color: '#CBD5E1' }}>Hệ thống sân tập chuẩn ISO</a></li>
-              <li><a href="#faq" style={{ color: '#CBD5E1' }}>Câu hỏi thường gặp (FAQ)</a></li>
+              <li><a href="#faq" style={{ color: '#CBD5E1' }}>Câu hỏi thường gặp ( FAQ )</a></li>
             </ul>
           </div>
 
