@@ -16,10 +16,12 @@ export default function StudentGallery({ onOpenRegister }) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [touchStartX, setTouchStartX] = useState(null);
   const [touchEndX, setTouchEndX] = useState(null);
+  const [isImageLoading, setIsImageLoading] = useState(true);
 
   const thumbStripRef = useRef(null);
+  const isInitialMount = useRef(true);
 
-  // Auto slide every 4.5 seconds
+  // Auto slide every 4.5 seconds (only when not paused and lightbox is closed)
   useEffect(() => {
     if (isPaused || lightboxOpen) return;
     const timer = setInterval(() => {
@@ -28,27 +30,32 @@ export default function StudentGallery({ onOpenRegister }) {
     return () => clearInterval(timer);
   }, [isPaused, lightboxOpen]);
 
-  // Auto scroll active thumbnail into view
+  // Safely scroll only the thumbnail strip container horizontally without ever scrolling the page window
   useEffect(() => {
-    if (thumbStripRef.current) {
-      const activeThumb = thumbStripRef.current.children[currentIndex];
-      if (activeThumb) {
-        activeThumb.scrollIntoView({
-          behavior: 'smooth',
-          inline: 'center',
-          block: 'nearest'
-        });
-      }
+    if (isInitialMount.current) {
+      isInitialMount.current = false;
+      return;
+    }
+    const container = thumbStripRef.current;
+    if (container && container.children && container.children[currentIndex]) {
+      const activeThumb = container.children[currentIndex];
+      const targetScroll = activeThumb.offsetLeft - (container.clientWidth / 2) + (activeThumb.clientWidth / 2);
+      container.scrollTo({
+        left: Math.max(0, targetScroll),
+        behavior: 'smooth'
+      });
     }
   }, [currentIndex]);
 
   const handlePrev = (e) => {
     if (e) e.stopPropagation();
+    setIsImageLoading(true);
     setCurrentIndex(prev => (prev === 0 ? STUDENT_PHOTOS.length - 1 : prev - 1));
   };
 
   const handleNext = (e) => {
     if (e) e.stopPropagation();
+    setIsImageLoading(true);
     setCurrentIndex(prev => (prev + 1) % STUDENT_PHOTOS.length);
   };
 
@@ -92,17 +99,17 @@ export default function StudentGallery({ onOpenRegister }) {
   return (
     <section id="student-gallery" style={{
       position: 'relative',
-      padding: '4.5rem 0 4rem 0',
+      padding: '4rem 0 3.5rem 0',
       background: 'var(--bg-main)',
       borderBottom: '1px solid var(--border-color)'
     }}>
       <div className="container" style={{ maxWidth: '1120px' }}>
         
         {/* Section Header */}
-        <div className="section-title-wrapper" style={{ textAlign: 'center', marginBottom: '2.25rem' }}>
+        <div className="section-title-wrapper" style={{ textAlign: 'center', marginBottom: '2rem' }}>
           <div className="badge badge-gold" style={{ marginBottom: '0.75rem' }}>
             <Camera size={15} />
-            <span>Kho Ảnh Thực Tế</span>
+            <span>Kho Ảnh Thực Tế ({STUDENT_PHOTOS.length} Ảnh)</span>
           </div>
 
           <h2 className="section-title" style={{ fontSize: 'clamp(1.65rem, 3.5vw, 2.3rem)', marginBottom: 0 }}>
@@ -116,8 +123,8 @@ export default function StudentGallery({ onOpenRegister }) {
           onMouseEnter={() => setIsPaused(true)}
           onMouseLeave={() => setIsPaused(false)}
           style={{
-            padding: '0.85rem',
-            borderRadius: '22px',
+            padding: 'clamp(0.5rem, 2vw, 0.85rem)',
+            borderRadius: '20px',
             boxShadow: 'var(--shadow-lg)',
             background: 'var(--bg-card)',
             marginBottom: '2.5rem'
@@ -132,8 +139,8 @@ export default function StudentGallery({ onOpenRegister }) {
             style={{
               position: 'relative',
               width: '100%',
-              height: 'clamp(330px, 48vw, 520px)',
-              borderRadius: '16px',
+              height: 'clamp(300px, 56vw, 520px)',
+              borderRadius: '14px',
               overflow: 'hidden',
               background: '#0B1120',
               userSelect: 'none',
@@ -144,20 +151,15 @@ export default function StudentGallery({ onOpenRegister }) {
             }}
             title="Bấm để xem ảnh phóng to toàn màn hình"
           >
-            {/* Ambient Blurred Background to Fill the Entire Frame */}
-            <img
-              src={currentPhoto.src}
-              alt=""
-              aria-hidden="true"
+            {/* Ambient Background */}
+            <div
               style={{
                 position: 'absolute',
                 top: 0,
                 left: 0,
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                filter: 'blur(32px) brightness(0.55)',
-                transform: 'scale(1.25)',
+                right: 0,
+                bottom: 0,
+                background: 'radial-gradient(circle at center, rgba(30, 58, 138, 0.35) 0%, #0B1120 100%)',
                 zIndex: 1,
                 pointerEvents: 'none'
               }}
@@ -165,8 +167,10 @@ export default function StudentGallery({ onOpenRegister }) {
 
             {/* Main Foreground Image */}
             <img
+              key={currentPhoto.src}
               src={currentPhoto.src}
-              alt=""
+              alt={`Học viên Thầy Hồng ${currentIndex + 1}`}
+              onLoad={() => setIsImageLoading(false)}
               style={{
                 position: 'relative',
                 zIndex: 2,
@@ -176,16 +180,16 @@ export default function StudentGallery({ onOpenRegister }) {
                 height: 'auto',
                 objectFit: 'contain',
                 display: 'block',
-                transition: 'all 0.3s ease',
-                filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.55))'
+                transition: 'opacity 0.25s ease',
+                opacity: isImageLoading ? 0.7 : 1
               }}
             />
 
             {/* Top Left: Zoom Button */}
             <div style={{
               position: 'absolute',
-              top: '14px',
-              left: '14px',
+              top: '12px',
+              left: '12px',
               zIndex: 10,
               display: 'flex',
               alignItems: 'center',
@@ -195,9 +199,9 @@ export default function StudentGallery({ onOpenRegister }) {
                 background: 'rgba(15, 23, 42, 0.85)',
                 backdropFilter: 'blur(8px)',
                 color: '#FFFFFF',
-                padding: '0.4rem 0.8rem',
+                padding: '0.35rem 0.75rem',
                 borderRadius: '9999px',
-                fontSize: '0.78rem',
+                fontSize: '0.76rem',
                 fontWeight: 700,
                 display: 'flex',
                 alignItems: 'center',
@@ -211,8 +215,8 @@ export default function StudentGallery({ onOpenRegister }) {
             {/* Top Right: Counter Badge */}
             <div style={{
               position: 'absolute',
-              top: '14px',
-              right: '14px',
+              top: '12px',
+              right: '12px',
               zIndex: 10,
               display: 'flex',
               alignItems: 'center',
@@ -222,9 +226,9 @@ export default function StudentGallery({ onOpenRegister }) {
                 background: 'rgba(15, 23, 42, 0.85)',
                 backdropFilter: 'blur(8px)',
                 color: '#FFFFFF',
-                padding: '0.4rem 0.85rem',
+                padding: '0.35rem 0.8rem',
                 borderRadius: '9999px',
-                fontSize: '0.8rem',
+                fontSize: '0.78rem',
                 fontWeight: 800
               }}>
                 {currentIndex + 1} / {STUDENT_PHOTOS.length}
@@ -237,10 +241,10 @@ export default function StudentGallery({ onOpenRegister }) {
               style={{
                 position: 'absolute',
                 top: '50%',
-                left: '12px',
+                left: '10px',
                 transform: 'translateY(-50%)',
-                width: '44px',
-                height: '44px',
+                width: '42px',
+                height: '42px',
                 borderRadius: '50%',
                 background: 'rgba(255, 255, 255, 0.95)',
                 border: 'none',
@@ -255,7 +259,7 @@ export default function StudentGallery({ onOpenRegister }) {
               }}
               aria-label="Ảnh trước"
             >
-              <ChevronLeft size={26} />
+              <ChevronLeft size={24} />
             </button>
 
             <button
@@ -263,10 +267,10 @@ export default function StudentGallery({ onOpenRegister }) {
               style={{
                 position: 'absolute',
                 top: '50%',
-                right: '12px',
+                right: '10px',
                 transform: 'translateY(-50%)',
-                width: '44px',
-                height: '44px',
+                width: '42px',
+                height: '42px',
                 borderRadius: '50%',
                 background: 'rgba(255, 255, 255, 0.95)',
                 border: 'none',
@@ -281,7 +285,7 @@ export default function StudentGallery({ onOpenRegister }) {
               }}
               aria-label="Ảnh kế tiếp"
             >
-              <ChevronRight size={26} />
+              <ChevronRight size={24} />
             </button>
           </div>
 
@@ -291,11 +295,12 @@ export default function StudentGallery({ onOpenRegister }) {
             className="no-scrollbar"
             style={{
               display: 'flex',
-              gap: '0.5rem',
+              gap: '0.45rem',
               overflowX: 'auto',
               padding: '0.75rem 0.2rem 0.2rem 0.2rem',
               scrollbarWidth: 'none',
-              msOverflowStyle: 'none'
+              msOverflowStyle: 'none',
+              WebkitOverflowScrolling: 'touch'
             }}
           >
             {STUDENT_PHOTOS.map((photo, idx) => (
@@ -303,11 +308,12 @@ export default function StudentGallery({ onOpenRegister }) {
                 key={photo.id}
                 onClick={(e) => {
                   e.stopPropagation();
+                  setIsImageLoading(true);
                   setCurrentIndex(idx);
                 }}
                 style={{
-                  width: '60px',
-                  height: '60px',
+                  width: '56px',
+                  height: '56px',
                   flexShrink: 0,
                   borderRadius: '10px',
                   overflow: 'hidden',
@@ -323,10 +329,12 @@ export default function StudentGallery({ onOpenRegister }) {
                 aria-label={`Xem ảnh ${idx + 1}`}
               >
                 <img
-                  src={photo.src}
+                  src={photo.thumb || photo.src}
                   alt=""
                   loading="lazy"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  width="56"
+                  height="56"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
                 />
               </button>
             ))}
@@ -338,7 +346,7 @@ export default function StudentGallery({ onOpenRegister }) {
           background: 'linear-gradient(135deg, rgba(29, 78, 216, 0.12) 0%, rgba(245, 158, 11, 0.08) 100%)',
           border: '1.5px solid var(--border-color)',
           borderRadius: '20px',
-          padding: '1.85rem 2.25rem',
+          padding: '1.75rem 1.5rem',
           display: 'flex',
           flexWrap: 'wrap',
           alignItems: 'center',
@@ -348,22 +356,23 @@ export default function StudentGallery({ onOpenRegister }) {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.35rem' }}>
               <ShieldCheck size={20} color="var(--primary)" />
-              <h3 style={{ fontSize: '1.2rem', fontWeight: 800, margin: 0 }}>
+              <h3 style={{ fontSize: '1.15rem', fontWeight: 800, margin: 0 }}>
                 Bạn Muốn Là Học Viên Tiếp Theo Vững Tay Lái &amp; Đậu Bằng?
               </h3>
             </div>
-            <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.9rem' }}>
+            <p style={{ margin: 0, color: 'var(--text-muted)', fontSize: '0.88rem' }}>
               Cam kết đồng hành 1-Kèm-1 Văn minh - Lịch sự, hỗ trợ đưa đón và học phí trọn gói minh bạch 100%.
             </p>
           </div>
 
-          <div style={{ display: 'flex', gap: '0.85rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', width: '100%', maxWidth: '460px' }}>
             <button
               onClick={() => onOpenRegister && onOpenRegister({ title: 'Đăng Ký Học Lái Xe Thực Tế' })}
               className="btn btn-primary"
               style={{
-                padding: '0.85rem 1.65rem',
-                fontSize: '0.95rem',
+                flex: 1,
+                padding: '0.85rem 1.25rem',
+                fontSize: '0.92rem',
                 borderRadius: '12px',
                 boxShadow: 'var(--shadow-primary)'
               }}
@@ -378,9 +387,10 @@ export default function StudentGallery({ onOpenRegister }) {
               style={{
                 display: 'inline-flex',
                 alignItems: 'center',
+                justifyContent: 'center',
                 gap: '0.45rem',
-                padding: '0.85rem 1.45rem',
-                fontSize: '0.95rem',
+                padding: '0.85rem 1.25rem',
+                fontSize: '0.92rem',
                 fontWeight: 700,
                 borderRadius: '12px',
                 background: '#1877F2',
@@ -427,8 +437,8 @@ export default function StudentGallery({ onOpenRegister }) {
               position: 'absolute',
               top: '18px',
               right: '18px',
-              width: '46px',
-              height: '46px',
+              width: '44px',
+              height: '44px',
               borderRadius: '50%',
               background: 'rgba(255, 255, 255, 0.15)',
               border: '1px solid rgba(255, 255, 255, 0.3)',
@@ -441,7 +451,7 @@ export default function StudentGallery({ onOpenRegister }) {
             }}
             aria-label="Đóng xem to"
           >
-            <X size={26} />
+            <X size={24} />
           </button>
 
           {/* Photo Counter */}
@@ -451,9 +461,9 @@ export default function StudentGallery({ onOpenRegister }) {
             left: '20px',
             color: '#FFFFFF',
             background: 'rgba(0,0,0,0.6)',
-            padding: '0.45rem 1.1rem',
+            padding: '0.4rem 1rem',
             borderRadius: '9999px',
-            fontSize: '0.95rem',
+            fontSize: '0.9rem',
             fontWeight: 700
           }}>
             {currentIndex + 1} / {STUDENT_PHOTOS.length}
@@ -464,7 +474,7 @@ export default function StudentGallery({ onOpenRegister }) {
             onClick={(e) => e.stopPropagation()}
             style={{
               position: 'relative',
-              maxWidth: '92vw',
+              maxWidth: '94vw',
               maxHeight: '84vh',
               display: 'flex',
               flexDirection: 'column',
@@ -482,8 +492,8 @@ export default function StudentGallery({ onOpenRegister }) {
                 width: 'auto',
                 height: 'auto',
                 objectFit: 'contain',
-                borderRadius: '16px',
-                boxShadow: '0 25px 65px rgba(0, 0, 0, 0.85)'
+                borderRadius: '14px',
+                boxShadow: '0 20px 60px rgba(0, 0, 0, 0.85)'
               }}
             />
           </div>
@@ -493,11 +503,11 @@ export default function StudentGallery({ onOpenRegister }) {
             onClick={handlePrev}
             style={{
               position: 'absolute',
-              left: '16px',
+              left: '14px',
               top: '50%',
               transform: 'translateY(-50%)',
-              width: '52px',
-              height: '52px',
+              width: '48px',
+              height: '48px',
               borderRadius: '50%',
               background: 'rgba(255, 255, 255, 0.92)',
               border: 'none',
@@ -511,18 +521,18 @@ export default function StudentGallery({ onOpenRegister }) {
             }}
             aria-label="Ảnh trước"
           >
-            <ChevronLeft size={32} />
+            <ChevronLeft size={30} />
           </button>
 
           <button
             onClick={handleNext}
             style={{
               position: 'absolute',
-              right: '16px',
+              right: '14px',
               top: '50%',
               transform: 'translateY(-50%)',
-              width: '52px',
-              height: '52px',
+              width: '48px',
+              height: '48px',
               borderRadius: '50%',
               background: 'rgba(255, 255, 255, 0.92)',
               border: 'none',
@@ -536,7 +546,7 @@ export default function StudentGallery({ onOpenRegister }) {
             }}
             aria-label="Ảnh kế tiếp"
           >
-            <ChevronRight size={32} />
+            <ChevronRight size={30} />
           </button>
         </div>
       )}
