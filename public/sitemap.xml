@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://thayhongdaylai.vn/</loc>
-    <lastmod>2025-01-01</lastmod>
+    <loc>https://thayhongdaylai.com/</loc>
+    <lastmod>2026-09-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://thayhongdaylai.vn/og-image.jpg</image:loc>
+      <image:loc>https://thayhongdaylai.com/og-image.jpg</image:loc>
       <image:title>Thầy Hồng Dạy Lái - Đào Tạo Lái Xe Ô Tô &amp; Xe Máy Chuẩn GTVT</image:title>
     </image:image>
     <image:image>
-      <image:loc>https://thayhongdaylai.vn/logo.png</image:loc>
+      <image:loc>https://thayhongdaylai.com/logo.png</image:loc>
       <image:title>Logo Thầy Hồng Dạy Lái</image:title>
     </image:image>
   </url>

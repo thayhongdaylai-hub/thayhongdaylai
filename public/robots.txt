@@ -9,4 +9,4 @@ Allow: /*.jpg$
 Allow: /*.svg$
 Allow: /*.ico$
 
-Sitemap: https://thayhongdaylai.vn/sitemap.xml
+Sitemap: https://thayhongdaylai.com/sitemap.xml
