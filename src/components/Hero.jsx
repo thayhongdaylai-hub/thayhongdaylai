@@ -82,20 +82,32 @@ export default function Hero({ onOpenRegister }) {
         }}>
           
           {/* Left Column: Headline, Subtitle & CTAs */}
-          <div>
+          <div style={{ width: '100%', minWidth: 0 }}>
             {/* Trust Badge */}
-            <div className="badge badge-gold" style={{ marginBottom: '1.25rem', fontSize: '0.85rem' }}>
-              <Sparkles size={15} />
+            <div
+              className="badge badge-gold"
+              style={{
+                marginBottom: '1.15rem',
+                fontSize: 'clamp(0.75rem, 2.5vw, 0.85rem)',
+                padding: '0.35rem 0.75rem',
+                maxWidth: '100%',
+                whiteSpace: 'normal',
+                lineHeight: 1.35,
+                display: 'inline-flex'
+              }}
+            >
+              <Sparkles size={15} style={{ flexShrink: 0 }} />
               <span>Trung Tâm Đào Tạo & Sát Hạch GPLX Chuẩn GTVT</span>
             </div>
 
             {/* Main Headline */}
             <h1 style={{
-              fontSize: 'clamp(2rem, 5.5vw, 3.4rem)',
+              fontSize: 'clamp(1.85rem, 6.5vw, 3.2rem)',
               fontWeight: 900,
               letterSpacing: '-0.03em',
-              marginBottom: '1rem',
-              lineHeight: 1.18
+              marginBottom: '0.85rem',
+              lineHeight: 1.2,
+              wordBreak: 'break-word'
             }}>
               <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG </span>
               <span className="text-gradient">DẠY LÁI</span>
@@ -103,11 +115,11 @@ export default function Hero({ onOpenRegister }) {
 
             {/* Subtitle */}
             <p style={{
-              fontSize: 'clamp(1.05rem, 2.2vw, 1.25rem)',
+              fontSize: 'clamp(0.92rem, 3.2vw, 1.15rem)',
               fontWeight: 600,
               color: 'var(--text-muted)',
-              lineHeight: 1.6,
-              marginBottom: '1.5rem',
+              lineHeight: 1.55,
+              marginBottom: '1.25rem',
               maxWidth: '560px'
             }}>
               Đào tạo lái xe ô tô và xe máy – Hướng dẫn tận tâm, dễ hiểu, thực tế
@@ -117,105 +129,143 @@ export default function Hero({ onOpenRegister }) {
             <div style={{
               display: 'flex',
               flexDirection: 'column',
-              gap: '0.65rem',
-              marginBottom: '2rem'
+              gap: '0.75rem',
+              marginBottom: '1.75rem',
+              width: '100%'
             }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
-                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
-                <span><strong>1-Kèm-1 Tận Tâm:</strong> Văn minh - Lịch sự , kèm cặp tỉ mỉ từng kỹ năng.</span>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem', fontSize: 'clamp(0.85rem, 2.8vw, 0.95rem)', color: 'var(--text-muted)', lineHeight: 1.5 }}>
+                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <span><strong style={{ color: 'var(--text-main)' }}>1-Kèm-1 Tận Tâm:</strong> Văn minh - Lịch sự, kèm cặp tỉ mỉ từng kỹ năng.</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
-                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
-                <span><strong>Học Phí Minh Bạch 100%:</strong> Hợp đồng rõ ràng, cam kết không phát sinh.</span>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem', fontSize: 'clamp(0.85rem, 2.8vw, 0.95rem)', color: 'var(--text-muted)', lineHeight: 1.5 }}>
+                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <span><strong style={{ color: 'var(--text-main)' }}>Học Phí Minh Bạch 100%:</strong> Hợp đồng rõ ràng, cam kết không phát sinh.</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
-                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
-                <span><strong>Tỷ Lệ Thi Đỗ 99%:</strong> Bộ mẹo 600 câu + 120 tình huống mô phỏng độc quyền.</span>
+              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem', fontSize: 'clamp(0.85rem, 2.8vw, 0.95rem)', color: 'var(--text-muted)', lineHeight: 1.5 }}>
+                <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0, marginTop: '2px' }} />
+                <span><strong style={{ color: 'var(--text-main)' }}>Tỷ Lệ Thi Đỗ 99%:</strong> Bộ mẹo 600 câu + 120 tình huống mô phỏng độc quyền.</span>
               </div>
             </div>
 
             {/* Direct Action CTAs */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.85rem', marginBottom: '1.5rem' }}>
+            <div className="hero-cta-group" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1.25rem', width: '100%' }}>
               <button
                 onClick={() => onOpenRegister && onOpenRegister({ title: 'Đăng Ký Học Lái Xe 2026' })}
                 className="btn btn-primary"
                 style={{
-                  padding: '0.95rem 1.75rem',
-                  fontSize: '1.02rem',
-                  borderRadius: '14px',
-                  boxShadow: 'var(--shadow-primary)'
+                  padding: '0.85rem 1.6rem',
+                  fontSize: '0.96rem',
+                  borderRadius: '12px',
+                  boxShadow: 'var(--shadow-primary)',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.45rem'
                 }}
               >
                 <span>ĐĂNG KÝ HỌC NGAY</span>
-                <ArrowRight size={18} />
+                <ArrowRight size={17} />
               </button>
 
               <a
                 href="#theory-exam"
                 className="btn btn-gold"
                 style={{
-                  padding: '0.95rem 1.6rem',
-                  fontSize: '1.02rem',
-                  borderRadius: '14px',
+                  padding: '0.85rem 1.45rem',
+                  fontSize: '0.96rem',
+                  borderRadius: '12px',
                   boxShadow: 'var(--shadow-gold)',
-                  textDecoration: 'none'
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.45rem'
                 }}
               >
                 <span>THI THỬ LÝ THUYẾT</span>
-                <Zap size={18} />
+                <Zap size={17} />
               </a>
             </div>
 
-            {/* Quick Contact Line: Phone & Fanpage */}
-            <div style={{
-              display: 'flex',
-              flexWrap: 'wrap',
+            {/* Quick Contact Line: Phone Contacts */}
+            <div className="hero-phone-box" style={{
+              display: 'inline-flex',
               alignItems: 'center',
-              gap: '0.85rem'
+              flexWrap: 'wrap',
+              gap: '0.45rem',
+              padding: '0.45rem 0.75rem',
+              borderRadius: '12px',
+              background: 'var(--bg-card)',
+              border: '1px solid var(--border-color)',
+              boxShadow: 'var(--shadow-sm)',
+              maxWidth: '100%',
+              marginBottom: '1.25rem'
             }}>
-              {/* Phone Contacts */}
               <div style={{
-                display: 'inline-flex',
+                display: 'flex',
                 alignItems: 'center',
-                gap: '0.45rem',
-                padding: '0.35rem 0.5rem',
-                borderRadius: '12px',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-color)',
-                boxShadow: 'var(--shadow-sm)'
+                gap: '0.35rem',
+                color: 'var(--primary)',
+                fontWeight: 800,
+                fontSize: '0.86rem',
+                flexShrink: 0
               }}>
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.35rem',
-                  color: 'var(--primary)',
-                  fontWeight: 800,
-                  fontSize: '0.92rem'
-                }}>
-                  <Phone size={16} />
-                  <span>GỌI TƯ VẤN:</span>
-                </div>
-                <a href="https://zalo.me/0983406221" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', fontWeight: 800, textDecoration: 'none' }}>0983.406.221</a>
-                <span style={{ color: 'var(--text-light)' }}>•</span>
-                <a href="https://zalo.me/0336611194" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', fontWeight: 800, textDecoration: 'none' }}>0336.611.194</a>
+                <Phone size={15} />
+                <span>GỌI TƯ VẤN:</span>
+              </div>
+              <div className="hero-phone-links" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.4rem', fontSize: '0.88rem' }}>
+                <a
+                  href="https://zalo.me/0983406221"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'var(--text-main)',
+                    fontWeight: 800,
+                    textDecoration: 'none',
+                    padding: '0.2rem 0.45rem',
+                    borderRadius: '6px',
+                    background: 'var(--bg-input)'
+                  }}
+                  title="Nhắn Zalo Thầy Hồng"
+                >
+                  0983.406.221
+                </a>
+                <span style={{ color: 'var(--text-muted)' }}>•</span>
+                <a
+                  href="https://zalo.me/0336611194"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: 'var(--text-main)',
+                    fontWeight: 800,
+                    textDecoration: 'none',
+                    padding: '0.2rem 0.45rem',
+                    borderRadius: '6px',
+                    background: 'var(--bg-input)'
+                  }}
+                  title="Nhắn Zalo Tư Vấn"
+                >
+                  0336.611.194
+                </a>
               </div>
             </div>
 
             {/* Rating summary */}
             <div style={{
               display: 'flex',
+              flexWrap: 'wrap',
               alignItems: 'center',
-              gap: '0.75rem',
-              marginTop: '1.75rem',
-              fontSize: '0.88rem',
-              color: 'var(--text-muted)'
+              gap: '0.5rem',
+              fontSize: 'clamp(0.8rem, 2.7vw, 0.88rem)',
+              color: 'var(--text-muted)',
+              lineHeight: 1.4
             }}>
-              <div style={{ display: 'flex', gap: '2px', color: '#F59E0B' }}>
-                <Star size={16} fill="#F59E0B" />
-                <Star size={16} fill="#F59E0B" />
-                <Star size={16} fill="#F59E0B" />
-                <Star size={16} fill="#F59E0B" />
-                <Star size={16} fill="#F59E0B" />
+              <div style={{ display: 'flex', gap: '2px', color: '#F59E0B', flexShrink: 0 }}>
+                <Star size={15} fill="#F59E0B" />
+                <Star size={15} fill="#F59E0B" />
+                <Star size={15} fill="#F59E0B" />
+                <Star size={15} fill="#F59E0B" />
+                <Star size={15} fill="#F59E0B" />
               </div>
               <span><strong>4.9/5.0</strong> đánh giá xuất sắc từ hơn <strong>850+ học viên</strong></span>
             </div>
@@ -662,6 +712,21 @@ export default function Hero({ onOpenRegister }) {
           }
           .hero-stat-card {
             padding: 0.9rem 0.75rem !important;
+          }
+        }
+        @media (max-width: 540px) {
+          .hero-cta-group {
+            flex-direction: column !important;
+            gap: 0.65rem !important;
+          }
+          .hero-cta-group .btn {
+            width: 100% !important;
+            justify-content: center !important;
+            padding: 0.85rem 1rem !important;
+          }
+          .hero-phone-box {
+            width: 100% !important;
+            justify-content: space-between !important;
           }
         }
       `}</style>
