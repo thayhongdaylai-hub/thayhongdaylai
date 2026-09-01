@@ -429,11 +429,13 @@ input, select, textarea {
 
 /* No Scrollbar Utility */
 .no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  -ms-overflow-style: none !important;
+  scrollbar-width: none !important;
 }
 .no-scrollbar::-webkit-scrollbar {
-  display: none;
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 
 /* Sticky Mobile Bottom Bar */
@@ -441,35 +443,73 @@ input, select, textarea {
   display: none;
 }
 
+/* ==========================================================================
+   RESPONSIVE MOBILE BREAKPOINTS (<= 768px and <= 480px)
+   ========================================================================== */
+
+@media (max-width: 900px) {
+  .teacher-profile-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.75rem !important;
+  }
+}
+
 @media (max-width: 768px) {
+  html, body, #root, .app-root {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
   .container {
-    padding: 0 1.15rem;
+    padding: 0 1rem !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   body {
-    padding-bottom: calc(68px + env(safe-area-inset-bottom, 0px));
+    padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)) !important;
   }
 
   section {
-    padding: 3.5rem 0 !important;
+    padding: 3.25rem 0 !important;
   }
 
+  .section-title-wrapper {
+    margin-bottom: 2rem !important;
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 5.5vw, 1.95rem) !important;
+  }
+
+  .section-subtitle {
+    font-size: 0.9rem !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Buttons on Mobile */
+  .btn {
+    padding: 0.8rem 1.35rem;
+    font-size: 0.92rem;
+  }
+
+  /* Mobile Sticky Bottom Floating Action Bar */
   .mobile-bottom-bar {
     display: flex;
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: calc(64px + env(safe-area-inset-bottom, 0px));
-    padding: 6px 8px calc(6px + env(safe-area-inset-bottom, 0px)) 8px;
+    height: calc(66px + env(safe-area-inset-bottom, 0px));
+    padding: 8px 10px calc(8px + env(safe-area-inset-bottom, 0px)) 10px;
     background: var(--bg-card);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
     border-top: 1.5px solid var(--border-color);
-    z-index: 999;
+    z-index: 9999;
     align-items: center;
-    gap: 6px;
-    box-shadow: 0 -4px 25px rgba(0, 0, 0, 0.15);
+    gap: 8px;
+    box-shadow: 0 -6px 28px rgba(0, 0, 0, 0.16);
   }
 
   .mobile-bottom-btn {
@@ -479,67 +519,76 @@ input, select, textarea {
     justify-content: center;
     flex: 1;
     height: 100%;
-    gap: 2px;
+    gap: 3px;
     background: var(--bg-main);
     border: 1px solid var(--border-color);
-    border-radius: 10px;
+    border-radius: 12px;
     color: var(--text-main);
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 800;
     text-decoration: none;
     cursor: pointer;
     padding: 2px 4px;
     text-align: center;
     transition: all 0.2s ease;
+    user-select: none;
   }
 
   .mobile-bottom-btn:active {
-    transform: scale(0.96);
+    transform: scale(0.95);
   }
 
   .mobile-bottom-btn.highlight {
     background: var(--gradient-gold);
     color: #0F172A;
     border: none;
-    flex: 1.15;
-    box-shadow: 0 3px 12px rgba(245, 158, 11, 0.35);
+    flex: 1.25;
+    box-shadow: 0 4px 14px rgba(245, 158, 11, 0.4);
   }
 
   .mobile-bottom-btn.highlight span {
     color: #0F172A;
     font-weight: 900;
+    font-size: 0.82rem;
+    letter-spacing: 0.02em;
   }
 
   /* Full-width spacious Theory Exam on Mobile */
   #theory-exam .container {
-    padding: 0 0.5rem !important;
+    padding: 0 0.4rem !important;
   }
 
   .exam-main-card {
-    padding: 0 !important;
+    padding: 0.5rem 0.25rem !important;
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
   }
 
   .exam-grid-responsive {
+    grid-template-columns: 100% !important;
     gap: 1.25rem !important;
   }
 
   .exam-question-card {
-    padding: 1.25rem 0.9rem !important;
+    padding: 1.15rem 0.85rem !important;
     border-radius: 14px !important;
   }
 }
 
-/* Hide Scrollbars cleanly across all browsers */
-.no-scrollbar::-webkit-scrollbar {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
+@media (max-width: 480px) {
+  .hero-grid {
+    gap: 1.75rem !important;
+  }
 
-.no-scrollbar {
-  -ms-overflow-style: none !important;
-  scrollbar-width: none !important;
+  .modern-card, .glass-card {
+    padding: 1.25rem !important;
+    border-radius: 14px !important;
+  }
+
+  /* Touch input size without auto-zoom */
+  input, select, textarea {
+    font-size: 16px !important;
+    padding: 0.75rem 0.85rem !important;
+  }
 }

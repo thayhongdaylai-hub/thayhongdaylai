@@ -1,27 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Award, CheckCircle2, ArrowRight, ShieldCheck, Zap, Sparkles, Users, Phone, ChevronLeft, ChevronRight, Camera, Star, Maximize2, X } from 'lucide-react';
+import { STUDENT_PHOTOS } from '../data/galleryData';
 
 export default function Hero({ onOpenRegister }) {
-  const galleryPhotos = [
-    '/images/gallery/1788023503238_204090055134776357_2543730497231762877_7e9b4c78c6268845613a8d2bae8b2879.jpg',
-    '/images/gallery/1788023044901_204090055134776357_2543730497231762877_f125425a703ff6d37e4c69f3cea1fe18.jpg',
-    '/images/gallery/1788023092366_204090055134776357_2543730497231762877_4ce09257c0d1e631a7c2f92fafbcd3fd.jpg',
-    '/images/gallery/1788023503206_204090055134776357_2543730497231762877_37abaa60a3ba5b83b39f01f2a9524d72.jpg',
-    '/images/gallery/1788023503256_204090055134776357_2543730497231762877_19c1ab1ce36d2bcdf44f6ee078f73493.jpg',
-    '/images/gallery/1788023503271_204090055134776357_2543730497231762877_e8ef0f5da7a95b6e2135f83fe825cf77.jpg',
-    '/images/gallery/1788023503285_204090055134776357_2543730497231762877_2c50792b0d9eaaad32cb91b168df6791.jpg',
-    '/images/gallery/1788023503297_204090055134776357_2543730497231762877_905f27ca86aaa9cb25ff6dbd08590b86.jpg',
-    '/images/gallery/1788023503306_204090055134776357_2543730497231762877_a3c8cb1e6805851149a5ec8fbcf64ea6.jpg',
-    '/images/gallery/1788023503316_204090055134776357_2543730497231762877_1cbe969375d62ca3e1b26b1be18aad53.jpg',
-    '/images/gallery/1788023503325_204090055134776357_2543730497231762877_fa8aa721b5d52f77fcef44dcec3c66cf.jpg',
-    '/images/gallery/1788023503334_204090055134776357_2543730497231762877_7e7222968d3e4bb9784bab22a2d52ac4.jpg',
-    '/images/gallery/1788023503345_204090055134776357_2543730497231762877_e0298ec31f78821d6f0ce188cba5c0f0.jpg',
-    '/images/gallery/1788023503353_204090055134776357_2543730497231762877_d2f1d92cb9917bf9f7eecad5445860f5.jpg',
-    '/images/gallery/1788023503361_204090055134776357_2543730497231762877_8ca0d4abbfd8b237b3bf5551d0c8242a.jpg',
-    '/images/gallery/1788023503369_204090055134776357_2543730497231762877_08d18a2acc93f007ff92a6b2b5e53a8c.jpg',
-    '/images/gallery/1788023503377_204090055134776357_2543730497231762877_82ec91416f316d4c110aab892f0c97db.jpg',
-    '/images/gallery/1788023503385_204090055134776357_2543730497231762877_5ce025c095c0c6a37d52cb09dd45a1e6.jpg'
-  ];
+  const galleryPhotos = STUDENT_PHOTOS.map(p => p.src);
 
   const [currentImgIndex, setCurrentImgIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -581,16 +563,16 @@ export default function Hero({ onOpenRegister }) {
         )}
 
         {/* 4 Stats Cards */}
-        <div style={{
+        <div className="hero-stats-grid" style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))',
           gap: '1.25rem',
           marginTop: '3.5rem'
         }}>
-          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div className="modern-card hero-stat-card" style={{ padding: '1.15rem', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
             <div style={{
-              width: '46px',
-              height: '46px',
+              width: '44px',
+              height: '44px',
               borderRadius: '12px',
               background: 'var(--primary-tint)',
               display: 'flex',
@@ -598,18 +580,18 @@ export default function Hero({ onOpenRegister }) {
               justifyContent: 'center',
               flexShrink: 0
             }}>
-              <Award size={24} color="var(--primary)" />
+              <Award size={22} color="var(--primary)" />
             </div>
             <div>
-              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>10+ Năm</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Kinh nghiệm đào tạo</div>
+              <div style={{ fontSize: '1.35rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>10+ Năm</div>
+              <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Kinh nghiệm</div>
             </div>
           </div>
 
-          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div className="modern-card hero-stat-card" style={{ padding: '1.15rem', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
             <div style={{
-              width: '46px',
-              height: '46px',
+              width: '44px',
+              height: '44px',
               borderRadius: '12px',
               background: 'var(--accent-gold-tint)',
               display: 'flex',
@@ -617,18 +599,18 @@ export default function Hero({ onOpenRegister }) {
               justifyContent: 'center',
               flexShrink: 0
             }}>
-              <Users size={24} color="var(--accent-gold-dark)" />
+              <Users size={22} color="var(--accent-gold-dark)" />
             </div>
             <div>
-              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>850+</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Học viên đã nhận bằng</div>
+              <div style={{ fontSize: '1.35rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>850+</div>
+              <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Đã nhận bằng</div>
             </div>
           </div>
 
-          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div className="modern-card hero-stat-card" style={{ padding: '1.15rem', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
             <div style={{
-              width: '46px',
-              height: '46px',
+              width: '44px',
+              height: '44px',
               borderRadius: '12px',
               background: 'var(--accent-emerald-tint)',
               display: 'flex',
@@ -636,18 +618,18 @@ export default function Hero({ onOpenRegister }) {
               justifyContent: 'center',
               flexShrink: 0
             }}>
-              <ShieldCheck size={24} color="var(--accent-emerald)" />
+              <ShieldCheck size={22} color="var(--accent-emerald)" />
             </div>
             <div>
-              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>99%</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Tỷ lệ đỗ kỳ sát hạch</div>
+              <div style={{ fontSize: '1.35rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>99%</div>
+              <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Tỷ lệ thi đỗ</div>
             </div>
           </div>
 
-          <div className="modern-card" style={{ padding: '1.25rem', display: 'flex', alignItems: 'center', gap: '1rem' }}>
+          <div className="modern-card hero-stat-card" style={{ padding: '1.15rem', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
             <div style={{
-              width: '46px',
-              height: '46px',
+              width: '44px',
+              height: '44px',
               borderRadius: '12px',
               background: 'var(--primary-tint)',
               display: 'flex',
@@ -655,11 +637,11 @@ export default function Hero({ onOpenRegister }) {
               justifyContent: 'center',
               flexShrink: 0
             }}>
-              <Zap size={24} color="var(--primary)" />
+              <Zap size={22} color="var(--primary)" />
             </div>
             <div>
-              <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>1 Kèm 1</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Văn minh & Lịch sự</div>
+              <div style={{ fontSize: '1.35rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>1 Kèm 1</div>
+              <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Văn minh - Tận tâm</div>
             </div>
           </div>
         </div>
@@ -670,6 +652,16 @@ export default function Hero({ onOpenRegister }) {
           .hero-grid {
             grid-template-columns: 1fr !important;
             gap: 2rem !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .hero-stats-grid {
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 0.75rem !important;
+            margin-top: 2rem !important;
+          }
+          .hero-stat-card {
+            padding: 0.9rem 0.75rem !important;
           }
         }
       `}</style>

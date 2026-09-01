@@ -1,27 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Award, ShieldCheck, HeartHandshake, Sparkles, CheckCircle2, ArrowRight, UserCheck, Clock, ThumbsUp, Compass, Phone, Star, ChevronLeft, ChevronRight, Camera } from 'lucide-react';
+import { STUDENT_PHOTOS } from '../data/galleryData';
 
 export default function AboutTeacher({ onOpenRegister }) {
-  const teacherPhotos = [
-    '/images/gallery/1788023503238_204090055134776357_2543730497231762877_7e9b4c78c6268845613a8d2bae8b2879.jpg',
-    '/images/gallery/1788023044901_204090055134776357_2543730497231762877_f125425a703ff6d37e4c69f3cea1fe18.jpg',
-    '/images/gallery/1788023092366_204090055134776357_2543730497231762877_4ce09257c0d1e631a7c2f92fafbcd3fd.jpg',
-    '/images/gallery/1788023503206_204090055134776357_2543730497231762877_37abaa60a3ba5b83b39f01f2a9524d72.jpg',
-    '/images/gallery/1788023503256_204090055134776357_2543730497231762877_19c1ab1ce36d2bcdf44f6ee078f73493.jpg',
-    '/images/gallery/1788023503271_204090055134776357_2543730497231762877_e8ef0f5da7a95b6e2135f83fe825cf77.jpg',
-    '/images/gallery/1788023503285_204090055134776357_2543730497231762877_2c50792b0d9eaaad32cb91b168df6791.jpg',
-    '/images/gallery/1788023503297_204090055134776357_2543730497231762877_905f27ca86aaa9cb25ff6dbd08590b86.jpg',
-    '/images/gallery/1788023503306_204090055134776357_2543730497231762877_a3c8cb1e6805851149a5ec8fbcf64ea6.jpg',
-    '/images/gallery/1788023503316_204090055134776357_2543730497231762877_1cbe969375d62ca3e1b26b1be18aad53.jpg',
-    '/images/gallery/1788023503325_204090055134776357_2543730497231762877_fa8aa721b5d52f77fcef44dcec3c66cf.jpg',
-    '/images/gallery/1788023503334_204090055134776357_2543730497231762877_7e7222968d3e4bb9784bab22a2d52ac4.jpg',
-    '/images/gallery/1788023503345_204090055134776357_2543730497231762877_e0298ec31f78821d6f0ce188cba5c0f0.jpg',
-    '/images/gallery/1788023503353_204090055134776357_2543730497231762877_d2f1d92cb9917bf9f7eecad5445860f5.jpg',
-    '/images/gallery/1788023503361_204090055134776357_2543730497231762877_8ca0d4abbfd8b237b3bf5551d0c8242a.jpg',
-    '/images/gallery/1788023503369_204090055134776357_2543730497231762877_08d18a2acc93f007ff92a6b2b5e53a8c.jpg',
-    '/images/gallery/1788023503377_204090055134776357_2543730497231762877_82ec91416f316d4c110aab892f0c97db.jpg',
-    '/images/gallery/1788023503385_204090055134776357_2543730497231762877_5ce025c095c0c6a37d52cb09dd45a1e6.jpg'
-  ];
+  const teacherPhotos = STUDENT_PHOTOS.map(p => p.src);
 
   const [currentIdx, setCurrentIdx] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -196,7 +178,7 @@ export default function AboutTeacher({ onOpenRegister }) {
         </div>
 
         {/* Teacher Visual & Profile Summary Banner with Full Photo Gallery */}
-        <div className="modern-card" style={{
+        <div className="modern-card teacher-profile-grid" style={{
           padding: '2rem',
           background: 'var(--bg-card)',
           borderRadius: '20px',
@@ -462,9 +444,10 @@ export default function AboutTeacher({ onOpenRegister }) {
 
       <style>{`
         @media (max-width: 850px) {
-          .modern-card[style*="grid-template-columns: 360px 1fr"] {
+          .teacher-profile-grid {
             grid-template-columns: 1fr !important;
             gap: 1.5rem !important;
+            padding: 1.25rem !important;
           }
         }
       `}</style>
