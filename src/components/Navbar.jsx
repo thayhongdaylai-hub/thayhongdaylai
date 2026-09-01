@@ -24,6 +24,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
     { name: 'Lộ Trình', href: '#roadmap' },
     { name: 'Sân Tập', href: '#facilities' },
     { name: 'Đánh Giá', href: '#testimonials' },
+    { name: 'Hình Ảnh Thực Tế', href: '#student-gallery' },
     { name: 'Hỏi Đáp', href: '#faq' },
   ];
 
@@ -73,15 +74,16 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
             <img
               src="/logo.png"
               alt="Logo Thầy Hồng Dạy Lái"
-              width="44"
-              height="44"
+              width="46"
+              height="46"
               style={{
-                width: '44px',
-                height: '44px',
+                width: '46px',
+                height: '46px',
                 borderRadius: '50%',
+                objectFit: 'cover',
                 flexShrink: 0,
-                boxShadow: '0 4px 12px rgba(29, 78, 216, 0.25)',
-                border: '2px solid rgba(251, 191, 36, 0.6)'
+                boxShadow: '0 4px 14px rgba(29, 78, 216, 0.3)',
+                border: '2px solid rgba(251, 191, 36, 0.7)'
               }}
             />
             <div style={{

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Award, CheckCircle2, ArrowRight, ShieldCheck, Zap, Sparkles, Users, Phone, ChevronLeft, ChevronRight, Camera, Star } from 'lucide-react';
+import { Award, CheckCircle2, ArrowRight, ShieldCheck, Zap, Sparkles, Users, Phone, ChevronLeft, ChevronRight, Camera, Star, Maximize2, X } from 'lucide-react';
 
 export default function Hero({ onOpenRegister }) {
   const galleryPhotos = [
@@ -27,14 +27,27 @@ export default function Hero({ onOpenRegister }) {
   const [isPaused, setIsPaused] = useState(false);
   const [touchStartX, setTouchStartX] = useState(null);
   const [touchEndX, setTouchEndX] = useState(null);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
 
   useEffect(() => {
-    if (isPaused) return;
+    if (isPaused || lightboxOpen) return;
     const interval = setInterval(() => {
       setCurrentImgIndex(prev => (prev + 1) % galleryPhotos.length);
     }, 4000);
     return () => clearInterval(interval);
-  }, [isPaused, galleryPhotos.length]);
+  }, [isPaused, lightboxOpen, galleryPhotos.length]);
+
+  // Keyboard navigation for lightbox
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!lightboxOpen) return;
+      if (e.key === 'Escape') setLightboxOpen(false);
+      if (e.key === 'ArrowRight') handleNext();
+      if (e.key === 'ArrowLeft') handlePrev();
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [lightboxOpen]);
 
   const handlePrev = (e) => {
     if (e) e.stopPropagation();
@@ -78,11 +91,11 @@ export default function Hero({ onOpenRegister }) {
       borderBottom: '1px solid var(--border-color)',
       overflow: 'hidden'
     }}>
-      <div className="container" style={{ position: 'relative', zIndex: 1 }}>
+      <div className="container" style={{ position: 'relative', zIndex: 1, maxWidth: '1540px' }}>
         <div className="hero-grid" style={{
           display: 'grid',
-          gridTemplateColumns: '1.15fr 0.85fr',
-          gap: '3rem',
+          gridTemplateColumns: 'minmax(0, 0.95fr) minmax(0, 1.15fr)',
+          gap: '2.5rem',
           alignItems: 'center'
         }}>
           
@@ -139,116 +152,71 @@ export default function Hero({ onOpenRegister }) {
               </div>
             </div>
 
-            {/* Dual CTA Buttons */}
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              flexWrap: 'wrap',
-              gap: '0.85rem'
-            }}>
+            {/* Direct Action CTAs */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.85rem', marginBottom: '1.5rem' }}>
               <button
-                onClick={() => onOpenRegister()}
-                className="btn btn-gold"
+                onClick={() => onOpenRegister && onOpenRegister({ title: 'Đăng Ký Học Lái Xe 2026' })}
+                className="btn btn-primary"
                 style={{
-                  padding: '0.95rem 1.85rem',
-                  fontSize: '1rem',
-                  borderRadius: '12px'
+                  padding: '0.95rem 1.75rem',
+                  fontSize: '1.02rem',
+                  borderRadius: '14px',
+                  boxShadow: 'var(--shadow-primary)'
                 }}
               >
-                <Sparkles size={18} />
                 <span>ĐĂNG KÝ HỌC NGAY</span>
+                <ArrowRight size={18} />
               </button>
 
+              <a
+                href="#theory-exam"
+                className="btn btn-gold"
+                style={{
+                  padding: '0.95rem 1.6rem',
+                  fontSize: '1.02rem',
+                  borderRadius: '14px',
+                  boxShadow: 'var(--shadow-gold)',
+                  textDecoration: 'none'
+                }}
+              >
+                <span>THI THỬ LÝ THUYẾT</span>
+                <Zap size={18} />
+              </a>
+            </div>
+
+            {/* Quick Contact Line: Phone & Fanpage */}
+            <div style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              alignItems: 'center',
+              gap: '0.85rem'
+            }}>
+              {/* Phone Contacts */}
               <div style={{
                 display: 'inline-flex',
                 alignItems: 'center',
-                background: 'var(--bg-card)',
-                border: '1.5px solid var(--primary)',
+                gap: '0.45rem',
+                padding: '0.35rem 0.5rem',
                 borderRadius: '12px',
-                padding: '0.3rem 0.5rem',
-                gap: '0.35rem',
-                boxShadow: 'var(--shadow-sm)',
-                flexWrap: 'wrap'
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-color)',
+                boxShadow: 'var(--shadow-sm)'
               }}>
                 <div style={{
                   display: 'flex',
                   alignItems: 'center',
-                  gap: '0.4rem',
-                  padding: '0.5rem 0.65rem',
+                  gap: '0.35rem',
                   color: 'var(--primary)',
-                  fontWeight: 700,
+                  fontWeight: 800,
                   fontSize: '0.92rem'
                 }}>
                   <Phone size={16} />
                   <span>GỌI TƯ VẤN:</span>
                 </div>
-                <a
-                  href="https://zalo.me/0983406221"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    padding: '0.5rem 0.75rem',
-                    borderRadius: '8px',
-                    background: 'var(--primary-tint)',
-                    color: 'var(--primary)',
-                    fontWeight: 800,
-                    fontSize: '0.92rem',
-                    textDecoration: 'none',
-                    transition: 'all 0.2s ease'
-                  }}
-                  title="Nhắn Zalo Thầy Hồng: 0983.406.221"
-                >
-                  0983.406.221
-                </a>
-                <span style={{ color: 'var(--text-light)', fontWeight: 600 }}>•</span>
-                <a
-                  href="https://zalo.me/0336611194"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    padding: '0.5rem 0.75rem',
-                    borderRadius: '8px',
-                    background: 'var(--primary-tint)',
-                    color: 'var(--primary)',
-                    fontWeight: 800,
-                    fontSize: '0.92rem',
-                    textDecoration: 'none',
-                    transition: 'all 0.2s ease'
-                  }}
-                  title="Nhắn Zalo Thầy Hồng: 0336.611.194"
-                >
-                  0336.611.194
-                </a>
+                <a href="https://zalo.me/0983406221" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', fontWeight: 800, textDecoration: 'none' }}>0983.406.221</a>
+                <span style={{ color: 'var(--text-light)' }}>•</span>
+                <a href="https://zalo.me/0336611194" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--text-main)', fontWeight: 800, textDecoration: 'none' }}>0336.611.194</a>
               </div>
-
-              {/* Facebook Fanpage Button */}
-              <a
-                href="https://www.facebook.com/share/1GuWF1te7x/"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  gap: '0.45rem',
-                  padding: '0.78rem 1.15rem',
-                  borderRadius: '12px',
-                  background: 'var(--bg-card)',
-                  border: '1.5px solid #1877F2',
-                  color: '#1877F2',
-                  fontWeight: 700,
-                  fontSize: '0.92rem',
-                  textDecoration: 'none',
-                  boxShadow: 'var(--shadow-sm)',
-                  transition: 'all 0.25s ease'
-                }}
-                title="Fanpage Facebook Thầy Hồng Dạy Lái"
-              >
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="#1877F2">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-                <span>FANPAGE</span>
-              </a>
             </div>
 
             {/* Rating summary */}
@@ -271,33 +239,37 @@ export default function Hero({ onOpenRegister }) {
             </div>
           </div>
 
-          {/* Right Column: Real Photo Gallery Card */}
-          <div style={{ position: 'relative' }}>
+          {/* Right Column: Wide & Expansive Outer Frame */}
+          <div style={{ position: 'relative', width: '100%' }}>
             <div className="modern-card" style={{
-              padding: '0.75rem',
-              borderRadius: '20px',
+              padding: '0.85rem',
+              borderRadius: '22px',
               boxShadow: 'var(--shadow-lg)',
-              background: 'var(--bg-card)'
+              background: 'var(--bg-card)',
+              width: '100%'
             }}>
-              {/* Photo Slider Box */}
+              {/* Photo Box spanning full width of the wide frame */}
               <div
                 onTouchStart={handleTouchStart}
                 onTouchMove={handleTouchMove}
                 onTouchEnd={handleTouchEnd}
+                onClick={() => setLightboxOpen(true)}
                 style={{
                   position: 'relative',
                   width: '100%',
-                  height: 'clamp(300px, 52vw, 440px)',
-                  borderRadius: '14px',
+                  height: 'clamp(340px, 32vw, 420px)',
+                  borderRadius: '16px',
                   overflow: 'hidden',
                   background: '#0B1120',
                   userSelect: 'none',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center'
+                  justifyContent: 'center',
+                  cursor: 'zoom-in'
                 }}
+                title="Bấm để xem ảnh phóng to toàn màn hình"
               >
-                {/* Ambient Blurred Background to Fill the Entire Frame Seamlessly */}
+                {/* Ambient Blurred Background to Fill the Entire Wide Frame Seamlessly */}
                 <img
                   src={galleryPhotos[currentImgIndex]}
                   alt=""
@@ -309,14 +281,14 @@ export default function Hero({ onOpenRegister }) {
                     width: '100%',
                     height: '100%',
                     objectFit: 'cover',
-                    filter: 'blur(28px) brightness(0.65)',
-                    transform: 'scale(1.2)',
+                    filter: 'blur(32px) brightness(0.55)',
+                    transform: 'scale(1.25)',
                     zIndex: 1,
                     pointerEvents: 'none'
                   }}
                 />
 
-                {/* Main Foreground Image Displayed 100% in Full Without Any Cropping */}
+                {/* Main Foreground Image Displayed in Full Detail */}
                 <img
                   src={galleryPhotos[currentImgIndex]}
                   alt="Thầy Hồng Dạy Lái Xe Thực Tế"
@@ -330,26 +302,46 @@ export default function Hero({ onOpenRegister }) {
                     objectFit: 'contain',
                     display: 'block',
                     transition: 'all 0.3s ease',
-                    filter: 'drop-shadow(0 8px 24px rgba(0, 0, 0, 0.45))'
+                    filter: 'drop-shadow(0 10px 30px rgba(0, 0, 0, 0.55))'
                   }}
                 />
 
-
-                {/* Photo Counter */}
+                {/* Top Left: Zoom / Fullscreen Button */}
                 <div style={{
                   position: 'absolute',
-                  top: '12px',
-                  right: '12px',
+                  top: '14px',
+                  left: '14px',
                   zIndex: 10,
-                  background: 'rgba(15, 23, 42, 0.75)',
+                  background: 'rgba(15, 23, 42, 0.8)',
                   backdropFilter: 'blur(8px)',
                   color: '#FFFFFF',
-                  padding: '0.35rem 0.75rem',
+                  padding: '0.4rem 0.8rem',
                   borderRadius: '9999px',
-                  fontSize: '0.75rem',
-                  fontWeight: 700
+                  fontSize: '0.78rem',
+                  fontWeight: 700,
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.35rem'
                 }}>
-                  {currentImgIndex + 1}/{galleryPhotos.length}
+                  <Maximize2 size={14} />
+                  <span>Phóng to</span>
+                </div>
+
+                {/* Top Right: Counter Badge */}
+                <div style={{
+                  position: 'absolute',
+                  top: '14px',
+                  right: '14px',
+                  zIndex: 10,
+                  background: 'rgba(15, 23, 42, 0.85)',
+                  backdropFilter: 'blur(8px)',
+                  color: '#FFFFFF',
+                  padding: '0.4rem 0.85rem',
+                  borderRadius: '9999px',
+                  fontSize: '0.8rem',
+                  fontWeight: 800
+                }}>
+                  {currentImgIndex + 1} / {galleryPhotos.length}
                 </div>
 
                 {/* Navigation Arrows */}
@@ -358,12 +350,12 @@ export default function Hero({ onOpenRegister }) {
                   style={{
                     position: 'absolute',
                     top: '50%',
-                    left: '10px',
+                    left: '12px',
                     transform: 'translateY(-50%)',
-                    width: '38px',
-                    height: '38px',
+                    width: '42px',
+                    height: '42px',
                     borderRadius: '50%',
-                    background: 'rgba(255, 255, 255, 0.9)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     border: 'none',
                     color: '#0F172A',
                     display: 'flex',
@@ -371,12 +363,12 @@ export default function Hero({ onOpenRegister }) {
                     justifyContent: 'center',
                     cursor: 'pointer',
                     boxShadow: 'var(--shadow-md)',
-                    zIndex: 10,
+                    zIndex: 20,
                     transition: 'all 0.2s ease'
                   }}
                   aria-label="Ảnh trước"
                 >
-                  <ChevronLeft size={22} />
+                  <ChevronLeft size={24} />
                 </button>
 
                 <button
@@ -384,12 +376,12 @@ export default function Hero({ onOpenRegister }) {
                   style={{
                     position: 'absolute',
                     top: '50%',
-                    right: '10px',
+                    right: '12px',
                     transform: 'translateY(-50%)',
-                    width: '38px',
-                    height: '38px',
+                    width: '42px',
+                    height: '42px',
                     borderRadius: '50%',
-                    background: 'rgba(255, 255, 255, 0.9)',
+                    background: 'rgba(255, 255, 255, 0.95)',
                     border: 'none',
                     color: '#0F172A',
                     display: 'flex',
@@ -397,32 +389,196 @@ export default function Hero({ onOpenRegister }) {
                     justifyContent: 'center',
                     cursor: 'pointer',
                     boxShadow: 'var(--shadow-md)',
-                    zIndex: 10,
+                    zIndex: 20,
                     transition: 'all 0.2s ease'
                   }}
                   aria-label="Ảnh kế tiếp"
                 >
-                  <ChevronRight size={22} />
+                  <ChevronRight size={24} />
                 </button>
               </div>
 
-              {/* Photo Caption */}
-              <div style={{
-                padding: '0.85rem 0.5rem 0.35rem 0.5rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '0.84rem',
-                color: 'var(--text-muted)'
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                  <Camera size={16} color="var(--primary)" />
-                  <span>Hình Ảnh Đào Tạo Thực Tế</span>
-                </div>
+              {/* Horizontal Thumbnails Carousel Strip across full card width */}
+              <div
+                className="no-scrollbar"
+                style={{
+                  display: 'flex',
+                  gap: '0.5rem',
+                  overflowX: 'auto',
+                  padding: '0.55rem 0.2rem 0.2rem 0.2rem',
+                  scrollbarWidth: 'none',
+                  msOverflowStyle: 'none'
+                }}
+              >
+                {galleryPhotos.map((photo, idx) => (
+                  <button
+                    key={idx}
+                    onClick={(e) => { e.stopPropagation(); setCurrentImgIndex(idx); }}
+                    style={{
+                      width: '58px',
+                      height: '58px',
+                      flexShrink: 0,
+                      borderRadius: '10px',
+                      overflow: 'hidden',
+                      border: currentImgIndex === idx ? '2.5px solid var(--primary)' : '1px solid var(--border-color)',
+                      padding: 0,
+                      background: '#0B1120',
+                      cursor: 'pointer',
+                      opacity: currentImgIndex === idx ? 1 : 0.6,
+                      transform: currentImgIndex === idx ? 'scale(1.05)' : 'scale(1)',
+                      boxShadow: currentImgIndex === idx ? 'var(--shadow-primary)' : 'none',
+                      transition: 'all 0.2s ease'
+                    }}
+                    aria-label={`Xem ảnh ${idx + 1}`}
+                  >
+                    <img src={photo} alt="" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                  </button>
+                ))}
               </div>
             </div>
           </div>
         </div>
+
+        {/* Fullscreen Lightbox Modal */}
+        {lightboxOpen && (
+          <div
+            onClick={() => setLightboxOpen(false)}
+            style={{
+              position: 'fixed',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              zIndex: 99999,
+              background: 'rgba(11, 17, 32, 0.96)',
+              backdropFilter: 'blur(16px)',
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: '1.5rem',
+              cursor: 'zoom-out'
+            }}
+          >
+            {/* Close button */}
+            <button
+              onClick={() => setLightboxOpen(false)}
+              style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                width: '46px',
+                height: '46px',
+                borderRadius: '50%',
+                background: 'rgba(255, 255, 255, 0.15)',
+                border: '1px solid rgba(255, 255, 255, 0.3)',
+                color: '#FFFFFF',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                zIndex: 100000
+              }}
+              aria-label="Đóng xem to"
+            >
+              <X size={26} />
+            </button>
+
+            {/* Counter */}
+            <div style={{
+              position: 'absolute',
+              top: '25px',
+              left: '25px',
+              color: '#FFFFFF',
+              fontSize: '1.05rem',
+              fontWeight: 800,
+              background: 'rgba(0,0,0,0.6)',
+              padding: '0.45rem 1.1rem',
+              borderRadius: '9999px'
+            }}>
+              {currentImgIndex + 1} / {galleryPhotos.length}
+            </div>
+
+            {/* Main Fullscreen Image */}
+            <div
+              onClick={(e) => e.stopPropagation()}
+              style={{
+                position: 'relative',
+                maxWidth: '92vw',
+                maxHeight: '84vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'default'
+              }}
+            >
+              <img
+                src={galleryPhotos[currentImgIndex]}
+                alt="Thầy Hồng Dạy Lái Thực Tế"
+                style={{
+                  maxWidth: '100%',
+                  maxHeight: '84vh',
+                  width: 'auto',
+                  height: 'auto',
+                  objectFit: 'contain',
+                  borderRadius: '16px',
+                  boxShadow: '0 25px 65px rgba(0, 0, 0, 0.85)'
+                }}
+              />
+            </div>
+
+            {/* Prev / Next controls */}
+            <button
+              onClick={(e) => { e.stopPropagation(); handlePrev(); }}
+              style={{
+                position: 'absolute',
+                left: '20px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                width: '54px',
+                height: '54px',
+                borderRadius: '50%',
+                background: 'rgba(255, 255, 255, 0.92)',
+                border: 'none',
+                color: '#0F172A',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.5)',
+                zIndex: 100000
+              }}
+              aria-label="Ảnh trước"
+            >
+              <ChevronLeft size={34} />
+            </button>
+
+            <button
+              onClick={(e) => { e.stopPropagation(); handleNext(); }}
+              style={{
+                position: 'absolute',
+                right: '20px',
+                top: '50%',
+                transform: 'translateY(-50%)',
+                width: '54px',
+                height: '54px',
+                borderRadius: '50%',
+                background: 'rgba(255, 255, 255, 0.92)',
+                border: 'none',
+                color: '#0F172A',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+                boxShadow: '0 8px 24px rgba(0,0,0,0.5)',
+                zIndex: 100000
+              }}
+              aria-label="Ảnh kế tiếp"
+            >
+              <ChevronRight size={34} />
+            </button>
+          </div>
+        )}
 
         {/* 4 Stats Cards */}
         <div style={{

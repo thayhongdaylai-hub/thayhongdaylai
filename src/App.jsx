@@ -9,6 +9,7 @@ import TheoryExam from './components/TheoryExam';
 import Roadmap from './components/Roadmap';
 import Facilities from './components/Facilities';
 import Testimonials from './components/Testimonials';
+import StudentGallery from './components/StudentGallery';
 import FAQ from './components/FAQ';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
@@ -91,6 +92,7 @@ export default function App() {
         <Roadmap onOpenRegister={() => handleOpenRegister()} />
         <Facilities />
         <Testimonials />
+        <StudentGallery onOpenRegister={() => handleOpenRegister()} />
         <FAQ />
         <CTASection onOpenRegister={() => handleOpenRegister()} />
       </main>
