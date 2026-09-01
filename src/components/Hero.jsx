@@ -84,13 +84,13 @@ export default function Hero({ onOpenRegister }) {
               </div>
             </div>
 
-            {/* Direct Action CTAs */}
+            {/* Direct Action CTAs: Đăng Ký, Thi Thử, Fanpage */}
             <div className="hero-cta-group" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', marginBottom: '1.25rem', width: '100%' }}>
               <button
                 onClick={() => onOpenRegister && onOpenRegister({ title: 'Đăng Ký Học Lái Xe 2026' })}
                 className="btn btn-primary"
                 style={{
-                  padding: '0.85rem 1.6rem',
+                  padding: '0.85rem 1.5rem',
                   fontSize: '0.96rem',
                   borderRadius: '12px',
                   boxShadow: 'var(--shadow-primary)',
@@ -108,7 +108,7 @@ export default function Hero({ onOpenRegister }) {
                 href="#theory-exam"
                 className="btn btn-gold"
                 style={{
-                  padding: '0.85rem 1.45rem',
+                  padding: '0.85rem 1.4rem',
                   fontSize: '0.96rem',
                   borderRadius: '12px',
                   boxShadow: 'var(--shadow-gold)',
@@ -122,18 +122,47 @@ export default function Hero({ onOpenRegister }) {
                 <span>THI THỬ LÝ THUYẾT</span>
                 <Zap size={17} />
               </a>
+
+              <a
+                href="https://www.facebook.com/share/1GuWF1te7x/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn"
+                style={{
+                  padding: '0.85rem 1.35rem',
+                  fontSize: '0.94rem',
+                  borderRadius: '12px',
+                  background: 'var(--bg-card)',
+                  border: '1.5px solid #1877F2',
+                  color: '#1877F2',
+                  fontWeight: 750,
+                  textDecoration: 'none',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '0.45rem',
+                  boxShadow: '0 2px 8px rgba(24, 119, 242, 0.15)',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Fanpage Facebook Thầy Hồng Dạy Lái"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="#1877F2">
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                </svg>
+                <span>FANPAGE THẦY HỒNG</span>
+              </a>
             </div>
 
-            {/* Quick Contact Line: Phone Contacts */}
+            {/* Quick Contact Line: 2 Số Zalo Thầy Hồng & Tuyển Sinh */}
             <div className="hero-phone-box" style={{
               display: 'inline-flex',
               alignItems: 'center',
               flexWrap: 'wrap',
-              gap: '0.45rem',
-              padding: '0.45rem 0.75rem',
+              gap: '0.5rem',
+              padding: '0.55rem 0.85rem',
               borderRadius: '12px',
               background: 'var(--bg-card)',
-              border: '1px solid var(--border-color)',
+              border: '1.5px solid var(--border-color)',
               boxShadow: 'var(--shadow-sm)',
               maxWidth: '100%',
               marginBottom: '1.25rem'
@@ -143,44 +172,46 @@ export default function Hero({ onOpenRegister }) {
                 alignItems: 'center',
                 gap: '0.35rem',
                 color: 'var(--primary)',
-                fontWeight: 800,
-                fontSize: '0.86rem',
+                fontWeight: 850,
+                fontSize: '0.88rem',
                 flexShrink: 0
               }}>
-                <Phone size={15} />
-                <span>GỌI TƯ VẤN:</span>
+                <Phone size={16} />
+                <span>ZALO TƯ VẤN:</span>
               </div>
-              <div className="hero-phone-links" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.4rem', fontSize: '0.88rem' }}>
+              <div className="hero-phone-links" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.45rem', fontSize: '0.9rem' }}>
                 <a
                   href="https://zalo.me/0983406221"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: 'var(--text-main)',
+                    color: 'var(--primary)',
                     fontWeight: 800,
                     textDecoration: 'none',
-                    padding: '0.2rem 0.45rem',
-                    borderRadius: '6px',
-                    background: 'var(--bg-input)'
+                    padding: '0.25rem 0.6rem',
+                    borderRadius: '8px',
+                    background: 'var(--primary-tint)',
+                    border: '1px solid rgba(59, 130, 246, 0.2)'
                   }}
-                  title="Nhắn Zalo Thầy Hồng"
+                  title="Nhắn Zalo Thầy Hồng: 0983.406.221"
                 >
                   0983.406.221
                 </a>
-                <span style={{ color: 'var(--text-muted)' }}>•</span>
+                <span style={{ color: 'var(--text-muted)', fontWeight: 700 }}>•</span>
                 <a
                   href="https://zalo.me/0336611194"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
-                    color: 'var(--text-main)',
+                    color: 'var(--primary)',
                     fontWeight: 800,
                     textDecoration: 'none',
-                    padding: '0.2rem 0.45rem',
-                    borderRadius: '6px',
-                    background: 'var(--bg-input)'
+                    padding: '0.25rem 0.6rem',
+                    borderRadius: '8px',
+                    background: 'var(--primary-tint)',
+                    border: '1px solid rgba(59, 130, 246, 0.2)'
                   }}
-                  title="Nhắn Zalo Tư Vấn"
+                  title="Nhắn Zalo Tuyển Sinh: 0336.611.194"
                 >
                   0336.611.194
                 </a>
