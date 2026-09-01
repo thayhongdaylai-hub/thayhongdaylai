@@ -19,10 +19,12 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
   const navLinks = [
     { name: 'Khóa Học', href: '#courses' },
     { name: 'Nâng Hạng', href: '#upgrades' },
-    { name: 'Ưu Điểm', href: '#about-teacher' },
+    { name: 'Xe Nâng & Máy Xúc', href: '#machinery' },
     { name: 'Thi Thử Lý Thuyết', href: '#theory-exam' },
     { name: 'Lộ Trình', href: '#roadmap' },
     { name: 'Sân Tập', href: '#facilities' },
+    { name: 'Ưu Điểm', href: '#about-teacher' },
+    { name: 'Hình Ảnh', href: '#student-gallery' },
     { name: 'Đánh Giá', href: '#testimonials' },
     { name: 'Hỏi Đáp', href: '#faq' },
   ];

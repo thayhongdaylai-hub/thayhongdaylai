@@ -22,7 +22,11 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
     'up_d1': 'Nâng Hạng D1 (16 Chỗ) - 18 Triệu',
     'up_d2': 'Nâng Hạng D2 (29 Chỗ) - 18 Triệu',
     'up_d': 'Nâng Hạng D (Trên 29 Chỗ) - 18 Triệu',
-    'up_ce': 'Nâng Hạng CE (Sơ Mi Rơ Moóc Trên 7T5) - 19 Triệu'
+    'up_ce': 'Nâng Hạng CE (Sơ Mi Rơ Moóc Trên 7T5) - 19 Triệu',
+    'forklift': 'Chứng Chỉ Vận Hành Xe Nâng (Forklift)',
+    'excavator': 'Chứng Chỉ Vận Hành Máy Xúc (Excavator)',
+    'crane': 'Chứng Chỉ Vận Hành Máy Cẩu (Crane)',
+    'machinery_enterprise': 'Đào Tạo Chứng Chỉ Doanh Nghiệp (Xe Nâng, Máy Xúc, Máy Cẩu)'
   };
 
   const branchMap = {
@@ -33,7 +37,11 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
   useEffect(() => {
     if (initialData && initialData.courseName) {
       const cName = initialData.courseName.toUpperCase();
-      if (cName.includes('CE')) setFormData(prev => ({ ...prev, course: 'up_ce' }));
+      if (cName.includes('XE NÂNG') || cName.includes('FORKLIFT')) setFormData(prev => ({ ...prev, course: 'forklift' }));
+      else if (cName.includes('MÁY XÚC') || cName.includes('EXCAVATOR')) setFormData(prev => ({ ...prev, course: 'excavator' }));
+      else if (cName.includes('MÁY CẨU') || cName.includes('CẦN TRỤC') || cName.includes('CRANE')) setFormData(prev => ({ ...prev, course: 'crane' }));
+      else if (cName.includes('DOANH NGHIỆP') || cName.includes('BÁO GIÁ')) setFormData(prev => ({ ...prev, course: 'machinery_enterprise' }));
+      else if (cName.includes('CE')) setFormData(prev => ({ ...prev, course: 'up_ce' }));
       else if (cName.includes('D1')) setFormData(prev => ({ ...prev, course: 'up_d1' }));
       else if (cName.includes('D2')) setFormData(prev => ({ ...prev, course: 'up_d2' }));
       else if (cName.includes('NÂNG HẠNG D') || (cName.includes('HẠNG D') && !cName.includes('D1') && !cName.includes('D2'))) setFormData(prev => ({ ...prev, course: 'up_d' }));
@@ -250,6 +258,12 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                       <option value="up_d2">Nâng Hạng D2 (29 Chỗ) - 18 Triệu</option>
                       <option value="up_d">Nâng Hạng D (Trên 29 Chỗ) - 18 Triệu</option>
                       <option value="up_ce">Nâng Hạng CE (Sơ Mi Rơ Moóc Trên 7T5) - 19 Triệu</option>
+                    </optgroup>
+                    <optgroup label="Chứng Chỉ Máy Công Trình">
+                      <option value="forklift">Chứng Chỉ Vận Hành Xe Nâng (Forklift)</option>
+                      <option value="excavator">Chứng Chỉ Vận Hành Máy Xúc (Excavator)</option>
+                      <option value="crane">Chứng Chỉ Vận Hành Máy Cẩu (Crane)</option>
+                      <option value="machinery_enterprise">Đào Tạo Chứng Chỉ Cho Doanh Nghiệp</option>
                     </optgroup>
                   </select>
                 </div>

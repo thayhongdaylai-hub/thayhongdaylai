@@ -59,8 +59,8 @@ export default function Footer() {
               <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Ô Tô Hạng B ( 4-9 chỗ )</a></li>
               <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Ô Tô Hạng C1 ( Xe Tải )</a></li>
               <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A1 ( Dưới 125cc )</a></li>
-              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A ( Trên 125cc )</a></li>
-              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A02 ( SH / PKL )</a></li>
+              <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A &amp; A02 ( PKL / SH )</a></li>
+              <li><a href="#machinery" style={{ color: '#FBBF24', fontWeight: 700, transition: 'color 0.2s' }}>Chứng Chỉ Xe Nâng • Máy Xúc • Cẩu</a></li>
             </ul>
           </div>
 
@@ -71,6 +71,7 @@ export default function Footer() {
             </h4>
             <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '0.65rem', fontSize: '0.88rem' }}>
               <li><a href="#about-teacher" style={{ color: '#CBD5E1' }}>5 Ưu điểm đào tạo</a></li>
+              <li><a href="#student-gallery" style={{ color: '#CBD5E1' }}>Hình ảnh thực tế học viên</a></li>
               <li><a href="#theory-exam" style={{ color: '#CBD5E1' }}>Thi thử lý thuyết online 2026</a></li>
               <li><a href="#roadmap" style={{ color: '#CBD5E1' }}>Lộ trình đào tạo 7 bước</a></li>
               <li><a href="#facilities" style={{ color: '#CBD5E1' }}>Hệ thống sân tập chuẩn ISO</a></li>

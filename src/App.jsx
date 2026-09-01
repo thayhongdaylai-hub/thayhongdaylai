@@ -3,11 +3,13 @@ import { Phone, MessageSquare, BookOpen, Gift, Sparkles } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CoursePackages from './components/CoursePackages';
-import AboutTeacher from './components/AboutTeacher';
 import UpgradePackages from './components/UpgradePackages';
+import MachineryCertificates from './components/MachineryCertificates';
 import TheoryExam from './components/TheoryExam';
 import Roadmap from './components/Roadmap';
 import Facilities from './components/Facilities';
+import AboutTeacher from './components/AboutTeacher';
+import StudentGallery from './components/StudentGallery';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import CTASection from './components/CTASection';
@@ -84,14 +86,37 @@ export default function App() {
           onOpenRegister={() => handleOpenRegister()}
           onOpenTestModal={() => setIsTestOpen(true)}
         />
+        {/* 1. Các Khóa Đào Tạo Lái Xe Chuẩn GTVT */}
         <CoursePackages onSelectCourse={handleSelectCourse} />
-        <AboutTeacher onOpenRegister={() => handleOpenRegister()} />
+
+        {/* 2. Các Gói Nâng Hạng Giấy Phép Lái Xe */}
         <UpgradePackages onSelectUpgrade={handleSelectCourse} />
+
+        {/* 3. Đào Tạo & Cấp Chứng Chỉ Xe Nâng • Máy Xúc • Máy Cẩu */}
+        <MachineryCertificates onSelectMachinery={handleSelectCourse} />
+
+        {/* 4. Thi Thử Lý Thuyết Lái Xe Trực Tuyến */}
         <TheoryExam />
+
+        {/* 5. Lộ Trình Đào Tạo 7 Bước Bài Bản */}
         <Roadmap onOpenRegister={() => handleOpenRegister()} />
+
+        {/* 6. Hệ Thống Sân Tập & Xe Thực Hành */}
         <Facilities />
+
+        {/* 7. Ưu Điểm Vượt Trội Tại Thầy Hồng Dạy Lái */}
+        <AboutTeacher onOpenRegister={() => handleOpenRegister()} />
+
+        {/* 8. Hình Ảnh Thầy Hồng Và Các Học Viên Thực Tế */}
+        <StudentGallery onOpenRegister={() => handleOpenRegister()} />
+
+        {/* 9. Học Viên Nói Gì Về Thầy Hồng? */}
         <Testimonials />
+
+        {/* 10. Câu Hỏi Thường Gặp (FAQ) */}
         <FAQ />
+
+        {/* 10. Kêu gọi hành động & Đăng ký tư vấn */}
         <CTASection onOpenRegister={() => handleOpenRegister()} />
       </main>
       <Footer />
