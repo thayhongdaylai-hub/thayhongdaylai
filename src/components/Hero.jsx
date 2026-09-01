@@ -271,8 +271,8 @@ export default function Hero({ onOpenRegister }) {
             </div>
           </div>
 
-          {/* Right Column: Wide & Expansive Outer Frame */}
-          <div style={{ position: 'relative', width: '100%' }}>
+          {/* Right Column: Wide & Expansive Outer Frame (Visible on Desktop/Tablet, Hidden on Mobile for clean text focus) */}
+          <div className="hero-gallery-col" style={{ position: 'relative', width: '100%' }}>
             <div className="modern-card" style={{
               padding: '0.85rem',
               borderRadius: '22px',
@@ -701,14 +701,17 @@ export default function Hero({ onOpenRegister }) {
         @media (max-width: 900px) {
           .hero-grid {
             grid-template-columns: 1fr !important;
-            gap: 2rem !important;
+            gap: 1.5rem !important;
+          }
+          .hero-gallery-col {
+            display: none !important;
           }
         }
         @media (max-width: 768px) {
           .hero-stats-grid {
             grid-template-columns: repeat(2, 1fr) !important;
             gap: 0.75rem !important;
-            margin-top: 2rem !important;
+            margin-top: 1.75rem !important;
           }
           .hero-stat-card {
             padding: 0.9rem 0.75rem !important;
