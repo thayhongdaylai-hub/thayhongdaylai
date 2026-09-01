@@ -3,16 +3,11 @@ import {
   HardHat,
   Construction,
   Truck,
-  Wrench,
-  Award,
   ShieldCheck,
   CheckCircle2,
   ArrowRight,
-  Sparkles,
   Clock,
-  Building2,
-  FileCheck,
-  Phone
+  FileCheck
 } from 'lucide-react';
 
 export default function MachineryCertificates({ onSelectMachinery }) {
@@ -82,14 +77,14 @@ export default function MachineryCertificates({ onSelectMachinery }) {
       desc: 'Khai giảng liên tục hàng tuần. Hỗ trợ khóa học cấp tốc 1 - 2 ngày cho học viên đã có kinh nghiệm.'
     },
     {
-      icon: Building2,
-      title: 'Hợp Đồng Doanh Nghiệp',
-      desc: 'Nhận đào tạo & cấp chứng chỉ tận nơi cho công ty, nhà máy, xí nghiệp với chiết khấu học phí tốt nhất.'
+      icon: HardHat,
+      title: 'Thực Chiến 1-Kèm-1',
+      desc: 'Thực hành trực tiếp trên máy công trình thật, giáo viên kèm cặp tỉ mỉ từng kỹ thuật thao tác.'
     },
     {
       icon: ShieldCheck,
       title: '100% Bao Đầu Ra',
-      desc: 'Được thực hành thực tế 1-kèm-1 trên máy thật cho đến khi thành thạo và tự tin nhận chứng chỉ.'
+      desc: 'Được đào tạo bài bản cho đến khi thành thạo tay nghề và tự tin nhận chứng chỉ.'
     }
   ];
 
@@ -223,8 +218,7 @@ export default function MachineryCertificates({ onSelectMachinery }) {
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))',
-          gap: '1.25rem',
-          marginBottom: '2.5rem'
+          gap: '1.25rem'
         }}>
           {highlights.map((h, idx) => {
             const HIcon = h.icon;
@@ -266,67 +260,6 @@ export default function MachineryCertificates({ onSelectMachinery }) {
               </div>
             );
           })}
-        </div>
-
-        {/* Enterprise Callout Banner */}
-        <div style={{
-          background: 'linear-gradient(135deg, rgba(29, 78, 216, 0.14) 0%, rgba(245, 158, 11, 0.1) 100%)',
-          border: '1.5px solid var(--border-color)',
-          borderRadius: '20px',
-          padding: '1.85rem 2rem',
-          display: 'flex',
-          flexWrap: 'wrap',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          gap: '1.5rem'
-        }}>
-          <div style={{ flex: 1, minWidth: 'min(100%, 320px)' }}>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '0.45rem' }}>
-              <Building2 size={22} color="var(--primary)" />
-              <h3 style={{ fontSize: 'clamp(1.15rem, 2.5vw, 1.35rem)', fontWeight: 900, color: 'var(--text-main)', margin: 0 }}>
-                Đào Tạo Chứng Chỉ Cho Doanh Nghiệp &amp; Nhà Máy
-              </h3>
-            </div>
-            <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem', lineHeight: 1.6, margin: 0 }}>
-              Thầy Hồng nhận hợp đồng đào tạo an toàn vận hành xe nâng, máy xúc, máy cẩu tận xưởng cho công ty, xuất hóa đơn VAT đầy đủ và cấp chứng chỉ nhanh chóng cho toàn bộ công nhân viên.
-            </p>
-          </div>
-
-          <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <button
-              onClick={() => onSelectMachinery && onSelectMachinery('Đào Tạo Chứng Chỉ Doanh Nghiệp')}
-              className="btn btn-gold"
-              style={{
-                padding: '0.85rem 1.6rem',
-                fontSize: '0.94rem',
-                borderRadius: '12px',
-                boxShadow: 'var(--shadow-gold)'
-              }}
-            >
-              <Sparkles size={16} />
-              <span>YÊU CẦU BÁO GIÁ DOANH NGHIỆP</span>
-            </button>
-
-            <a
-              href="https://zalo.me/0983406221"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-secondary"
-              style={{
-                padding: '0.85rem 1.25rem',
-                fontSize: '0.92rem',
-                borderRadius: '12px',
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                textDecoration: 'none'
-              }}
-              title="Hotline tư vấn chứng chỉ"
-            >
-              <Phone size={16} color="var(--primary)" />
-              <span>HOTLINE: 0983.406.221</span>
-            </a>
-          </div>
         </div>
       </div>
     </section>

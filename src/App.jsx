@@ -27,10 +27,14 @@ const getTimeBasedTheme = () => {
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
-    const saved = localStorage.getItem('thayhong_theme');
-    if (saved === 'light' || saved === 'dark') {
-      return saved;
-    }
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        const saved = window.localStorage.getItem('thayhong_theme');
+        if (saved === 'light' || saved === 'dark') {
+          return saved;
+        }
+      }
+    } catch (e) {}
     return getTimeBasedTheme();
   });
 
@@ -39,16 +43,20 @@ export default function App() {
   const [modalDetails, setModalDetails] = useState(null);
 
   useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      document.documentElement.setAttribute('data-theme', theme);
+    } catch (e) {}
   }, [theme]);
 
   // Check real-time clock periodically if user hasn't explicitly locked a manual preference
   useEffect(() => {
     const interval = setInterval(() => {
-      const saved = localStorage.getItem('thayhong_theme');
-      if (!saved) {
-        setTheme(getTimeBasedTheme());
-      }
+      try {
+        const saved = typeof window !== 'undefined' && window.localStorage ? window.localStorage.getItem('thayhong_theme') : null;
+        if (!saved) {
+          setTheme(getTimeBasedTheme());
+        }
+      } catch (e) {}
     }, 60000); // check every 1 minute
     return () => clearInterval(interval);
   }, []);
@@ -56,7 +64,11 @@ export default function App() {
   const toggleTheme = () => {
     setTheme(prev => {
       const next = prev === 'dark' ? 'light' : 'dark';
-      localStorage.setItem('thayhong_theme', next);
+      try {
+        if (typeof window !== 'undefined' && window.localStorage) {
+          window.localStorage.setItem('thayhong_theme', next);
+        }
+      } catch (e) {}
       return next;
     });
   };
