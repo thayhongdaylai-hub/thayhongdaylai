@@ -24,7 +24,6 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
     { name: 'Lộ Trình', href: '#roadmap' },
     { name: 'Sân Tập', href: '#facilities' },
     { name: 'Đánh Giá', href: '#testimonials' },
-    { name: 'Hình Ảnh Thực Tế', href: '#student-gallery' },
     { name: 'Hỏi Đáp', href: '#faq' },
   ];
 
