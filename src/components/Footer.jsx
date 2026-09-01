@@ -41,12 +41,12 @@ export default function Footer() {
             </div>
 
             <p style={{ fontSize: '0.9rem', lineHeight: 1.65, color: '#CBD5E1', marginBottom: '1.25rem' }}>
-              Trung tâm đào tạo & sát hạch lái xe hàng đầu Việt Nam. Cấp giấy phép đào tạo số 128/GP-GTVT do Sở Giao Thông Vận Tải thẩm định.
+              Thầy Hồng Dạy Lái &amp; Sát Hạch Lái Xe .
             </p>
 
             <div style={{ fontSize: '0.84rem', color: '#94A3B8', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
               <Clock size={16} color="#60A5FA" />
-              <span>Thời gian làm việc: 7h30 - 20h00 ( Cả T7 & CN )</span>
+              <span>Thời gian làm việc: 7h30 - 20h00 ( Cả T7 &amp; CN )</span>
             </div>
           </div>
 
@@ -60,7 +60,7 @@ export default function Footer() {
               <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Ô Tô Hạng C1 ( Xe Tải )</a></li>
               <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A1 ( Dưới 125cc )</a></li>
               <li><a href="#courses" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Xe Máy Hạng A &amp; A02 ( PKL / SH )</a></li>
-              <li><a href="#machinery" style={{ color: '#FBBF24', fontWeight: 700, transition: 'color 0.2s' }}>Chứng Chỉ Xe Nâng • Máy Xúc • Cẩu</a></li>
+              <li><a href="#machinery" style={{ color: '#CBD5E1', transition: 'color 0.2s' }}>Chứng Chỉ Xe Nâng • Máy Xúc • Cẩu</a></li>
             </ul>
           </div>
 
@@ -127,7 +127,7 @@ export default function Footer() {
           fontSize: '0.84rem'
         }}>
           <div>
-             © 2026 Trung Tâm Đào Tạo Lái Xe Thầy Hồng Dạy Lái. Tất cả quyền được bảo lưu.
+             © 2026 Thầy Hồng Dạy Lái.
           </div>
           <div style={{ display: 'flex', gap: '1.5rem', color: '#64748B', flexWrap: 'wrap' }}>
             <a href="#about-teacher" style={{ color: '#94A3B8' }}>Giới thiệu Thầy Hồng</a>
