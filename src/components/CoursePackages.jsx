@@ -119,71 +119,98 @@ export default function CoursePackages({ onSelectCourse }) {
         </div>
 
         {/* Category Filter Tabs */}
-        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2.5rem' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '2.25rem', width: '100%' }}>
           <div
-            className="no-scrollbar"
+            className="course-filter-container"
             style={{
-              display: 'flex',
-              overflowX: 'auto',
-              whiteSpace: 'nowrap',
+              display: 'grid',
+              gridTemplateColumns: 'repeat(3, 1fr)',
               background: 'var(--bg-card)',
-              border: '1px solid var(--border-color)',
+              border: '1.5px solid var(--border-color)',
               padding: '0.35rem',
-              borderRadius: '12px',
-              gap: '0.4rem',
-              maxWidth: '100%'
+              borderRadius: '14px',
+              gap: '0.35rem',
+              width: '100%',
+              maxWidth: '680px',
+              boxShadow: 'var(--shadow-sm)'
             }}
           >
             <button
               onClick={() => setFilter('all')}
-              className="btn"
+              className="course-filter-btn"
               style={{
-                padding: '0.55rem 1.25rem',
-                borderRadius: '8px',
-                fontSize: '0.88rem',
-                fontWeight: 700,
+                padding: '0.65rem 0.6rem',
+                borderRadius: '10px',
+                fontSize: 'clamp(0.78rem, 2.5vw, 0.92rem)',
+                fontWeight: 800,
                 border: 'none',
                 background: filter === 'all' ? 'var(--primary)' : 'transparent',
                 color: filter === 'all' ? '#FFFFFF' : 'var(--text-muted)',
                 boxShadow: filter === 'all' ? 'var(--shadow-primary)' : 'none',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.25s ease',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.4rem',
+                cursor: 'pointer',
+                textAlign: 'center'
               }}
+              title="Xem toàn bộ 5 khóa đào tạo"
             >
-              Tất Cả Khóa Học ( {courses.length} )
+              <Sparkles size={16} style={{ flexShrink: 0 }} />
+              <span>Tất Cả ({courses.length})</span>
             </button>
+
             <button
               onClick={() => setFilter('car')}
-              className="btn"
+              className="course-filter-btn"
               style={{
-                padding: '0.55rem 1.25rem',
-                borderRadius: '8px',
-                fontSize: '0.88rem',
-                fontWeight: 700,
+                padding: '0.65rem 0.6rem',
+                borderRadius: '10px',
+                fontSize: 'clamp(0.78rem, 2.5vw, 0.92rem)',
+                fontWeight: 800,
                 border: 'none',
                 background: filter === 'car' ? 'var(--primary)' : 'transparent',
                 color: filter === 'car' ? '#FFFFFF' : 'var(--text-muted)',
                 boxShadow: filter === 'car' ? 'var(--shadow-primary)' : 'none',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.25s ease',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.4rem',
+                cursor: 'pointer',
+                textAlign: 'center'
               }}
+              title="Khóa đào tạo lái xe Ô tô hạng B và C1"
             >
-              Ô Tô ( Hạng B, C1 )
+              <Car size={16} style={{ flexShrink: 0 }} />
+              <span>Ô Tô (B, C1)</span>
             </button>
+
             <button
               onClick={() => setFilter('bike')}
-              className="btn"
+              className="course-filter-btn"
               style={{
-                padding: '0.55rem 1.25rem',
-                borderRadius: '8px',
-                fontSize: '0.88rem',
-                fontWeight: 700,
+                padding: '0.65rem 0.6rem',
+                borderRadius: '10px',
+                fontSize: 'clamp(0.78rem, 2.5vw, 0.92rem)',
+                fontWeight: 800,
                 border: 'none',
                 background: filter === 'bike' ? 'var(--primary)' : 'transparent',
                 color: filter === 'bike' ? '#FFFFFF' : 'var(--text-muted)',
                 boxShadow: filter === 'bike' ? 'var(--shadow-primary)' : 'none',
-                transition: 'all 0.2s ease'
+                transition: 'all 0.25s ease',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.4rem',
+                cursor: 'pointer',
+                textAlign: 'center'
               }}
+              title="Khóa học lái xe máy hạng A1, A và A02"
             >
-              Xe Máy ( A1, A, A02 )
+              <Bike size={16} style={{ flexShrink: 0 }} />
+              <span>Xe Máy (A1, A, A02)</span>
             </button>
           </div>
         </div>
@@ -297,6 +324,22 @@ export default function CoursePackages({ onSelectCourse }) {
           })}
         </div>
       </div>
+
+      <style>{`
+        @media (max-width: 580px) {
+          .course-filter-container {
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 4px !important;
+            padding: 4px !important;
+          }
+          .course-filter-btn {
+            padding: 0.55rem 0.2rem !important;
+            font-size: 0.74rem !important;
+            flex-direction: column !important;
+            gap: 3px !important;
+          }
+        }
+      `}</style>
     </section>
   );
 }
