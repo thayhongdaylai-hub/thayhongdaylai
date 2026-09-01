@@ -127,7 +127,7 @@ export default function Hero({ onOpenRegister }) {
             }}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
                 <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
-                <span><strong>1-Kèm-1 Tận Tâm:</strong> Không quát mắng, kèm cặp tỉ mỉ từng kỹ năng.</span>
+                <span><strong>1-Kèm-1 Tận Tâm:</strong> Văn minh - Lịch sự , kèm cặp tỉ mỉ từng kỹ năng.</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', fontSize: '0.95rem', color: 'var(--text-muted)' }}>
                 <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0 }} />
@@ -503,7 +503,7 @@ export default function Hero({ onOpenRegister }) {
             </div>
             <div>
               <div style={{ fontSize: '1.45rem', fontWeight: 900, color: 'var(--text-main)', lineHeight: 1.1 }}>1 Kèm 1</div>
-              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Tận tâm & không quát mắng</div>
+              <div style={{ fontSize: '0.82rem', color: 'var(--text-muted)' }}>Văn minh & Lịch sự</div>
             </div>
           </div>
         </div>

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { X, Bike, Car, Truck, CheckCircle2, AlertCircle, Clock, ChevronLeft, ChevronRight, Award, RefreshCw, Layers, Eye, Check } from 'lucide-react';
 import { EXAM_DATA } from '../data/examQuestions';
+import QuestionIllustration from './QuestionIllustration';
 
 export default function TestModal({ isOpen, onClose }) {
   const [selectedCategory, setSelectedCategory] = useState(null); // null | 'a1' | 'a' | 'b' | 'c1' | 'ce' | 'd'
@@ -313,6 +314,9 @@ export default function TestModal({ isOpen, onClose }) {
                 <h4 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', lineHeight: 1.5 }}>
                   {currentExam.questions[currentQIndex].question}
                 </h4>
+
+                {/* Question Illustration */}
+                <QuestionIllustration src={currentExam.questions[currentQIndex].image} alt={currentExam.questions[currentQIndex].question} />
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem', marginBottom: '2rem' }}>
                   {currentExam.questions[currentQIndex].options.map((optText, oIdx) => {
@@ -646,6 +650,9 @@ export default function TestModal({ isOpen, onClose }) {
                       <h4 style={{ fontSize: '1.2rem', marginBottom: '1.5rem', lineHeight: 1.5 }}>
                         {q.question}
                       </h4>
+
+                      {/* Question Illustration in Review Mode */}
+                      <QuestionIllustration src={q.image} alt={q.question} />
 
                       {/* Options List with Red/Green Color Highlights */}
                       <div style={{ display: 'flex', flexDirection: 'column', gap: '0.9rem', marginBottom: '1.5rem' }}>

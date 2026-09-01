@@ -69,7 +69,7 @@ export default function AboutTeacher({ onOpenRegister }) {
     {
       icon: HeartHandshake,
       title: 'Hướng Dẫn Tận Tâm',
-      desc: 'Phương châm 1-Thầy-1-Trò, giảng dạy kiên nhẫn, giải thích dễ hiểu, tuyệt đối không quát mắng hay tạo áp lực cho học viên.',
+      desc: 'Phương châm 1-Thầy-1-Trò, phong cách văn minh - lịch sự, giảng dạy kiên nhẫn, kèm cặp tỉ mỉ từng kỹ năng cho học viên.',
       badge: '1 Kèm 1'
     },
     {

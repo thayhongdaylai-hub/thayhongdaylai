@@ -1018,6 +1018,7 @@ export const NORMAL_QUESTIONS = [
     category: 'rules',
     isCritical: false,
     question: 'Tốc độ tối đa cho phép đối với xe mô tô hai bánh trên đường bộ trong khu vực đông dân cư (đường đôi có dải phân cách giữa) là bao nhiêu?',
+    image: '/images/signs/r420_khu_dong_dan_cu.svg',
     options: [
       '40 km/h.',
       '50 km/h.',
@@ -1112,234 +1113,377 @@ export const NORMAL_QUESTIONS = [
     correctIndex: 2,
     explanation: 'Tất cả các tình huống nguy hiểm, giao cắt, cầu hẹp, dốc cao hoặc tầm nhìn hạn chế đều bắt buộc người lái xe phải giảm tốc độ an toàn.'
   },
+
+  // ==================== CÁC CÂU HỎI BIỂN BÁO (CÓ HÌNH ẢNH MINH HỌA) ====================
   {
     id: 'sign-01',
     types: ['motorbike', 'car'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển báo hiệu có dạng hình tròn, viền đỏ, nền trắng, trên nền có hình vẽ hoặc chữ số màu đen thuộc loại biển báo nào?',
+    question: 'Biển báo hiệu dưới đây (Biển P.102: hình tròn nền đỏ, ở giữa có vạch ngang trắng) là biển gì?',
+    image: '/images/signs/p102_cam_nguoc_chieu.svg',
     options: [
-      'Biển báo nguy hiểm.',
-      'Biển báo cấm.',
-      'Biển hiệu lệnh phải thi hành.',
-      'Biển chỉ dẫn.'
+      'Biển cấm đi ngược chiều.',
+      'Biển đường cấm mọi phương tiện.',
+      'Biển cấm dừng và đỗ xe.',
+      'Biển dừng lại (STOP).'
     ],
-    correctIndex: 1,
-    explanation: 'Đặc điểm nhận diện biển báo: Hình tròn viền đỏ nền trắng -> Biển CẤM. Hình tam giác vàng viền đỏ -> Biển NGUY HIỂM. Hình tròn xanh -> Biển HIỆU LỆNH. Hình vuông/chữ nhật xanh -> Biển CHỈ DẪN.'
+    correctIndex: 0,
+    explanation: 'Biển P.102: Hình tròn nền đỏ có thanh gạch ngang màu trắng ở giữa là biển báo "Cấm đi ngược chiều". Các phương tiện không được phép đi vào chiều đặt biển.'
   },
   {
     id: 'sign-02',
     types: ['motorbike', 'car'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển báo hiệu có dạng hình tam giác đều, viền đỏ, nền màu vàng, trên có hình vẽ màu đen là loại biển gì?',
+    question: 'Biển báo hiệu dưới đây (Biển W.208: tam giác ngược viền đỏ, nền màu vàng) có ý nghĩa gì?',
+    image: '/images/signs/w208_giao_nhau_duong_uu_tien.svg',
     options: [
-      'Biển báo nguy hiểm và cảnh báo.',
-      'Biển báo cấm.',
-      'Biển báo hiệu lệnh.',
-      'Biển phụ.'
+      'Giao nhau với đường ưu tiên (phải nhường đường cho xe trên đường ưu tiên).',
+      'Giao nhau với đường không ưu tiên.',
+      'Bắt đầu đoạn đường ưu tiên.',
+      'Đường hầm phía trước.'
     ],
     correctIndex: 0,
-    explanation: 'Tam giác đều, viền đỏ, nền vàng là Biển báo NGUY HIỂM và cảnh báo các tình huống cần đề phòng.'
+    explanation: 'Biển W.208 hình tam giác ngược viền đỏ nền vàng là biển "Giao nhau với đường ưu tiên". Phương tiện đi trên nhánh có biển này phải giảm tốc độ và nhường đường cho xe đang đi trên đường ưu tiên.'
   },
   {
     id: 'sign-03',
     types: ['car'],
     category: 'signs',
     isCritical: false,
-    question: 'Khi gặp biển nào dưới đây thì xe ô tô con được phép đi vào?',
+    question: 'Khi gặp biển báo dưới đây (Biển P.106a: Cấm xe ô tô tải), xe ô tô con có được phép đi vào hay không?',
+    image: '/images/signs/p106a_cam_tai.svg',
     options: [
-      'Biển 1: Cấm xe ô tô tải.',
-      'Biển 2: Cấm xe ô tô kéo rơ-moóc.',
-      'Biển 3: Cấm xe ô tô con.',
-      'Cả Biển 1 và Biển 2.'
+      'Được phép đi vào (vì biển cấm xe tải không cấm ô tô con).',
+      'Không được phép đi vào.',
+      'Chỉ được đi vào vào ban đêm.',
+      'Tùy thuộc vào biển phụ bên dưới.'
     ],
-    correctIndex: 3,
-    explanation: 'Mẹo biển cấm: Cấm xe nhỏ thì cấm xe lớn. Cấm xe lớn KHÔNG cấm xe nhỏ. Biển cấm tải và cấm kéo rơ-moóc là cấm xe lớn nên ô tô con vẫn được đi vào.'
+    correctIndex: 0,
+    explanation: 'Quy tắc thứ tự cấm: Cấm xe nhỏ thì cấm xe lớn (Cấm ô tô con -> cấm tải -> cấm máy kéo). Ngược lại: Cấm xe lớn KHÔNG cấm xe nhỏ. Do đó biển Cấm xe tải thì xe ô tô con vẫn ĐƯỢC PHÉP ĐI VÀO bình thường.'
   },
   {
     id: 'sign-04',
     types: ['motorbike'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển nào cấm xe mô tô hai bánh đi vào?',
+    question: 'Biển báo dưới đây (Biển P.104) cấm loại phương tiện nào đi vào?',
+    image: '/images/signs/p104_cam_moto.svg',
     options: [
-      'Biển có hình xe mô tô 2 bánh trong vòng tròn viền đỏ (Biển P.104).',
-      'Biển có hình xe gắn máy.',
-      'Biển cấm xe ô tô con.'
+      'Cấm xe mô tô hai bánh và ba bánh.',
+      'Cấm xe đạp và xe gắn máy dưới 50cc.',
+      'Cấm tất cả các loại xe ô tô.',
+      'Cấm xe thô sơ.'
     ],
     correctIndex: 0,
-    explanation: 'Biển P.104 (vòng tròn viền đỏ vẽ xe mô tô có người ngồi lái) là biển Cấm mô tô hai bánh.'
+    explanation: 'Biển P.104: Vòng tròn viền đỏ vẽ xe mô tô có người ngồi lái là biển "Cấm xe mô tô", cấm tất cả mô tô 2 bánh và 3 bánh đi vào (không cấm xe gắn máy dưới 50cc).'
   },
   {
     id: 'sign-05',
-    types: ['motorbike', 'car'],
+    types: ['car'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển nào báo hiệu "Giao nhau với đường ưu tiên"?',
+    question: 'Biển báo dưới đây (Biển P.108) có ý nghĩa gì?',
+    image: '/images/signs/p108_cam_keo_ro_mooc.svg',
     options: [
-      'Biển hình tam giác ngược, viền đỏ, nền vàng (Biển W.208).',
-      'Biển hình tam giác đỉnh hướng lên trên có mũi tên giao nhau.',
-      'Biển hình thoi màu vàng viền trắng (Biển I.401).'
+      'Cấm xe ô tô kéo rơ-moóc hoặc kéo sơ-mi rơ-moóc.',
+      'Cấm tất cả xe ô tô tải.',
+      'Cấm xe khách trên 30 chỗ.',
+      'Đường dành riêng cho xe container.'
     ],
     correctIndex: 0,
-    explanation: 'Biển W.208 hình tam giác ngược đỉnh chúc xuống là biển "Giao nhau với đường ưu tiên" -> phương tiện nhìn thấy biển này phải nhường đường cho xe trên đường ưu tiên.'
+    explanation: 'Biển P.108: Cấm các loại xe cơ giới kéo theo rơ-moóc kể cả xe mô tô, máy kéo kéo rơ-moóc đi vào.'
   },
   {
     id: 'sign-06',
     types: ['car'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển "Hết mọi lệnh cấm" có đặc điểm nhận dạng như thế nào?',
+    question: 'Biển báo dưới đây (Biển DP.135: Hình tròn nền trắng viền xanh, có 5 vạch chéo) báo hiệu điều gì?',
+    image: '/images/signs/dp135_het_tat_ca_lenh_cam.svg',
     options: [
-      'Biển tròn nền trắng, viền xanh có 5 vạch kẻ đen chéo từ phải qua trái (Biển DP.135).',
-      'Biển tròn nền xanh có vạch đỏ gạch chéo.',
-      'Biển hình vuông nền xanh.'
+      'Hết tất cả các lệnh cấm.',
+      'Hết hạn chế tốc độ tối đa.',
+      'Cấm vượt mọi phương tiện.',
+      'Đường một chiều.'
     ],
     correctIndex: 0,
-    explanation: 'Biển DP.135: Hình tròn nền trắng viền xanh với các vạch chéo màu đen là biển báo hiệu Hết tất cả các lệnh cấm trước đó.'
+    explanation: 'Biển DP.135 là biển báo "Hết tất cả các lệnh cấm", báo hiệu đoạn đường hết hiệu lực của mọi biển báo cấm trước đó.'
   },
   {
     id: 'sign-07',
     types: ['motorbike', 'car'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển báo hình tròn nền xanh lam có vẽ hình mũi tên màu trắng chỉ hướng đi bắt buộc là biển gì?',
+    question: 'Biển báo dưới đây (Biển R.301a: Hình tròn nền xanh lam có mũi tên trắng đi thẳng) thuộc loại biển gì?',
+    image: '/images/signs/r301a_di_thang.svg',
     options: [
-      'Biển hiệu lệnh (bắt buộc các phương tiện phải đi theo hướng mũi tên chỉ).',
-      'Biển chỉ dẫn.',
-      'Biển báo nguy hiểm.'
+      'Biển hiệu lệnh: Các xe chỉ được đi thẳng.',
+      'Biển chỉ dẫn đường một chiều.',
+      'Biển báo nguy hiểm đường hẹp.',
+      'Biển cấm rẽ trái và rẽ phải.'
     ],
     correctIndex: 0,
-    explanation: 'Biển tròn nền xanh lam là BIỂN HIỆU LỆNH (Hiệu lệnh số R.301) -> Bắt buộc các phương tiện phải tuân theo hướng mũi tên trên biển.'
+    explanation: 'Biển R.301a: Biển hiệu lệnh bắt buộc các phương tiện chỉ được phép đi thẳng, không được rẽ sang hướng khác.'
   },
   {
     id: 'sign-08',
     types: ['car'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển báo "Cấm quay đầu xe" có cấm xe rẽ trái hay không?',
+    question: 'Gặp biển báo dưới đây (Biển P.124a: Cấm quay đầu xe), người lái xe ô tô có được phép rẽ trái hay không?',
+    image: '/images/signs/p124a_cam_quay_dau.svg',
     options: [
-      'Không cấm rẽ trái (theo quy chuẩn kỹ thuật quốc gia QCVN 41:2019/BGTVT).',
-      'Cấm luôn cả rẽ trái.',
-      'Tùy từng loại xe con hay xe tải.'
+      'Được phép rẽ trái (theo quy chuẩn QCVN 41:2019/BGTVT).',
+      'Không được phép rẽ trái.',
+      'Chỉ được rẽ trái khi đường vắng.',
+      'Bị cấm cả rẽ trái và quay đầu.'
     ],
     correctIndex: 0,
-    explanation: 'Theo QCVN 41:2019/BGTVT: Biển CẤM QUAY ĐẦU XE (P.124a) không còn đồng nghĩa với cấm rẽ trái. Phương tiện gặp biển này vẫn ĐƯỢC PHÉP RẼ TRÁI bình thường.'
+    explanation: 'Quy chuẩn QCVN 41:2019/BGTVT quy định rõ: Biển P.124a "Cấm quay đầu xe" KHÔNG cấm rẽ trái. Gặp biển này phương tiện vẫn được rẽ trái bình thường.'
   },
   {
     id: 'sign-09',
     types: ['motorbike', 'car'],
     category: 'signs',
     isCritical: false,
-    question: 'Biển nào báo hiệu "Cửa chui" hoặc "Đường hầm phía trước"?',
+    question: 'Biển báo dưới đây (Biển W.218: Tam giác viền đỏ nền vàng vẽ hình vòm cửa) báo hiệu điều gì?',
+    image: '/images/signs/w218_cua_chui.svg',
     options: [
-      'Biển tam giác viền đỏ nền vàng vẽ hình vòm cửa màu đen (Biển W.218).',
-      'Biển tam giác vẽ hình cầu hẹp.',
-      'Biển tròn màu đỏ có gạch ngang trắng.'
+      'Báo hiệu phía trước có Cửa chui hoặc Hầm chui giới hạn chiều cao.',
+      'Báo hiệu đường ngầm có nước lũ.',
+      'Báo hiệu cầu vòm phía trước.',
+      'Báo hiệu đường hầm đường sắt.'
     ],
     correctIndex: 0,
-    explanation: 'Biển W.218 hình vòm là biển báo nguy hiểm "Cửa chui", cảnh báo đoạn đường sắp đi qua hầm hoặc gầm cầu chui có tĩnh không giới hạn.'
+    explanation: 'Biển W.218: Cảnh báo phía trước có cửa chui (gầm cầu chui, hầm đường bộ tĩnh không thấp).'
   },
+  {
+    id: 'sign-10',
+    types: ['motorbike', 'car'],
+    category: 'signs',
+    isCritical: false,
+    question: 'Biển báo hình bát giác màu đỏ chữ STOP dưới đây (Biển P.122) bắt buộc các phương tiện phải xử lý như thế nào?',
+    image: '/images/signs/p122_stop.svg',
+    options: [
+      'Buộc tất cả các xe (kể cả xe ưu tiên) phải dừng lại trước vạch dừng, chỉ đi tiếp khi tuyệt đối an toàn.',
+      'Chỉ giảm tốc độ không cần dừng hẳn.',
+      'Chỉ áp dụng đối với xe tải nặng.',
+      'Được phép đi tiếp nếu không thấy cảnh sát giao thông.'
+    ],
+    correctIndex: 0,
+    explanation: 'Biển P.122 "Dừng lại" (STOP) buộc mọi phương tiện cơ giới và thô sơ phải dừng lại trước vạch dừng để quan sát an toàn.'
+  },
+  {
+    id: 'sign-11',
+    types: ['motorbike', 'car'],
+    category: 'signs',
+    isCritical: false,
+    question: 'Biển báo dưới đây (Biển P.123a) có ý nghĩa gì?',
+    image: '/images/signs/p123a_cam_re_trai.svg',
+    options: [
+      'Cấm rẽ trái (và cấm luôn quay đầu xe theo hướng trái).',
+      'Cấm quay đầu xe nhưng được rẽ trái.',
+      'Chỉ dẫn hướng đi đường vòng.',
+      'Cấm đi thẳng.'
+    ],
+    correctIndex: 0,
+    explanation: 'Biển P.123a: Cấm rẽ trái tại nơi đường giao nhau.'
+  },
+  {
+    id: 'sign-12',
+    types: ['motorbike', 'car'],
+    category: 'signs',
+    isCritical: false,
+    question: 'Biển báo dưới đây (Biển W.210: Vẽ hàng rào sắt) cảnh báo điều gì?',
+    image: '/images/signs/w210_duong_sat_co_rao_chan.svg',
+    options: [
+      'Báo hiệu giao nhau với đường sắt có rào chắn.',
+      'Báo hiệu giao nhau với đường sắt không có rào chắn.',
+      'Báo hiệu công trường đang thi công.',
+      'Báo hiệu cổng làng.'
+    ],
+    correctIndex: 0,
+    explanation: 'Biển W.210 có hình hàng rào cảnh báo đoạn đường giao cắt đường sắt có rào chắn tự động hoặc có người gác chắn.'
+  },
+  {
+    id: 'sign-13',
+    types: ['car', 'motorbike'],
+    category: 'signs',
+    isCritical: false,
+    question: 'Biển báo hình thoi màu vàng viền trắng dưới đây (Biển I.401) có ý nghĩa gì?',
+    image: '/images/signs/i401_bat_dau_duong_uu_tien.svg',
+    options: [
+      'Bắt đầu đoạn đường ưu tiên (phương tiện được quyền ưu tiên qua nơi giao nhau).',
+      'Hết đoạn đường ưu tiên.',
+      'Đường cấm mọi phương tiện.',
+      'Giao nhau với đường cùng cấp.'
+    ],
+    correctIndex: 0,
+    explanation: 'Biển I.401 hình thoi vàng là biển chỉ dẫn "Bắt đầu đoạn đường ưu tiên". Phương tiện đi trên đường này được quyền ưu tiên qua nơi giao nhau.'
+  },
+  {
+    id: 'sign-14',
+    types: ['car', 'motorbike'],
+    category: 'signs',
+    isCritical: false,
+    question: 'Biển báo dưới đây (Biển P.130: Hình tròn xanh viền đỏ có 2 vạch chéo màu đỏ) cấm hành vi nào?',
+    image: '/images/signs/p130_cam_dung_do.svg',
+    options: [
+      'Cấm dừng xe và cấm đỗ xe.',
+      'Chỉ cấm đỗ xe (vẫn được dừng xe dưới 5 phút).',
+      'Cấm xe tải đi vào.',
+      'Hết mọi lệnh cấm.'
+    ],
+    correctIndex: 0,
+    explanation: 'Biển P.130 có 2 vạch đỏ đan chéo chữ X là biển "Cấm dừng xe và đỗ xe". Cả hành vi dừng tạm thời và đỗ xe lâu đều bị nghiêm cấm.'
+  },
+  {
+    id: 'sign-15',
+    types: ['car', 'motorbike'],
+    category: 'signs',
+    isCritical: false,
+    question: 'Biển báo dưới đây (Biển P.131a: Hình tròn xanh viền đỏ có 1 vạch chéo đỏ) cấm hành vi nào?',
+    image: '/images/signs/p131a_cam_do.svg',
+    options: [
+      'Cấm đỗ xe (vẫn được phép dừng xe tạm thời để đón trả khách/hàng hóa).',
+      'Cấm cả dừng xe và đỗ xe.',
+      'Cấm quay đầu xe.',
+      'Đường dành riêng cho ô tô.'
+    ],
+    correctIndex: 0,
+    explanation: 'Biển P.131a có 1 vạch chéo là biển "Cấm đỗ xe". Người lái xe vẫn được phép dừng xe tạm thời có bật xi-nhan và người lái không rời khỏi vị trí lái.'
+  },
+
+  // ==================== CÁC CÂU HỎI SA HÌNH TÌNH HUỐNG (CÓ HÌNH ẢNH MINH HỌA) ====================
   {
     id: 'sh-01',
     types: ['motorbike', 'car'],
     category: 'sahinh',
     isCritical: false,
-    question: 'Thứ tự các xe đi như thế nào là đúng quy tắc giao thông tại ngã tư?',
+    question: 'Trong tình huống sa hình dưới đây, xe nào được quyền đi trước theo đúng quy tắc xe ưu tiên?',
+    image: '/images/sahinh/sh_nga_tu_xe_uu_tien.svg',
     options: [
-      '1. Xe đã vào giao lộ -> 2. Xe ưu tiên -> 3. Xe trên đường ưu tiên -> 4. Xe bên phải không vướng -> 5. Hướng rẽ (Rẽ phải > Đi thẳng > Rẽ trái).',
-      'Xe nào to hơn được đi trước.',
-      'Xe ô tô con luôn được đi trước xe mô tô.'
+      'Xe Cứu hỏa (Chữa cháy).',
+      'Xe Công an.',
+      'Xe Cứu thương.',
+      'Xe Con.'
     ],
     correctIndex: 0,
-    explanation: '5 BƯỚC VÀNG XÉT SA HÌNH: 1. Nhất chớm (xe đã vào giao lộ) -> 2. Nhì ưu (Hỏa-Sự-Công-Thương) -> 3. Tam đường (đường ưu tiên) -> 4. Tứ hướng (bên phải trống) -> 5. Ngũ hướng (Phải - Thẳng - Trái).'
+    explanation: 'Khẩu quyết xe ưu tiên: "HỎA - SỰ - CÔNG - THƯƠNG". Trong hình có xe Cứu hỏa, Xe Công an, Xe Cứu thương -> Xe Cứu hỏa có quyền ưu tiên cao nhất và được đi trước.'
   },
   {
     id: 'sh-02',
     types: ['motorbike', 'car'],
     category: 'sahinh',
     isCritical: false,
-    question: 'Trong các xe ưu tiên (Xe Cứu hỏa, Xe Quân sự, Xe Công an, Xe Cứu thương), xe nào có quyền ưu tiên cao nhất?',
+    question: 'Theo tình huống sa hình bên dưới, thứ tự các xe đi như thế nào là đúng quy tắc giao thông?',
+    image: '/images/sahinh/sh_nga_tu_bien_uu_tien.svg',
     options: [
-      'Xe Cứu hỏa (Chữa cháy).',
-      'Xe Quân sự.',
-      'Xe Công an.',
-      'Xe Cứu thương.'
+      'Xe Con và Xe Mô tô (trên đường ưu tiên) -> Xe Tải (gặp biển nhường đường).',
+      'Xe Tải -> Xe Con -> Xe Mô tô.',
+      'Xe Mô tô -> Xe Tải -> Xe Con.',
+      'Xe nào to hơn được đi trước.'
     ],
     correctIndex: 0,
-    explanation: 'Khẩu quyết thứ tự xe ưu tiên: "HỎA - SỰ - CÔNG - THƯƠNG" (Cứu hỏa đi đầu tiên, tiếp theo đến Quân sự, rồi đến Công an, cuối cùng là Cứu thương).'
+    explanation: 'Xét theo biển báo: Xe Con và Xe Mô tô nằm trên trục đường có biển I.401 (Đường ưu tiên) nên được đi trước. Xe Tải nằm ở nhánh có biển W.208 (Giao nhau với đường ưu tiên) phải nhường đường đi sau cùng.'
   },
   {
     id: 'sh-03',
     types: ['motorbike', 'car'],
     category: 'sahinh',
     isCritical: false,
-    question: 'Tại ngã tư không có biển báo ưu tiên và các xe đều đi thẳng, xe nào được quyền đi trước?',
+    question: 'Tại ngã tư đồng cấp không có biển báo như hình dưới, xe nào được quyền đi đầu tiên?',
+    image: '/images/sahinh/sh_nga_tu_dong_cap.svg',
     options: [
-      'Xe có bên phải không vướng (bên phải không có xe khác) được quyền đi trước.',
-      'Xe đi từ hướng Tây sang Đông.',
-      'Xe nào bấm còi to hơn được đi trước.'
+      'Xe Mô tô (vì hướng bên tay phải của xe mô tô hoàn toàn không vướng xe khác).',
+      'Xe Con.',
+      'Xe Tải.',
+      'Cả 3 xe đi cùng lúc.'
     ],
     correctIndex: 0,
-    explanation: 'Quy tắc bên phải không vướng: Khi ngã 4 đồng cấp, phương tiện nào có phía bên tay phải không bị vướng xe khác thì được quyền xuất phát đi trước.'
+    explanation: 'Quy tắc bên phải không vướng tại ngã 4 đồng cấp: Hướng Tây trống -> Phía bên phải Xe Mô tô trống -> Xe Mô tô được quyền xuất phát đi đầu tiên -> Sau đó đến Xe Con -> Cuối cùng là Xe Tải.'
   },
   {
     id: 'sh-04',
     types: ['car'],
     category: 'sahinh',
     isCritical: false,
-    question: 'Khi hai xe ô tô cùng đến ngã tư đồng cấp: Xe A muốn rẽ phải, Xe B muốn rẽ trái. Xe nào phải nhường đường?',
+    question: 'Theo tình huống sa hình hướng rẽ bên dưới, thứ tự các xe đi như thế nào là đúng?',
+    image: '/images/sahinh/sh_nga_tu_huong_re.svg',
     options: [
-      'Xe B (rẽ trái) phải nhường đường cho Xe A (rẽ phải).',
-      'Xe A phải nhường đường cho Xe B.',
-      'Hai xe đi cùng lúc.'
+      'Xe Con (A) rẽ phải -> Xe Tải (B) đi thẳng -> Xe Khách (C) rẽ trái.',
+      'Xe Tải (B) -> Xe Khách (C) -> Xe Con (A).',
+      'Xe Khách (C) -> Xe Tải (B) -> Xe Con (A).',
+      'Xe Con (A) -> Xe Khách (C) -> Xe Tải (B).'
     ],
     correctIndex: 0,
-    explanation: 'Thứ tự ưu tiên theo hướng di chuyển: Xe RẼ PHẢI đi trước -> Xe ĐI THẲNG đi thứ nhì -> Xe RẼ TRÁI phải nhường đường cuối cùng.'
+    explanation: 'Thứ tự ưu tiên theo hướng di chuyển: 1. Xe RẼ PHẢI đi đầu tiên (Xe Con A) -> 2. Xe ĐI THẲNG đi thứ nhì (Xe Tải B) -> 3. Xe RẼ TRÁI phải nhường đường đi sau cùng (Xe Khách C).'
   },
   {
     id: 'sh-05',
-    types: ['motorbike'],
-    category: 'sahinh',
-    isCritical: false,
-    question: 'Xe mô tô và xe đạp cùng đến một ngã ba, xe mô tô đi thẳng, xe đạp rẽ trái từ đường không ưu tiên ra. Thứ tự đi thế nào?',
-    options: [
-      'Xe mô tô đi trước vì đang đi thẳng trên đường ưu tiên.',
-      'Xe đạp đi trước vì là phương tiện thô sơ.',
-      'Xe nào đến trước vạch dừng đi trước.'
-    ],
-    correctIndex: 0,
-    explanation: 'Phương tiện đang đi trên đường ưu tiên và đi thẳng luôn có quyền ưu tiên cao hơn phương tiện rẽ từ đường nhánh/đường không ưu tiên.'
-  },
-  {
-    id: 'sh-06',
-    types: ['car'],
-    category: 'sahinh',
-    isCritical: false,
-    question: 'Tại ngã tư có đèn tín hiệu giao thông, xe của bạn chuẩn bị đi thẳng nhưng gặp đèn tín hiệu màu đỏ, đồng thời có đèn phụ mũi tên xanh rẽ phải bật sáng, bạn phải làm gì?',
-    options: [
-      'Dừng lại nếu muốn đi thẳng; nếu muốn rẽ phải thì được phép rẽ phải theo đèn phụ nhưng phải nhường đường cho người đi bộ.',
-      'Vẫn đi thẳng bình thường.',
-      'Phải bấm còi xin đường để đi thẳng.'
-    ],
-    correctIndex: 0,
-    explanation: 'Đèn đỏ áp dụng cho hướng đi thẳng -> Phải dừng trước vạch dừng. Đèn phụ màu xanh rẽ phải chỉ cho phép các xe rẽ phải được tiếp tục lưu thông.'
-  },
-  {
-    id: 'sh-07',
     types: ['motorbike', 'car'],
     category: 'sahinh',
     isCritical: false,
-    question: 'Xe nào phải dừng lại trong trường hợp gặp biển báo "STOP" hình bát giác màu đỏ tại nơi giao cắt?',
+    question: 'Trong tình huống ngã ba bên dưới, xe nào phải nhường đường?',
+    image: '/images/sahinh/sh_nga_ba_chuyen_huong.svg',
     options: [
-      'Tất cả các xe (kể cả xe ưu tiên nếu quy định biển dừng khẩn cấp) đều phải dừng lại trước vạch dừng.',
-      'Chỉ xe tải phải dừng lại.',
-      'Chỉ xe mô tô phải dừng lại.'
+      'Xe Con (vì đang chuyển hướng từ đường nhánh phụ ra đường chính).',
+      'Xe Mô tô.',
+      'Cả hai xe dừng lại nhường nhau.'
     ],
     correctIndex: 0,
-    explanation: 'Biển STOP (P.122) là biển hiệu lệnh DỪNG LẠI bắt buộc đối với tất cả các phương tiện cơ giới và thô sơ, chỉ được đi tiếp khi đã quan sát thấy tuyệt đối an toàn.'
+    explanation: 'Phương tiện đang đi thẳng trên đường chính (Xe mô tô) có quyền ưu tiên. Xe ô tô con từ đường nhánh rẽ ra bắt buộc phải giảm tốc độ và nhường đường.'
   },
+  {
+    id: 'sh-06',
+    types: ['car', 'motorbike'],
+    category: 'sahinh',
+    isCritical: false,
+    question: 'Trong tình huống dưới đây, người lái xe con muốn đi thẳng thì phải xử lý như thế nào?',
+    image: '/images/sahinh/sh_den_tin_hieu_re_phai.svg',
+    options: [
+      'Phải dừng lại trước vạch dừng vì đèn tín hiệu chính đi thẳng đang đỏ (chỉ đèn phụ rẽ phải là xanh).',
+      'Vẫn đi thẳng bình thường theo đèn phụ.',
+      'Bấm còi to xin vượt qua ngã tư.'
+    ],
+    correctIndex: 0,
+    explanation: 'Đèn chính màu đỏ áp dụng cho hướng đi thẳng -> Xe con đi thẳng bắt buộc phải dừng trước vạch dừng. Đèn phụ mũi tên xanh chỉ cho phép các phương tiện rẽ phải được lưu thông.'
+  },
+  {
+    id: 'sh-07',
+    types: ['car'],
+    category: 'sahinh',
+    isCritical: false,
+    question: 'Trong hình dưới đây, xe tải và xe con đỗ xe như thế nào có đúng quy định không?',
+    image: '/images/sahinh/sh_xe_dung_do_bien_cam.svg',
+    options: [
+      'Cả hai xe đều vi phạm (vì biển phụ mũi tên 2 đầu có hiệu lực cấm cả phía trước và phía sau biển).',
+      'Chỉ xe tải vi phạm.',
+      'Chỉ xe con vi phạm.',
+      'Cả hai xe đều đỗ đúng.'
+    ],
+    correctIndex: 0,
+    explanation: 'Biển P.130 kết hợp biển phụ S.503e (mũi tên chỉ 2 hướng lên xuống) có hiệu lực cấm dừng đỗ ở cả phạm vi TRƯỚC và SAU biển báo -> Cả Xe Tải và Xe Con đều vi phạm.'
+  },
+  {
+    id: 'sh-08',
+    types: ['car'],
+    category: 'sahinh',
+    isCritical: false,
+    question: 'Xe con vượt xe tải trong tình huống sa hình dưới đây (đè qua vạch liền màu vàng) có đúng quy tắc giao thông không?',
+    image: '/images/sahinh/sh_xe_vuot_vach_lien.svg',
+    options: [
+      'Không đúng quy tắc giao thông (Vi phạm lỗi đè vạch liền cấm lấn làn).',
+      'Đúng quy tắc vì xe tải đi chậm.',
+      'Đúng quy tắc nếu bật đèn xi-nhan báo hiệu trước.'
+    ],
+    correctIndex: 0,
+    explanation: 'Vạch liền màu vàng là vạch phân chia 2 chiều xe chạy cấm lấn làn, cấm đè vạch. Xe con lấn làn đè vạch liền để vượt xe tải là hành vi vi phạm pháp luật giao thông.'
+  },
+
+  // ==================== CÁC CÂU HỎI KỸ THUẬT LÁI XE ====================
   {
     id: 'tech-01',
     types: ['car'],
@@ -1397,6 +1541,7 @@ export const NORMAL_QUESTIONS = [
     explanation: 'Khi phanh xe mô tô: Phải nhả ga và kết hợp phanh cả 2 bánh (phanh trước 60-70%, phanh sau 30-40%) để xe dừng êm ái, tránh trượt bánh trước gây ngã xe.'
   }
 ];
+
 
 // Tổng hợp toàn bộ ngân hàng câu hỏi
 export const QUESTIONS_DATABASE = [...CRITICAL_60_QUESTIONS, ...NORMAL_QUESTIONS];

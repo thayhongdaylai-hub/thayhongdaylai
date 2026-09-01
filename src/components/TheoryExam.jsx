@@ -5,6 +5,7 @@ import {
   CRITICAL_60_QUESTIONS,
   generateRandomExam
 } from '../data/theoryQuestions';
+import QuestionIllustration from './QuestionIllustration';
 import {
   Timer,
   CheckCircle2,
@@ -35,6 +36,7 @@ export default function TheoryExam() {
   const [userAnswers, setUserAnswers] = useState({}); // { [questionId]: optionIndex }
   const [bookmarkedQuestions, setBookmarkedQuestions] = useState({}); // { [questionId]: true }
   const [timeLeft, setTimeLeft] = useState(0); // in seconds
+  const [elapsedTime, setElapsedTime] = useState(0); // in seconds (for un-timed critical mode)
   const [isExamActive, setIsExamActive] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [examResult, setExamResult] = useState(null);
@@ -46,7 +48,7 @@ export default function TheoryExam() {
   const startNewExam = useCallback((licenseKey = selectedLicense, mode = examMode) => {
     let examData;
     if (mode === 'critical') {
-      // Full 60 critical questions mode
+      // Full 60 critical questions mode - KHÔNG TÍNH THỜI GIAN
       const config = LICENSE_CONFIGS[licenseKey];
       const critQuestions = CRITICAL_60_QUESTIONS;
       examData = {
@@ -55,21 +57,24 @@ export default function TheoryExam() {
         config: {
           ...config,
           totalQuestions: critQuestions.length,
-          durationMinutes: 30,
+          durationMinutes: 0, // No time limit
           passingScore: critQuestions.length,
-          name: `Trọn Bộ 60 Câu Hỏi Điểm Liệt Bộ GTVT`
+          name: `Trọn Bộ 60 Câu Hỏi Điểm Liệt Bộ GTVT (Không Giới Hạn Thời Gian)`
         },
         questions: critQuestions
       };
+      setTimeLeft(0);
+      setElapsedTime(0);
     } else {
       examData = generateRandomExam(licenseKey);
+      setTimeLeft(examData.config.durationMinutes * 60);
+      setElapsedTime(0);
     }
 
     setCurrentExam(examData);
     setCurrentQuestionIndex(0);
     setUserAnswers({});
     setBookmarkedQuestions({});
-    setTimeLeft(examData.config.durationMinutes * 60);
     setIsExamActive(true);
     setIsSubmitted(false);
     setExamResult(null);
@@ -80,25 +85,32 @@ export default function TheoryExam() {
     startNewExam(selectedLicense, examMode);
   }, [selectedLicense, examMode, startNewExam]);
 
-  // Timer countdown
+  // Timer effect (Countdown for mock exam, count-up for untimed critical questions)
   useEffect(() => {
-    if (isExamActive && !isSubmitted && timeLeft > 0) {
-      timerRef.current = setInterval(() => {
-        setTimeLeft(prev => {
-          if (prev <= 1) {
-            clearInterval(timerRef.current);
-            handleSubmitExam();
-            return 0;
-          }
-          return prev - 1;
-        });
-      }, 1000);
+    if (isExamActive && !isSubmitted) {
+      if (examMode === 'critical') {
+        // Untimed mode: simply track elapsed study time without timeout
+        timerRef.current = setInterval(() => {
+          setElapsedTime(prev => prev + 1);
+        }, 1000);
+      } else if (timeLeft > 0) {
+        timerRef.current = setInterval(() => {
+          setTimeLeft(prev => {
+            if (prev <= 1) {
+              clearInterval(timerRef.current);
+              handleSubmitExam();
+              return 0;
+            }
+            return prev - 1;
+          });
+        }, 1000);
+      }
     } else {
       clearInterval(timerRef.current);
     }
 
     return () => clearInterval(timerRef.current);
-  }, [isExamActive, isSubmitted, timeLeft]);
+  }, [isExamActive, isSubmitted, timeLeft, examMode]);
 
   // Handle select answer
   const handleSelectOption = (optionIndex) => {
@@ -173,14 +185,14 @@ export default function TheoryExam() {
       isPassed,
       failedCritical,
       percentage: Math.round((correctCount / currentExam.questions.length) * 100),
-      timeSpentSeconds: currentExam.config.durationMinutes * 60 - timeLeft,
+      timeSpentSeconds: examMode === 'critical' ? elapsedTime : (currentExam.config.durationMinutes * 60 - timeLeft),
       details
     };
 
     setExamResult(result);
     setIsSubmitted(true);
     setIsExamActive(false);
-  }, [currentExam, isSubmitted, userAnswers, timeLeft]);
+  }, [currentExam, isSubmitted, userAnswers, timeLeft, elapsedTime, examMode]);
 
   // Keyboard navigation shortcuts
   useEffect(() => {
@@ -391,23 +403,41 @@ export default function TheoryExam() {
 
             {/* Controls & Timer */}
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
-              {/* Countdown Timer */}
+              {/* Countdown Timer or Untimed Badge */}
               {!isSubmitted && (
-                <div style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '0.4rem',
-                  padding: '0.45rem 0.85rem',
-                  borderRadius: '10px',
-                  background: timeLeft < 180 ? 'rgba(239, 68, 68, 0.1)' : 'var(--bg-input)',
-                  border: timeLeft < 180 ? '1px solid #EF4444' : '1px solid var(--border-color)',
-                  color: timeLeft < 180 ? '#EF4444' : 'var(--text-main)',
-                  fontWeight: 800,
-                  fontSize: '1.05rem'
-                }}>
-                  <Clock size={16} color={timeLeft < 180 ? '#EF4444' : 'var(--accent-emerald)'} />
-                  <span>{formatTime(timeLeft)}</span>
-                </div>
+                examMode === 'critical' ? (
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
+                    padding: '0.45rem 0.85rem',
+                    borderRadius: '10px',
+                    background: 'rgba(239, 68, 68, 0.1)',
+                    border: '1px solid rgba(239, 68, 68, 0.3)',
+                    color: '#EF4444',
+                    fontWeight: 800,
+                    fontSize: '0.88rem'
+                  }}>
+                    <Clock size={16} color="#EF4444" />
+                    <span>Không Tính Thời Gian</span>
+                  </div>
+                ) : (
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.4rem',
+                    padding: '0.45rem 0.85rem',
+                    borderRadius: '10px',
+                    background: timeLeft < 180 ? 'rgba(239, 68, 68, 0.1)' : 'var(--bg-input)',
+                    border: timeLeft < 180 ? '1px solid #EF4444' : '1px solid var(--border-color)',
+                    color: timeLeft < 180 ? '#EF4444' : 'var(--text-main)',
+                    fontWeight: 800,
+                    fontSize: '1.05rem'
+                  }}>
+                    <Clock size={16} color={timeLeft < 180 ? '#EF4444' : 'var(--accent-emerald)'} />
+                    <span>{formatTime(timeLeft)}</span>
+                  </div>
+                )
               )}
 
               {/* Random New Exam Button */}
@@ -618,6 +648,9 @@ export default function TheoryExam() {
                 }}>
                   {currentQ.question}
                 </h4>
+
+                {/* Question Illustration / Diagram Image (For traffic signs & situations) */}
+                <QuestionIllustration src={currentQ.image} alt={currentQ.question} />
 
                 {/* Options List (Spacious & Touch-Friendly) */}
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '0.65rem', marginBottom: '1.25rem' }}>

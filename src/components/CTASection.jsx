@@ -204,7 +204,7 @@ export default function CTASection({ onOpenRegister }) {
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
             <CheckCircle2 size={16} color="#FBBF24" />
-            <span>Học 1 kèm 1 không quát mắng</span>
+            <span>Học 1 kèm 1 Văn minh - Lịch sự</span>
           </div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
             <CheckCircle2 size={16} color="#FBBF24" />
