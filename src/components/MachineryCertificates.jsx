@@ -7,13 +7,12 @@ import {
   ArrowRight
 } from 'lucide-react';
 
-// Official Zalo Brand Icon SVG
+// Official Zalo Brand Icon SVG – accurate "Z" lettermark
 const ZaloIcon = ({ size = 18 }) => (
-  <svg width={size} height={size} viewBox="0 0 40 40" fill="none" style={{ flexShrink: 0 }}>
-    <rect width="40" height="40" rx="10" fill="#0068FF"/>
-    <path d="M19.5 12H8V16.2L16.2 24.8H8V28.5H20V24.3L11.8 15.7H19.5V12Z" fill="#FFFFFF"/>
-    <path d="M22 17.5H25.5V28.5H22V17.5Z" fill="#FFFFFF"/>
-    <path d="M31.5 17.5C29 17.5 27 19.5 27 22.5V23.5C27 26.5 29 28.5 31.5 28.5C34 28.5 36 26.5 36 23.5V22.5C36 19.5 34 17.5 31.5 17.5ZM32.5 23.8C32.5 25 32 25.5 31.5 25.5C31 25.5 30.5 25 30.5 23.8V22.2C30.5 21 31 20.5 31.5 20.5C32 20.5 32.5 21 32.5 22.2V23.8Z" fill="#FFFFFF"/>
+  <svg width={size} height={size} viewBox="0 0 48 48" fill="none" style={{ flexShrink: 0 }}>
+    <rect width="48" height="48" rx="12" fill="#0068FF"/>
+    <path d="M32.5 10H15.5C12.46 10 10 12.46 10 15.5V32.5C10 35.54 12.46 38 15.5 38H32.5C35.54 38 38 35.54 38 32.5V15.5C38 12.46 35.54 10 32.5 10Z" fill="#0068FF"/>
+    <path d="M29.8 14.5H18.2C17.54 14.5 17 15.04 17 15.7V17.6C17 17.82 17.05 18.04 17.14 18.24L24.5 31.5H17.8C17.36 31.5 17 31.86 17 32.3V33.3C17 33.74 17.36 34.1 17.8 34.1H30C30.66 34.1 31.2 33.56 31.2 32.9V31C31.2 30.78 31.15 30.56 31.06 30.36L23.7 17.1H29.8C30.24 17.1 30.6 16.74 30.6 16.3V15.3C30.6 14.86 30.24 14.5 29.8 14.5Z" fill="white"/>
   </svg>
 );
 
@@ -37,7 +36,6 @@ export default function MachineryCertificates({ onSelectMachinery }) {
       iconColor: 'var(--primary)',
       iconBg: 'var(--primary-tint)',
       features: [
-        'Học Phí Trọn Gói: Liên Hệ Để Có Thông Tin Chi Tiết',
         'Cấp chứng chỉ Sơ cấp nghề chuẩn Bộ LĐ-TB&XH ( Vô thời hạn )',
         'Thực hành trực tiếp: Vận hành, nâng hạ hàng, xếp dỡ pallet an toàn',
         'Hướng dẫn quy trình an toàn lao động, kiểm tra bảo dưỡng xe nâng',
@@ -56,7 +54,6 @@ export default function MachineryCertificates({ onSelectMachinery }) {
       iconColor: '#F59E0B',
       iconBg: 'rgba(245, 158, 11, 0.12)',
       features: [
-        'Học Phí Trọn Gói: Liên Hệ Để Có Thông Tin Chi Tiết',
         'Chứng chỉ có hồ sơ gốc lưu trữ toàn quốc, giá trị pháp lý vĩnh viễn',
         'Thực hành thao tác đào rãnh, múc móng, san gạt mặt bằng chuẩn kỹ thuật',
         'Quy chuẩn an toàn công trường, kỹ năng kiểm soát độ dốc & chống lật',
@@ -75,7 +72,6 @@ export default function MachineryCertificates({ onSelectMachinery }) {
       iconColor: '#8B5CF6',
       iconBg: 'rgba(139, 92, 246, 0.12)',
       features: [
-        'Học Phí Trọn Gói: Liên Hệ Để Có Thông Tin Chi Tiết',
         'Cấp chứng chỉ thợ vận hành thiết bị nâng hạ & cần trục chuẩn GTVT',
         'Kỹ thuật đọc biểu đồ tải trọng ( Load Chart ), đánh tín hiệu & buộc móc cáp',
         'Thực hành điều khiển vươn cần, quay toa và hạ tải chuẩn xác từng centimet',
@@ -197,37 +193,68 @@ export default function MachineryCertificates({ onSelectMachinery }) {
                       </span>
                     </div>
 
-                    {/* Direct Contact Buttons: Zalo & Fanpage */}
+                    {/* Direct Contact Buttons: Zalo 1 | Zalo 2 | Fanpage */}
                     <div style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-                      gap: '0.5rem'
+                      gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
+                      gap: '0.4rem'
                     }}>
-                      {/* Zalo Button */}
+                      {/* Zalo Button 1 – Thầy Hồng */}
                       <a
                         href="https://zalo.me/0983406221"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="machinery-social-link zalo"
-                        title="Nhắn Zalo Thầy Hồng: 0983.406.221 để nhận báo giá trọn gói"
+                        title="Nhắn Zalo Thầy Hồng: 0983.406.221"
                         style={{
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          gap: '0.45rem',
-                          padding: '0.5rem 0.65rem',
+                          gap: '0.3rem',
+                          padding: '0.45rem 0.35rem',
                           borderRadius: '9px',
                           background: 'rgba(0, 104, 255, 0.1)',
                           border: '1.5px solid rgba(0, 104, 255, 0.35)',
                           color: '#0068FF',
-                          fontSize: '0.84rem',
+                          fontSize: '0.76rem',
                           fontWeight: 800,
                           textDecoration: 'none',
-                          boxShadow: '0 2px 6px rgba(0, 104, 255, 0.12)'
+                          boxShadow: '0 2px 6px rgba(0, 104, 255, 0.12)',
+                          flexDirection: 'column',
+                          lineHeight: 1.3
                         }}
                       >
-                        <ZaloIcon size={19} />
-                        <span>Zalo</span>
+                        <ZaloIcon size={16} />
+                        <span style={{ fontWeight: 900, letterSpacing: '0.01em' }}>0983.406.221</span>
+                      </a>
+
+                      {/* Zalo Button 2 – Tư Vấn */}
+                      <a
+                        href="https://zalo.me/0336611194"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="machinery-social-link zalo"
+                        title="Nhắn Zalo Tư Vấn: 0336.611.194"
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'center',
+                          gap: '0.3rem',
+                          padding: '0.45rem 0.35rem',
+                          borderRadius: '9px',
+                          background: 'rgba(0, 104, 255, 0.1)',
+                          border: '1.5px solid rgba(0, 104, 255, 0.35)',
+                          color: '#0068FF',
+                          fontSize: '0.76rem',
+                          fontWeight: 800,
+                          textDecoration: 'none',
+                          boxShadow: '0 2px 6px rgba(0, 104, 255, 0.12)',
+                          flexDirection: 'column',
+                          lineHeight: 1.3
+                        }}
+                      >
+                        <ZaloIcon size={16} />
+                        <span style={{ fontWeight: 900, letterSpacing: '0.01em' }}>0336.611.194</span>
                       </a>
 
                       {/* Fanpage Facebook Button */}
@@ -241,29 +268,29 @@ export default function MachineryCertificates({ onSelectMachinery }) {
                           display: 'flex',
                           alignItems: 'center',
                           justifyContent: 'center',
-                          gap: '0.45rem',
-                          padding: '0.5rem 0.65rem',
+                          gap: '0.3rem',
+                          padding: '0.45rem 0.35rem',
                           borderRadius: '9px',
                           background: 'rgba(24, 119, 242, 0.1)',
                           border: '1.5px solid rgba(24, 119, 242, 0.35)',
                           color: '#1877F2',
-                          fontSize: '0.84rem',
+                          fontSize: '0.76rem',
                           fontWeight: 800,
                           textDecoration: 'none',
-                          boxShadow: '0 2px 6px rgba(24, 119, 242, 0.12)'
+                          boxShadow: '0 2px 6px rgba(24, 119, 242, 0.12)',
+                          flexDirection: 'column',
+                          lineHeight: 1.3
                         }}
                       >
-                        <FacebookIcon size={19} />
-                        <span>Fanpage</span>
+                        <FacebookIcon size={16} />
+                        <span style={{ fontWeight: 900 }}>FANPAGE</span>
                       </a>
                     </div>
                   </div>
 
                   {/* Features List */}
                   <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', marginBottom: '1.75rem' }}>
-                    {item.features.map((feat, fIdx) => {
-                      const isTuition = feat.startsWith('Học Phí Trọn Gói');
-                      return (
+                    {item.features.map((feat, fIdx) => (
                         <div
                           key={fIdx}
                           style={{
@@ -271,52 +298,20 @@ export default function MachineryCertificates({ onSelectMachinery }) {
                             alignItems: 'flex-start',
                             gap: '0.55rem',
                             fontSize: '0.88rem',
-                            color: isTuition ? 'var(--text-main)' : 'var(--text-muted)',
-                            fontWeight: isTuition ? 700 : 400,
+                            color: 'var(--text-muted)',
+                            fontWeight: 400,
                             lineHeight: 1.5
                           }}
                         >
                           <CheckCircle2
                             size={16}
-                            color={isTuition ? 'var(--accent-gold)' : 'var(--primary)'}
+                            color="var(--primary)"
                             style={{ flexShrink: 0, marginTop: '3px' }}
                           />
-                          <span>
-                            {isTuition ? (
-                              <span style={{ display: 'inline-flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.35rem' }}>
-                                <strong style={{ color: 'var(--text-main)' }}>Học Phí Trọn Gói:</strong>{' '}
-                                <span style={{ color: 'var(--primary)', fontWeight: 800 }}>Liên Hệ Để Có Thông Tin Chi Tiết</span>
-                                <span style={{ display: 'inline-flex', alignItems: 'center', gap: '0.3rem', marginLeft: '0.15rem' }}>
-                                  (qua
-                                  <a
-                                    href="https://zalo.me/0983406221"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    title="Zalo Thầy Hồng"
-                                    style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', color: '#0068FF', fontWeight: 800, textDecoration: 'none' }}
-                                  >
-                                    <ZaloIcon size={14} /> Zalo
-                                  </a>
-                                  •
-                                  <a
-                                    href="https://www.facebook.com/share/1GuWF1te7x/"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    title="Fanpage Facebook Thầy Hồng Dạy Lái"
-                                    style={{ display: 'inline-flex', alignItems: 'center', gap: '0.2rem', color: '#1877F2', fontWeight: 800, textDecoration: 'none' }}
-                                  >
-                                    <FacebookIcon size={14} /> Fanpage
-                                  </a>
-                                  )
-                                </span>
-                              </span>
-                            ) : (
-                              feat
-                            )}
-                          </span>
+                          <span>{feat}</span>
                         </div>
-                      );
-                    })}
+                      )
+                    )}
                   </div>
                 </div>
 
