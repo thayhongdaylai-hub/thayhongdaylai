@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
-  Camera,
   ChevronLeft,
   ChevronRight,
   X,
@@ -152,11 +151,6 @@ export default function StudentGallery({ onOpenRegister }) {
       <div className="container" style={{ maxWidth: '1120px' }}>
         {/* Section Header */}
         <div className="section-title-wrapper" style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <div className="badge badge-gold" style={{ marginBottom: '0.75rem' }}>
-            <Camera size={15} />
-            <span>Kho Ảnh Thực Tế ({STUDENT_PHOTOS.length} Ảnh)</span>
-          </div>
-
           <h2
             className="section-title"
             style={{ fontSize: 'clamp(1.65rem, 3.5vw, 2.3rem)', marginBottom: 0 }}
