@@ -80,7 +80,7 @@ export default function Hero({ onOpenRegister }) {
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.55rem', fontSize: 'clamp(0.85rem, 2.8vw, 0.95rem)', color: 'var(--text-muted)', lineHeight: 1.5 }}>
                 <CheckCircle2 size={18} color="var(--primary)" style={{ flexShrink: 0, marginTop: '2px' }} />
-                <span><strong style={{ color: 'var(--text-main)' }}>Tỷ Lệ Thi Đỗ 99%:</strong> Bộ mẹo 600 câu + 120 tình huống mô phỏng độc quyền.</span>
+                <span><strong style={{ color: 'var(--text-main)' }}>Tỷ Lệ Thi Đỗ 99%:</strong> Bộ đề 600 câu + 120 tình huống mô phỏng độc quyền.</span>
               </div>
             </div>
 
