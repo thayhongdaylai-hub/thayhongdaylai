@@ -18,8 +18,8 @@ export default function TestModal({ isOpen, onClose }) {
       group: 'xe_may',
       groupTitle: '🛵 Bằng Xe Máy & Phân Khối Lớn',
       items: [
-        { id: 'a1', name: 'Hạng A1', desc: 'Xe máy dưới 175cm³ (25 câu / 19 phút - Đạt 21/25)', icon: Bike, badge: 'A1 - 25 Câu (19p)' },
-        { id: 'a', name: 'Hạng A', desc: 'Xe mô tô PKL từ 175cm³ trở lên (25 câu / 19 phút - Đạt 23/25)', icon: Bike, badge: 'A - 25 Câu (19p)' },
+        { id: 'a1', name: 'Hạng A1', desc: 'Bộ 250 câu xe máy A1 (25 câu / 19 phút - Đạt 21/25)', icon: Bike, badge: 'A1 - 25 Câu (19p)' },
+        { id: 'a', name: 'Hạng A', desc: 'Bộ 250 câu mô tô PKL Hạng A (25 câu / 19 phút - Đạt 23/25)', icon: Bike, badge: 'A - 25 Câu (19p)' },
       ]
     },
     {
@@ -85,6 +85,19 @@ export default function TestModal({ isOpen, onClose }) {
       }
     });
     return correct;
+  };
+
+  const hasFailedCritical = () => {
+    if (!currentExam) return false;
+    return currentExam.questions.some((q, idx) => {
+      const ans = userAnswers[idx];
+      return q.isCritical && ans !== undefined && ans !== q.answer;
+    });
+  };
+
+  const isExamPassed = () => {
+    if (!currentExam) return false;
+    return calculateScore() >= currentExam.passScore && !hasFailedCritical();
   };
 
   const handleResetExam = () => {
@@ -304,8 +317,13 @@ export default function TestModal({ isOpen, onClose }) {
             <div className="test-modal-exam-grid" style={{ display: 'grid', gridTemplateColumns: '1.8fr 1fr', gap: '1.5rem', alignItems: 'start' }}>
               {/* Question Details */}
               <div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem' }}>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginBottom: '1rem', flexWrap: 'wrap' }}>
                   <span className="badge badge-emerald">Câu {currentQIndex + 1} / {currentExam.questions.length}</span>
+                  {currentExam.questions[currentQIndex]?.isCritical && (
+                    <span className="badge badge-red" style={{ background: 'rgba(239, 68, 68, 0.18)', color: '#ef4444', border: '1px solid #ef4444', fontWeight: 700 }}>
+                      ⚠️ CÂU ĐIỂM LIỆT
+                    </span>
+                  )}
                   {userAnswers[currentQIndex] !== undefined && (
                     <span className="badge badge-blue">Đã chọn đáp án</span>
                   )}
@@ -425,7 +443,7 @@ export default function TestModal({ isOpen, onClose }) {
         {/* STEP 3: Exam Result Summary & Review Mode */}
         {selectedCategory && isSubmitted && !isReviewMode && (
           <div style={{ textAlign: 'center', padding: '1rem 0' }}>
-            {calculateScore() >= currentExam.passScore ? (
+            {isExamPassed() ? (
               <div style={{
                 width: '80px',
                 height: '80px',
@@ -454,11 +472,16 @@ export default function TestModal({ isOpen, onClose }) {
             )}
 
             <h2 style={{ fontSize: '2rem', marginBottom: '0.5rem' }}>
-              {calculateScore() >= currentExam.passScore ? '🎉 CHÚC MỪNG: KẾT QUẢ ĐẠT!' : '⚠️ KẾT QUẢ: CHƯA ĐẠT!'}
+              {isExamPassed() ? '🎉 CHÚC MỪNG: KẾT QUẢ ĐẠT!' : (hasFailedCritical() ? '⚠️ KHÔNG ĐẠT: SAI CÂU ĐIỂM LIỆT!' : '⚠️ KẾT QUẢ: CHƯA ĐẠT!')}
             </h2>
 
             <p style={{ fontSize: '1rem', color: 'var(--text-muted)', marginBottom: '1.75rem' }}>
-              {currentExam.title} • Điểm đạt chuẩn sát hạch GTVT: <strong>{currentExam.passScore}/{currentExam.total} câu</strong>
+              {currentExam.title} • Điểm đạt chuẩn sát hạch: <strong>{currentExam.passScore}/{currentExam.total} câu</strong>
+              {hasFailedCritical() && (
+                <span style={{ display: 'block', color: 'var(--accent-red)', fontWeight: 600, marginTop: '0.35rem' }}>
+                  Bạn đã làm sai câu hỏi điểm liệt (theo quy định Cục CSGT, sai câu điểm liệt sẽ bị tính KHÔNG ĐẠT)
+                </span>
+              )}
             </p>
 
             {/* Score Big Pill */}
@@ -556,8 +579,8 @@ export default function TestModal({ isOpen, onClose }) {
               </div>
 
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
-                <span className={`badge ${calculateScore() >= currentExam.passScore ? 'badge-emerald' : 'badge-red'}`} style={{ fontSize: '0.9rem', padding: '0.4rem 0.8rem' }}>
-                  Kết quả: {calculateScore()}/{currentExam.total} câu ({calculateScore() >= currentExam.passScore ? 'ĐẠT' : 'CHƯA ĐẠT'})
+                <span className={`badge ${isExamPassed() ? 'badge-emerald' : 'badge-red'}`} style={{ fontSize: '0.9rem', padding: '0.4rem 0.8rem' }}>
+                  Kết quả: {calculateScore()}/{currentExam.total} câu ({isExamPassed() ? 'ĐẠT' : (hasFailedCritical() ? 'KHÔNG ĐẠT (SAI ĐIỂM LIỆT)' : 'CHƯA ĐẠT')})
                 </span>
                 <button
                   onClick={() => handleStartExam(selectedCategory)}
@@ -631,7 +654,14 @@ export default function TestModal({ isOpen, onClose }) {
                   return (
                     <div className="glass-card" style={{ padding: '1.5rem', borderRadius: '1.25rem' }}>
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '1rem', flexWrap: 'wrap', gap: '0.5rem' }}>
-                        <span className="badge badge-blue">Câu {currentQIndex + 1} / {currentExam.questions.length}</span>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+                          <span className="badge badge-blue">Câu {currentQIndex + 1} / {currentExam.questions.length}</span>
+                          {q.isCritical && (
+                            <span className="badge badge-red" style={{ background: 'rgba(239, 68, 68, 0.18)', color: '#ef4444', border: '1px solid #ef4444', fontWeight: 700 }}>
+                              ⚠️ CÂU ĐIỂM LIỆT
+                            </span>
+                          )}
+                        </div>
                         {isCorrect ? (
                           <span className="badge badge-emerald" style={{ display: 'flex', alignItems: 'center', gap: '0.3rem' }}>
                             <Check size={14} /> BẠN ĐÃ TRẢ LỜI ĐÚNG (+1 điểm)

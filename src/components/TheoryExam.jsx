@@ -3,6 +3,7 @@ import {
   LICENSE_CONFIGS,
   QUESTIONS_DATABASE,
   CRITICAL_60_QUESTIONS,
+  CRITICAL_MOTORCYCLE_QUESTIONS,
   generateRandomExam
 } from '../data/theoryQuestions';
 import QuestionIllustration from './QuestionIllustration';
@@ -48,9 +49,10 @@ export default function TheoryExam() {
   const startNewExam = useCallback((licenseKey = selectedLicense, mode = examMode) => {
     let examData;
     if (mode === 'critical') {
-      // Full 60 critical questions mode - KHÔNG TÍNH THỜI GIAN
+      // Critical questions mode - KHÔNG TÍNH THỜI GIAN
       const config = LICENSE_CONFIGS[licenseKey];
-      const critQuestions = CRITICAL_60_QUESTIONS;
+      const isMoto = config.vehicleType === 'motorbike';
+      const critQuestions = isMoto ? CRITICAL_MOTORCYCLE_QUESTIONS : CRITICAL_60_QUESTIONS;
       examData = {
         examId: `CRIT-${Date.now().toString(36).toUpperCase()}`,
         licenseType: licenseKey,
@@ -59,7 +61,9 @@ export default function TheoryExam() {
           totalQuestions: critQuestions.length,
           durationMinutes: 0, // No time limit
           passingScore: critQuestions.length,
-          name: `Trọn Bộ 60 Câu Hỏi Điểm Liệt Bộ GTVT (Không Giới Hạn Thời Gian)`
+          name: isMoto
+            ? `Trọn Bộ ${critQuestions.length} Câu Điểm Liệt Xe Máy A1 - A (Không Giới Hạn Thời Gian)`
+            : `Trọn Bộ ${critQuestions.length} Câu Hỏi Điểm Liệt Ô Tô (Không Giới Hạn Thời Gian)`
         },
         questions: critQuestions
       };
@@ -719,7 +723,7 @@ export default function TheoryExam() {
                           {idx + 1}
                         </div>
                         <div style={{ fontSize: 'clamp(0.95rem, 2.5vw, 1.02rem)', fontWeight: 600, lineHeight: 1.48, flex: 1 }}>
-                          {opt}
+                          {typeof opt === 'string' ? opt.replace(/^\d+\s*[\.:]\s*/, '') : opt}
                         </div>
                         {isSubmitted && isCorrect && (
                           <div style={{ color: 'var(--accent-emerald)', display: 'flex', alignItems: 'center', gap: '0.3rem', fontWeight: 700, fontSize: '0.85rem', flexShrink: 0 }}>
