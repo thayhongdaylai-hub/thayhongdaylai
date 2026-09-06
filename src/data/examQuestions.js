@@ -30,7 +30,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-217.jpeg",
         "page": 89,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe khách và xe tải, xe con.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe khách và xe tải, xe con.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe khách và xe tải, xe con.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe khách và xe tải, xe con."
       },
       {
         "id": 222,
@@ -48,7 +51,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-222.jpeg",
         "page": 92,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe con, xe tải.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con, xe tải.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe con, xe tải."
       },
       {
         "id": 125,
@@ -67,7 +73,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 43,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 12,
@@ -85,7 +94,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 6,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 174,
@@ -104,7 +116,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-174.jpeg",
         "page": 67,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 47,
@@ -122,7 +137,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 17,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Trước khi thay đổi làn đường.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Trước khi thay đổi làn đường."
       },
       {
         "id": 153,
@@ -139,7 +157,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-153.png",
         "page": 57,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 138,
@@ -157,7 +178,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-138.jpeg",
         "page": 50,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 216,
@@ -175,7 +199,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-216.jpeg",
         "page": 89,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Chỉ xe con.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Chỉ xe con.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Chỉ xe con.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Chỉ xe con."
       },
       {
         "id": 91,
@@ -192,7 +219,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Được phục hồi đủ 12 điểm, nếu không bị trừ điểm trong thời hạn 12 tháng từ ngày bị trừ điểm gần nhất."
       },
       {
         "id": 235,
@@ -211,7 +241,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-235.jpeg",
         "page": 98,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Hướng 1 và 3.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1 và 3.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1 và 3.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Hướng 1 và 3."
       },
       {
         "id": 6,
@@ -229,7 +262,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 4,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Là người điều khiển xe cơ giới, người điều khiển xe thô sơ, người điều khiển xe máy chuyên dùng.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là người điều khiển xe cơ giới, người điều khiển xe thô sơ, người điều khiển xe máy chuyên dùng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là người điều khiển xe cơ giới, người điều khiển xe thô sơ, người điều khiển xe máy chuyên dùng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là người điều khiển xe cơ giới, người điều khiển xe thô sơ, người điều khiển xe máy chuyên dùng."
       },
       {
         "id": 107,
@@ -248,7 +284,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 37,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Chỉ bấm còi khi thật sự cần thiết, không bấm còi liên tục hoặc kéo dài, sử dụng còi với mức âm lượng theo quy định.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Chỉ bấm còi khi thật sự cần thiết, không bấm còi liên tục hoặc kéo dài, sử dụng còi với mức âm lượng theo quy định."
       },
       {
         "id": 240,
@@ -265,7 +304,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-240.jpeg",
         "page": 101,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được vượt.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Không được vượt."
       },
       {
         "id": 36,
@@ -283,7 +325,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 14,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Đi trên làn đường bên trái.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đi trên làn đường bên trái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đi trên làn đường bên trái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Đi trên làn đường bên trái."
       },
       {
         "id": 155,
@@ -302,7 +347,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-155.jpeg",
         "page": 58,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp).\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp).\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp).\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp)."
       },
       {
         "id": 177,
@@ -320,7 +368,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-177.jpeg",
         "page": 69,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 134,
@@ -339,7 +390,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-134.jpeg",
         "page": 48,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 1 và biển 2."
       },
       {
         "id": 1,
@@ -357,7 +411,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 3,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Phần đường xe chạy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phần đường xe chạy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phần đường xe chạy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Phần đường xe chạy."
       },
       {
         "id": 78,
@@ -376,7 +433,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 27,
-        "explanation": "Đáp án đúng: Phương án 4. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 242,
@@ -395,7 +455,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-242.jpeg",
         "page": 102,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe khách, xe tải.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe khách, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe khách, xe tải.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe khách, xe tải."
       },
       {
         "id": 61,
@@ -414,7 +477,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 21,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xử phạt cả người điều khiển và người được chở trên xe mô tô, xe gắn máy."
       },
       {
         "id": 77,
@@ -432,7 +498,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 27,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Dừng lại về bên phải đường của mình, trước vạch dừng xe.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Dừng lại về bên phải đường của mình, trước vạch dừng xe."
       },
       {
         "id": 131,
@@ -451,7 +520,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-131.jpeg",
         "page": 46,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 141,
@@ -469,7 +541,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-141.jpeg",
         "page": 51,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       }
     ]
   },
@@ -496,7 +571,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 22,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Chỉ được báo hiệu bằng đèn.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Chỉ được báo hiệu bằng đèn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Chỉ được báo hiệu bằng đèn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Chỉ được báo hiệu bằng đèn."
       },
       {
         "id": 86,
@@ -514,7 +592,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 30,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe mô tô ba bánh.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe mô tô ba bánh.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe mô tô ba bánh.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xe mô tô ba bánh."
       },
       {
         "id": 90,
@@ -533,7 +614,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 65,
@@ -551,7 +635,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 23,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt."
       },
       {
         "id": 177,
@@ -569,7 +656,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-177.jpeg",
         "page": 69,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 231,
@@ -588,7 +678,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-231.jpeg",
         "page": 96,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe con.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe con."
       },
       {
         "id": 198,
@@ -607,7 +700,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-198.jpeg",
         "page": 79,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 19,
@@ -625,7 +721,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 8,
-        "explanation": "Đáp án đúng: Phương án 1. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Người điều khiển xe ô tô, xe mô tô, xe đạp, xe gắn máy.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Người điều khiển xe ô tô, xe mô tô, xe đạp, xe gắn máy."
       },
       {
         "id": 233,
@@ -644,7 +743,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-233.jpeg",
         "page": 97,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe mô tô, xe tải.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe mô tô, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe mô tô, xe tải.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe mô tô, xe tải."
       },
       {
         "id": 181,
@@ -662,7 +764,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-181.jpeg",
         "page": 71,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 194,
@@ -681,7 +786,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-194.jpeg",
         "page": 77,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 237,
@@ -700,7 +808,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-237.jpeg",
         "page": 99,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe tải ( D), xe con (B).\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải ( D), xe con (B).\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải ( D), xe con (B).\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe tải ( D), xe con (B)."
       },
       {
         "id": 214,
@@ -719,7 +830,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-214.png",
         "page": 87,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Vạch 3.\"\n• Vì sao đúng: Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.\n• Vì sao phương án khác sai: Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "whyCorrect": "Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.",
+        "whyWrong": "Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "correctAnswerText": "Vạch 3."
       },
       {
         "id": 184,
@@ -738,7 +852,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-184.jpeg",
         "page": 72,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 223,
@@ -756,7 +873,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-223.jpeg",
         "page": 92,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe khách, xe tải.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe khách, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe khách, xe tải.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe khách, xe tải."
       },
       {
         "id": 30,
@@ -775,7 +895,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-30.jpeg",
         "page": 12,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau."
       },
       {
         "id": 46,
@@ -794,7 +917,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 17,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 183,
@@ -812,7 +938,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-183.jpeg",
         "page": 72,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 227,
@@ -831,7 +960,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-227.jpeg",
         "page": 94,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả ba xe.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả ba xe.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả ba xe.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Cả ba xe."
       },
       {
         "id": 123,
@@ -850,7 +982,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 43,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng."
       },
       {
         "id": 12,
@@ -868,7 +1003,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 6,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 45,
@@ -886,7 +1024,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 16,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 106,
@@ -904,7 +1045,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 36,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; dừng, đỗ xe đúng nơi quy định; đã uống rượu, bia thì không lái xe.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; dừng, đỗ xe đúng nơi quy định; đã uống rượu, bia thì không lái xe.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; dừng, đỗ xe đúng nơi quy định; đã uống rượu, bia thì không lái xe.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; dừng, đỗ xe đúng nơi quy định; đã uống rượu, bia thì không lái xe."
       },
       {
         "id": 217,
@@ -922,7 +1066,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-217.jpeg",
         "page": 89,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe khách và xe tải, xe con.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe khách và xe tải, xe con.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe khách và xe tải, xe con.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe khách và xe tải, xe con."
       },
       {
         "id": 135,
@@ -941,7 +1088,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/motorcycle/cau-moto-135.jpeg",
         "page": 48,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 1 và biển 2."
       }
     ]
   },
@@ -966,7 +1116,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-447.png",
         "page": 118,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 367,
@@ -982,7 +1135,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-367.jpeg",
         "page": 92,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 132,
@@ -999,7 +1155,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Ý 1 và ý 2.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Ý 1 và ý 2."
       },
       {
         "id": 516,
@@ -1014,7 +1173,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-516.jpeg",
         "page": 146,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe khách.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe khách.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe khách.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe khách."
       },
       {
         "id": 303,
@@ -1031,7 +1193,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-303.jpeg",
         "page": 71,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2 và biển 3.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2 và biển 3.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2 và biển 3.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 2 và biển 3."
       },
       {
         "id": 325,
@@ -1047,7 +1212,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-325.jpeg",
         "page": 79,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 234,
@@ -1063,7 +1231,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 55,
-        "explanation": "Đáp án đúng: Phương án 1. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Quan sát tình hình giao thông phía trước, phía sau và phía bên mở cửa xe, mở hé cánh cửa, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Quan sát tình hình giao thông phía trước, phía sau và phía bên mở cửa xe, mở hé cánh cửa, nếu đảm bảo an toàn thì mở cửa ở mức cần thiết để xuống xe ô tô."
       },
       {
         "id": 107,
@@ -1080,7 +1251,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 25,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả ba ý trên.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả ba ý trên.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 9,
@@ -1096,7 +1270,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 6,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe đạp, xe đạp máy, xe đạp điện; xe xích lô; xe lăn dùng cho người khuyết tật; xe vật nuôi kéo và các loại xe tương tự.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe đạp, xe đạp máy, xe đạp điện; xe xích lô; xe lăn dùng cho người khuyết tật; xe vật nuôi kéo và các loại xe tương tự.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe đạp, xe đạp máy, xe đạp điện; xe xích lô; xe lăn dùng cho người khuyết tật; xe vật nuôi kéo và các loại xe tương tự.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xe đạp, xe đạp máy, xe đạp điện; xe xích lô; xe lăn dùng cho người khuyết tật; xe vật nuôi kéo và các loại xe tương tự."
       },
       {
         "id": 187,
@@ -1111,7 +1288,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 44,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Là thiếu văn hóa giao thông, vi phạm pháp luật về trật tự, an toàn giao thông đường bộ.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Là thiếu văn hóa giao thông, vi phạm pháp luật về trật tự, an toàn giao thông đường bộ."
       },
       {
         "id": 341,
@@ -1126,7 +1306,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-341.jpeg",
         "page": 84,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Được đi vào.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Được đi vào.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Được đi vào.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Được đi vào."
       },
       {
         "id": 573,
@@ -1142,7 +1325,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-573.jpeg",
         "page": 174,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh."
       },
       {
         "id": 511,
@@ -1157,7 +1343,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-511.jpeg",
         "page": 143,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Chỉ hướng 1.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Chỉ hướng 1.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Chỉ hướng 1.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Chỉ hướng 1."
       },
       {
         "id": 177,
@@ -1174,7 +1363,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 41,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 399,
@@ -1190,7 +1382,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-399.jpeg",
         "page": 102,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 504,
@@ -1207,7 +1402,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-504.jpeg",
         "page": 140,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe mô tô, xe tải, xe khách, xe con.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe mô tô, xe tải, xe khách, xe con.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe mô tô, xe tải, xe khách, xe con.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe mô tô, xe tải, xe khách, xe con."
       },
       {
         "id": 595,
@@ -1223,7 +1421,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-595.jpeg",
         "page": 185,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước."
       },
       {
         "id": 431,
@@ -1239,7 +1440,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-431.png",
         "page": 113,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển báo hiệu cho người lái xe biết số lượng làn đường trên mặt đường và hướng đi trên mỗi làn đường phải theo.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển báo hiệu cho người lái xe biết số lượng làn đường trên mặt đường và hướng đi trên mỗi làn đường phải theo.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển báo hiệu cho người lái xe biết số lượng làn đường trên mặt đường và hướng đi trên mỗi làn đường phải theo.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển báo hiệu cho người lái xe biết số lượng làn đường trên mặt đường và hướng đi trên mỗi làn đường phải theo."
       },
       {
         "id": 179,
@@ -1254,7 +1458,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 41,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ."
       },
       {
         "id": 7,
@@ -1270,7 +1477,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 6,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Là người điều khiển xe cơ giới.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là người điều khiển xe cơ giới.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là người điều khiển xe cơ giới.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là người điều khiển xe cơ giới."
       },
       {
         "id": 339,
@@ -1286,7 +1496,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-339.jpeg",
         "page": 83,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Cấm các loại xe có tải trọng toàn bộ trên 10 tấn đi qua.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cấm các loại xe có tải trọng toàn bộ trên 10 tấn đi qua.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cấm các loại xe có tải trọng toàn bộ trên 10 tấn đi qua.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Cấm các loại xe có tải trọng toàn bộ trên 10 tấn đi qua."
       },
       {
         "id": 450,
@@ -1303,7 +1516,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-450.png",
         "page": 119,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 149,
@@ -1319,7 +1535,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 34,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe ô tô chở người đến 28 chỗ không kể chỗ của người lái xe (trừ xe buýt); ô tô tải có trọng tải không lớn hơn 3,5 tấn."
       },
       {
         "id": 292,
@@ -1336,7 +1555,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 67,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Để phát điện năng cung cấp cho các phụ tải làm việc và nạp điện cho ắc quy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Để phát điện năng cung cấp cho các phụ tải làm việc và nạp điện cho ắc quy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Để phát điện năng cung cấp cho các phụ tải làm việc và nạp điện cho ắc quy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Để phát điện năng cung cấp cho các phụ tải làm việc và nạp điện cho ắc quy."
       },
       {
         "id": 123,
@@ -1353,7 +1575,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 29,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe gắn máy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xe gắn máy."
       },
       {
         "id": 217,
@@ -1368,7 +1593,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 51,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái; giảm tốc độ, quan sát an toàn xung quanh đặc biệt là bên trái; đổi sang làn đường bên trái và điều khiển xe từ từ rẽ trái.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái; giảm tốc độ, quan sát an toàn xung quanh đặc biệt là bên trái; đổi sang làn đường bên trái và điều khiển xe từ từ rẽ trái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái; giảm tốc độ, quan sát an toàn xung quanh đặc biệt là bên trái; đổi sang làn đường bên trái và điều khiển xe từ từ rẽ trái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ trái; giảm tốc độ, quan sát an toàn xung quanh đặc biệt là bên trái; đổi sang làn đường bên trái và điều khiển xe từ từ rẽ trái."
       },
       {
         "id": 196,
@@ -1383,7 +1611,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 46,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đặt nạn nhân nằm ngửa, khai thông đường thở của nạn nhân; thực hiện các biện pháp hô hấp nhân tạo.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Đặt nạn nhân nằm ngửa, khai thông đường thở của nạn nhân; thực hiện các biện pháp hô hấp nhân tạo."
       },
       {
         "id": 221,
@@ -1398,7 +1629,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 52,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác."
       },
       {
         "id": 412,
@@ -1414,7 +1648,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-412.jpeg",
         "page": 107,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 508,
@@ -1431,7 +1668,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-508.jpeg",
         "page": 142,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Cả hai xe.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả hai xe.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả hai xe.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Cả hai xe."
       }
     ]
   },
@@ -1457,7 +1697,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-479.png",
         "page": 129,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Vạch 1 và vạch 3.\"\n• Vì sao đúng: Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.\n• Vì sao phương án khác sai: Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "whyCorrect": "Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.",
+        "whyWrong": "Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "correctAnswerText": "Vạch 1 và vạch 3."
       },
       {
         "id": 519,
@@ -1474,7 +1717,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-519.jpeg",
         "page": 147,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Hướng 1, 3 và 4.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1, 3 và 4.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1, 3 và 4.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Hướng 1, 3 và 4."
       },
       {
         "id": 18,
@@ -1490,7 +1736,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 8,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác."
       },
       {
         "id": 273,
@@ -1506,7 +1755,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 63,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 330,
@@ -1522,7 +1774,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-330.jpeg",
         "page": 80,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 499,
@@ -1537,7 +1792,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-499.jpeg",
         "page": 137,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe con và xe khách.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con và xe khách.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con và xe khách.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe con và xe khách."
       },
       {
         "id": 566,
@@ -1554,7 +1812,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-566.jpeg",
         "page": 171,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe tải ( D), xe con (B).\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải ( D), xe con (B).\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải ( D), xe con (B).\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe tải ( D), xe con (B)."
       },
       {
         "id": 347,
@@ -1570,7 +1831,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-347.jpeg",
         "page": 86,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển."
       },
       {
         "id": 177,
@@ -1587,7 +1851,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 41,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 46,
@@ -1602,7 +1869,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 13,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước."
       },
       {
         "id": 214,
@@ -1618,7 +1888,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 50,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về số 1, đạp 1/2 ly hợp (côn) cho xe đến chỗ dừng; khi xe đã dừng, về số không (N), đạp phanh chân, sử dụng phanh đỗ.\"\n• Vì sao đúng: Xe xuống dốc phải nhường đường cho xe đang lên dốc vì xe lên dốc cần đà và khó xử lý hơn khi phải dừng lại giữa dốc.\n• Vì sao phương án khác sai: Bắt xe lên dốc phải dừng lại nhường đường là sai nguyên tắc an toàn, dễ gây trôi dốc và chết máy.",
+        "whyCorrect": "Xe xuống dốc phải nhường đường cho xe đang lên dốc vì xe lên dốc cần đà và khó xử lý hơn khi phải dừng lại giữa dốc.",
+        "whyWrong": "Bắt xe lên dốc phải dừng lại nhường đường là sai nguyên tắc an toàn, dễ gây trôi dốc và chết máy.",
+        "correctAnswerText": "Có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về số 1, đạp 1/2 ly hợp (côn) cho xe đến chỗ dừng; khi xe đã dừng, về số không (N), đạp phanh chân, sử dụng phanh đỗ."
       },
       {
         "id": 366,
@@ -1633,7 +1906,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-366.png",
         "page": 91,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy."
       },
       {
         "id": 530,
@@ -1648,7 +1924,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-530.jpeg",
         "page": 153,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đúng.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đúng.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đúng.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Đúng."
       },
       {
         "id": 123,
@@ -1665,7 +1944,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 29,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe gắn máy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xe gắn máy."
       },
       {
         "id": 59,
@@ -1681,7 +1963,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 16,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 191,
@@ -1697,7 +1982,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 45,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; đội mũ bảo hiểm đúng quy chuẩn kỹ thuật quốc gia, cài quai đúng quy cách.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; đội mũ bảo hiểm đúng quy chuẩn kỹ thuật quốc gia, cài quai đúng quy cách.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; đội mũ bảo hiểm đúng quy chuẩn kỹ thuật quốc gia, cài quai đúng quy cách.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Điều khiển xe đi bên phải theo chiều đi của mình; đi đúng phần đường, làn đường quy định; đội mũ bảo hiểm đúng quy chuẩn kỹ thuật quốc gia, cài quai đúng quy cách."
       },
       {
         "id": 495,
@@ -1712,7 +2000,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-495.jpeg",
         "page": 135,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe cứu thương đi làm nhiệm vụ cấp cứu.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe cứu thương đi làm nhiệm vụ cấp cứu.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe cứu thương đi làm nhiệm vụ cấp cứu.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe cứu thương đi làm nhiệm vụ cấp cứu."
       },
       {
         "id": 129,
@@ -1728,7 +2019,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 30,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 279,
@@ -1744,7 +2038,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 64,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Khi làm việc, nhiệt năng được biến đổi thành cơ năng làm trục khủy động cơ quay, truyền lực đến các bánh xe chủ động tạo ra chuyển động tịnh tiến cho xe ô tô.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Khi làm việc, nhiệt năng được biến đổi thành cơ năng làm trục khủy động cơ quay, truyền lực đến các bánh xe chủ động tạo ra chuyển động tịnh tiến cho xe ô tô."
       },
       {
         "id": 360,
@@ -1760,7 +2057,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-360.jpeg",
         "page": 90,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 386,
@@ -1777,7 +2077,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-386.jpeg",
         "page": 98,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 256,
@@ -1792,7 +2095,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 59,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Quan sát phía trước, phía sau và bên phía mở cửa để phát hiện các phương tiện đang di chuyển tới gần, khi đủ điều kiện an toàn, mở hé cửa, sau đó mở ở mức cần thiết để xuống xe.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Quan sát phía trước, phía sau và bên phía mở cửa để phát hiện các phương tiện đang di chuyển tới gần, khi đủ điều kiện an toàn, mở hé cửa, sau đó mở ở mức cần thiết để xuống xe.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Quan sát phía trước, phía sau và bên phía mở cửa để phát hiện các phương tiện đang di chuyển tới gần, khi đủ điều kiện an toàn, mở hé cửa, sau đó mở ở mức cần thiết để xuống xe.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Quan sát phía trước, phía sau và bên phía mở cửa để phát hiện các phương tiện đang di chuyển tới gần, khi đủ điều kiện an toàn, mở hé cửa, sau đó mở ở mức cần thiết để xuống xe."
       },
       {
         "id": 551,
@@ -1809,7 +2115,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-551.jpeg",
         "page": 163,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe của bạn và xe con, xe tải.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe của bạn và xe con, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe của bạn và xe con, xe tải.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe của bạn và xe con, xe tải."
       },
       {
         "id": 110,
@@ -1825,7 +2134,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 26,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt."
       },
       {
         "id": 427,
@@ -1841,7 +2153,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-427.jpeg",
         "page": 111,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai biển.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cả hai biển.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cả hai biển.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Cả hai biển."
       },
       {
         "id": 161,
@@ -1857,7 +2172,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 37,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"35 m.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"35 m.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"35 m.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "35 m."
       },
       {
         "id": 509,
@@ -1874,7 +2192,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-509.jpeg",
         "page": 142,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả ba xe.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả ba xe.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả ba xe.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Cả ba xe."
       },
       {
         "id": 517,
@@ -1889,7 +2210,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-517.jpeg",
         "page": 146,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe mô tô.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe mô tô.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe mô tô.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe mô tô."
       },
       {
         "id": 151,
@@ -1906,7 +2230,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 35,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động)."
       },
       {
         "id": 490,
@@ -1923,7 +2250,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-490.jpeg",
         "page": 133,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe mô tô, xe con, xe tải.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe mô tô, xe con, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe mô tô, xe con, xe tải.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe mô tô, xe con, xe tải."
       },
       {
         "id": 395,
@@ -1939,7 +2269,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-395.jpeg",
         "page": 101,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 338,
@@ -1954,7 +2287,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-338.jpeg",
         "page": 83,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Cho phép xe ô tô có tải trọng trên trục xe từ 7 tấn trở xuống đi qua.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cho phép xe ô tô có tải trọng trên trục xe từ 7 tấn trở xuống đi qua.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cho phép xe ô tô có tải trọng trên trục xe từ 7 tấn trở xuống đi qua.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Cho phép xe ô tô có tải trọng trên trục xe từ 7 tấn trở xuống đi qua."
       },
       {
         "id": 467,
@@ -1971,7 +2307,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-467.jpeg",
         "page": 125,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Ý 1 và ý 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Ý 1 và ý 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Ý 1 và ý 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Ý 1 và ý 3."
       },
       {
         "id": 154,
@@ -1988,7 +2327,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 35,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc)."
       },
       {
         "id": 63,
@@ -2005,7 +2347,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 16,
-        "explanation": "Đáp án đúng: Phương án 4. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Không được phép.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Không được phép."
       }
     ]
   },
@@ -2031,7 +2376,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-297.jpeg",
         "page": 69,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Phá cửa kính xe ô tô trong các trường hợp khẩn cấp.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phá cửa kính xe ô tô trong các trường hợp khẩn cấp.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phá cửa kính xe ô tô trong các trường hợp khẩn cấp.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Phá cửa kính xe ô tô trong các trường hợp khẩn cấp."
       },
       {
         "id": 147,
@@ -2047,7 +2395,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 34,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Ô tô tải, ô tô chở người trên 28 chỗ không kể chỗ của người lái xe."
       },
       {
         "id": 308,
@@ -2064,7 +2415,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-308.jpeg",
         "page": 73,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 1 và biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1 và biển 3."
       },
       {
         "id": 486,
@@ -2080,7 +2434,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-486.jpeg",
         "page": 131,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Chỉ xe con.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Chỉ xe con.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Chỉ xe con.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Chỉ xe con."
       },
       {
         "id": 418,
@@ -2096,7 +2453,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-418.png",
         "page": 108,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Báo trước sắp đến bến phà.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo trước sắp đến bến phà.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo trước sắp đến bến phà.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Báo trước sắp đến bến phà."
       },
       {
         "id": 214,
@@ -2112,7 +2472,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 50,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về số 1, đạp 1/2 ly hợp (côn) cho xe đến chỗ dừng; khi xe đã dừng, về số không (N), đạp phanh chân, sử dụng phanh đỗ.\"\n• Vì sao đúng: Xe xuống dốc phải nhường đường cho xe đang lên dốc vì xe lên dốc cần đà và khó xử lý hơn khi phải dừng lại giữa dốc.\n• Vì sao phương án khác sai: Bắt xe lên dốc phải dừng lại nhường đường là sai nguyên tắc an toàn, dễ gây trôi dốc và chết máy.",
+        "whyCorrect": "Xe xuống dốc phải nhường đường cho xe đang lên dốc vì xe lên dốc cần đà và khó xử lý hơn khi phải dừng lại giữa dốc.",
+        "whyWrong": "Bắt xe lên dốc phải dừng lại nhường đường là sai nguyên tắc an toàn, dễ gây trôi dốc và chết máy.",
+        "correctAnswerText": "Có tín hiệu rẽ phải, điều khiển xe sát vào lề đường bên phải; đạp phanh sớm và mạnh hơn lúc dừng xe trên đường bằng để xe đi với tốc độ chậm đến mức dễ dàng dừng lại được; về số 1, đạp 1/2 ly hợp (côn) cho xe đến chỗ dừng; khi xe đã dừng, về số không (N), đạp phanh chân, sử dụng phanh đỗ."
       },
       {
         "id": 572,
@@ -2128,7 +2491,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-572.jpeg",
         "page": 174,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Giảm tốc độ, rẽ phải sau xe tải và xe đạp.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ, rẽ phải sau xe tải và xe đạp.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ, rẽ phải sau xe tải và xe đạp.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Giảm tốc độ, rẽ phải sau xe tải và xe đạp."
       },
       {
         "id": 565,
@@ -2145,7 +2511,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-565.jpeg",
         "page": 170,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe khách, xe mô tô.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe khách, xe mô tô.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe khách, xe mô tô.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe khách, xe mô tô."
       },
       {
         "id": 224,
@@ -2161,7 +2530,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 53,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Quan sát, ước lượng độ ngập nước mà xe ô tô có thể vượt qua an toàn, về số thấp, giữ đều ga và giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Quan sát, ước lượng độ ngập nước mà xe ô tô có thể vượt qua an toàn, về số thấp, giữ đều ga và giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Quan sát, ước lượng độ ngập nước mà xe ô tô có thể vượt qua an toàn, về số thấp, giữ đều ga và giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Quan sát, ước lượng độ ngập nước mà xe ô tô có thể vượt qua an toàn, về số thấp, giữ đều ga và giữ vững tay lái để ô tô vượt qua đoạn đường ngập nước."
       },
       {
         "id": 582,
@@ -2177,7 +2549,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-582.jpeg",
         "page": 179,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Giảm tốc độ và đi thẳng qua ngã tư.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ và đi thẳng qua ngã tư.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ và đi thẳng qua ngã tư.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Giảm tốc độ và đi thẳng qua ngã tư."
       },
       {
         "id": 389,
@@ -2193,7 +2568,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-389.jpeg",
         "page": 99,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 287,
@@ -2210,7 +2588,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-287.jpeg",
         "page": 66,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cần kiểm tra động cơ.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cần kiểm tra động cơ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cần kiểm tra động cơ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cần kiểm tra động cơ."
       },
       {
         "id": 40,
@@ -2226,7 +2607,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 12,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Dừng lại trước vạch dừng; trường hợp đang đi trên vạch dừng hoặc đã đi qua vạch dừng mà tín hiệu đèn màu vàng thì được đi tiếp; trường hợp tín hiệu đèn màu vàng nhấp nháy, người điều khiển phương tiện tham gia giao thông đường bộ được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường hoặc các phương tiện khác.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Dừng lại trước vạch dừng; trường hợp đang đi trên vạch dừng hoặc đã đi qua vạch dừng mà tín hiệu đèn màu vàng thì được đi tiếp; trường hợp tín hiệu đèn màu vàng nhấp nháy, người điều khiển phương tiện tham gia giao thông đường bộ được đi nhưng phải quan sát, giảm tốc độ hoặc dừng lại nhường đường cho người đi bộ, xe lăn của người khuyết tật qua đường hoặc các phương tiện khác."
       },
       {
         "id": 183,
@@ -2242,7 +2626,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 43,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 154,
@@ -2259,7 +2646,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 35,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc)."
       },
       {
         "id": 578,
@@ -2276,7 +2666,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-578.jpeg",
         "page": 177,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Ý 1 và ý 2.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Ý 1 và ý 2.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Ý 1 và ý 2.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Ý 1 và ý 2."
       },
       {
         "id": 13,
@@ -2292,7 +2685,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 7,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Là Cảnh sát giao thông và người được giao nhiệm vụ hướng dẫn giao thông trên đường bộ.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là Cảnh sát giao thông và người được giao nhiệm vụ hướng dẫn giao thông trên đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là Cảnh sát giao thông và người được giao nhiệm vụ hướng dẫn giao thông trên đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là Cảnh sát giao thông và người được giao nhiệm vụ hướng dẫn giao thông trên đường bộ."
       },
       {
         "id": 151,
@@ -2309,7 +2705,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 35,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động)."
       },
       {
         "id": 329,
@@ -2325,7 +2724,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-329.jpeg",
         "page": 80,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 332,
@@ -2342,7 +2744,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-332.jpeg",
         "page": 81,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1 và biển 2."
       },
       {
         "id": 230,
@@ -2359,7 +2764,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-230.jpeg",
         "page": 54,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Lái xe và người ngồi ghế trước chưa cài dây đai an toàn.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Lái xe và người ngồi ghế trước chưa cài dây đai an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Lái xe và người ngồi ghế trước chưa cài dây đai an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Lái xe và người ngồi ghế trước chưa cài dây đai an toàn."
       },
       {
         "id": 190,
@@ -2374,7 +2782,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 44,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật."
       },
       {
         "id": 118,
@@ -2390,7 +2801,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 28,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"18 tuổi.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"18 tuổi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"18 tuổi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "18 tuổi."
       },
       {
         "id": 37,
@@ -2407,7 +2821,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-37.jpeg",
         "page": 11,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Người tham gia giao thông đường bộ ở tất cả các hướng phải dừng lại, trừ các xe đã ở trong khu vực giao nhau."
       },
       {
         "id": 548,
@@ -2424,7 +2841,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-548.jpeg",
         "page": 162,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe con (E), xe mô tô (D).\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con (E), xe mô tô (D).\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con (E), xe mô tô (D).\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe con (E), xe mô tô (D)."
       },
       {
         "id": 366,
@@ -2439,7 +2859,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-366.png",
         "page": 91,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy."
       },
       {
         "id": 526,
@@ -2454,7 +2877,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-526.jpeg",
         "page": 151,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Vi phạm.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Vi phạm.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Vi phạm.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Vi phạm."
       },
       {
         "id": 134,
@@ -2470,7 +2896,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc."
       },
       {
         "id": 440,
@@ -2487,7 +2916,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-440.jpeg",
         "page": 116,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 139,
@@ -2504,7 +2936,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 32,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 524,
@@ -2521,7 +2956,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-524.jpeg",
         "page": 150,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Trừ hướng 2.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Trừ hướng 2.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Trừ hướng 2.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Trừ hướng 2."
       },
       {
         "id": 479,
@@ -2538,7 +2976,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-479.png",
         "page": 129,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Vạch 1 và vạch 3.\"\n• Vì sao đúng: Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.\n• Vì sao phương án khác sai: Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "whyCorrect": "Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.",
+        "whyWrong": "Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "correctAnswerText": "Vạch 1 và vạch 3."
       },
       {
         "id": 379,
@@ -2554,7 +2995,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-379.jpeg",
         "page": 96,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn."
       },
       {
         "id": 173,
@@ -2571,7 +3015,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 40,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Ý 1 và ý 2.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Ý 1 và ý 2."
       },
       {
         "id": 145,
@@ -2587,7 +3034,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 33,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"60 km/h.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"60 km/h.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"60 km/h.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "60 km/h."
       },
       {
         "id": 367,
@@ -2603,7 +3053,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-367.jpeg",
         "page": 92,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 419,
@@ -2618,7 +3071,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-419.png",
         "page": 109,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Báo hiệu đường có ổ gà, lồi lõm.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu đường có ổ gà, lồi lõm.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu đường có ổ gà, lồi lõm.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Báo hiệu đường có ổ gà, lồi lõm."
       },
       {
         "id": 334,
@@ -2634,7 +3090,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-334.png",
         "page": 82,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Đường cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng đi qua.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Đường cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng đi qua.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Đường cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng đi qua.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Đường cấm súc vật vận tải hàng hóa hoặc hành khách dù kéo xe hay chở trên lưng đi qua."
       },
       {
         "id": 41,
@@ -2650,7 +3109,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 13,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Không vượt quá tốc độ tối đa cho phép.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Không vượt quá tốc độ tối đa cho phép.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Không vượt quá tốc độ tối đa cho phép.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Không vượt quá tốc độ tối đa cho phép."
       },
       {
         "id": 163,
@@ -2667,7 +3129,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 38,
-        "explanation": "Đáp án đúng: Phương án 1. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Gặp biển báo nguy hiểm và cảnh báo trên đường.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Gặp biển báo nguy hiểm và cảnh báo trên đường."
       }
     ]
   },
@@ -2692,7 +3157,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-333.jpeg",
         "page": 81,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 336,
@@ -2707,7 +3175,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-336.jpeg",
         "page": 82,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được phép.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Không được phép."
       },
       {
         "id": 107,
@@ -2724,7 +3195,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 25,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả ba ý trên.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả ba ý trên.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 304,
@@ -2740,7 +3214,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-304.jpeg",
         "page": 72,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 1 và biển 2."
       },
       {
         "id": 340,
@@ -2756,7 +3233,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-340.jpeg",
         "page": 84,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai biển.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Cả hai biển.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Cả hai biển.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Cả hai biển."
       },
       {
         "id": 355,
@@ -2771,7 +3251,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-355.jpeg",
         "page": 89,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Không được phép.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Không được phép."
       },
       {
         "id": 173,
@@ -2788,7 +3271,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 40,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Ý 1 và ý 2.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Ý 1 và ý 2."
       },
       {
         "id": 374,
@@ -2805,7 +3291,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-374.jpeg",
         "page": 94,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 2 và biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2 và biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2 và biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2 và biển 3."
       },
       {
         "id": 94,
@@ -2821,7 +3310,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 23,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe ưu tiên gồm xe chữa cháy của Cảnh sát phòng cháy, chữa cháy và cứu nạn, cứu hộ và xe chữa cháy của các lực lượng khác được huy động đi làm nhiệm vụ chữa cháy; xe của lực lượng quân sự, công an và kiểm sát đi làm nhiệm vụ khẩn cấp; đoàn xe có xe Cảnh sát giao thông dẫn đường; xe cứu thương đi làm nhiệm vụ cấp cứu; xe hộ đê đi làm nhiệm vụ; xe đi làm nhiệm vụ cứu nạn, cứu hộ, khắc phục sự cố thiên tai, dịch bệnh hoặc xe đi làm nhiệm vụ trong tình trạng khẩn cấp theo quy định của pháp luật; đoàn xe tang."
       },
       {
         "id": 231,
@@ -2838,7 +3330,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-231.jpeg",
         "page": 55,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Sắp hết nhiên liệu.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Sắp hết nhiên liệu.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Sắp hết nhiên liệu.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Sắp hết nhiên liệu."
       },
       {
         "id": 425,
@@ -2853,7 +3348,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-425.png",
         "page": 111,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Báo hiệu khu vực có đường dây điện cắt ngang phía trên tuyến đường.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu khu vực có đường dây điện cắt ngang phía trên tuyến đường.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Báo hiệu khu vực có đường dây điện cắt ngang phía trên tuyến đường.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Báo hiệu khu vực có đường dây điện cắt ngang phía trên tuyến đường."
       },
       {
         "id": 67,
@@ -2870,7 +3368,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 17,
-        "explanation": "Đáp án đúng: Phương án 4. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Không được phép.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Không được phép."
       },
       {
         "id": 505,
@@ -2887,7 +3388,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-505.jpeg",
         "page": 140,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe tải.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe tải."
       },
       {
         "id": 492,
@@ -2902,7 +3406,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-492.jpeg",
         "page": 134,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe con.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe con.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe con.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe con."
       },
       {
         "id": 582,
@@ -2918,7 +3425,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-582.jpeg",
         "page": 179,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Giảm tốc độ và đi thẳng qua ngã tư.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ và đi thẳng qua ngã tư.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Giảm tốc độ và đi thẳng qua ngã tư.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Giảm tốc độ và đi thẳng qua ngã tư."
       },
       {
         "id": 12,
@@ -2934,7 +3444,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 7,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 179,
@@ -2949,7 +3462,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 41,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Phải chạy với tốc độ quy định trong giấy phép và phải có báo hiệu kích thước của hàng; trường hợp cần thiết, phải có người, phương tiện hỗ trợ lái xe, cảnh báo cho người, phương tiện tham gia giao thông đường bộ khác và thực hiện các biện pháp bảo đảm an toàn giao thông khi vận chuyển hàng siêu trường, siêu trọng trên đường bộ."
       },
       {
         "id": 432,
@@ -2965,7 +3481,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-432.jpeg",
         "page": 113,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Không biển nào.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không biển nào.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không biển nào.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Không biển nào."
       },
       {
         "id": 96,
@@ -2981,7 +3500,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 23,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Giảm tốc độ, đi sát lề đường bên phải hoặc dừng lại để nhường đường."
       },
       {
         "id": 56,
@@ -2998,7 +3520,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 15,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 14,
@@ -3014,7 +3539,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 7,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là trạng thái đứng yên tạm thời của xe trong một khoảng thời gian cần thiết đủ để cho người lên xe, xuống xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe hoặc hoạt động khác. Khi dừng xe không được tắt máy và không được rời khỏi vị trí lái, trừ trường hợp rời khỏi vị trí lái để đóng, mở cửa xe, xếp dỡ hàng hóa, kiểm tra kỹ thuật xe nhưng phải sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác."
       },
       {
         "id": 570,
@@ -3031,7 +3559,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-570.jpeg",
         "page": 173,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đi thẳng, rẽ trái.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đi thẳng, rẽ trái.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đi thẳng, rẽ trái.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Đi thẳng, rẽ trái."
       },
       {
         "id": 281,
@@ -3047,7 +3578,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 65,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Dùng để truyền hoặc ngắt truyền động từ động cơ đến hộp số của xe ô tô.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Dùng để truyền hoặc ngắt truyền động từ động cơ đến hộp số của xe ô tô."
       },
       {
         "id": 46,
@@ -3062,7 +3596,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 13,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là tình huống giao thông trên đường mà mỗi chiều đường xe chạy chỉ có một làn đường dành cho xe cơ giới, xe đi phía sau di chuyển sang bên trái để di chuyển lên trước xe phía trước."
       },
       {
         "id": 498,
@@ -3077,7 +3614,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-498.jpeg",
         "page": 137,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe chữa cháy đi làm nhiệm vụ chữa cháy.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe chữa cháy đi làm nhiệm vụ chữa cháy.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe chữa cháy đi làm nhiệm vụ chữa cháy.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe chữa cháy đi làm nhiệm vụ chữa cháy."
       },
       {
         "id": 477,
@@ -3094,7 +3634,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-477.png",
         "page": 128,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Vạch 1 và vạch 2.\"\n• Vì sao đúng: Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.\n• Vì sao phương án khác sai: Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "whyCorrect": "Quy chuẩn vạch kẻ đường: Vạch màu vàng phân chia hai chiều xe chạy ngược chiều; vạch màu trắng phân chia các làn xe cùng chiều. Vạch nét đứt được phép đè vạch, vạch nét liền cấm đè vạch.",
+        "whyWrong": "Các phương án khác nhầm lẫn màu sắc hoặc hiệu lực cho phép đè vạch của vạch liền và vạch đứt.",
+        "correctAnswerText": "Vạch 1 và vạch 2."
       },
       {
         "id": 556,
@@ -3109,7 +3652,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-556.jpeg",
         "page": 166,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được vượt.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Không được vượt."
       },
       {
         "id": 459,
@@ -3125,7 +3671,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-459.jpeg",
         "page": 122,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1 và biển 2."
       },
       {
         "id": 127,
@@ -3141,7 +3690,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 30,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 273,
@@ -3157,7 +3709,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 63,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 145,
@@ -3173,7 +3728,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 33,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"60 km/h.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"60 km/h.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"60 km/h.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "60 km/h."
       },
       {
         "id": 208,
@@ -3189,7 +3747,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 49,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Dùng lực tay phải bóp khóa hãm đẩy cần phanh tay về phía trước hết hành trình; nếu khóa hãm bị kẹt cứng phải kéo cần phanh tay về phía sau đồng thời bóp khóa hãm.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Dùng lực tay phải bóp khóa hãm đẩy cần phanh tay về phía trước hết hành trình; nếu khóa hãm bị kẹt cứng phải kéo cần phanh tay về phía sau đồng thời bóp khóa hãm."
       },
       {
         "id": 121,
@@ -3205,7 +3766,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 28,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Đủ 57 tuổi đối với nam và đủ 55 tuổi đối với nữ.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đủ 57 tuổi đối với nam và đủ 55 tuổi đối với nữ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đủ 57 tuổi đối với nam và đủ 55 tuổi đối với nữ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Đủ 57 tuổi đối với nam và đủ 55 tuổi đối với nữ."
       },
       {
         "id": 557,
@@ -3222,7 +3786,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-557.jpeg",
         "page": 166,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Vị trí B và C.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Vị trí B và C.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Vị trí B và C.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Vị trí B và C."
       },
       {
         "id": 2,
@@ -3238,7 +3805,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 5,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ chiều rộng cho xe chạy an toàn."
       },
       {
         "id": 221,
@@ -3253,7 +3823,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 52,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Không được nhìn xuống buồng lái, cần phải tăng thứ tự từ thấp đến cao, phối hợp các động tác phải nhịp nhàng, chính xác."
       },
       {
         "id": 560,
@@ -3269,7 +3842,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-560.jpeg",
         "page": 168,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe tải.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe tải."
       },
       {
         "id": 303,
@@ -3286,7 +3862,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-303.jpeg",
         "page": 71,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2 và biển 3.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2 và biển 3.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2 và biển 3.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 2 và biển 3."
       },
       {
         "id": 512,
@@ -3303,7 +3882,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-512.jpeg",
         "page": 144,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Hướng 3.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 3.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 3.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Hướng 3."
       },
       {
         "id": 488,
@@ -3320,7 +3902,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-488.jpeg",
         "page": 132,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe công an đi làm nhiệm vụ khẩn cấp, xe con, xe tải, xe khách."
       },
       {
         "id": 119,
@@ -3336,7 +3921,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 28,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"18 tuổi.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"18 tuổi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"18 tuổi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "18 tuổi."
       },
       {
         "id": 319,
@@ -3353,7 +3941,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-319.jpeg",
         "page": 77,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 132,
@@ -3370,7 +3961,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Ý 1 và ý 2.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Ý 1 và ý 2.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Ý 1 và ý 2."
       },
       {
         "id": 185,
@@ -3386,7 +3980,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 43,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 462,
@@ -3401,7 +3998,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-462.png",
         "page": 123,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Có.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Có.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Có.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Có."
       }
     ]
   },
@@ -3427,7 +4027,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-437.jpeg",
         "page": 115,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 433,
@@ -3442,7 +4045,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-433.png",
         "page": 113,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 68,
@@ -3458,7 +4064,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 17,
-        "explanation": "Đáp án đúng: Phương án 1. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách."
       },
       {
         "id": 131,
@@ -3474,7 +4083,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 30,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 263,
@@ -3491,7 +4103,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 61,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 387,
@@ -3507,7 +4122,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-387.jpeg",
         "page": 98,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 259,
@@ -3524,7 +4142,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 60,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Để quan sát an toàn phía sau của bên trái và bên phải trước khi chuyển hướng."
       },
       {
         "id": 5,
@@ -3541,7 +4162,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 5,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là vạch chỉ sự phân chia làn đường, vị trí hoặc hướng đi, vị trí dừng lại."
       },
       {
         "id": 556,
@@ -3556,7 +4180,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-556.jpeg",
         "page": 166,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được vượt.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Không được vượt."
       },
       {
         "id": 577,
@@ -3571,7 +4198,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-577.jpeg",
         "page": 176,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được vượt những người đi xe đạp.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt những người đi xe đạp.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt những người đi xe đạp.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Không được vượt những người đi xe đạp."
       },
       {
         "id": 113,
@@ -3587,7 +4217,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 27,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Trên đường cao tốc, chỉ được cho xe chạy ở làn xe quy định, giữ khoảng cách an toàn, chỉ được dừng đỗ tại nơi quy định hoặc làn dừng khẩn cấp khi xe gặp sự cố.\n• Vì sao phương án khác sai: Hành vi quay đầu, lùi xe, chạy quá tốc độ tối đa hoặc dưới tốc độ tối thiểu trên cao tốc là cực kỳ nguy hiểm, bị phạt kịch khung.",
+        "whyCorrect": "Trên đường cao tốc, chỉ được cho xe chạy ở làn xe quy định, giữ khoảng cách an toàn, chỉ được dừng đỗ tại nơi quy định hoặc làn dừng khẩn cấp khi xe gặp sự cố.",
+        "whyWrong": "Hành vi quay đầu, lùi xe, chạy quá tốc độ tối đa hoặc dưới tốc độ tối thiểu trên cao tốc là cực kỳ nguy hiểm, bị phạt kịch khung.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 417,
@@ -3602,7 +4235,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-417.png",
         "page": 108,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái."
       },
       {
         "id": 599,
@@ -3617,7 +4253,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-599.jpeg",
         "page": 187,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đúng.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đúng.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đúng.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Đúng."
       },
       {
         "id": 282,
@@ -3633,7 +4272,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 65,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Truyền và thay đổi mô men từ động cơ đến bánh xe chủ động, cắt truyền động từ động cơ đến bánh xe chủ động, bảo đảm cho xe ô tô chuyển động lùi.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Truyền và thay đổi mô men từ động cơ đến bánh xe chủ động, cắt truyền động từ động cơ đến bánh xe chủ động, bảo đảm cho xe ô tô chuyển động lùi."
       },
       {
         "id": 160,
@@ -3649,7 +4291,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 37,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"55 m.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"55 m.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"55 m.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "55 m."
       },
       {
         "id": 355,
@@ -3664,7 +4309,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-355.jpeg",
         "page": 89,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Không được phép.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Không được phép."
       },
       {
         "id": 45,
@@ -3681,7 +4329,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 13,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Khi xe sau xin vượt nếu đủ điều kiện an toàn.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Khi xe sau xin vượt nếu đủ điều kiện an toàn.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Khi xe sau xin vượt nếu đủ điều kiện an toàn.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Khi xe sau xin vượt nếu đủ điều kiện an toàn."
       },
       {
         "id": 528,
@@ -3697,7 +4348,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-528.jpeg",
         "page": 152,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi."
       },
       {
         "id": 570,
@@ -3714,7 +4368,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-570.jpeg",
         "page": 173,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đi thẳng, rẽ trái.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đi thẳng, rẽ trái.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Đi thẳng, rẽ trái.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Đi thẳng, rẽ trái."
       },
       {
         "id": 127,
@@ -3730,7 +4387,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 30,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 284,
@@ -3746,7 +4406,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 65,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Dùng để giảm tốc độ, dừng chuyển động của xe ô tô và giữ cho xe ô tô đứng yên trên dốc.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Dùng để giảm tốc độ, dừng chuyển động của xe ô tô và giữ cho xe ô tô đứng yên trên dốc."
       },
       {
         "id": 319,
@@ -3763,7 +4426,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-319.jpeg",
         "page": 77,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 469,
@@ -3779,7 +4445,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-469.jpeg",
         "page": 125,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Chỉ dẫn khoảng cách đến trạm kiểm tra tải trọng xe cách 750 m.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỉ dẫn khoảng cách đến trạm kiểm tra tải trọng xe cách 750 m.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỉ dẫn khoảng cách đến trạm kiểm tra tải trọng xe cách 750 m.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Chỉ dẫn khoảng cách đến trạm kiểm tra tải trọng xe cách 750 m."
       },
       {
         "id": 155,
@@ -3796,7 +4465,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 36,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động).\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe buýt; ô tô đầu kéo kéo sơ mi rơ moóc (trừ ô tô đầu kéo kéo sơ mi rơ moóc xi téc); xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông lưu động)."
       },
       {
         "id": 445,
@@ -3812,7 +4484,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-445.jpeg",
         "page": 117,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực."
       },
       {
         "id": 566,
@@ -3829,7 +4504,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-566.jpeg",
         "page": 171,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe tải ( D), xe con (B).\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải ( D), xe con (B).\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe tải ( D), xe con (B).\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe tải ( D), xe con (B)."
       },
       {
         "id": 190,
@@ -3844,7 +4522,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 44,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông, quy định về tốc độ, tín hiệu đèn, biển báo hiệu, vạch kẻ đường khi lái xe; nhường đường cho người đi bộ, người già, trẻ em, người khuyết tật."
       },
       {
         "id": 228,
@@ -3861,7 +4542,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-228.jpeg",
         "page": 54,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Áp suất dầu ở mức thấp.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Áp suất dầu ở mức thấp.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Áp suất dầu ở mức thấp.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Áp suất dầu ở mức thấp."
       },
       {
         "id": 110,
@@ -3877,7 +4561,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 26,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt."
       },
       {
         "id": 134,
@@ -3893,7 +4580,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc."
       },
       {
         "id": 454,
@@ -3909,7 +4599,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-454.png",
         "page": 120,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này."
       },
       {
         "id": 311,
@@ -3925,7 +4618,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-311.jpeg",
         "page": 74,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai biển.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Cả hai biển.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Cả hai biển.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Cả hai biển."
       },
       {
         "id": 552,
@@ -3941,7 +4637,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-552.jpeg",
         "page": 164,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua."
       },
       {
         "id": 401,
@@ -3957,22 +4656,30 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-401.jpeg",
         "page": 103,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 302,
         "chapter": "Báo hiệu đường bộ",
         "question": "Biển nào cấm xe ô tô tải?",
         "options": [
-          "1. Cả ba biển. 3. Biển 1 và biển 3.",
-          "2. Biển 2 và biển 3. 4. Biển 1 và biển 2."
+          "1. Cả ba biển.",
+          "2. Biển 2 và biển 3.",
+          "3. Biển 1 và biển 3.",
+          "4. Biển 1 và biển 2."
         ],
-        "correctIndex": 1,
-        "answer": 1,
+        "correctIndex": 3,
+        "answer": 3,
         "isCritical": false,
         "image": "/images/questions/cau-302.jpeg",
         "page": 71,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 1 và biển 2."
       },
       {
         "id": 183,
@@ -3988,7 +4695,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 43,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 41,
@@ -4004,7 +4714,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 13,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Không vượt quá tốc độ tối đa cho phép.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Không vượt quá tốc độ tối đa cho phép.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Không vượt quá tốc độ tối đa cho phép.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Không vượt quá tốc độ tối đa cho phép."
       },
       {
         "id": 76,
@@ -4020,7 +4733,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 19,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách, không sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính).\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách, không sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính).\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách, không sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính).\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Phải đội mũ bảo hiểm theo đúng quy chuẩn kỹ thuật quốc gia và cài quai đúng quy cách, không sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính)."
       },
       {
         "id": 335,
@@ -4035,7 +4751,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-335.png",
         "page": 82,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Tốc độ tối đa cho phép về ban đêm cho các phương tiện là 70 km/h."
       },
       {
         "id": 531,
@@ -4051,7 +4770,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-531.jpeg",
         "page": 153,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe con.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe con."
       },
       {
         "id": 49,
@@ -4067,7 +4789,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 14,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Từ 05 giờ đến 22 giờ.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Từ 05 giờ đến 22 giờ."
       },
       {
         "id": 569,
@@ -4083,7 +4808,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-569.jpeg",
         "page": 172,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe con.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe con."
       },
       {
         "id": 3,
@@ -4099,7 +4827,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 5,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều rộng, chiều cao của đường bộ để các xe, bao gồm cả hàng hoá xếp trên xe đi qua được an toàn và được xác định theo quy chuẩn, tiêu chuẩn kỹ thuật của đường bộ.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều rộng, chiều cao của đường bộ để các xe, bao gồm cả hàng hoá xếp trên xe đi qua được an toàn và được xác định theo quy chuẩn, tiêu chuẩn kỹ thuật của đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều rộng, chiều cao của đường bộ để các xe, bao gồm cả hàng hoá xếp trên xe đi qua được an toàn và được xác định theo quy chuẩn, tiêu chuẩn kỹ thuật của đường bộ.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Khổ giới hạn của đường bộ là khoảng trống có kích thước giới hạn về chiều rộng, chiều cao của đường bộ để các xe, bao gồm cả hàng hoá xếp trên xe đi qua được an toàn và được xác định theo quy chuẩn, tiêu chuẩn kỹ thuật của đường bộ."
       },
       {
         "id": 468,
@@ -4115,7 +4846,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-468.jpeg",
         "page": 125,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xăng dầu, ăn uống, thông tin, sửa chữa xe.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Xăng dầu, ăn uống, thông tin, sửa chữa xe.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Xăng dầu, ăn uống, thông tin, sửa chữa xe.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Xăng dầu, ăn uống, thông tin, sửa chữa xe."
       },
       {
         "id": 44,
@@ -4131,7 +4865,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 13,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Đi trên làn đường bên trái.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đi trên làn đường bên trái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đi trên làn đường bên trái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Đi trên làn đường bên trái."
       }
     ]
   },
@@ -4156,7 +4893,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-329.jpeg",
         "page": 80,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 462,
@@ -4171,7 +4911,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-462.png",
         "page": 123,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Có.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Có.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Có.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Có."
       },
       {
         "id": 543,
@@ -4188,7 +4931,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-543.jpeg",
         "page": 159,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe con (E), xe mô tô (C).\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con (E), xe mô tô (C).\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con (E), xe mô tô (C).\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe con (E), xe mô tô (C)."
       },
       {
         "id": 38,
@@ -4204,7 +4950,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 12,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Theo hiệu lệnh của người điều khiển giao thông.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Theo hiệu lệnh của người điều khiển giao thông."
       },
       {
         "id": 336,
@@ -4219,7 +4968,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-336.jpeg",
         "page": 82,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được phép.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Không được phép."
       },
       {
         "id": 281,
@@ -4235,7 +4987,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 65,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Dùng để truyền hoặc ngắt truyền động từ động cơ đến hộp số của xe ô tô.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Dùng để truyền hoặc ngắt truyền động từ động cơ đến hộp số của xe ô tô."
       },
       {
         "id": 311,
@@ -4251,7 +5006,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-311.jpeg",
         "page": 74,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai biển.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Cả hai biển.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Cả hai biển.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Cả hai biển."
       },
       {
         "id": 134,
@@ -4267,7 +5025,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc."
       },
       {
         "id": 369,
@@ -4283,7 +5044,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-369.jpeg",
         "page": 92,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 378,
@@ -4300,7 +5064,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-378.jpeg",
         "page": 95,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1 và biển 2."
       },
       {
         "id": 465,
@@ -4316,7 +5083,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-465.jpeg",
         "page": 124,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Chỉ dẫn vị trí nhập làn xe cách 250 m.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỉ dẫn vị trí nhập làn xe cách 250 m.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỉ dẫn vị trí nhập làn xe cách 250 m.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Chỉ dẫn vị trí nhập làn xe cách 250 m."
       },
       {
         "id": 225,
@@ -4332,7 +5102,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 53,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Chuyển từ đèn chiếu xa sang đèn chiếu gần; không nhìn thẳng vào đèn của xe chạy ngược chiều mà nhìn chếch sang phía phải theo chiều chuyển động của xe mình.\"\n• Vì sao đúng: Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.\n• Vì sao phương án khác sai: Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "whyCorrect": "Trong khu đô thị, khu đông dân cư có đèn đường từ 22h đêm đến 5h sáng, người lái xe chỉ được bật đèn chiếu gần (đèn cốt) và không được bấm còi để bảo đảm an toàn, không gây chói mắt xe đối diện.",
+        "whyWrong": "Bật đèn chiếu xa (pha) gây chói mắt làm mất tầm nhìn của phương tiện ngược chiều, rất dễ xảy ra tai nạn đối đầu nguy hiểm.",
+        "correctAnswerText": "Chuyển từ đèn chiếu xa sang đèn chiếu gần; không nhìn thẳng vào đèn của xe chạy ngược chiều mà nhìn chếch sang phía phải theo chiều chuyển động của xe mình."
       },
       {
         "id": 157,
@@ -4348,7 +5121,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 36,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe chở hàng bốn bánh có gắn động cơ khi tham gia giao thông trong phạm vi và thời gian cho phép hoạt động.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe chở hàng bốn bánh có gắn động cơ khi tham gia giao thông trong phạm vi và thời gian cho phép hoạt động.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe chở hàng bốn bánh có gắn động cơ khi tham gia giao thông trong phạm vi và thời gian cho phép hoạt động.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe chở hàng bốn bánh có gắn động cơ khi tham gia giao thông trong phạm vi và thời gian cho phép hoạt động."
       },
       {
         "id": 586,
@@ -4363,7 +5139,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-586.jpeg",
         "page": 181,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe của bạn.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe của bạn.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe của bạn.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe của bạn."
       },
       {
         "id": 61,
@@ -4380,7 +5159,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 16,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"20 mét.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"20 mét.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"20 mét.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "20 mét."
       },
       {
         "id": 158,
@@ -4396,7 +5178,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 37,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"70 m.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"70 m.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"70 m.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "70 m."
       },
       {
         "id": 377,
@@ -4412,7 +5197,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-377.jpeg",
         "page": 95,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn."
       },
       {
         "id": 15,
@@ -4427,7 +5215,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 7,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Là trạng thái đứng yên của xe không giới hạn thời gian. Khi đỗ xe, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được rời khỏi xe khi đã sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác. Xe đỗ trên đoạn đường dốc phải đánh lái về phía lề đường, chèn bánh.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là trạng thái đứng yên của xe không giới hạn thời gian. Khi đỗ xe, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được rời khỏi xe khi đã sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác. Xe đỗ trên đoạn đường dốc phải đánh lái về phía lề đường, chèn bánh.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Là trạng thái đứng yên của xe không giới hạn thời gian. Khi đỗ xe, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được rời khỏi xe khi đã sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác. Xe đỗ trên đoạn đường dốc phải đánh lái về phía lề đường, chèn bánh.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Là trạng thái đứng yên của xe không giới hạn thời gian. Khi đỗ xe, người điều khiển phương tiện tham gia giao thông đường bộ chỉ được rời khỏi xe khi đã sử dụng phanh đỗ xe hoặc thực hiện biện pháp an toàn khác. Xe đỗ trên đoạn đường dốc phải đánh lái về phía lề đường, chèn bánh."
       },
       {
         "id": 123,
@@ -4444,7 +5235,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 29,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe gắn máy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe gắn máy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xe gắn máy."
       },
       {
         "id": 500,
@@ -4460,7 +5254,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-500.jpeg",
         "page": 138,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe con, xe tải.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con, xe tải.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe con, xe tải."
       },
       {
         "id": 204,
@@ -4477,7 +5274,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 47,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy."
       },
       {
         "id": 136,
@@ -4493,7 +5293,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 32,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Phải thực hành trên xe tập lái, trên tuyến đường tập lái và có giáo viên dạy lái bảo trợ tay lái.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải thực hành trên xe tập lái, trên tuyến đường tập lái và có giáo viên dạy lái bảo trợ tay lái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải thực hành trên xe tập lái, trên tuyến đường tập lái và có giáo viên dạy lái bảo trợ tay lái.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Phải thực hành trên xe tập lái, trên tuyến đường tập lái và có giáo viên dạy lái bảo trợ tay lái."
       },
       {
         "id": 83,
@@ -4509,7 +5312,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 20,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Phải nhường đường cho người đi bộ, xe thô sơ, xe đi ngược chiều và chỉ chuyển hướng khi không gây trở ngại hoặc nguy hiểm cho người, phương tiện khác."
       },
       {
         "id": 209,
@@ -4524,7 +5330,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 49,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Kiểm tra an toàn xung quanh xe ô tô; đạp ly hợp (côn) hết hành trình; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát; nhả từ từ đến 1/2 hành trình bàn đạp côn và giữ trong khoảng 3 giây, sau đó vừa tăng ga vừa nhả hết côn để cho xe ô tô chuyển động.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Kiểm tra an toàn xung quanh xe ô tô; đạp ly hợp (côn) hết hành trình; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát; nhả từ từ đến 1/2 hành trình bàn đạp côn và giữ trong khoảng 3 giây, sau đó vừa tăng ga vừa nhả hết côn để cho xe ô tô chuyển động.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Kiểm tra an toàn xung quanh xe ô tô; đạp ly hợp (côn) hết hành trình; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát; nhả từ từ đến 1/2 hành trình bàn đạp côn và giữ trong khoảng 3 giây, sau đó vừa tăng ga vừa nhả hết côn để cho xe ô tô chuyển động.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Kiểm tra an toàn xung quanh xe ô tô; đạp ly hợp (côn) hết hành trình; vào số 1; nhả hết phanh tay, báo hiệu bằng còi, đèn trước khi xuất phát; tăng ga đủ để xuất phát; nhả từ từ đến 1/2 hành trình bàn đạp côn và giữ trong khoảng 3 giây, sau đó vừa tăng ga vừa nhả hết côn để cho xe ô tô chuyển động."
       },
       {
         "id": 53,
@@ -4540,7 +5349,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 15,
-        "explanation": "Đáp án đúng: Phương án 1. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Trên cầu hẹp có một làn đường; nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; khi gặp xe ưu tiên.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Trên cầu hẹp có một làn đường; nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; khi gặp xe ưu tiên."
       },
       {
         "id": 347,
@@ -4556,7 +5368,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-347.jpeg",
         "page": 86,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển."
       },
       {
         "id": 527,
@@ -4573,7 +5388,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-527.jpeg",
         "page": 151,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe con.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Xe con.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Xe con."
       },
       {
         "id": 309,
@@ -4589,7 +5407,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-309.jpeg",
         "page": 73,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 591,
@@ -4604,7 +5425,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-591.jpeg",
         "page": 183,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe tải.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe tải.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe tải."
       },
       {
         "id": 218,
@@ -4620,7 +5444,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 51,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô tô lên khỏi rãnh.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô tô lên khỏi rãnh.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô tô lên khỏi rãnh.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Vào số một (1) và từ từ cho hai bánh xe trước xuống rãnh, tăng ga cho hai bánh xe trước vượt lên khỏi rãnh, tiếp tục để bánh xe sau từ từ xuống rãnh rồi tăng dần ga cho xe ô tô lên khỏi rãnh."
       },
       {
         "id": 354,
@@ -4636,7 +5463,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-354.jpeg",
         "page": 88,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Cấm dừng và đỗ xe theo hướng bên phải.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cấm dừng và đỗ xe theo hướng bên phải.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cấm dừng và đỗ xe theo hướng bên phải.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Cấm dừng và đỗ xe theo hướng bên phải."
       },
       {
         "id": 549,
@@ -4651,7 +5481,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-549.jpeg",
         "page": 162,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe tải.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe tải.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe tải."
       },
       {
         "id": 107,
@@ -4668,7 +5501,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 25,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả ba ý trên.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả ba ý trên.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 407,
@@ -4684,7 +5520,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-407.jpeg",
         "page": 105,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Biển cảnh báo nguy hiểm có dạng hình tam giác đều, viền đỏ, nền vàng nhằm cảnh báo trước nguy cơ để người lái xe chủ động giảm tốc độ. Đáp án đúng là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác nhầm lẫn giữa các vị trí nguy hiểm (đường hẹp, đường trơn, khúc cua, giao cắt) hoặc nhầm sang nhóm biển hiệu lệnh/chỉ dẫn.",
+        "whyCorrect": "Biển cảnh báo nguy hiểm có dạng hình tam giác đều, viền đỏ, nền vàng nhằm cảnh báo trước nguy cơ để người lái xe chủ động giảm tốc độ. Đáp án đúng là: \"Biển 2.\".",
+        "whyWrong": "Các phương án khác nhầm lẫn giữa các vị trí nguy hiểm (đường hẹp, đường trơn, khúc cua, giao cắt) hoặc nhầm sang nhóm biển hiệu lệnh/chỉ dẫn.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 379,
@@ -4700,7 +5539,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-379.jpeg",
         "page": 96,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn."
       },
       {
         "id": 280,
@@ -4716,7 +5558,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 65,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Dùng để truyền mô men quay từ động cơ tới các bánh xe chủ động của xe ô tô.\"\n• Vì sao đúng: Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.\n• Vì sao phương án khác sai: Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "whyCorrect": "Khi xuống dốc cao hoặc lái xe đường trơn trượt, phải về số thấp (kết hợp phanh động cơ và phanh chân), giữ đều ga, không được về số mo (N) hoặc đạp côn thả trôi.",
+        "whyWrong": "Về số N (số mo) hoặc tắt máy thả trôi làm mất tác dụng phanh động cơ, xe lao nhanh dẫn đến nóng và cháy má phanh, mất hoàn toàn kiểm soát phanh gây tai nạn nghiêm trọng.",
+        "correctAnswerText": "Dùng để truyền mô men quay từ động cơ tới các bánh xe chủ động của xe ô tô."
       },
       {
         "id": 118,
@@ -4732,7 +5577,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 28,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"18 tuổi.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"18 tuổi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"18 tuổi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "18 tuổi."
       },
       {
         "id": 584,
@@ -4749,7 +5597,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-584.jpeg",
         "page": 180,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Xe của bạn, xe con, xe tải.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe của bạn, xe con, xe tải.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe của bạn, xe con, xe tải.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe của bạn, xe con, xe tải."
       },
       {
         "id": 569,
@@ -4765,7 +5616,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-569.jpeg",
         "page": 172,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe con.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe con."
       },
       {
         "id": 531,
@@ -4781,7 +5635,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-531.jpeg",
         "page": 153,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe con.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe con.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe con."
       },
       {
         "id": 355,
@@ -4796,7 +5653,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-355.jpeg",
         "page": 89,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Không được phép.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Không được phép.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Không được phép."
       },
       {
         "id": 264,
@@ -4812,7 +5672,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 62,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Rút que thăm dầu trên các-te, lau sạch que thăm sau đó cắm vào các-te và rút ra quan sát vệt dầu trên que thăm, mức dầu phải nằm trong khoảng vạch mức tối thiểu và tối đa được thể hiện trên que thăm.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Rút que thăm dầu trên các-te, lau sạch que thăm sau đó cắm vào các-te và rút ra quan sát vệt dầu trên que thăm, mức dầu phải nằm trong khoảng vạch mức tối thiểu và tối đa được thể hiện trên que thăm.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Rút que thăm dầu trên các-te, lau sạch que thăm sau đó cắm vào các-te và rút ra quan sát vệt dầu trên que thăm, mức dầu phải nằm trong khoảng vạch mức tối thiểu và tối đa được thể hiện trên que thăm.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Rút que thăm dầu trên các-te, lau sạch que thăm sau đó cắm vào các-te và rút ra quan sát vệt dầu trên que thăm, mức dầu phải nằm trong khoảng vạch mức tối thiểu và tối đa được thể hiện trên que thăm."
       },
       {
         "id": 103,
@@ -4828,7 +5691,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 24,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe, người lái xe, người điều khiển xe máy chuyên dùng phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp, nếu không di chuyển được, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách bảo đảm an toàn.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe, người lái xe, người điều khiển xe máy chuyên dùng phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp, nếu không di chuyển được, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách bảo đảm an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe, người lái xe, người điều khiển xe máy chuyên dùng phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp, nếu không di chuyển được, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách bảo đảm an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xe cơ giới, xe máy chuyên dùng phải bật đèn chiếu gần; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; không dừng xe, đỗ xe trong hầm đường bộ; trường hợp gặp sự cố kỹ thuật hoặc bất khả kháng khác buộc phải dừng xe, đỗ xe, người lái xe, người điều khiển xe máy chuyên dùng phải đưa xe vào vị trí dừng xe, đỗ xe khẩn cấp, nếu không di chuyển được, phải có báo hiệu bằng đèn khẩn cấp và đặt biển hoặc đèn cảnh báo về phía sau xe khoảng cách bảo đảm an toàn."
       },
       {
         "id": 106,
@@ -4844,7 +5710,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 25,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng. Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu, có đèn cảnh báo nhấp nháy màu vàng.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng. Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu, có đèn cảnh báo nhấp nháy màu vàng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng. Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu, có đèn cảnh báo nhấp nháy màu vàng.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; việc nối xe kéo với xe được kéo phải bảo đảm chắc chắn, an toàn; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng. Phía trước của xe kéo và phía sau của xe được kéo phải có biển báo hiệu, có đèn cảnh báo nhấp nháy màu vàng."
       },
       {
         "id": 326,
@@ -4860,7 +5729,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-326.jpeg",
         "page": 79,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1 và biển 2."
       }
     ]
   },
@@ -4886,7 +5758,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-559.jpeg",
         "page": 167,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả hai xe.\"\n• Vì sao đúng: Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả hai xe.\".\n• Vì sao phương án khác sai: Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "whyCorrect": "Phương tiện vi phạm vì không chấp hành biển báo hiệu, vạch kẻ đường hoặc đèn tín hiệu (như đỗ ngược chiều, đè vạch liền, đi sai làn đường quy định). Đáp án chính xác: \"Cả hai xe.\".",
+        "whyWrong": "Các phương án khác xác định sai phương tiện vi phạm hoặc bỏ sót xe có hành vi không chấp hành quy tắc giao thông.",
+        "correctAnswerText": "Cả hai xe."
       },
       {
         "id": 577,
@@ -4901,7 +5776,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-577.jpeg",
         "page": 176,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được vượt những người đi xe đạp.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt những người đi xe đạp.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt những người đi xe đạp.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Không được vượt những người đi xe đạp."
       },
       {
         "id": 519,
@@ -4918,7 +5796,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-519.jpeg",
         "page": 147,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Hướng 1, 3 và 4.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1, 3 và 4.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1, 3 và 4.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Hướng 1, 3 và 4."
       },
       {
         "id": 552,
@@ -4934,7 +5815,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-552.jpeg",
         "page": 164,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua."
       },
       {
         "id": 417,
@@ -4949,7 +5833,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-417.png",
         "page": 108,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái."
       },
       {
         "id": 43,
@@ -4965,7 +5852,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 13,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Đi về bên phải theo chiều đi của mình.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Đi về bên phải theo chiều đi của mình.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Đi về bên phải theo chiều đi của mình.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Đi về bên phải theo chiều đi của mình."
       },
       {
         "id": 204,
@@ -4982,7 +5872,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 47,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Bình tĩnh, đưa xe sát vào lề đường, tránh xa nơi có nhiều người, nhiều chất dễ cháy và tắt khóa điện, thực hiện các bước chữa cháy."
       },
       {
         "id": 295,
@@ -4999,7 +5892,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-295.jpeg",
         "page": 68,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Hệ thống lái gặp sự cố.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Hệ thống lái gặp sự cố.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Hệ thống lái gặp sự cố.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Hệ thống lái gặp sự cố."
       },
       {
         "id": 583,
@@ -5015,7 +5911,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-583.jpeg",
         "page": 179,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Xe đạp, xe mô tô, xe của bạn.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe đạp, xe mô tô, xe của bạn.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe đạp, xe mô tô, xe của bạn.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe đạp, xe mô tô, xe của bạn."
       },
       {
         "id": 406,
@@ -5031,7 +5930,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-406.jpeg",
         "page": 105,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 101,
@@ -5047,7 +5949,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 24,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Người lái xe và người có mặt phải ngay lập tức báo hiệu để dừng tàu, thực hiện các biện pháp bảo đảm an toàn.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Người lái xe và người có mặt phải ngay lập tức báo hiệu để dừng tàu, thực hiện các biện pháp bảo đảm an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Người lái xe và người có mặt phải ngay lập tức báo hiệu để dừng tàu, thực hiện các biện pháp bảo đảm an toàn.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Người lái xe và người có mặt phải ngay lập tức báo hiệu để dừng tàu, thực hiện các biện pháp bảo đảm an toàn."
       },
       {
         "id": 216,
@@ -5063,7 +5968,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 51,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; giảm tốc độ, quan sát an toàn phía trước, sau, bên phải và điều khiển xe từ từ rẽ phải.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; giảm tốc độ, quan sát an toàn phía trước, sau, bên phải và điều khiển xe từ từ rẽ phải.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; giảm tốc độ, quan sát an toàn phía trước, sau, bên phải và điều khiển xe từ từ rẽ phải.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cách chỗ rẽ một khoảng cách an toàn có tín hiệu rẽ phải; giảm tốc độ, quan sát an toàn phía trước, sau, bên phải và điều khiển xe từ từ rẽ phải."
       },
       {
         "id": 396,
@@ -5079,7 +5987,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-396.jpeg",
         "page": 101,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 166,
@@ -5095,7 +6006,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 38,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu với xe phía trước cùng làn đường hoặc phần đường."
       },
       {
         "id": 350,
@@ -5111,7 +6025,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-350.jpeg",
         "page": 87,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 168,
@@ -5126,7 +6043,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 39,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đón, trả hành khách đúng nơi quy định; hướng dẫn sử dụng trang thiết bị an toàn trên xe; có biện pháp giữ gìn vệ sinh trong xe; vận chuyển hành khách đúng lịch trình, lộ trình đã đăng ký, trừ trường hợp bất khả kháng; không chở hành khách trên nóc xe, trong khoang chở hành lý hoặc để hành khách đu, bám bên ngoài xe.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đón, trả hành khách đúng nơi quy định; hướng dẫn sử dụng trang thiết bị an toàn trên xe; có biện pháp giữ gìn vệ sinh trong xe; vận chuyển hành khách đúng lịch trình, lộ trình đã đăng ký, trừ trường hợp bất khả kháng; không chở hành khách trên nóc xe, trong khoang chở hành lý hoặc để hành khách đu, bám bên ngoài xe.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đón, trả hành khách đúng nơi quy định; hướng dẫn sử dụng trang thiết bị an toàn trên xe; có biện pháp giữ gìn vệ sinh trong xe; vận chuyển hành khách đúng lịch trình, lộ trình đã đăng ký, trừ trường hợp bất khả kháng; không chở hành khách trên nóc xe, trong khoang chở hành lý hoặc để hành khách đu, bám bên ngoài xe.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Đón, trả hành khách đúng nơi quy định; hướng dẫn sử dụng trang thiết bị an toàn trên xe; có biện pháp giữ gìn vệ sinh trong xe; vận chuyển hành khách đúng lịch trình, lộ trình đã đăng ký, trừ trường hợp bất khả kháng; không chở hành khách trên nóc xe, trong khoang chở hành lý hoặc để hành khách đu, bám bên ngoài xe."
       },
       {
         "id": 367,
@@ -5142,7 +6062,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-367.jpeg",
         "page": 92,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 235,
@@ -5158,7 +6081,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 55,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 534,
@@ -5174,7 +6100,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-534.jpeg",
         "page": 155,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe khách và xe tải, xe con.\"\n• Vì sao đúng: Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe khách và xe tải, xe con.\".\n• Vì sao phương án khác sai: Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "whyCorrect": "Áp dụng 5 nguyên tắc giải sa hình chuẩn: 1. Xe đã chớm vào giao lộ; 2. Xe ưu tiên (Cứu hỏa > Quân sự > Công an > Cứu thương); 3. Xe trên đường ưu tiên; 4. Xe có bên phải không vướng; 5. Hướng rẽ ưu tiên (Rẽ phải > Đi thẳng > Rẽ trái). Theo đó, phương án đúng là: \"Xe khách và xe tải, xe con.\".",
+        "whyWrong": "Các phương án khác vi phạm thứ tự quyền ưu tiên hoặc không tuân thủ nguyên tắc nhường đường tại nơi giao nhau (như rẽ trái cắt mặt xe đi thẳng, hoặc tranh chấp đường với xe ưu tiên).",
+        "correctAnswerText": "Xe khách và xe tải, xe con."
       },
       {
         "id": 556,
@@ -5189,7 +6118,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-556.jpeg",
         "page": 166,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Không được vượt.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Không được vượt.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Không được vượt."
       },
       {
         "id": 272,
@@ -5205,7 +6137,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 63,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, tạp chất.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, tạp chất.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, tạp chất.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Hết nhiên liệu, lõi lọc nhiên liệu bị tắc, lọc khí bị tắc, nhiên liệu lẫn không khí, tạp chất."
       },
       {
         "id": 110,
@@ -5221,7 +6156,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 26,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Giảm tốc độ, có tín hiệu rẽ phải để báo hiệu cho người điều khiển phương tiện tham gia giao thông đường bộ phía sau biết được vượt và đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được cản trở đối với xe xin vượt."
       },
       {
         "id": 223,
@@ -5237,7 +6175,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 53,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Về số thấp phù hợp, nhả bàn đạp ga, kết hợp đạp phanh chân với mức độ phù hợp để giảm tốc độ."
       },
       {
         "id": 440,
@@ -5254,7 +6195,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-440.jpeg",
         "page": 116,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 169,
@@ -5271,7 +6215,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 39,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Cả ba ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả ba ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả ba ý trên."
       },
       {
         "id": 289,
@@ -5288,7 +6235,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-289.jpeg",
         "page": 67,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Báo hiệu hệ thống chống bó cứng phanh bị lỗi.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Báo hiệu hệ thống chống bó cứng phanh bị lỗi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Báo hiệu hệ thống chống bó cứng phanh bị lỗi.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Báo hiệu hệ thống chống bó cứng phanh bị lỗi."
       },
       {
         "id": 18,
@@ -5304,7 +6254,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 8,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Đường chính, đường nhánh, đường gom, đường bên, đường dành cho giao thông công cộng, đường nội bộ, đường dành riêng cho người đi bộ, người đi xe đạp và các đường khác."
       },
       {
         "id": 408,
@@ -5321,7 +6274,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-408.jpeg",
         "page": 105,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 427,
@@ -5337,7 +6293,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-427.jpeg",
         "page": 111,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai biển.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cả hai biển.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Cả hai biển.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Cả hai biển."
       },
       {
         "id": 550,
@@ -5353,7 +6312,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-550.jpeg",
         "page": 163,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Quay đầu theo hướng A.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Quay đầu theo hướng A.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Quay đầu theo hướng A.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Quay đầu theo hướng A."
       },
       {
         "id": 162,
@@ -5369,7 +6331,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 37,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả hai ý trên.\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Cả hai ý trên.\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 129,
@@ -5385,7 +6350,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 30,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 537,
@@ -5402,7 +6370,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-537.jpeg",
         "page": 156,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Hướng 1, 3 và 4.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1, 3 và 4.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Hướng 1, 3 và 4.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Hướng 1, 3 và 4."
       },
       {
         "id": 154,
@@ -5419,7 +6390,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 35,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\"\n• Vì sao đúng: Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\".\n• Vì sao phương án khác sai: Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "whyCorrect": "Căn cứ Thông tư 31/2019/TT-BGTVT quy định về tốc độ và khoảng cách an toàn, mức quy định chuẩn xác đối với trường hợp này là: \"Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).\".",
+        "whyWrong": "Các phương án khác đưa ra giới hạn tốc độ vượt quá mức cho phép hoặc cự ly không đủ an toàn để phanh dừng khi xảy ra tình huống bất ngờ.",
+        "correctAnswerText": "Xe ô tô chở người trên 28 chỗ không kể chỗ người lái xe (trừ xe buýt); ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc)."
       },
       {
         "id": 22,
@@ -5434,7 +6408,10 @@ export const EXAM_DATA = {
         "isCritical": true,
         "image": null,
         "page": 8,
-        "explanation": "Đáp án đúng: Phương án 2. [CÂU ĐIỂM LIỆT]"
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Tùy theo mức độ của hành vi vi phạm có thể bị xử lý hành chính hoặc xử lý hình sự.\"\n• Vì sao đúng: Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.\n• Vì sao phương án khác sai: Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "whyCorrect": "Hành vi này là tình huống mất an toàn giao thông đặc biệt nghiêm trọng (CÂU ĐIỂM LIỆT). Luật Giao thông đường bộ nghiêm cấm tuyệt đối vì có thể trực tiếp dẫn đến tai nạn thảm khốc, gây nguy hiểm khôn lường cho xã hội.",
+        "whyWrong": "Các phương án khác xem nhẹ mức độ nguy hiểm hoặc cho phép thực hiện hành vi vi phạm. Trong kỳ thi sát hạch thực tế, nếu chọn sai câu điểm liệt, học viên sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC dù các câu khác làm đúng.",
+        "correctAnswerText": "Tùy theo mức độ của hành vi vi phạm có thể bị xử lý hành chính hoặc xử lý hình sự."
       },
       {
         "id": 437,
@@ -5451,7 +6428,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-437.jpeg",
         "page": 115,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 324,
@@ -5467,7 +6447,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-324.jpeg",
         "page": 78,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1."
       },
       {
         "id": 12,
@@ -5483,7 +6466,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 7,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 449,
@@ -5499,7 +6485,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-449.png",
         "page": 119,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Biển 1 và 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1 và 2."
       },
       {
         "id": 436,
@@ -5516,7 +6505,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-436.jpeg",
         "page": 114,
-        "explanation": "Đáp án đúng: Phương án 4."
+        "explanation": "• Đáp án đúng: Phương án 4 - \"Biển 1 và biển 2.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 1 và biển 2.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 1 và biển 2."
       },
       {
         "id": 134,
@@ -5532,7 +6524,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 31,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Các loại xe ô tô quy định cho giấy phép lái xe hạng C kéo rơ moóc có khối lượng toàn bộ theo thiết kế trên 750 kg; xe ô tô đầu kéo kéo sơ mi rơ moóc."
       },
       {
         "id": 402,
@@ -5548,7 +6543,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-402.jpeg",
         "page": 103,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Biển 3.\"\n• Vì sao đúng: Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".\n• Vì sao phương án khác sai: Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "whyCorrect": "Căn cứ Quy chuẩn kỹ thuật quốc gia về báo hiệu đường bộ (QCVN 41:2019/BGTVT), biển báo này có ý nghĩa chuẩn xác là: \"Biển 3.\".",
+        "whyWrong": "Các phương án còn lại hiểu sai phạm vi tác dụng, đối tượng điều chỉnh hoặc chức năng của biển phụ bổ sung.",
+        "correctAnswerText": "Biển 3."
       },
       {
         "id": 11,
@@ -5564,7 +6562,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": null,
         "page": 6,
-        "explanation": "Đáp án đúng: Phương án 3."
+        "explanation": "• Đáp án đúng: Phương án 3 - \"Cả hai ý trên.\"\n• Vì sao đúng: Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.\n• Vì sao phương án khác sai: Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "whyCorrect": "Căn cứ chuẩn xác quy định tại Luật Giao thông đường bộ, phương án \"Cả hai ý trên.\" bảo đảm đúng nguyên tắc kỹ thuật, đạo đức lái xe và pháp luật ATGT.",
+        "whyWrong": "Các phương án khác chưa đầy đủ điều kiện an toàn, thiếu tính cẩn trọng hoặc vi phạm quy tắc chung của Luật Giao thông đường bộ.",
+        "correctAnswerText": "Cả hai ý trên."
       },
       {
         "id": 320,
@@ -5581,7 +6582,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-320.jpeg",
         "page": 77,
-        "explanation": "Đáp án đúng: Phương án 2."
+        "explanation": "• Đáp án đúng: Phương án 2 - \"Biển 2.\"\n• Vì sao đúng: Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2.\".\n• Vì sao phương án khác sai: Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "whyCorrect": "Căn cứ QCVN 41:2019/BGTVT, nhóm biển báo cấm có dạng hình tròn viền đỏ nền trắng. Áp dụng quy tắc cấm (cấm xe con cấm luôn xe tải; cấm xe tải cấm luôn máy kéo), đáp án đúng là: \"Biển 2.\".",
+        "whyWrong": "Các phương án khác hiểu sai đối tượng bị cấm hoặc áp dụng sai nguyên tắc 'cấm nhỏ thì cấm lớn, cấm lớn không cấm nhỏ'.",
+        "correctAnswerText": "Biển 2."
       },
       {
         "id": 516,
@@ -5596,7 +6600,10 @@ export const EXAM_DATA = {
         "isCritical": false,
         "image": "/images/questions/cau-516.jpeg",
         "page": 146,
-        "explanation": "Đáp án đúng: Phương án 1."
+        "explanation": "• Đáp án đúng: Phương án 1 - \"Xe khách.\"\n• Vì sao đúng: Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe khách.\".\n• Vì sao phương án khác sai: Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "whyCorrect": "Theo quy tắc điều khiển phương tiện tại nơi giao nhau và tín hiệu đèn giao thông, hành vi/hướng đi đúng quy tắc là: \"Xe khách.\".",
+        "whyWrong": "Các phương án khác dẫn đến xung đột giao thông hoặc vi phạm hiệu lệnh của đèn/biển báo.",
+        "correctAnswerText": "Xe khách."
       }
     ]
   }

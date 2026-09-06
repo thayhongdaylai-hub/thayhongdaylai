@@ -733,21 +733,119 @@ export default function TestModal({ isOpen, onClose }) {
                       </div>
 
                       {/* Detailed Explanation Box */}
-                      <div style={{
-                        padding: '1.25rem',
-                        borderRadius: '1rem',
-                        background: 'rgba(16, 185, 129, 0.08)',
-                        border: '1px solid rgba(16, 185, 129, 0.3)',
-                        color: 'var(--text-main)',
-                        fontSize: '0.92rem',
-                        lineHeight: 1.5
-                      }}>
-                        <div style={{ fontWeight: 700, color: 'var(--accent-emerald)', marginBottom: '0.4rem', display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                          <CheckCircle2 size={18} />
-                          <span>Giải Thích Đáp Án Chi Tiết (Luật GTVT 2026):</span>
-                        </div>
-                        <p style={{ margin: 0, color: 'var(--text-muted)' }}>{q.explanation}</p>
-                      </div>
+                      {(() => {
+                        const correctOptText = q.options[q.answer]?.replace(/^\d+\s*[\.:]\s*/, '') || '';
+                        const userOptText = isAnswered ? q.options[userAns]?.replace(/^\d+\s*[\.:]\s*/, '') : '';
+                        const whyRightText = q.whyCorrect || (q.explanation ? q.explanation.split('• Vì sao các phương án khác sai:')[0].replace(/•\s*Đáp án đúng:[^\n]*\n?/, '').replace(/•\s*Vì sao đúng:\s*/, '').trim() : 'Đáp án chính xác theo quy chuẩn Luật Giao thông đường bộ.');
+                        const whyWrongText = q.whyWrong || (q.explanation && q.explanation.includes('• Vì sao các phương án khác sai:') ? q.explanation.split('• Vì sao các phương án khác sai:')[1].trim() : 'Các phương án còn lại không đúng quy định an toàn, hiểu sai thứ tự ưu tiên hoặc vi phạm quy tắc giao thông.');
+
+                        return (
+                          <div style={{
+                            padding: '1.25rem',
+                            borderRadius: '14px',
+                            background: isCorrect ? 'rgba(16, 185, 129, 0.06)' : 'rgba(239, 68, 68, 0.05)',
+                            border: isCorrect ? '1px solid rgba(16, 185, 129, 0.35)' : '1px solid rgba(239, 68, 68, 0.3)',
+                            borderLeft: isCorrect ? '5px solid #10b981' : '5px solid #ef4444',
+                            color: 'var(--text-main)',
+                            fontSize: '0.92rem',
+                            lineHeight: 1.5,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            gap: '0.85rem'
+                          }}>
+                            {/* Header: Title + Status Badge */}
+                            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', color: isCorrect ? 'var(--accent-emerald)' : '#ef4444', fontWeight: 800, fontSize: '1.05rem' }}>
+                                <CheckCircle2 size={20} />
+                                <span>Giải Thích:</span>
+                              </div>
+                              {isCorrect ? (
+                                <span className="badge badge-emerald" style={{ fontSize: '0.82rem', padding: '0.35rem 0.75rem' }}>
+                                  <Check size={14} /> Bạn đã trả lời đúng (+1 điểm)
+                                </span>
+                              ) : isAnswered ? (
+                                <span className="badge badge-red" style={{ fontSize: '0.82rem', padding: '0.35rem 0.75rem', background: 'rgba(239, 68, 68, 0.15)', color: '#ef4444', border: '1px solid #ef4444' }}>
+                                  <X size={14} /> Bạn đã trả lời sai
+                                </span>
+                              ) : (
+                                <span className="badge badge-orange" style={{ fontSize: '0.82rem', padding: '0.35rem 0.75rem', background: 'rgba(245, 158, 11, 0.15)', color: '#f59e0b', border: '1px solid #f59e0b' }}>
+                                  <AlertCircle size={14} /> Chưa chọn đáp án
+                                </span>
+                              )}
+                            </div>
+
+                            {/* Answer Comparison Box */}
+                            <div style={{
+                              padding: '0.85rem 1rem',
+                              borderRadius: '10px',
+                              background: 'var(--bg-input)',
+                              border: '1px solid var(--border-color)',
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '0.55rem',
+                              fontSize: '0.92rem',
+                              lineHeight: 1.5
+                            }}>
+                              {isAnswered && !isCorrect && (
+                                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', color: '#ef4444' }}>
+                                  <span style={{ fontWeight: 800, minWidth: '135px' }}>❌ Bạn đã chọn:</span>
+                                  <span style={{ fontWeight: 600 }}>Phương án {userAns + 1}: "{userOptText}"</span>
+                                </div>
+                              )}
+                              {!isAnswered && (
+                                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', color: '#f59e0b' }}>
+                                  <span style={{ fontWeight: 800, minWidth: '135px' }}>⚠️ Bạn đã chọn:</span>
+                                  <span>Chưa chọn đáp án cho câu này</span>
+                                </div>
+                              )}
+                              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '0.5rem', color: 'var(--accent-emerald)' }}>
+                                <span style={{ fontWeight: 800, minWidth: '135px' }}>✅ Đáp án đúng:</span>
+                                <span style={{ fontWeight: 700 }}>Phương án {q.answer + 1}: "{correctOptText}"</span>
+                              </div>
+                            </div>
+
+                            {/* Detailed Explanations */}
+                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem', fontSize: '0.92rem', lineHeight: 1.6 }}>
+                              <div>
+                                <div style={{ fontWeight: 700, color: 'var(--accent-emerald)', marginBottom: '0.2rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                                  <span>👉 Vì sao đáp án này đúng:</span>
+                                </div>
+                                <div style={{ color: 'var(--text-main)', paddingLeft: '0.5rem' }}>
+                                  {whyRightText}
+                                </div>
+                              </div>
+
+                              <div>
+                                <div style={{ fontWeight: 700, color: !isCorrect && isAnswered ? '#ef4444' : 'var(--text-muted)', marginBottom: '0.2rem', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                                  <span>🔍 Vì sao phương án khác lại sai:</span>
+                                </div>
+                                <div style={{ color: 'var(--text-muted)', paddingLeft: '0.5rem' }}>
+                                  {whyWrongText}
+                                </div>
+                              </div>
+
+                              {q.isCritical && (
+                                <div style={{
+                                  marginTop: '0.25rem',
+                                  padding: '0.65rem 0.85rem',
+                                  borderRadius: '8px',
+                                  background: 'rgba(239, 68, 68, 0.12)',
+                                  border: '1px solid rgba(239, 68, 68, 0.3)',
+                                  color: '#ef4444',
+                                  fontSize: '0.86rem',
+                                  fontWeight: 600,
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '0.4rem'
+                                }}>
+                                  <AlertCircle size={16} />
+                                  <span>LƯU Ý ĐIỂM LIỆT: Đây là câu hỏi điểm liệt về hành vi bị nghiêm cấm. Sai câu này trong kỳ thi sát hạch thực tế sẽ bị ĐÁNH TRƯỢT NGAY LẬP TỨC.</span>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        );
+                      })()}
 
                       {/* Prev / Next controls */}
                       <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: '1.5rem' }}>
