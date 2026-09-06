@@ -117,6 +117,9 @@ export default function App() {
           onOpenRegister={() => handleOpenRegister()}
           onOpenTestModal={() => setIsTestOpen(true)}
         />
+        {/* Ưu Điểm Vượt Trội Tại Thầy Hồng Dạy Lái */}
+        <AboutTeacher onOpenRegister={() => handleOpenRegister()} />
+
         {/* 1. Các Khóa Đào Tạo Lái Xe Chuẩn GTVT */}
         <CoursePackages onSelectCourse={handleSelectCourse} />
 
@@ -134,9 +137,6 @@ export default function App() {
 
         {/* 6. Hệ Thống Sân Tập & Xe Thực Hành */}
         <Facilities />
-
-        {/* 7. Ưu Điểm Vượt Trội Tại Thầy Hồng Dạy Lái */}
-        <AboutTeacher onOpenRegister={() => handleOpenRegister()} />
 
         {/* 8. Hình Ảnh Thầy Hồng Và Các Học Viên Thực Tế */}
         <StudentGallery onOpenRegister={() => handleOpenRegister()} />
