@@ -39,8 +39,27 @@ export default function App() {
   });
 
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
-  const [isTestOpen, setIsTestOpen] = useState(false);
+  const [isTestOpen, setIsTestOpen] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      const search = window.location.search;
+      return hash === '#test' || hash === '#thi-thu' || search.includes('test=true') || search.includes('modal=test');
+    }
+    return false;
+  });
   const [modalDetails, setModalDetails] = useState(null);
+
+  useEffect(() => {
+    const handleHashCheck = () => {
+      const hash = window.location.hash;
+      const search = window.location.search;
+      if (hash === '#test' || hash === '#thi-thu' || search.includes('test=true') || search.includes('modal=test')) {
+        setIsTestOpen(true);
+      }
+    };
+    window.addEventListener('hashchange', handleHashCheck);
+    return () => window.removeEventListener('hashchange', handleHashCheck);
+  }, []);
 
   useEffect(() => {
     try {
@@ -174,7 +193,12 @@ export default function App() {
       />
       <TestModal
         isOpen={isTestOpen}
-        onClose={() => setIsTestOpen(false)}
+        onClose={() => {
+          setIsTestOpen(false);
+          if (typeof window !== 'undefined' && (window.location.hash === '#test' || window.location.hash === '#thi-thu')) {
+            window.history.replaceState(null, '', window.location.pathname + window.location.search);
+          }
+        }}
       />
     </div>
   );

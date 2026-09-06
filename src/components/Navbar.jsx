@@ -51,15 +51,17 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
         width: '100%',
         maxWidth: '100vw'
       }}>
-        <div className="container" style={{
+        <div className="navbar-container" style={{
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
           minHeight: '64px',
-          paddingTop: '0.35rem',
-          paddingBottom: '0.35rem'
+          width: '100%',
+          maxWidth: '100%',
+          padding: '0.35rem 1.5rem',
+          boxSizing: 'border-box'
         }}>
-          {/* Brand Logo */}
+          {/* Brand Logo - Anchored firmly to the left */}
           <a
             href="#"
             className="brand-logo"
@@ -69,7 +71,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               gap: '0.65rem',
               textDecoration: 'none',
               flexShrink: 0,
-              marginRight: '1.25rem'
+              marginRight: '0.75rem'
             }}
           >
             <img
@@ -89,7 +91,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
             />
             <div style={{
               fontFamily: "'Montserrat', 'Be Vietnam Pro', sans-serif",
-              fontSize: 'clamp(1.05rem, 3.5vw, 1.3rem)',
+              fontSize: 'clamp(1.05rem, 3.5vw, 1.25rem)',
               fontWeight: 900,
               letterSpacing: '-0.02em',
               lineHeight: 1.2,
@@ -107,9 +109,10 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
           <nav className="desktop-nav" style={{
             display: 'flex',
             alignItems: 'center',
-            gap: '0.4rem',
-            margin: '0 1rem 0 1.75rem',
-            flexShrink: 0
+            gap: '0.3rem',
+            margin: '0 0.5rem',
+            flexShrink: 1,
+            minWidth: 0
           }}>
             {navLinks.map((link, idx) => (
               <a
@@ -120,12 +123,12 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
-                  padding: '0.42rem 0.72rem',
-                  borderRadius: '9px',
+                  padding: '0.36rem 0.58rem',
+                  borderRadius: '8px',
                   background: 'var(--bg-card)',
                   border: '1px solid var(--border-color)',
                   color: 'var(--text-main)',
-                  fontSize: '0.88rem',
+                  fontSize: '0.83rem',
                   fontWeight: 650,
                   textDecoration: 'none',
                   whiteSpace: 'nowrap',
@@ -152,8 +155,14 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
             ))}
           </nav>
 
-          {/* Right Actions (Theme Switcher + Hotline + Register CTA + Hamburger) */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', flexShrink: 0 }}>
+          {/* Right Actions (Theme Switcher + Prominent Hotline Badges + Register CTA + Hamburger) */}
+          <div className="navbar-right-actions" style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.45rem',
+            flexShrink: 0,
+            marginLeft: 'auto'
+          }}>
             {/* Theme Toggle Button */}
             <button
               onClick={toggleTheme}
@@ -161,71 +170,80 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               aria-label="Chuyển đổi chế độ sáng/tối"
               title={theme === 'dark' ? 'Chuyển sang chế độ Sáng' : 'Chuyển sang chế độ Tối'}
               style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '10px',
+                width: '36px',
+                height: '36px',
+                borderRadius: '8px',
                 background: 'var(--bg-card)',
                 border: '1px solid var(--border-color)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 cursor: 'pointer',
-                boxShadow: 'var(--shadow-sm)'
+                boxShadow: 'var(--shadow-sm)',
+                flexShrink: 0
               }}
             >
               {theme === 'dark' ? (
-                <Sun size={18} color="#FBBF24" />
+                <Sun size={17} color="#FBBF24" />
               ) : (
-                <Moon size={18} color="#3B82F6" />
+                <Moon size={17} color="#3B82F6" />
               )}
             </button>
 
-            {/* Hotline Zalo Buttons (Desktop only) */}
-            <div className="hotline-btn" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+            {/* Always-Visible Hotline Buttons */}
+            <div className="hotline-btn-group" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', flexShrink: 0 }}>
               <a
                 href="https://zalo.me/0983406221"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Nhắn Zalo Thầy Hồng: 0983.406.221"
+                className="nav-hotline-badge primary"
+                title="Gọi / Zalo Thầy Hồng: 0983.406.221"
                 style={{
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.35rem',
-                  padding: '0.5rem 0.75rem',
+                  padding: '0.42rem 0.65rem',
                   borderRadius: '8px',
-                  background: 'var(--primary-tint)',
-                  border: '1px solid var(--border-highlight)',
-                  fontSize: '0.86rem',
-                  fontWeight: 700,
-                  color: 'var(--primary)',
+                  background: 'rgba(29, 78, 216, 0.12)',
+                  border: '1.5px solid rgba(59, 130, 246, 0.4)',
+                  fontSize: '0.84rem',
+                  fontWeight: 800,
+                  color: '#3B82F6',
                   whiteSpace: 'nowrap',
-                  textDecoration: 'none'
+                  textDecoration: 'none',
+                  boxShadow: '0 2px 6px rgba(59, 130, 246, 0.15)',
+                  transition: 'all 0.2s ease',
+                  flexShrink: 0
                 }}
               >
-                <Phone size={14} color="var(--primary)" />
+                <Phone size={13} color="#3B82F6" style={{ flexShrink: 0 }} />
                 <span>0983.406.221</span>
               </a>
               <a
                 href="https://zalo.me/0336611194"
                 target="_blank"
                 rel="noopener noreferrer"
-                title="Nhắn Zalo Thầy Hồng: 0336.611.194"
+                className="nav-hotline-badge secondary"
+                title="Zalo Tư Vấn: 0336.611.194"
                 style={{
-                  display: 'flex',
+                  display: 'inline-flex',
                   alignItems: 'center',
                   gap: '0.35rem',
-                  padding: '0.5rem 0.75rem',
+                  padding: '0.42rem 0.65rem',
                   borderRadius: '8px',
-                  background: 'var(--primary-tint)',
-                  border: '1px solid var(--border-highlight)',
-                  fontSize: '0.86rem',
-                  fontWeight: 700,
-                  color: 'var(--primary)',
+                  background: 'rgba(16, 185, 129, 0.12)',
+                  border: '1.5px solid rgba(16, 185, 129, 0.4)',
+                  fontSize: '0.84rem',
+                  fontWeight: 800,
+                  color: '#10B981',
                   whiteSpace: 'nowrap',
-                  textDecoration: 'none'
+                  textDecoration: 'none',
+                  boxShadow: '0 2px 6px rgba(16, 185, 129, 0.15)',
+                  transition: 'all 0.2s ease',
+                  flexShrink: 0
                 }}
               >
-                <Phone size={14} color="var(--primary)" />
+                <Phone size={13} color="#10B981" style={{ flexShrink: 0 }} />
                 <span>0336.611.194</span>
               </a>
             </div>
@@ -235,13 +253,16 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               onClick={() => onOpenRegister()}
               className="btn btn-gold desktop-cta-btn"
               style={{
-                padding: '0.65rem 1.25rem',
-                fontSize: '0.9rem',
-                borderRadius: '10px',
-                boxShadow: 'var(--shadow-gold)'
+                padding: '0.52rem 1.05rem',
+                fontSize: '0.86rem',
+                fontWeight: 800,
+                borderRadius: '8px',
+                boxShadow: 'var(--shadow-gold)',
+                whiteSpace: 'nowrap',
+                flexShrink: 0
               }}
             >
-              <Sparkles size={16} />
+              <Sparkles size={15} />
               <span>ĐĂNG KÝ HỌC</span>
             </button>
 
@@ -254,16 +275,17 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 border: '1px solid var(--border-color)',
                 color: 'var(--text-main)',
                 padding: '0.45rem 0.55rem',
-                borderRadius: '10px',
+                borderRadius: '8px',
                 cursor: 'pointer',
                 display: 'none',
                 alignItems: 'center',
                 justifyContent: 'center',
-                boxShadow: 'var(--shadow-sm)'
+                boxShadow: 'var(--shadow-sm)',
+                flexShrink: 0
               }}
               aria-label="Toggle Navigation Menu"
             >
-              {mobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
+              {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
           </div>
         </div>
@@ -458,30 +480,74 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
 
       {/* Responsive Media Queries */}
       <style>{`
+        .navbar-container {
+          width: 100%;
+          max-width: 100%;
+          padding: 0.35rem 1.5rem;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          min-height: 64px;
+          box-sizing: border-box;
+        }
         .nav-framed-item {
           transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
         }
-        @media (max-width: 1280px) {
+        .nav-hotline-badge {
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .nav-hotline-badge:hover {
+          transform: translateY(-1px);
+          filter: brightness(1.15);
+        }
+        .desktop-nav::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* Large laptops & monitors */
+        @media (max-width: 1440px) {
           .desktop-nav {
-            gap: 0.25rem !important;
-            margin: 0 0.5rem 0 1rem !important;
+            gap: 0.22rem !important;
+            margin: 0 0.35rem !important;
           }
           .nav-framed-item {
-            padding: 0.38rem 0.55rem !important;
-            font-size: 0.82rem !important;
+            padding: 0.32rem 0.45rem !important;
+            font-size: 0.79rem !important;
           }
         }
-        @media (max-width: 1080px) {
-          .hotline-btn {
+
+        /* Medium screens (<= 1240px): activate mobile menu so Phone numbers & CTA have plenty of room and are never cut off */
+        @media (max-width: 1240px) {
+          .desktop-nav {
+            display: none !important;
+          }
+          .mobile-menu-btn {
+            display: flex !important;
+          }
+        }
+
+        /* Tablets: keep primary hotline 0983.406.221 visible */
+        @media (max-width: 860px) {
+          .nav-hotline-badge.secondary {
             display: none !important;
           }
         }
-        @media (max-width: 992px) {
-          .desktop-nav, .hotline-btn { display: none !important; }
-          .mobile-menu-btn { display: flex !important; }
-        }
+
+        /* Small mobile screens */
         @media (max-width: 600px) {
-          .desktop-cta-btn { display: none !important; }
+          .navbar-container {
+            padding: 0.35rem 0.75rem !important;
+          }
+          .desktop-cta-btn {
+            display: none !important;
+          }
+        }
+
+        @media (max-width: 440px) {
+          .nav-hotline-badge {
+            display: none !important;
+          }
         }
       `}</style>
     </>
