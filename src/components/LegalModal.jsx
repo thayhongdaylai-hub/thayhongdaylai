@@ -690,24 +690,24 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
         @media (max-width: 768px) {
           .legal-modal-backdrop {
             align-items: center !important;
-            padding: max(2.75rem, calc(env(safe-area-inset-top, 0px) + 2.25rem)) 0.65rem max(1rem, env(safe-area-inset-bottom, 0px)) 0.65rem !important;
+            padding: max(3.25rem, calc(env(safe-area-inset-top, 0px) + 2.75rem)) 0.65rem max(1.25rem, env(safe-area-inset-bottom, 0px)) 0.65rem !important;
           }
           .legal-modal-container {
-            height: calc(100dvh - max(4.5rem, calc(env(safe-area-inset-top, 0px) + 3.75rem))) !important;
-            max-height: calc(100dvh - max(4.5rem, calc(env(safe-area-inset-top, 0px) + 3.75rem))) !important;
+            height: calc(100dvh - max(4.75rem, calc(env(safe-area-inset-top, 0px) + 4rem))) !important;
+            max-height: calc(100dvh - max(4.75rem, calc(env(safe-area-inset-top, 0px) + 4rem))) !important;
             border-radius: 18px !important;
           }
           .legal-modal-header {
             flex-direction: column !important;
             align-items: stretch !important;
             gap: 0.75rem !important;
-            padding: 1.15rem 0.85rem 0.85rem 0.85rem !important;
+            padding: 1.65rem 0.85rem 0.85rem 0.85rem !important;
           }
           .legal-header-top-bar {
             width: 100% !important;
             justify-content: space-between !important;
             order: 1 !important;
-            padding: 0.1rem 0.15rem !important;
+            padding: 0.15rem 0.2rem !important;
           }
           .legal-header-brand-badge {
             display: inline-flex !important;
