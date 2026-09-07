@@ -58,6 +58,8 @@ export const LEGAL_CONFIG = {
     id: 'privacy',
     title: 'Chính sách bảo mật',
     tabLabel: 'CHÍNH SÁCH BẢO MẬT',
+    mobileMain: 'Chính Sách',
+    mobileSub: 'Bảo Mật',
     subtitle: 'Quy định thu thập, quản lý và bảo mật dữ liệu cá nhân học viên',
     pdfUrl: '/dieu-luat/chinh-sach-bao-mat.pdf',
     icon: ShieldCheck
@@ -66,6 +68,8 @@ export const LEGAL_CONFIG = {
     id: 'terms',
     title: 'Điều khoản sử dụng',
     tabLabel: 'ĐIỀU KHOẢN SỬ DỤNG',
+    mobileMain: 'Điều Khoản',
+    mobileSub: 'Sử Dụng',
     subtitle: 'Quy chế đào tạo, quyền lợi và trách nhiệm giữa học viên & trung tâm',
     pdfUrl: '/dieu-luat/dieu-khoan-su-dung.pdf',
     icon: Scale
@@ -74,6 +78,8 @@ export const LEGAL_CONFIG = {
     id: 'refund',
     title: 'Chính sách đăng ký, hủy và hoàn tiền',
     tabLabel: 'CHÍNH SÁCH ĐĂNG KÝ, HUỶ, HOÀN TIỀN',
+    mobileMain: 'Đăng Ký, Huỷ',
+    mobileSub: '& Hoàn Tiền',
     subtitle: 'Quy trình tiếp nhận hồ sơ, bảo lưu lịch thi & chính sách hoàn học phí minh bạch',
     pdfUrl: '/dieu-luat/chinh-sach-dang-ky-huy-hoan-tien.pdf',
     icon: FileText
@@ -176,31 +182,51 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
         }}
       >
         {/* Header Bar with Document Tabs & Controls */}
-        <div
-          className="legal-modal-header"
-          style={{
-            padding: '0.85rem 1.25rem',
-            background: 'var(--bg-card-hover, #131B2E)',
-            borderBottom: '1px solid var(--border-color, #1E293B)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
-            gap: '0.75rem',
-            flexWrap: 'wrap'
-          }}
-        >
-          {/* 3 Document Tabs */}
-          <div
-            className="legal-tabs-list"
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.45rem',
-              overflowX: 'auto',
-              scrollbarWidth: 'none',
-              flex: 1
-            }}
-          >
+        <div className="legal-modal-header">
+          {/* Top Control Bar (Row 1 on Mobile, Right on Desktop) */}
+          <div className="legal-header-top-bar">
+            <div className="legal-header-brand-badge">
+              <ShieldCheck size={16} color="#60A5FA" style={{ flexShrink: 0 }} />
+              <span>QUY CHẾ &amp; PHÁP LÝ</span>
+            </div>
+
+            {/* Action Buttons */}
+            <div className="legal-header-actions">
+              {/* Download Original PDF button */}
+              <a
+                href={currentConfig.pdfUrl}
+                download
+                className="legal-header-btn"
+                title="Tải bản PDF gốc về máy"
+              >
+                <Download size={14} color="#F59E0B" />
+                <span className="legal-btn-text">Tải PDF</span>
+              </a>
+
+              {/* Print Button */}
+              <button
+                onClick={() => window.print()}
+                className="legal-header-btn"
+                title="In văn bản"
+              >
+                <Printer size={14} color="var(--primary, #3B82F6)" />
+                <span className="legal-btn-text">In</span>
+              </button>
+
+              {/* Close Button */}
+              <button
+                onClick={onClose}
+                aria-label="Đóng cửa sổ"
+                title="Đóng (ESC)"
+                className="legal-close-btn"
+              >
+                <X size={19} />
+              </button>
+            </div>
+          </div>
+
+          {/* 3 Document Tabs (Row 2 on Mobile, Left on Desktop) */}
+          <nav className="legal-tabs-list" aria-label="Mục điều khoản pháp lý">
             {Object.values(LEGAL_CONFIG).map((doc) => {
               const isActive = doc.id === activeDocId;
               const TabIcon = doc.icon;
@@ -209,105 +235,22 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
                   key={doc.id}
                   onClick={() => handleTabChange(doc.id)}
                   className={`legal-tab-btn ${isActive ? 'active' : ''}`}
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '0.45rem',
-                    padding: '0.52rem 0.95rem',
-                    borderRadius: '10px',
-                    border: isActive ? '1.5px solid var(--primary, #3B82F6)' : '1px solid var(--border-color, #1E293B)',
-                    background: isActive ? 'var(--primary, #1D4ED8)' : 'var(--bg-card, #0F172A)',
-                    color: isActive ? '#FFFFFF' : 'var(--text-muted, #94A3B8)',
-                    fontWeight: isActive ? 800 : 700,
-                    fontSize: '0.78rem',
-                    letterSpacing: '0.01em',
-                    cursor: 'pointer',
-                    whiteSpace: 'nowrap',
-                    boxShadow: isActive ? '0 3px 12px rgba(29, 78, 216, 0.35)' : 'none',
-                    transition: 'all 0.2s ease',
-                    flexShrink: 0
-                  }}
+                  title={doc.tabLabel}
                 >
-                  <TabIcon size={14} style={{ color: isActive ? '#FFFFFF' : 'var(--primary, #3B82F6)' }} />
-                  <span>{doc.tabLabel}</span>
+                  <TabIcon
+                    size={14}
+                    className="legal-tab-icon"
+                    style={{ color: isActive ? '#FFFFFF' : 'var(--primary, #3B82F6)', flexShrink: 0 }}
+                  />
+                  <span className="tab-label-desktop">{doc.tabLabel}</span>
+                  <span className="tab-label-mobile">
+                    <span className="tab-mobile-main">{doc.mobileMain}</span>
+                    <span className="tab-mobile-sub">{doc.mobileSub}</span>
+                  </span>
                 </button>
               );
             })}
-          </div>
-
-          {/* Action Buttons */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem', flexShrink: 0 }}>
-            {/* Download Original PDF button */}
-            <a
-              href={currentConfig.pdfUrl}
-              download
-              className="legal-header-btn"
-              title="Tải bản PDF gốc về máy"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                padding: '0.45rem 0.8rem',
-                borderRadius: '9px',
-                background: 'var(--bg-main, #0B0F19)',
-                border: '1px solid var(--border-color, #1E293B)',
-                color: 'var(--text-main, #F1F5F9)',
-                fontSize: '0.8rem',
-                fontWeight: 700,
-                textDecoration: 'none',
-                transition: 'all 0.2s ease'
-              }}
-            >
-              <Download size={14} color="#F59E0B" />
-              <span className="legal-btn-text">Tải PDF</span>
-            </a>
-
-            {/* Print Button */}
-            <button
-              onClick={() => window.print()}
-              className="legal-header-btn"
-              title="In văn bản"
-              style={{
-                display: 'inline-flex',
-                alignItems: 'center',
-                gap: '0.4rem',
-                padding: '0.45rem 0.8rem',
-                borderRadius: '9px',
-                background: 'var(--bg-main, #0B0F19)',
-                border: '1px solid var(--border-color, #1E293B)',
-                color: 'var(--text-main, #F1F5F9)',
-                fontSize: '0.8rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                transition: 'all 0.2s ease'
-              }}
-            >
-              <Printer size={14} color="var(--primary, #3B82F6)" />
-              <span className="legal-btn-text">In</span>
-            </button>
-
-            {/* Close Button */}
-            <button
-              onClick={onClose}
-              aria-label="Đóng cửa sổ"
-              title="Đóng (ESC)"
-              style={{
-                width: '36px',
-                height: '36px',
-                borderRadius: '9px',
-                background: 'var(--bg-main, #0B0F19)',
-                border: '1px solid var(--border-color, #1E293B)',
-                color: 'var(--text-main, #F1F5F9)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                cursor: 'pointer',
-                transition: 'all 0.2s ease'
-              }}
-            >
-              <X size={19} />
-            </button>
-          </div>
+          </nav>
         </div>
 
         {/* Document Reading Body (Clean Typography Format like the User Reference) */}
@@ -617,6 +560,103 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
           from { opacity: 0; transform: scale(0.96) translateY(14px); }
           to { opacity: 1; transform: scale(1) translateY(0); }
         }
+        /* Desktop Header Layout */
+        .legal-modal-header {
+          padding: 0.85rem 1.25rem;
+          background: var(--bg-card-hover, #131B2E);
+          border-bottom: 1px solid var(--border-color, #1E293B);
+          display: flex;
+          align-items: center;
+          justifyContent: space-between;
+          gap: 0.85rem;
+        }
+        .legal-header-top-bar {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          order: 2;
+        }
+        .legal-header-brand-badge {
+          display: none;
+        }
+        .legal-header-actions {
+          display: flex;
+          align-items: center;
+          gap: 0.45rem;
+        }
+        .legal-header-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.4rem;
+          padding: 0.45rem 0.8rem;
+          border-radius: 9px;
+          background: var(--bg-main, #0B0F19);
+          border: 1px solid var(--border-color, #1E293B);
+          color: var(--text-main, #F1F5F9);
+          font-size: 0.8rem;
+          font-weight: 700;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        .legal-close-btn {
+          width: 36px;
+          height: 36px;
+          border-radius: 9px;
+          background: var(--bg-main, #0B0F19);
+          border: 1px solid var(--border-color, #1E293B);
+          color: var(--text-main, #F1F5F9);
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+        .legal-close-btn:hover {
+          background: rgba(239, 68, 68, 0.2) !important;
+          border-color: #EF4444 !important;
+          color: #EF4444 !important;
+        }
+        .legal-tabs-list {
+          display: flex;
+          align-items: center;
+          gap: 0.45rem;
+          overflow-x: auto;
+          scrollbar-width: none;
+          flex: 1;
+          order: 1;
+        }
+        .legal-tab-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.45rem;
+          padding: 0.52rem 0.95rem;
+          border-radius: 10px;
+          border: 1px solid var(--border-color, #1E293B);
+          background: var(--bg-card, #0F172A);
+          color: var(--text-muted, #94A3B8);
+          font-weight: 700;
+          font-size: 0.78rem;
+          letter-spacing: 0.01em;
+          cursor: pointer;
+          white-space: nowrap;
+          transition: all 0.2s ease;
+          flex-shrink: 0;
+        }
+        .legal-tab-btn.active {
+          border-color: var(--primary, #3B82F6) !important;
+          background: var(--primary, #1D4ED8) !important;
+          color: #FFFFFF !important;
+          font-weight: 800 !important;
+          box-shadow: 0 3px 12px rgba(29, 78, 216, 0.35) !important;
+        }
+        .tab-label-desktop {
+          display: inline;
+        }
+        .tab-label-mobile {
+          display: none;
+        }
+
         .legal-header-btn:hover {
           border-color: var(--primary, #3B82F6) !important;
           background: rgba(29, 78, 216, 0.15) !important;
@@ -645,9 +685,11 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
         .legal-reading-body::-webkit-scrollbar-thumb:hover {
           background: #475569;
         }
-        @media (max-width: 680px) {
-          .legal-btn-text {
-            display: none !important;
+
+        /* Mobile specific layout (max-width: 768px) */
+        @media (max-width: 768px) {
+          .legal-modal-backdrop {
+            padding: 0.35rem !important;
           }
           .legal-modal-container {
             height: 98vh !important;
@@ -655,14 +697,75 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
             border-radius: 14px !important;
           }
           .legal-modal-header {
-            padding: 0.65rem 0.85rem !important;
+            flex-direction: column !important;
+            align-items: stretch !important;
+            gap: 0.65rem !important;
+            padding: 0.75rem 0.85rem !important;
+          }
+          .legal-header-top-bar {
+            width: 100% !important;
+            justify-content: space-between !important;
+            order: 1 !important;
+          }
+          .legal-header-brand-badge {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 0.4rem !important;
+            font-size: 0.74rem !important;
+            font-weight: 800 !important;
+            color: #60A5FA !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.03em !important;
+          }
+          .legal-btn-text {
+            display: none !important;
+          }
+          .legal-tabs-list {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 0.35rem !important;
+            width: 100% !important;
+            order: 2 !important;
+            overflow: visible !important;
           }
           .legal-tab-btn {
-            padding: 0.45rem 0.7rem !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 0.45rem 0.2rem !important;
+            border-radius: 9px !important;
+            min-height: 52px !important;
+            width: 100% !important;
+            white-space: normal !important;
+            text-align: center !important;
+          }
+          .legal-tab-icon {
+            margin-bottom: 0.15rem !important;
+          }
+          .tab-label-desktop {
+            display: none !important;
+          }
+          .tab-label-mobile {
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            line-height: 1.15 !important;
+          }
+          .tab-mobile-main {
             font-size: 0.72rem !important;
+            font-weight: 800 !important;
+            color: inherit !important;
+          }
+          .tab-mobile-sub {
+            font-size: 0.64rem !important;
+            font-weight: 600 !important;
+            opacity: 0.88 !important;
+            color: inherit !important;
           }
           .legal-reading-body {
-            padding: 1.5rem 1rem 3rem 1rem !important;
+            padding: 1.25rem 0.85rem 3.5rem 0.85rem !important;
           }
         }
       `}</style>
