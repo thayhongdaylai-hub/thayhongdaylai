@@ -181,24 +181,6 @@ export default function Hero({ onOpenRegister }) {
               </div>
               <div className="hero-phone-links" style={{ display: 'flex', alignItems: 'center', flexWrap: 'wrap', gap: '0.45rem', fontSize: '0.9rem' }}>
                 <a
-                  href="https://zalo.me/0983406221"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    color: 'var(--primary)',
-                    fontWeight: 800,
-                    textDecoration: 'none',
-                    padding: '0.25rem 0.6rem',
-                    borderRadius: '8px',
-                    background: 'var(--primary-tint)',
-                    border: '1px solid rgba(59, 130, 246, 0.2)'
-                  }}
-                  title="Nhắn Zalo Thầy Hồng: 0983.406.221"
-                >
-                  0983.406.221
-                </a>
-                <span style={{ color: 'var(--text-muted)', fontWeight: 700 }}>•</span>
-                <a
                   href="https://zalo.me/0336611194"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -211,7 +193,7 @@ export default function Hero({ onOpenRegister }) {
                     background: 'var(--primary-tint)',
                     border: '1px solid rgba(59, 130, 246, 0.2)'
                   }}
-                  title="Nhắn Zalo Tuyển Sinh: 0336.611.194"
+                  title="Nhắn Zalo Thầy Hồng: 0336.611.194"
                 >
                   0336.611.194
                 </a>

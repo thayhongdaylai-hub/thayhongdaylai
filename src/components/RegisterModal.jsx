@@ -208,7 +208,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                 <input
                   type="tel"
                   required
-                  placeholder="Ví dụ: 0983 406 221"
+                  placeholder="Ví dụ: 0336 611 194"
                   value={formData.phone}
                   onChange={e => setFormData({ ...formData, phone: e.target.value })}
                   style={{
@@ -302,7 +302,7 @@ export default function RegisterModal({ isOpen, onClose, initialData }) {
                 gap: '0.35rem'
               }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '0.5rem' }}>
-                  <span>📞 Hotline: <strong style={{ color: 'var(--accent-emerald)' }}>0983.406.221</strong> - <strong style={{ color: 'var(--accent-emerald)' }}>0336.611.194</strong></span>
+                  <span>📞 Hotline / Zalo: <strong style={{ color: 'var(--accent-emerald)' }}>0336.611.194</strong></span>
                   <span>✉️ Gmail: <strong style={{ color: 'var(--accent-blue)' }}>thayhongdaylai@gmail.com</strong></span>
                 </div>
                 <div>📍 Cơ sở: <strong>Số 14 Ngõ 190/11 Thượng Thanh, Việt Hưng, HN</strong> & <strong>Phố Dương Lôi, Từ Sơn, BN</strong></div>

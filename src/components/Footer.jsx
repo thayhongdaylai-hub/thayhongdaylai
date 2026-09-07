@@ -1,7 +1,7 @@
 import React from 'react';
-import { ShieldCheck, Phone, Mail, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Phone, Mail, MapPin, Clock, ArrowRight, FileText } from 'lucide-react';
 
-export default function Footer() {
+export default function Footer({ onOpenLegal }) {
   return (
     <footer style={{
       background: '#0F172A',
@@ -95,11 +95,7 @@ export default function Footer() {
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Phone size={16} color="#60A5FA" style={{ flexShrink: 0 }} />
-                <span>Thầy Hồng: <a href="https://zalo.me/0983406221" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 800, color: '#FBBF24', textDecoration: 'none' }} title="Mở Zalo Thầy Hồng">0983.406.221</a></span>
-              </li>
-              <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <Phone size={16} color="#60A5FA" style={{ flexShrink: 0 }} />
-                <span>Thầy Hồng: <a href="https://zalo.me/0336611194" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 800, color: '#FBBF24', textDecoration: 'none' }} title="Mở Zalo Thầy Hồng">0336.611.194</a></span>
+                <span>Hotline / Zalo: <a href="https://zalo.me/0336611194" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 800, color: '#FBBF24', textDecoration: 'none' }} title="Mở Zalo Thầy Hồng: 0336.611.194">0336.611.194</a></span>
               </li>
               <li style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <Mail size={16} color="#60A5FA" style={{ flexShrink: 0 }} />
@@ -109,40 +105,119 @@ export default function Footer() {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="#1877F2" style={{ flexShrink: 0 }}>
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
                 </svg>
-                <span>Fanpage: <a href="https://www.facebook.com/share/1GuWF1te7x/" target="_blank" rel="noopener noreferrer" style={{ color: '#60A5FA', fontWeight: 700 }}>Thầy Hồng Dạy Lái</a></span>
+                <span>FANPAGE : <a href="https://www.facebook.com/share/1GuWF1te7x/" target="_blank" rel="noopener noreferrer" style={{ color: '#60A5FA', fontWeight: 700 }}>Thầy Hồng Dạy Lái .</a></span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Bottom copyright */}
+        {/* Bottom copyright & Legal policy links */}
         <div style={{
           borderTop: '1px solid rgba(255, 255, 255, 0.1)',
-          paddingTop: '1.75rem',
+          paddingTop: '1.5rem',
           display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'space-between',
-          flexWrap: 'wrap',
-          gap: '1rem',
+          flexDirection: 'column',
+          gap: '0.9rem',
           fontSize: '0.84rem'
         }}>
-          <div>
-             © 2026 Thầy Hồng Dạy Lái.
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            flexWrap: 'wrap',
+            gap: '1rem'
+          }}>
+            <div>
+              © 2026 Thầy Hồng Dạy Lái. All Rights Reserved.
+            </div>
+            <div style={{ display: 'flex', gap: '1.5rem', color: '#64748B', flexWrap: 'wrap' }}>
+              <a href="#about-teacher" style={{ color: '#94A3B8', textDecoration: 'none' }}>Giới thiệu Thầy Hồng</a>
+              <a href="#courses" style={{ color: '#94A3B8', textDecoration: 'none' }}>Bảng giá khóa học</a>
+              <a href="#faq" style={{ color: '#94A3B8', textDecoration: 'none' }}>Hỏi đáp</a>
+            </div>
           </div>
-          <div style={{ display: 'flex', gap: '1.5rem', color: '#64748B', flexWrap: 'wrap' }}>
-            <a href="#about-teacher" style={{ color: '#94A3B8' }}>Giới thiệu Thầy Hồng</a>
-            <a href="#courses" style={{ color: '#94A3B8' }}>Bảng giá khóa học</a>
-            <a href="#faq" style={{ color: '#94A3B8' }}>Hỏi đáp</a>
+
+          {/* 3 Mục Chính Sách & Điều Khoản Pháp Lý */}
+          <div className="footer-legal-bar" style={{
+            display: 'flex',
+            alignItems: 'center',
+            flexWrap: 'wrap',
+            gap: '0.75rem 1.25rem',
+            paddingTop: '0.85rem',
+            borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+            fontSize: '0.8rem'
+          }}>
+            <a
+              href="/dieu-luat/chinh-sach-bao-mat.pdf"
+              onClick={(e) => {
+                if (onOpenLegal) {
+                  e.preventDefault();
+                  onOpenLegal('privacy');
+                }
+              }}
+              className="footer-legal-link"
+              title="Xem văn bản: Chính Sách Bảo Mật trực tiếp trên website"
+            >
+              <FileText size={14} style={{ flexShrink: 0, color: '#60A5FA' }} />
+              <span>CHÍNH SÁCH BẢO MẬT</span>
+            </a>
+            <span style={{ color: 'rgba(255, 255, 255, 0.2)' }}>•</span>
+            <a
+              href="/dieu-luat/dieu-khoan-su-dung.pdf"
+              onClick={(e) => {
+                if (onOpenLegal) {
+                  e.preventDefault();
+                  onOpenLegal('terms');
+                }
+              }}
+              className="footer-legal-link"
+              title="Xem văn bản: Điều Khoản Sử Dụng trực tiếp trên website"
+            >
+              <FileText size={14} style={{ flexShrink: 0, color: '#60A5FA' }} />
+              <span>ĐIỀU KHOẢN SỬ DỤNG</span>
+            </a>
+            <span style={{ color: 'rgba(255, 255, 255, 0.2)' }}>•</span>
+            <a
+              href="/dieu-luat/chinh-sach-dang-ky-huy-hoan-tien.pdf"
+              onClick={(e) => {
+                if (onOpenLegal) {
+                  e.preventDefault();
+                  onOpenLegal('refund');
+                }
+              }}
+              className="footer-legal-link"
+              title="Xem văn bản: Chính Sách Đăng Ký, Huỷ, Hoàn Tiền trực tiếp trên website"
+            >
+              <FileText size={14} style={{ flexShrink: 0, color: '#60A5FA' }} />
+              <span>CHÍNH SÁCH ĐĂNG KÝ , HUỶ , HOÀN TIỀN</span>
+            </a>
           </div>
         </div>
       </div>
 
       <style>{`
+        .footer-legal-link {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.35rem;
+          color: #94A3B8;
+          text-decoration: none;
+          font-weight: 700;
+          font-size: 0.78rem;
+          letter-spacing: 0.02em;
+          transition: all 0.2s ease;
+        }
+        .footer-legal-link:hover {
+          color: #60A5FA !important;
+          text-decoration: underline;
+        }
         @media (max-width: 992px) {
           .footer-grid { grid-template-columns: repeat(2, 1fr) !important; gap: 2rem !important; }
         }
         @media (max-width: 576px) {
           .footer-grid { grid-template-columns: 1fr !important; }
+          .footer-legal-bar { flex-direction: column; align-items: flex-start !important; gap: 0.55rem !important; }
+          .footer-legal-bar > span { display: none; }
         }
       `}</style>
     </footer>

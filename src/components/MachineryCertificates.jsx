@@ -193,40 +193,12 @@ export default function MachineryCertificates({ onSelectMachinery }) {
                       </span>
                     </div>
 
-                    {/* Direct Contact Buttons: Zalo 1 | Zalo 2 | Fanpage */}
+                    {/* Direct Contact Buttons: Zalo | Fanpage */}
                     <div style={{
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(3, minmax(0, 1fr))',
-                      gap: '0.4rem'
+                      gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
+                      gap: '0.5rem'
                     }}>
-                      {/* Zalo Button 1 – Thầy Hồng */}
-                      <a
-                        href="https://zalo.me/0983406221"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="machinery-social-link zalo"
-                        title="Nhắn Zalo Thầy Hồng: 0983.406.221"
-                        style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          gap: '0.3rem',
-                          padding: '0.45rem 0.35rem',
-                          borderRadius: '9px',
-                          background: 'rgba(0, 104, 255, 0.1)',
-                          border: '1.5px solid rgba(0, 104, 255, 0.35)',
-                          color: '#0068FF',
-                          fontSize: '0.76rem',
-                          fontWeight: 800,
-                          textDecoration: 'none',
-                          boxShadow: '0 2px 6px rgba(0, 104, 255, 0.12)',
-                          flexDirection: 'column',
-                          lineHeight: 1.3
-                        }}
-                      >
-                        <ZaloIcon size={16} />
-                        <span style={{ fontWeight: 900, letterSpacing: '0.01em' }}>0983.406.221</span>
-                      </a>
 
                       {/* Zalo Button 2 – Tư Vấn */}
                       <a

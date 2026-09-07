@@ -190,14 +190,14 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               )}
             </button>
 
-            {/* Always-Visible Hotline Buttons */}
+            {/* Always-Visible Hotline Button */}
             <div className="hotline-btn-group" style={{ display: 'flex', alignItems: 'center', gap: '0.35rem', flexShrink: 0 }}>
               <a
-                href="https://zalo.me/0983406221"
+                href="https://zalo.me/0336611194"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="nav-hotline-badge primary"
-                title="Gọi / Zalo Thầy Hồng: 0983.406.221"
+                title="Hotline / Zalo: 0336.611.194"
                 style={{
                   display: 'inline-flex',
                   alignItems: 'center',
@@ -217,33 +217,6 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 }}
               >
                 <Phone size={13} color="#3B82F6" style={{ flexShrink: 0 }} />
-                <span>0983.406.221</span>
-              </a>
-              <a
-                href="https://zalo.me/0336611194"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="nav-hotline-badge secondary"
-                title="Zalo Tư Vấn: 0336.611.194"
-                style={{
-                  display: 'inline-flex',
-                  alignItems: 'center',
-                  gap: '0.35rem',
-                  padding: '0.42rem 0.65rem',
-                  borderRadius: '8px',
-                  background: 'rgba(16, 185, 129, 0.12)',
-                  border: '1.5px solid rgba(16, 185, 129, 0.4)',
-                  fontSize: '0.84rem',
-                  fontWeight: 800,
-                  color: '#10B981',
-                  whiteSpace: 'nowrap',
-                  textDecoration: 'none',
-                  boxShadow: '0 2px 6px rgba(16, 185, 129, 0.15)',
-                  transition: 'all 0.2s ease',
-                  flexShrink: 0
-                }}
-              >
-                <Phone size={13} color="#10B981" style={{ flexShrink: 0 }} />
                 <span>0336.611.194</span>
               </a>
             </div>
@@ -385,7 +358,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
                 <a
-                  href="https://zalo.me/0983406221"
+                  href="https://zalo.me/0336611194"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setMobileMenuOpen(false)}
@@ -405,33 +378,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
                     <Phone size={16} color="var(--primary)" />
-                    <span>Thầy Hồng:</span>
-                  </div>
-                  <strong style={{ fontSize: '1.02rem', letterSpacing: '0.02em' }}>0983.406.221</strong>
-                </a>
-
-                <a
-                  href="https://zalo.me/0336611194"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setMobileMenuOpen(false)}
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '0.7rem 0.9rem',
-                    borderRadius: '10px',
-                    background: 'var(--bg-card)',
-                    border: '1px solid var(--border-color)',
-                    color: 'var(--text-main)',
-                    fontWeight: 800,
-                    fontSize: '0.95rem',
-                    textDecoration: 'none'
-                  }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.45rem' }}>
-                    <Phone size={16} color="var(--accent-gold)" />
-                    <span>Tư Vấn Hồ Sơ:</span>
+                    <span>Hotline / Zalo:</span>
                   </div>
                   <strong style={{ fontSize: '1.02rem', letterSpacing: '0.02em' }}>0336.611.194</strong>
                 </a>
@@ -527,12 +474,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
           }
         }
 
-        /* Tablets: keep primary hotline 0983.406.221 visible */
-        @media (max-width: 860px) {
-          .nav-hotline-badge.secondary {
-            display: none !important;
-          }
-        }
+        /* Tablets: keep hotline 0336.611.194 visible */
 
         /* Small mobile screens */
         @media (max-width: 600px) {

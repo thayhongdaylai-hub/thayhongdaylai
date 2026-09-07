@@ -126,25 +126,6 @@ export default function CTASection({ onOpenRegister }) {
               <span>GỌI TƯ VẤN:</span>
             </div>
             <a
-              href="https://zalo.me/0983406221"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                padding: '0.55rem 0.85rem',
-                borderRadius: '8px',
-                background: '#FFFFFF',
-                color: 'var(--primary-dark)',
-                fontWeight: 800,
-                fontSize: '0.92rem',
-                textDecoration: 'none',
-                boxShadow: '0 2px 8px rgba(0,0,0,0.15)'
-              }}
-              title="Nhắn Zalo Thầy Hồng: 0983.406.221"
-            >
-              0983.406.221
-            </a>
-            <span style={{ color: '#E2E8F0', fontWeight: 600 }}>•</span>
-            <a
               href="https://zalo.me/0336611194"
               target="_blank"
               rel="noopener noreferrer"

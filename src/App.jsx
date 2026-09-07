@@ -16,6 +16,7 @@ import CTASection from './components/CTASection';
 import Footer from './components/Footer';
 import RegisterModal from './components/RegisterModal';
 import TestModal from './components/TestModal';
+import LegalModal from './components/LegalModal';
 
 // Helper function to detect real-time day/night theme
 const getTimeBasedTheme = () => {
@@ -48,6 +49,15 @@ export default function App() {
     return false;
   });
   const [modalDetails, setModalDetails] = useState(null);
+  const [legalDoc, setLegalDoc] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const hash = window.location.hash;
+      if (hash === '#chinh-sach-bao-mat' || hash === '#bao-mat') return 'privacy';
+      if (hash === '#dieu-khoan-su-dung' || hash === '#dieu-khoan') return 'terms';
+      if (hash === '#chinh-sach-hoan-tien' || hash === '#hoan-tien' || hash === '#dieu-luat') return 'refund';
+    }
+    return null;
+  });
 
   useEffect(() => {
     const handleHashCheck = () => {
@@ -55,6 +65,12 @@ export default function App() {
       const search = window.location.search;
       if (hash === '#test' || hash === '#thi-thu' || search.includes('test=true') || search.includes('modal=test')) {
         setIsTestOpen(true);
+      } else if (hash === '#chinh-sach-bao-mat' || hash === '#bao-mat') {
+        setLegalDoc('privacy');
+      } else if (hash === '#dieu-khoan-su-dung' || hash === '#dieu-khoan') {
+        setLegalDoc('terms');
+      } else if (hash === '#chinh-sach-hoan-tien' || hash === '#hoan-tien' || hash === '#dieu-luat') {
+        setLegalDoc('refund');
       }
     };
     window.addEventListener('hashchange', handleHashCheck);
@@ -150,29 +166,18 @@ export default function App() {
         {/* 10. Kêu gọi hành động & Đăng ký tư vấn */}
         <CTASection onOpenRegister={() => handleOpenRegister()} />
       </main>
-      <Footer />
+      <Footer onOpenLegal={(docKey) => setLegalDoc(docKey)} />
 
       {/* Sticky Mobile Floating Action Bar with Clear Phone Numbers */}
       <div className="mobile-bottom-bar">
-        <a
-          href="https://zalo.me/0983406221"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mobile-bottom-btn"
-          title="Gọi / Zalo Thầy Hồng: 0983.406.221"
-        >
-          <Phone size={17} color="var(--primary)" />
-          <span style={{ fontWeight: 800 }}>0983.406.221</span>
-        </a>
-
         <a
           href="https://zalo.me/0336611194"
           target="_blank"
           rel="noopener noreferrer"
           className="mobile-bottom-btn"
-          title="Zalo Tư Vấn: 0336.611.194"
+          title="Hotline / Zalo: 0336.611.194"
         >
-          <MessageSquare size={17} color="var(--primary)" />
+          <Phone size={17} color="var(--primary)" />
           <span style={{ fontWeight: 800 }}>0336.611.194</span>
         </a>
 
@@ -196,6 +201,16 @@ export default function App() {
         onClose={() => {
           setIsTestOpen(false);
           if (typeof window !== 'undefined' && (window.location.hash === '#test' || window.location.hash === '#thi-thu')) {
+            window.history.replaceState(null, '', window.location.pathname + window.location.search);
+          }
+        }}
+      />
+      <LegalModal
+        isOpen={!!legalDoc}
+        initialDoc={legalDoc}
+        onClose={() => {
+          setLegalDoc(null);
+          if (typeof window !== 'undefined' && window.location.hash && window.location.hash.includes('chinh-sach')) {
             window.history.replaceState(null, '', window.location.pathname + window.location.search);
           }
         }}
