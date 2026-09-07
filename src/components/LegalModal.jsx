@@ -689,23 +689,25 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
         /* Mobile specific layout (max-width: 768px) */
         @media (max-width: 768px) {
           .legal-modal-backdrop {
-            padding: 0.35rem !important;
+            align-items: center !important;
+            padding: max(2.75rem, calc(env(safe-area-inset-top, 0px) + 2.25rem)) 0.65rem max(1rem, env(safe-area-inset-bottom, 0px)) 0.65rem !important;
           }
           .legal-modal-container {
-            height: 98vh !important;
-            max-height: 98vh !important;
-            border-radius: 14px !important;
+            height: calc(100dvh - max(4.5rem, calc(env(safe-area-inset-top, 0px) + 3.75rem))) !important;
+            max-height: calc(100dvh - max(4.5rem, calc(env(safe-area-inset-top, 0px) + 3.75rem))) !important;
+            border-radius: 18px !important;
           }
           .legal-modal-header {
             flex-direction: column !important;
             align-items: stretch !important;
-            gap: 0.65rem !important;
-            padding: 0.75rem 0.85rem !important;
+            gap: 0.75rem !important;
+            padding: 1.15rem 0.85rem 0.85rem 0.85rem !important;
           }
           .legal-header-top-bar {
             width: 100% !important;
             justify-content: space-between !important;
             order: 1 !important;
+            padding: 0.1rem 0.15rem !important;
           }
           .legal-header-brand-badge {
             display: inline-flex !important;

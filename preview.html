@@ -239,21 +239,26 @@
     }
 
     @media (max-width: 768px) {
+      .legal-modal-backdrop {
+        align-items: center !important;
+        padding: max(2.75rem, calc(env(safe-area-inset-top, 0px) + 2.25rem)) 0.65rem max(1rem, env(safe-area-inset-bottom, 0px)) 0.65rem !important;
+      }
       .legal-modal-container {
-        height: 98vh !important;
-        max-height: 98vh !important;
-        border-radius: 14px !important;
+        height: calc(100dvh - max(4.5rem, calc(env(safe-area-inset-top, 0px) + 3.75rem))) !important;
+        max-height: calc(100dvh - max(4.5rem, calc(env(safe-area-inset-top, 0px) + 3.75rem))) !important;
+        border-radius: 18px !important;
       }
       .legal-modal-header {
         flex-direction: column !important;
         align-items: stretch !important;
-        gap: 0.65rem !important;
-        padding: 0.75rem 0.85rem !important;
+        gap: 0.75rem !important;
+        padding: 1.15rem 0.85rem 0.85rem 0.85rem !important;
       }
       .legal-header-top-bar {
         width: 100% !important;
         justify-content: space-between !important;
         order: 1 !important;
+        padding: 0.1rem 0.15rem !important;
       }
       .legal-header-brand-badge {
         display: inline-flex !important;
@@ -2468,7 +2473,7 @@
       const cur = LEGAL_DATA[activeId] || LEGAL_DATA.privacy;
 
       return (
-        <div style={{ position: 'fixed', inset: 0, zIndex: 999999, background: 'rgba(5,10,24,0.88)', backdropFilter: 'blur(16px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'clamp(0.5rem, 2vw, 1.25rem)' }} onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
+        <div className="legal-modal-backdrop" style={{ position: 'fixed', inset: 0, zIndex: 999999, background: 'rgba(5,10,24,0.88)', backdropFilter: 'blur(16px)', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: 'clamp(0.5rem, 2vw, 1.25rem)' }} onClick={(e) => { if (e.target === e.currentTarget) onClose(); }}>
           <div className="legal-modal-container" style={{ width: '100%', maxWidth: '1020px', height: '92vh', background: 'var(--bg-card, #0F172A)', border: '1.5px solid var(--border-color, #1E293B)', borderRadius: '20px', display: 'flex', flexDirection: 'column', overflow: 'hidden', boxShadow: '0 30px 80px rgba(0,0,0,0.75)' }}>
             <div className="legal-modal-header">
               <div className="legal-header-top-bar">
