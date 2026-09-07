@@ -4,15 +4,55 @@ import { ShieldCheck, Phone, Menu, X, ChevronRight, Sparkles, Sun, Moon } from '
 export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Lock body scroll when mobile menu is open
+  // Lock body scroll reliably on iOS, Android & Desktop when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
+      const scrollY = window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+      document.body.dataset.scrollY = scrollY.toString();
+      document.body.classList.add('mobile-menu-active');
+
+      // Full freeze on iOS WebKit & all mobile browsers
+      document.body.style.position = 'fixed';
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = '0';
+      document.body.style.right = '0';
+      document.body.style.width = '100%';
       document.body.style.overflow = 'hidden';
+      document.documentElement.style.overflow = 'hidden';
+      document.body.style.touchAction = 'none';
     } else {
+      document.body.classList.remove('mobile-menu-active');
+      const scrollY = document.body.dataset.scrollY;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      document.body.style.touchAction = '';
+
+      if (scrollY !== undefined && scrollY !== '') {
+        window.scrollTo(0, parseInt(scrollY, 10));
+        delete document.body.dataset.scrollY;
+      }
     }
+
     return () => {
+      document.body.classList.remove('mobile-menu-active');
+      const scrollY = document.body.dataset.scrollY;
+      document.body.style.position = '';
+      document.body.style.top = '';
+      document.body.style.left = '';
+      document.body.style.right = '';
+      document.body.style.width = '';
       document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      document.body.style.touchAction = '';
+      if (scrollY !== undefined && scrollY !== '') {
+        window.scrollTo(0, parseInt(scrollY, 10));
+        delete document.body.dataset.scrollY;
+      }
     };
   }, [mobileMenuOpen]);
 
@@ -29,7 +69,30 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
     { name: 'Hỏi Đáp', href: '#faq' },
   ];
 
-  const handleLinkClick = () => {
+  const handleLinkClick = (e, href) => {
+    if (href && href.startsWith('#')) {
+      if (e) e.preventDefault();
+      setMobileMenuOpen(false);
+
+      setTimeout(() => {
+        const targetId = href.substring(1);
+        const targetEl = document.getElementById(targetId);
+        if (targetEl) {
+          const headerOffset = 70;
+          const elementPosition = targetEl.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+        if (onNavigate) {
+          onNavigate();
+        }
+      }, 60);
+      return;
+    }
+
     setMobileMenuOpen(false);
     if (onNavigate) {
       onNavigate();
@@ -41,7 +104,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
       <header style={{
         position: 'sticky',
         top: 0,
-        zIndex: 1000,
+        zIndex: 100000,
         background: 'var(--bg-nav)',
         backdropFilter: 'blur(16px)',
         WebkitBackdropFilter: 'blur(16px)',
@@ -244,9 +307,9 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="mobile-menu-btn"
               style={{
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-color)',
-                color: 'var(--text-main)',
+                background: mobileMenuOpen ? 'rgba(239, 68, 68, 0.15)' : 'var(--bg-card)',
+                border: mobileMenuOpen ? '1.5px solid rgba(239, 68, 68, 0.5)' : '1px solid var(--border-color)',
+                color: mobileMenuOpen ? '#EF4444' : 'var(--text-main)',
                 padding: '0.45rem 0.55rem',
                 borderRadius: '8px',
                 cursor: 'pointer',
@@ -254,9 +317,11 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 alignItems: 'center',
                 justifyContent: 'center',
                 boxShadow: 'var(--shadow-sm)',
-                flexShrink: 0
+                flexShrink: 0,
+                transition: 'all 0.2s ease'
               }}
-              aria-label="Toggle Navigation Menu"
+              aria-label={mobileMenuOpen ? 'Đóng menu' : 'Mở menu điều hướng'}
+              title={mobileMenuOpen ? 'Đóng menu' : 'Mở menu'}
             >
               {mobileMenuOpen ? <X size={20} /> : <Menu size={20} />}
             </button>
@@ -264,37 +329,42 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
         </div>
       </header>
 
-      {/* FULL-SCREEN MOBILE DRAWER OVERLAY (Rendered outside header to guarantee 100% visibility) */}
+      {/* FULL-SCREEN MOBILE DRAWER (Self-contained, solid background, zero scroll chaining to outside page) */}
       {mobileMenuOpen && (
         <div
-          onClick={() => setMobileMenuOpen(false)}
+          className="mobile-drawer-wrapper"
           style={{
             position: 'fixed',
             top: '64px',
             left: 0,
             right: 0,
             bottom: 0,
-            height: 'calc(100vh - 64px)',
-            background: 'rgba(0, 0, 0, 0.75)',
-            backdropFilter: 'blur(8px)',
-            WebkitBackdropFilter: 'blur(8px)',
+            height: 'calc(100dvh - 64px)',
+            maxHeight: 'calc(100dvh - 64px)',
+            background: 'var(--bg-card, #0F172A)',
             zIndex: 99999,
             overflowY: 'auto',
-            WebkitOverflowScrolling: 'touch'
+            overscrollBehavior: 'contain',
+            WebkitOverflowScrolling: 'touch',
+            touchAction: 'pan-y',
+            display: 'flex',
+            flexDirection: 'column',
+            boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.7)',
+            animation: 'mobileDrawerSlideDown 0.2s ease-out'
           }}
         >
           {/* Scrollable Container Panel */}
           <div
-            onClick={(e) => e.stopPropagation()}
+            className="mobile-drawer-panel"
             style={{
-              background: 'var(--bg-card)',
-              borderBottom: '2px solid var(--border-color)',
-              padding: '1rem 1rem 3.5rem 1rem',
+              padding: '1rem 1rem 4.5rem 1rem',
               display: 'flex',
               flexDirection: 'column',
-              gap: '0.55rem',
-              boxShadow: '0 20px 40px rgba(0, 0, 0, 0.5)',
-              minHeight: 'max-content'
+              gap: '0.6rem',
+              width: '100%',
+              maxWidth: '640px',
+              margin: '0 auto',
+              boxSizing: 'border-box'
             }}
           >
             {/* Mobile Theme Switch Row */}
@@ -325,7 +395,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               <a
                 key={idx}
                 href={link.href}
-                onClick={handleLinkClick}
+                onClick={(e) => handleLinkClick(e, link.href)}
                 style={{
                   display: 'flex',
                   alignItems: 'center',
@@ -421,12 +491,47 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
             >
               ĐĂNG KÝ HỌC NGAY • NHẬN VOUCHER
             </button>
+
+            {/* Bottom Quick Close Button */}
+            <button
+              onClick={() => setMobileMenuOpen(false)}
+              className="btn"
+              style={{
+                width: '100%',
+                padding: '0.72rem',
+                marginTop: '0.35rem',
+                borderRadius: '10px',
+                background: 'rgba(255, 255, 255, 0.05)',
+                border: '1px solid var(--border-color)',
+                color: 'var(--text-muted)',
+                fontWeight: 700,
+                fontSize: '0.85rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.45rem',
+                cursor: 'pointer'
+              }}
+            >
+              <X size={16} />
+              <span>Đóng menu điều hướng</span>
+            </button>
           </div>
         </div>
       )}
 
       {/* Responsive Media Queries */}
       <style>{`
+        @keyframes mobileDrawerSlideDown {
+          from {
+            opacity: 0;
+            transform: translateY(-8px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
         .navbar-container {
           width: 100%;
           max-width: 100%;

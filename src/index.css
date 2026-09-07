@@ -512,6 +512,12 @@ input, select, textarea {
     box-shadow: 0 -6px 28px rgba(0, 0, 0, 0.16);
   }
 
+  body.mobile-menu-active .mobile-bottom-bar {
+    display: none !important;
+    pointer-events: none !important;
+    visibility: hidden !important;
+  }
+
   .mobile-bottom-btn {
     display: flex;
     flex-direction: column;
