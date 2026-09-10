@@ -8,6 +8,8 @@
    ========================================================================== */
 
 :root, :root[data-theme='light'], html[data-theme='light'], body[data-theme='light'], [data-theme='light'] {
+  color-scheme: light;
+
   /* Primary Brand Colors (Xanh Dương Chủ Đạo) */
   --primary: #1D4ED8;
   --primary-hover: #1E40AF;
@@ -89,6 +91,8 @@
    ========================================================================== */
 
 :root[data-theme='dark'], html[data-theme='dark'], body[data-theme='dark'], [data-theme='dark'] {
+  color-scheme: dark;
+
   /* Primary Brand Colors (Electric Royal Blue for Dark Mode) */
   --primary: #3B82F6;
   --primary-hover: #60A5FA;
@@ -427,6 +431,9 @@ input, select, textarea {
   flex-shrink: 0;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
   box-shadow: var(--shadow-sm);
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
 }
 
 .theme-toggle-btn:hover {
@@ -521,6 +528,8 @@ input, select, textarea {
     align-items: center;
     gap: 8px;
     box-shadow: 0 -6px 28px rgba(0, 0, 0, 0.16);
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
   }
 
   body.mobile-menu-active .mobile-bottom-bar {
@@ -549,6 +558,10 @@ input, select, textarea {
     text-align: center;
     transition: all 0.2s ease;
     user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: none;
   }
 
   .mobile-bottom-btn:active {

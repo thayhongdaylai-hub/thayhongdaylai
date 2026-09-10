@@ -228,6 +228,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
           }}>
             {/* Theme Toggle Button */}
             <button
+              type="button"
               onClick={toggleTheme}
               className="theme-toggle-btn"
               aria-label="Chuyển đổi chế độ sáng/tối"
@@ -382,7 +383,11 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 Giao diện: {theme === 'dark' ? '🌙 Chế độ Tối' : '☀️ Chế độ Sáng'}
               </span>
               <button
-                onClick={toggleTheme}
+                type="button"
+                onClick={() => {
+                  toggleTheme();
+                  setMobileMenuOpen(false);
+                }}
                 className="btn btn-secondary"
                 style={{ padding: '0.35rem 0.75rem', fontSize: '0.82rem', borderRadius: '8px' }}
               >
@@ -494,6 +499,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
 
             {/* Bottom Quick Close Button */}
             <button
+              type="button"
               onClick={() => setMobileMenuOpen(false)}
               className="btn"
               style={{
@@ -501,7 +507,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 padding: '0.72rem',
                 marginTop: '0.35rem',
                 borderRadius: '10px',
-                background: 'rgba(255, 255, 255, 0.05)',
+                background: theme === 'dark' ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.04)',
                 border: '1px solid var(--border-color)',
                 color: 'var(--text-muted)',
                 fontWeight: 700,

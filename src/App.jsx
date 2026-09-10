@@ -18,34 +18,17 @@ import RegisterModal from './components/RegisterModal';
 import TestModal from './components/TestModal';
 import LegalModal from './components/LegalModal';
 
-// Helper function to detect real-time day/night theme
-const getTimeBasedTheme = () => {
-  const hour = new Date().getHours();
-  // 06:00 to 17:59 -> Light Mode (Sáng)
-  // 18:00 to 05:59 -> Dark Mode (Tối)
-  return (hour >= 6 && hour < 18) ? 'light' : 'dark';
-};
-
 export default function App() {
-  const [userManualTheme, setUserManualTheme] = useState(() => {
-    try {
-      if (typeof window !== 'undefined' && window.localStorage) {
-        return !!window.localStorage.getItem('thayhong_theme');
-      }
-    } catch (e) {}
-    return false;
-  });
-
   const [theme, setTheme] = useState(() => {
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
         const saved = window.localStorage.getItem('thayhong_theme');
-        if (saved === 'light' || saved === 'dark') {
+        if (saved === 'dark' || saved === 'light') {
           return saved;
         }
       }
     } catch (e) {}
-    return getTimeBasedTheme();
+    return 'light'; // Default to clean, professional light theme (nền trắng sạch)
   });
 
   const [isRegisterOpen, setIsRegisterOpen] = useState(false);
@@ -86,48 +69,37 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashCheck);
   }, []);
 
-  // Sync theme attribute to documentElement AND body immediately
+  // Sync theme attribute to documentElement, body, and meta-theme-color immediately
   useEffect(() => {
     try {
       if (typeof document !== 'undefined') {
         document.documentElement.setAttribute('data-theme', theme);
         document.body.setAttribute('data-theme', theme);
+        const metaTheme = document.getElementById('meta-theme-color');
+        if (metaTheme) {
+          metaTheme.setAttribute('content', theme === 'dark' ? '#0B1120' : '#FFFFFF');
+        }
       }
     } catch (e) {}
   }, [theme]);
 
-  // Check real-time clock periodically if user hasn't explicitly chosen a manual preference
-  useEffect(() => {
-    if (userManualTheme) return;
-    const interval = setInterval(() => {
-      try {
-        const saved = typeof window !== 'undefined' && window.localStorage ? window.localStorage.getItem('thayhong_theme') : null;
-        if (!saved && !userManualTheme) {
-          const autoTheme = getTimeBasedTheme();
-          setTheme(autoTheme);
-          if (typeof document !== 'undefined') {
-            document.documentElement.setAttribute('data-theme', autoTheme);
-            document.body.setAttribute('data-theme', autoTheme);
-          }
-        }
-      } catch (e) {}
-    }, 60000); // check every 1 minute
-    return () => clearInterval(interval);
-  }, [userManualTheme]);
-
-  const toggleTheme = () => {
-    setUserManualTheme(true);
+  const toggleTheme = (e) => {
+    if (e && e.preventDefault) e.preventDefault();
     setTheme(prev => {
       const next = prev === 'dark' ? 'light' : 'dark';
       try {
-        if (typeof window !== 'undefined') {
-          if (window.localStorage) {
-            window.localStorage.setItem('thayhong_theme', next);
-          }
+        if (typeof document !== 'undefined') {
           document.documentElement.setAttribute('data-theme', next);
           document.body.setAttribute('data-theme', next);
+          const metaTheme = document.getElementById('meta-theme-color');
+          if (metaTheme) {
+            metaTheme.setAttribute('content', next === 'dark' ? '#0B1120' : '#FFFFFF');
+          }
         }
-      } catch (e) {}
+        if (typeof window !== 'undefined' && window.localStorage) {
+          window.localStorage.setItem('thayhong_theme', next);
+        }
+      } catch (err) {}
       return next;
     });
   };
@@ -206,6 +178,7 @@ export default function App() {
         </a>
 
         <button
+          type="button"
           onClick={toggleTheme}
           className="mobile-bottom-btn"
           aria-label="Chuyển đổi giao diện sáng/tối"
@@ -221,6 +194,7 @@ export default function App() {
         </button>
 
         <button
+          type="button"
           onClick={() => handleOpenRegister({ note: 'Đăng ký nhanh từ điện thoại' })}
           className="mobile-bottom-btn highlight"
           title="Đăng ký nhận voucher 1.000.000đ"

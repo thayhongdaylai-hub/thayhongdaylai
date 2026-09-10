@@ -24,7 +24,8 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="preload" as="image" href="/logo.png" />
     <link rel="preload" as="image" href="/logo-dark.png" />
-    <meta name="theme-color" content="#1D4ED8" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#FFFFFF" id="meta-theme-color" />
     <meta name="msapplication-TileColor" content="#1D4ED8" />
     <meta name="msapplication-TileImage" content="/android-chrome-192x192.png" />
 
@@ -118,19 +119,20 @@
     <link href="https://fonts.cdnfonts.com/css/google-sans-2" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
 
-    <!-- Theme Initializer -->
+    <!-- Theme Initializer: Default to clean Light Theme (Nền Sáng) unless user chose Dark -->
     <script>
       (function() {
         try {
           var saved = localStorage.getItem('thayhong_theme');
-          if (saved === 'light' || saved === 'dark') {
-            document.documentElement.setAttribute('data-theme', saved);
-          } else {
-            var hour = new Date().getHours();
-            var autoTheme = (hour >= 6 && hour < 18) ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', autoTheme);
+          var activeTheme = (saved === 'dark') ? 'dark' : 'light';
+          document.documentElement.setAttribute('data-theme', activeTheme);
+          var metaTheme = document.getElementById('meta-theme-color');
+          if (metaTheme) {
+            metaTheme.setAttribute('content', activeTheme === 'dark' ? '#0B1120' : '#FFFFFF');
           }
-        } catch (e) {}
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
       })();
     </script>
   </head>
