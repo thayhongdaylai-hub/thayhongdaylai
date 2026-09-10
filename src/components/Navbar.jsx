@@ -149,17 +149,20 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 transition: 'opacity 0.2s ease'
               }}
             />
-            <div style={{
-              fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif",
-              fontSize: 'clamp(1.05rem, 3.5vw, 1.25rem)',
-              fontWeight: 900,
-              letterSpacing: '-0.02em',
-              lineHeight: 1.2,
-              whiteSpace: 'nowrap',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.35rem'
-            }}>
+            <div
+              className="brand-title-text"
+              style={{
+                fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif",
+                fontSize: 'clamp(1.05rem, 3.5vw, 1.25rem)',
+                fontWeight: 900,
+                letterSpacing: '-0.02em',
+                lineHeight: 1.2,
+                whiteSpace: 'nowrap',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.35rem'
+              }}
+            >
               <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
               <span className="text-gradient">DẠY LÁI</span>
             </div>
@@ -576,21 +579,28 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
           }
         }
 
-        /* Tablets: keep hotline 0336.611.194 visible */
-
-        /* Small mobile screens */
-        @media (max-width: 600px) {
-          .navbar-container {
-            padding: 0.35rem 0.75rem !important;
-          }
+        /* Tablets & Mobile: clean layout with zero overflow */
+        @media (max-width: 768px) {
           .desktop-cta-btn {
+            display: none !important;
+          }
+          .hotline-btn-group {
             display: none !important;
           }
         }
 
-        @media (max-width: 440px) {
-          .nav-hotline-badge {
+        @media (max-width: 520px) {
+          .brand-title-text {
             display: none !important;
+          }
+          .brand-logo {
+            margin-right: 0.35rem !important;
+          }
+        }
+
+        @media (max-width: 600px) {
+          .navbar-container {
+            padding: 0.35rem 0.75rem !important;
           }
         }
       `}</style>

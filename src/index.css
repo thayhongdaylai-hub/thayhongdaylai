@@ -7,7 +7,7 @@
    Chế độ: Hỗ trợ Sáng (Light) và Tối (Dark Mode) chuẩn Responsive
    ========================================================================== */
 
-:root, [data-theme='light'] {
+:root, :root[data-theme='light'], html[data-theme='light'], body[data-theme='light'], [data-theme='light'] {
   /* Primary Brand Colors (Xanh Dương Chủ Đạo) */
   --primary: #1D4ED8;
   --primary-hover: #1E40AF;
@@ -88,7 +88,7 @@
    DARK MODE TOKENS (Sleek Deep Midnight Navy)
    ========================================================================== */
 
-[data-theme='dark'] {
+:root[data-theme='dark'], html[data-theme='dark'], body[data-theme='dark'], [data-theme='dark'] {
   /* Primary Brand Colors (Electric Royal Blue for Dark Mode) */
   --primary: #3B82F6;
   --primary-hover: #60A5FA;
@@ -182,6 +182,14 @@ body {
   font-family: 'Google Sans', 'Quicksand', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.65;
   overflow-x: hidden;
+  width: 100%;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-root {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  min-height: 100vh;
   width: 100%;
   transition: background-color 0.3s ease, color 0.3s ease;
 }

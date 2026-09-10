@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, BookOpen, Gift, Sparkles } from 'lucide-react';
+import { Phone, MessageSquare, BookOpen, Gift, Sparkles, Sun, Moon } from 'lucide-react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CoursePackages from './components/CoursePackages';
@@ -27,6 +27,15 @@ const getTimeBasedTheme = () => {
 };
 
 export default function App() {
+  const [userManualTheme, setUserManualTheme] = useState(() => {
+    try {
+      if (typeof window !== 'undefined' && window.localStorage) {
+        return !!window.localStorage.getItem('thayhong_theme');
+      }
+    } catch (e) {}
+    return false;
+  });
+
   const [theme, setTheme] = useState(() => {
     try {
       if (typeof window !== 'undefined' && window.localStorage) {
@@ -77,31 +86,46 @@ export default function App() {
     return () => window.removeEventListener('hashchange', handleHashCheck);
   }, []);
 
+  // Sync theme attribute to documentElement AND body immediately
   useEffect(() => {
     try {
-      document.documentElement.setAttribute('data-theme', theme);
+      if (typeof document !== 'undefined') {
+        document.documentElement.setAttribute('data-theme', theme);
+        document.body.setAttribute('data-theme', theme);
+      }
     } catch (e) {}
   }, [theme]);
 
-  // Check real-time clock periodically if user hasn't explicitly locked a manual preference
+  // Check real-time clock periodically if user hasn't explicitly chosen a manual preference
   useEffect(() => {
+    if (userManualTheme) return;
     const interval = setInterval(() => {
       try {
         const saved = typeof window !== 'undefined' && window.localStorage ? window.localStorage.getItem('thayhong_theme') : null;
-        if (!saved) {
-          setTheme(getTimeBasedTheme());
+        if (!saved && !userManualTheme) {
+          const autoTheme = getTimeBasedTheme();
+          setTheme(autoTheme);
+          if (typeof document !== 'undefined') {
+            document.documentElement.setAttribute('data-theme', autoTheme);
+            document.body.setAttribute('data-theme', autoTheme);
+          }
         }
       } catch (e) {}
     }, 60000); // check every 1 minute
     return () => clearInterval(interval);
-  }, []);
+  }, [userManualTheme]);
 
   const toggleTheme = () => {
+    setUserManualTheme(true);
     setTheme(prev => {
       const next = prev === 'dark' ? 'light' : 'dark';
       try {
-        if (typeof window !== 'undefined' && window.localStorage) {
-          window.localStorage.setItem('thayhong_theme', next);
+        if (typeof window !== 'undefined') {
+          if (window.localStorage) {
+            window.localStorage.setItem('thayhong_theme', next);
+          }
+          document.documentElement.setAttribute('data-theme', next);
+          document.body.setAttribute('data-theme', next);
         }
       } catch (e) {}
       return next;
@@ -180,6 +204,21 @@ export default function App() {
           <Phone size={17} color="var(--primary)" />
           <span style={{ fontWeight: 800 }}>0336.611.194</span>
         </a>
+
+        <button
+          onClick={toggleTheme}
+          className="mobile-bottom-btn"
+          aria-label="Chuyển đổi giao diện sáng/tối"
+          title={theme === 'dark' ? 'Chuyển sang nền Sáng' : 'Chuyển sang nền Tối'}
+          style={{ flex: 0.85 }}
+        >
+          {theme === 'dark' ? (
+            <Sun size={17} color="#FBBF24" />
+          ) : (
+            <Moon size={17} color="#3B82F6" />
+          )}
+          <span style={{ fontWeight: 800 }}>{theme === 'dark' ? 'Nền Sáng' : 'Nền Tối'}</span>
+        </button>
 
         <button
           onClick={() => handleOpenRegister({ note: 'Đăng ký nhanh từ điện thoại' })}

@@ -26,7 +26,41 @@
     /* ==========================================================================
        DESIGN SYSTEM & THEME TOKENS (LIGHT & DARK MODE)
        ========================================================================== */
-    :root, [data-theme='dark'] {
+    :root, [data-theme='light'], html[data-theme='light'], body[data-theme='light'] {
+      --bg-main: #F8FAFC;
+      --bg-card: #FFFFFF;
+      --bg-card-hover: #F1F5F9;
+      --bg-nav: rgba(255, 255, 255, 0.9);
+      --bg-glass: rgba(255, 255, 255, 0.8);
+      --bg-input: #F1F5F9;
+
+      --text-main: #0F172A;
+      --text-muted: #475569;
+      --text-light: #64748B;
+
+      --border-color: #E2E8F0;
+      --border-highlight: rgba(0, 229, 153, 0.4);
+
+      --accent-emerald: #00B377;
+      --accent-emerald-glow: rgba(0, 179, 119, 0.15);
+      --accent-blue: #1D4ED8;
+      --accent-blue-glow: rgba(29, 78, 216, 0.15);
+      --accent-orange: #D97706;
+      --accent-red: #DC2626;
+
+      --gradient-emerald: linear-gradient(135deg, #00B377 0%, #059669 100%);
+      --gradient-blue: linear-gradient(135deg, #1D4ED8 0%, #2563EB 100%);
+      --gradient-orange: linear-gradient(135deg, #D97706 0%, #B45309 100%);
+      --gradient-dark-card: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+      --gradient-hero: radial-gradient(circle at 50% 20%, rgba(0, 229, 153, 0.08) 0%, rgba(59, 130, 246, 0.05) 50%, rgba(248, 250, 252, 1) 100%);
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.1);
+      --shadow-neon: 0 0 20px rgba(0, 179, 119, 0.2);
+    }
+
+    [data-theme='dark'], html[data-theme='dark'], body[data-theme='dark'] {
       --bg-main: #0B0F19;
       --bg-card: #131B2E;
       --bg-card-hover: #1A243F;
@@ -59,14 +93,6 @@
       --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
       --shadow-neon: 0 0 25px rgba(0, 229, 153, 0.3);
     }
-
-    [data-theme='light'] {
-      --bg-main: #F8FAFC;
-      --bg-card: #FFFFFF;
-      --bg-card-hover: #F1F5F9;
-      --bg-nav: rgba(255, 255, 255, 0.9);
-      --bg-glass: rgba(255, 255, 255, 0.8);
-      --bg-input: #F1F5F9;
 
       --text-main: #0F172A;
       --text-muted: #475569;
@@ -2580,12 +2606,20 @@
 
       useEffect(() => {
         document.documentElement.setAttribute('data-theme', theme);
+        document.body.setAttribute('data-theme', theme);
         if (window.lucide) {
           window.lucide.createIcons();
         }
       }, [theme, isTestOpen, isRegisterOpen, legalDoc]);
 
-      const toggleTheme = () => setTheme(prev => (prev === 'dark' ? 'light' : 'dark'));
+      const toggleTheme = () => {
+        setTheme(prev => {
+          const next = prev === 'dark' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', next);
+          document.body.setAttribute('data-theme', next);
+          return next;
+        });
+      };
 
       return (
         <div className="app-root">
