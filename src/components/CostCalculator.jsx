@@ -225,7 +225,7 @@ export default function CostCalculator({ onOpenRegisterWithDetails }) {
               </div>
               <div style={{
                 fontSize: '2.3rem',
-                fontFamily: "'Quicksand', sans-serif",
+                fontFamily: "'Google Sans', 'Quicksand', sans-serif",
                 fontWeight: 800,
                 color: 'var(--accent-emerald)'
               }}>

@@ -7,10 +7,12 @@
   <link rel="icon" type="image/png" href="/public/logo.png">
   <link rel="shortcut icon" href="/public/favicon.ico">
 
-  <!-- Google Fonts: Be Vietnam Pro & Montserrat for crystal-clear Vietnamese typography -->
+  <!-- Google Fonts: Google Sans & Quicksand (Google Sand) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,700&family=Quicksand:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400..800;1,400..800&family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/google-sans-2" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/google-sans" rel="stylesheet">
 
   <!-- React 18 & ReactDOM 18 CDN -->
   <script src="https://unpkg.com/react@18/umd/react.production.min.js" crossorigin></script>
@@ -93,9 +95,9 @@
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; font-family: 'Be Vietnam Pro', 'Inter', sans-serif; font-size: 16px; }
-    body { background-color: var(--bg-main); color: var(--text-main); line-height: 1.6; overflow-x: hidden; transition: background-color 0.3s ease, color 0.3s ease; }
-    h1, h2, h3, h4, h5, h6 { font-family: 'Be Vietnam Pro', 'Montserrat', sans-serif; font-weight: 700; line-height: 1.25; color: var(--text-main); }
+    html { scroll-behavior: smooth; font-family: 'Google Sans', 'Quicksand', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; font-size: 16px; }
+    body { background-color: var(--bg-main); color: var(--text-main); font-family: 'Google Sans', 'Quicksand', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; overflow-x: hidden; transition: background-color 0.3s ease, color 0.3s ease; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Google Sans', 'Quicksand', 'Montserrat', sans-serif; font-weight: 700; line-height: 1.25; color: var(--text-main); }
     a { color: inherit; text-decoration: none; }
     button, input, select, textarea { font-family: inherit; }
     
@@ -384,8 +386,8 @@
         <header style={{ position: 'sticky', top: 0, zIndex: 100, background: 'var(--bg-nav)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border-color)', transition: 'all 0.3s ease' }}>
           <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: '84px', paddingTop: '0.5rem', paddingBottom: '0.5rem' }}>
             <a href="#" className="brand-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', textDecoration: 'none', flexShrink: 0 }}>
-              <img src="/public/logo.png" alt="Logo Thầy Hồng Dạy Lái" width="46" height="46" style={{ width: '46px', height: '46px', borderRadius: '50%', border: '2px solid #FBBF24', boxShadow: '0 4px 16px rgba(0, 229, 153, 0.25)', flexShrink: 0 }} onError={(e) => { e.target.src = 'public/logo.png'; }} />
-              <div style={{ fontFamily: "'Outfit', sans-serif", fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.2, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+              <img src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'} alt="Logo Thầy Hồng Dạy Lái - THDL" height="40" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} onError={(e) => { e.target.src = theme === 'dark' ? 'public/logo-dark.png' : 'public/logo.png'; }} />
+              <div style={{ fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif", fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.2, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
                 <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
                 <span className="text-gradient">DẠY LÁI</span>
               </div>

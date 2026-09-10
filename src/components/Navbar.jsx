@@ -138,22 +138,19 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
             }}
           >
             <img
-              src="/logo.png"
-              alt="Logo Thầy Hồng Dạy Lái"
-              width="46"
-              height="46"
+              src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
+              alt="Logo Thầy Hồng Dạy Lái - THDL"
+              height="40"
               style={{
-                width: '46px',
-                height: '46px',
-                borderRadius: '50%',
-                objectFit: 'cover',
-                flexShrink: 0,
-                boxShadow: '0 4px 14px rgba(29, 78, 216, 0.3)',
-                border: '2px solid rgba(251, 191, 36, 0.7)'
+                height: 'clamp(36px, 5vw, 42px)',
+                width: 'auto',
+                objectFit: 'contain',
+                display: 'block',
+                transition: 'opacity 0.2s ease'
               }}
             />
             <div style={{
-              fontFamily: "'Montserrat', 'Be Vietnam Pro', sans-serif",
+              fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif",
               fontSize: 'clamp(1.05rem, 3.5vw, 1.25rem)',
               fontWeight: 900,
               letterSpacing: '-0.02em',

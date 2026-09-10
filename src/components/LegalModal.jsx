@@ -272,7 +272,7 @@ export default function LegalModal({ isOpen, initialDoc = 'privacy', onClose }) 
               maxWidth: '840px',
               margin: '0 auto',
               color: '#CBD5E1',
-              fontFamily: "'Be Vietnam Pro', 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif"
+              fontFamily: "'Google Sans', 'Quicksand', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif"
             }}
           >
             {/* Document Header */}

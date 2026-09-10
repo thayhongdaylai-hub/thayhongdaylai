@@ -21,21 +21,16 @@ export default function Footer({ onOpenLegal }) {
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1.25rem' }}>
               <img
-                src="/logo.png"
-                alt="Logo Thầy Hồng Dạy Lái"
-                width="50"
-                height="50"
+                src="/logo-dark.png"
+                alt="Logo Thầy Hồng Dạy Lái - THDL"
                 style={{
-                  width: '50px',
-                  height: '50px',
-                  borderRadius: '50%',
-                  objectFit: 'cover',
-                  flexShrink: 0,
-                  boxShadow: '0 4px 14px rgba(29, 78, 216, 0.4)',
-                  border: '2.5px solid rgba(251, 191, 36, 0.8)'
+                  height: '42px',
+                  width: 'auto',
+                  objectFit: 'contain',
+                  display: 'block'
                 }}
               />
-              <span style={{ fontFamily: "'Montserrat', 'Be Vietnam Pro', sans-serif", fontSize: '1.35rem', fontWeight: 900, color: '#FFFFFF' }}>
+              <span style={{ fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif", fontSize: '1.35rem', fontWeight: 900, color: '#FFFFFF' }}>
                  THẦY HỒNG<span style={{ color: '#60A5FA' }}> DẠY LÁI</span>
               </span>
             </div>
