@@ -1,12 +1,20 @@
 User-agent: *
 Allow: /
 
-# Allow Googlebot to crawl all images and icons
+# Allow Googlebot and Favicon crawlers to access all icons
+User-agent: Googlebot
+Allow: /
+Allow: /favicon.ico
+Allow: /*.png$
+Allow: /*.ico$
+Allow: /*.svg$
+
 User-agent: Googlebot-Image
 Allow: /
 Allow: /*.png$
 Allow: /*.jpg$
+Allow: /*.jpeg$
 Allow: /*.svg$
 Allow: /*.ico$
 
-Sitemap: https://thayhongdaylai.com/sitemap.xml
+Sitemap: https://www.thayhongdaylai.com/sitemap.xml

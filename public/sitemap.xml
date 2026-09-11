@@ -3,9 +3,13 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.thayhongdaylai.com/</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://www.thayhongdaylai.com/logo-square.png</image:loc>
+      <image:title>Logo Thầy Hồng Dạy Lái Chuẩn GTVT</image:title>
+    </image:image>
     <image:image>
       <image:loc>https://www.thayhongdaylai.com/og-image-v2.jpg</image:loc>
       <image:title>Thầy Hồng Dạy Lái - Đào Tạo Lái Xe Ô Tô &amp; Xe Máy Chuẩn GTVT</image:title>
