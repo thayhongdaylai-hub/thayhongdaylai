@@ -383,6 +383,52 @@ input, select, textarea {
 }
 
 /* ==========================================================================
+   BRAND LOGO LIGHT & DARK SYNCHRONIZATION (IDENTICAL ON PC & MOBILE)
+   ========================================================================== */
+.brand-logo-img {
+  display: block;
+  object-fit: contain;
+  width: auto;
+  transition: opacity 0.2s ease;
+}
+
+.brand-logo-light {
+  display: block !important;
+}
+
+.brand-logo-dark {
+  display: none !important;
+}
+
+:root[data-theme='dark'] .brand-logo-light,
+html[data-theme='dark'] .brand-logo-light,
+body[data-theme='dark'] .brand-logo-light,
+[data-theme='dark'] .brand-logo-light {
+  display: none !important;
+}
+
+:root[data-theme='dark'] .brand-logo-dark,
+html[data-theme='dark'] .brand-logo-dark,
+body[data-theme='dark'] .brand-logo-dark,
+[data-theme='dark'] .brand-logo-dark {
+  display: block !important;
+}
+
+:root[data-theme='light'] .brand-logo-light,
+html[data-theme='light'] .brand-logo-light,
+body[data-theme='light'] .brand-logo-light,
+[data-theme='light'] .brand-logo-light {
+  display: block !important;
+}
+
+:root[data-theme='light'] .brand-logo-dark,
+html[data-theme='light'] .brand-logo-dark,
+body[data-theme='light'] .brand-logo-dark,
+[data-theme='light'] .brand-logo-dark {
+  display: none !important;
+}
+
+/* ==========================================================================
    CARDS & SURFACE STYLING (Bo góc vừa phải 12-16px, Shadow nhẹ)
    ========================================================================== */
 

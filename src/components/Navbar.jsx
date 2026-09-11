@@ -137,23 +137,34 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               marginRight: '0.75rem'
             }}
           >
+            {/* Dual logo rendering for instant, zero-flicker light and dark mode display */}
             <img
-              src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'}
+              src="/logo.png"
               alt="Logo Thầy Hồng Dạy Lái - THDL"
               height="40"
+              className="brand-logo-img brand-logo-light"
               style={{
-                height: 'clamp(36px, 5vw, 42px)',
+                height: 'clamp(32px, 4.5vw, 42px)',
                 width: 'auto',
-                objectFit: 'contain',
-                display: 'block',
-                transition: 'opacity 0.2s ease'
+                objectFit: 'contain'
+              }}
+            />
+            <img
+              src="/logo-dark.png"
+              alt="Logo Thầy Hồng Dạy Lái - THDL"
+              height="40"
+              className="brand-logo-img brand-logo-dark"
+              style={{
+                height: 'clamp(32px, 4.5vw, 42px)',
+                width: 'auto',
+                objectFit: 'contain'
               }}
             />
             <div
               className="brand-title-text"
               style={{
                 fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif",
-                fontSize: 'clamp(1.05rem, 3.5vw, 1.25rem)',
+                fontSize: 'clamp(1.02rem, 3.2vw, 1.25rem)',
                 fontWeight: 900,
                 letterSpacing: '-0.02em',
                 lineHeight: 1.2,
@@ -163,7 +174,7 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
                 gap: '0.35rem'
               }}
             >
-              <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
+              <span className="brand-title-prefix" style={{ color: 'var(--text-main)', transition: 'color 0.2s ease' }}>THẦY HỒNG</span>
               <span className="text-gradient">DẠY LÁI</span>
             </div>
           </a>
@@ -368,6 +379,45 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
               boxSizing: 'border-box'
             }}
           >
+            {/* Brand Header Inside Drawer */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.65rem',
+              padding: '0.75rem 0.9rem',
+              background: 'var(--bg-main)',
+              borderRadius: '12px',
+              border: '1px solid var(--border-color)',
+              marginBottom: '0.2rem'
+            }}>
+              <img
+                src="/logo.png"
+                alt="Logo Thầy Hồng Dạy Lái"
+                className="brand-logo-img brand-logo-light"
+                style={{ height: '32px', width: 'auto', objectFit: 'contain' }}
+              />
+              <img
+                src="/logo-dark.png"
+                alt="Logo Thầy Hồng Dạy Lái"
+                className="brand-logo-img brand-logo-dark"
+                style={{ height: '32px', width: 'auto', objectFit: 'contain' }}
+              />
+              <div style={{
+                fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif",
+                fontSize: '1.08rem',
+                fontWeight: 900,
+                letterSpacing: '-0.02em',
+                lineHeight: 1.2,
+                whiteSpace: 'nowrap',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.35rem'
+              }}>
+                <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
+                <span className="text-gradient">DẠY LÁI</span>
+              </div>
+            </div>
+
             {/* Mobile Theme Switch Row */}
             <div style={{
               display: 'flex',
@@ -595,18 +645,54 @@ export default function Navbar({ theme, toggleTheme, onOpenRegister, onNavigate 
           }
         }
 
-        @media (max-width: 520px) {
-          .brand-title-text {
-            display: none !important;
-          }
-          .brand-logo {
-            margin-right: 0.35rem !important;
-          }
-        }
-
         @media (max-width: 600px) {
           .navbar-container {
             padding: 0.35rem 0.75rem !important;
+          }
+        }
+
+        /* Mobile screens: preserve brand logo and full title colors matching PC version */
+        @media (max-width: 520px) {
+          .navbar-container {
+            padding: 0.35rem 0.65rem !important;
+          }
+          .brand-logo {
+            margin-right: 0.25rem !important;
+            gap: 0.42rem !important;
+          }
+          .brand-logo-img {
+            height: clamp(28px, 6vw, 34px) !important;
+          }
+          .brand-title-text {
+            display: flex !important;
+            font-size: clamp(0.9rem, 3.2vw, 1.08rem) !important;
+            gap: 0.25rem !important;
+          }
+        }
+
+        @media (max-width: 380px) {
+          .navbar-container {
+            padding: 0.3rem 0.45rem !important;
+          }
+          .brand-logo {
+            margin-right: 0.15rem !important;
+            gap: 0.3rem !important;
+          }
+          .brand-logo-img {
+            height: 26px !important;
+          }
+          .brand-title-text {
+            display: flex !important;
+            font-size: 0.85rem !important;
+            gap: 0.2rem !important;
+          }
+          .navbar-right-actions {
+            gap: 0.25rem !important;
+          }
+          .theme-toggle-btn, .mobile-menu-btn {
+            width: 32px !important;
+            height: 32px !important;
+            padding: 0.3rem !important;
           }
         }
       `}</style>

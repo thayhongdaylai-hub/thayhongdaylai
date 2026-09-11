@@ -164,6 +164,25 @@
 
     .brand-logo:hover .brand-icon-box { transform: scale(1.08) rotate(-4deg); box-shadow: 0 6px 22px rgba(0, 229, 153, 0.45); }
     
+    .brand-logo-img { display: block; object-fit: contain; width: auto; transition: opacity 0.2s ease; }
+    .brand-logo-light { display: block !important; }
+    .brand-logo-dark { display: none !important; }
+    [data-theme='dark'] .brand-logo-light { display: none !important; }
+    [data-theme='dark'] .brand-logo-dark { display: block !important; }
+    [data-theme='light'] .brand-logo-light { display: block !important; }
+    [data-theme='light'] .brand-logo-dark { display: none !important; }
+
+    @media (max-width: 520px) {
+      .brand-logo { gap: 0.42rem !important; }
+      .brand-logo-img { height: 32px !important; }
+      .brand-title-text { font-size: 1.05rem !important; gap: 0.25rem !important; }
+    }
+    @media (max-width: 380px) {
+      .brand-logo { gap: 0.3rem !important; }
+      .brand-logo-img { height: 28px !important; }
+      .brand-title-text { font-size: 0.88rem !important; gap: 0.2rem !important; }
+    }
+    
     .desktop-nav-grid { display: grid; grid-template-rows: repeat(2, auto); grid-template-columns: repeat(3, auto); gap: 0.4rem 0.65rem; align-items: center; margin: 0 1rem; }
     .nav-link-card { display: inline-flex; align-items: center; justify-content: center; padding: 0.38rem 0.85rem; border-radius: 10px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-muted); font-size: 0.88rem; font-weight: 600; text-decoration: none; white-space: nowrap; transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); box-shadow: var(--shadow-sm); }
     .nav-link-card:hover { border-color: var(--accent-emerald); background: var(--bg-card-hover); color: var(--accent-emerald); box-shadow: 0 4px 16px var(--accent-emerald-glow); transform: translateY(-2px); }
@@ -384,10 +403,11 @@
       return (
         <header style={{ position: 'sticky', top: 0, zIndex: 100, background: 'var(--bg-nav)', backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)', borderBottom: '1px solid var(--border-color)', transition: 'all 0.3s ease' }}>
           <div className="container" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', minHeight: '84px', paddingTop: '0.5rem', paddingBottom: '0.5rem' }}>
-            <a href="#" className="brand-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.85rem', textDecoration: 'none', flexShrink: 0 }}>
-              <img src={theme === 'dark' ? '/logo-dark.png' : '/logo.png'} alt="Logo Thầy Hồng Dạy Lái - THDL" height="40" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} onError={(e) => { e.target.src = theme === 'dark' ? 'public/logo-dark.png' : 'public/logo.png'; }} />
-              <div style={{ fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif", fontSize: '1.35rem', fontWeight: 800, letterSpacing: '-0.02em', lineHeight: 1.2, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
-                <span style={{ color: 'var(--text-main)' }}>THẦY HỒNG</span>
+            <a href="#" className="brand-logo" style={{ display: 'flex', alignItems: 'center', gap: '0.65rem', textDecoration: 'none', flexShrink: 0 }}>
+              <img src="/logo.png" alt="Logo Thầy Hồng Dạy Lái - THDL" height="40" className="brand-logo-img brand-logo-light" style={{ height: 'clamp(32px, 4.5vw, 42px)', width: 'auto', objectFit: 'contain' }} onError={(e) => { e.target.src = 'public/logo.png'; }} />
+              <img src="/logo-dark.png" alt="Logo Thầy Hồng Dạy Lái - THDL" height="40" className="brand-logo-img brand-logo-dark" style={{ height: 'clamp(32px, 4.5vw, 42px)', width: 'auto', objectFit: 'contain' }} onError={(e) => { e.target.src = 'public/logo-dark.png'; }} />
+              <div className="brand-title-text" style={{ fontFamily: "'Google Sans', 'Quicksand', 'Montserrat', sans-serif", fontSize: 'clamp(1.02rem, 3.2vw, 1.25rem)', fontWeight: 900, letterSpacing: '-0.02em', lineHeight: 1.2, whiteSpace: 'nowrap', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                <span style={{ color: 'var(--text-main)', transition: 'color 0.2s ease' }}>THẦY HỒNG</span>
                 <span className="text-gradient">DẠY LÁI</span>
               </div>
             </a>
